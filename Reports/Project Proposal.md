@@ -20,11 +20,11 @@ This project, and the Formula SAE Electric competition, gives new engineers expo
 
 1. _Objective_
 
-The main goal of this project is to design the powertrain and power system for the electric vehicle, so that it meets the specifications and constraints set by Formula SAE. To be more specific a tractive system to drive and stop the car will be designed. The tractive system, and any related subsystems should be in a state so that Tennessee Tech Motorsports can continue to adjust and develop the rest of the vehicle.
+The main goal of this project is to design the powertrain, controls, and power system for the electric vehicle, so that it meets the specifications and constraints set by Formula SAE. To be more specific a tractive system to drive and stop the car will be designed. The tractive system, and any related subsystems should be in a state so that Tennessee Tech Motorsports can continue to adjust and develop the rest of the vehicle.
 
 1. _Benefits_
 
-The main benefit of this project its relation to Tennessee Tech Motorsports. Completing this project will help the club enter the electric vehicle into the Formula SAE Electric competition. This will expose current and future members to the field of electric automotive engineering. Students and faculty of all engineering disciplines will learn more about electric vehicles and contribute new ideas to the field.
+The main benefit of this project is its relation to Tennessee Tech Motorsports. Completing this project will help the club enter the electric vehicle into the Formula SAE Electric competition. This will expose current and future members to the field of electric automotive engineering. Students and faculty of all engineering disciplines will learn more about electric vehicles and contribute new ideas to the field.
 
 1. _Challenges/Obstacles_
 
