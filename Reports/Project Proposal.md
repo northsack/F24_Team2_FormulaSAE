@@ -79,7 +79,7 @@ The stakeholders involved in this project are:
 17. Inertia Switch
 
 A figure has been included to give a visual representation of all these systems:
-
+![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/main/Documentation/Images/Fig.%201%20shutdown%20circuit.png)
 Figure 1: Shutdown Circuit of a Formula SAE EV Car
 
 1. An Accumulator Management System must monitor the Accumulator’s Voltage and Temperature when the Tractive System is Active, and/or when the Accumulator is connected to a charger.
