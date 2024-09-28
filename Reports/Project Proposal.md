@@ -146,6 +146,8 @@ A more detailed look at the current timeline of events is as follows:
 - April 11: Have the planned project scope finished and ready for tweaking
 - May 2: Project finished and ready to present
 
+![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/project_proposal/Documentation/Other%20Files/Gantt%20Chart.pdf)
+
 # Broader Impacts
 
 When designing the Formula SAE electric vehicle's powertrain and power system, it's not only about following the technical requirements; it also involves considering a much wider approach. For example, the development of electric car technology does considerably lower greenhouse gas emissions. However, battery production and disposal present environmental risks, especially concerning the sourcing of lithium and cobalt. It is our ethical duty as engineers to take research into account when selecting materials to reduce harm to the environment, encourage recycling, and support sustainable practices. The team also needs to recognize the potential unknowns, such as technological limitations or unforeseen environmental impacts, when acquiring new materials.
