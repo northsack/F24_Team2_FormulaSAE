@@ -146,7 +146,12 @@ A more detailed look at the current timeline of events is as follows:
 - April 11: Have the planned project scope finished and ready for tweaking
 - May 2: Project finished and ready to present
 
-![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/project_proposal/Documentation/Other%20Files/Gantt%20Chart.pdf)
+![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/project_proposal/Documentation/Images/Gantt%20Chart-1.png)
+Figure 2: Gantt Chart
+
+Disclaimer: This Gantt Chart will be updated with individual tasks when we start assigning them.
+
+The excel file for this Gantt Chart can be viewed on github.
 
 # Broader Impacts
 
