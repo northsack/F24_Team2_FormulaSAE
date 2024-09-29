@@ -58,25 +58,25 @@ The stakeholders involved in this project are:
 ## Specifications of this project
 
 1. This electric powertrain shall have enough performance to be comparable to Tennessee Tech Motorsports internal combustion engine car.
-    a. The EV powertrain of this project shall have a power output comparable to Tennessee Tech Motorsports' internal combustion engine.  TTM's internal combustion engine has a power output of 52 horsepower, and 55 ft*lbs of torque.  Thus, the EV powertrain shall have a similar power output to match these specifications.
-    b. The car shall be able to operate for at least an hour to complete the FSAE endurance event before needing to recharge.
-    c. The electric powertrain shall have the capability to reach a top speed of 60 miles per hour.
-2. This Formula SAE Electric powertrain shall comply with all rules and regulations specified in the Formula SAE rule book \[1\]. Some of these rules are listed below:
-3. The voltage measured between any two points shall not exceed 600 V DC.
-4. The car shall use electric motors only.
-5. The tractive system (every part connected to the motor and/or accumulator (battery)) motor shall be connected to the battery through a motor controller.
-6. The accumulator container shall be completely closed at all times, and removeable from the vehicle while staying rule compliant.
-7. The vehicle shall include a tractive systems active light that shall illuminate when the tractive system is active.
-8. The entire Tractive System and GLV System (Grounded Low Voltage) shall be completely galvanically separated.
-9. Shutdown System: The shutdown system consists of the following components, connected in series.  The purpose of these systems is to ensure the safety of the car, the driver, and team members in the near viscinity of the vehicle.  If one of these safety systems encounters a fault, the system has the ability to shut down all power to the vehicle.  Each safety system is daisy chained to the previous/next safety system, thus if one disengages power, none of the systems on the vehicle are able to be engaged.  They system shall only function when all contacts of the safety system are closed:
-a. Accumulator Management System
-b. Insulation Monitoring Device
-c. Brake System Plausibility Device
-d. Interlocks
-e. Master Switches
-f. Shutdown Buttons
-g. Brake Over Travel Switch
-h. Inertia Switch
+    1. The EV powertrain of this project shall have a power output comparable to Tennessee Tech Motorsports' internal combustion engine.  TTM's internal combustion engine has a power output of 52 horsepower, and 55 ft*lbs of torque.  Thus, the EV powertrain shall have a similar power output to match these specifications.
+    2. The car shall be able to operate for at least an hour to complete the FSAE endurance event before needing to recharge.
+    3. The electric powertrain shall have the capability to reach a top speed of 60 miles per hour.
+3. This Formula SAE Electric powertrain shall comply with all rules and regulations specified in the Formula SAE rule book \[1\]. Some of these rules are listed below:
+4. The voltage measured between any two points shall not exceed 600 V DC.
+5. The car shall use electric motors only.
+6. The tractive system (every part connected to the motor and/or accumulator (battery)) motor shall be connected to the battery through a motor controller.
+7. The accumulator container shall be completely closed at all times, and removeable from the vehicle while staying rule compliant.
+8. The vehicle shall include a tractive systems active light that shall illuminate when the tractive system is active.
+9. The entire Tractive System and GLV System (Grounded Low Voltage) shall be completely galvanically separated.
+10. Shutdown System: The shutdown system consists of the following components, connected in series.  The purpose of these systems is to ensure the safety of the car, the driver, and team members in the near viscinity of the vehicle.  If one of these safety systems encounters a fault, the system has the ability to shut down all power to the vehicle.  Each safety system is daisy chained to the previous/next safety system, thus if one disengages power, none of the systems on the vehicle are able to be engaged.  They system shall only function when all contacts of the safety system are closed:
+    1. Accumulator Management System
+    2. Insulation Monitoring Device
+    3. Brake System Plausibility Device
+    4. Interlocks
+    5. Master Switches
+    6. Shutdown Buttons
+    7. Brake Over Travel Switch
+    8. Inertia Switch
 
 A figure has been included to give a visual representation of all these systems:
 ![Figure 1: Shutdown Circuit of a Formula SAE EV Car](https://github.com/northsack/F24_Team2_FormulaSAE/blob/main/Documentation/Images/Fig.%201%20shutdown%20circuit.png)
