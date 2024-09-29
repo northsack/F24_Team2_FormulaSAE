@@ -58,38 +58,40 @@ The stakeholders involved in this project are:
 ## Specifications of this project
 
 1. This electric powertrain shall have enough performance to be comparable to Tennessee Tech Motorsports internal combustion engine car.
-    1. The EV powertrain shall have comparable performance to a 50-horsepower internal combustion engine.
-    2. The car shall be able to operate for at least an hour to complete the FSAE endurance event before needing to recharge.
-    3. The electric powertrain shall have the capability to reach a top speed of 60 miles per hour.
+    a. The EV powertrain of this project shall have a power output comparable to Tennessee Tech Motorsports' internal combustion engine.  TTM's internal combustion engine has a power output of 52 horsepower, and 55 ft*lbs of torque.  Thus, the EV powertrain shall have a similar power output to match these specifications.
+    b. The car shall be able to operate for at least an hour to complete the FSAE endurance event before needing to recharge.
+    c. The electric powertrain shall have the capability to reach a top speed of 60 miles per hour.
 2. This Formula SAE Electric powertrain shall comply with all rules and regulations specified in the Formula SAE rule book \[1\]. Some of these rules are listed below:
-3. The voltage measured between any two points may not exceed 600 V DC.
-4. Only electric motors are allowed.
-5. The tractive system (every part connected to the motor and/or accumulator (battery)) motor must be connected to the battery through a motor controller.
-6. The accumulator container must be completely closed at all times, and removeable from the vehicle while staying rule compliant.
-7. The vehicle must include a tractive systems active light that must illuminate when the tractive system is active.
-8. The entire Tractive System and GLV System (Grounded Low Voltage) must be completely galvanically separated.
-9. Shutdown System: The shutdown system consists of the following components, connected in series:
-10. Accumulator Management System
-11. Insulation Monitoring Device
-12. Brake System Plausibility Device
-13. Interlocks
-14. Master Switches
-15. Shutdown Buttons
-16. Brake Over Travel Switch
-17. Inertia Switch
+3. The voltage measured between any two points shall not exceed 600 V DC.
+4. The car shall use electric motors only.
+5. The tractive system (every part connected to the motor and/or accumulator (battery)) motor shall be connected to the battery through a motor controller.
+6. The accumulator container shall be completely closed at all times, and removeable from the vehicle while staying rule compliant.
+7. The vehicle shall include a tractive systems active light that shall illuminate when the tractive system is active.
+8. The entire Tractive System and GLV System (Grounded Low Voltage) shall be completely galvanically separated.
+9. Shutdown System: The shutdown system consists of the following components, connected in series.  The purpose of these systems is to ensure the safety of the car, the driver, and team members in the near viscinity of the vehicle.  If one of these safety systems encounters a fault, the system has the ability to shut down all power to the vehicle.  Each safety system is daisy chained to the previous/next safety system, thus if one disengages power, none of the systems on the vehicle are able to be engaged.  They system shall only function when all contacts of the safety system are closed:
+a. Accumulator Management System
+b. Insulation Monitoring Device
+c. Brake System Plausibility Device
+d. Interlocks
+e. Master Switches
+f. Shutdown Buttons
+g. Brake Over Travel Switch
+h. Inertia Switch
 
 A figure has been included to give a visual representation of all these systems:
 ![Figure 1: Shutdown Circuit of a Formula SAE EV Car](https://github.com/northsack/F24_Team2_FormulaSAE/blob/main/Documentation/Images/Fig.%201%20shutdown%20circuit.png)
 Figure 1: Shutdown Circuit of a Formula SAE EV Car
 
-1. An Accumulator Management System must monitor the Accumulator’s Voltage and Temperature when the Tractive System is Active, and/or when the Accumulator is connected to a charger.
-2. The vehicle must have an Insulation Monitoring Device (IMD) installed in the Tractive System
-3. The vehicle must have a standalone nonprogrammable circuit (Brake System Plausibility Device – BSPD) to check for simultaneous braking and high power output. The BSPD must open the shutdown circuit when both there is a demand for hard braking, and the motor/accumulator is at a level where 5 kW of electrical power in the DC circuit is delivered to the motor at the nominal battery voltage.
+10. An Accumulator Management System must monitor the Accumulator’s Voltage and Temperature when the Tractive System is Active, and/or when the Accumulator is connected to a charger.
+11. The vehicle must have an Insulation Monitoring Device (IMD) installed in the Tractive System
+12. The vehicle must have a standalone nonprogrammable circuit (Brake System Plausibility Device – BSPD) to check for simultaneous braking and high power output. The BSPD must open the shutdown circuit when both there is a demand for hard braking, and the motor/accumulator is at a level where 5 kW of electrical power in the DC circuit is delivered to the motor at the nominal battery voltage.
 
 ## Constraints of this project
 
 1. This electric powertrain shall be designed around the budget allotted by the engineering department.
 2. This electric powertrain shall be designed with regards to the available tools, resources, and professional expertise available to the College of Engineering students at Tennessee Tech University.
+3. This electric powertrain shall be designed to operate in environments ranging from 0 C to 25 C.  When competing in Michigan, the weather varies every year that the Formula SAE EV competetion is held.  The powertrain must be operational in a wide range of temperatures.
+4. This electric powertrain shall be constrained by the Tennessee Tech shop policies.  To ensure the safety of students working on this vehicle, the battery shall not be charged unless the powertrain is ready for testing.  An alternate method of supplying voltage and power to the EV powertrain system must be used.
 
 # Identify Relevant Literature (Patents)
 
@@ -97,13 +99,13 @@ Patents are important for a Formula SAE electric car because they protect the un
 
 # Set Goals and Measurements
 
-The specifications of this project are defined in the Formula SAE Rules \[1\]. This powertrain shall be comparable in power to Tennessee Tech Motorsports’ internal combustion (IC) engine currently used in their Formula SAE competition car.
+The specifications of this project are defined in the Formula SAE Rules \[1\]. This powertrain shall be comparable in power to Tennessee Tech Motorsports’ internal combustion (IC) engine currently used in their Formula SAE competition car.  [Specification 1]
 
-First, the electric powertrain’s success shall be measured by checking the specifications of the powertrain against the mandated rules by the Formula SAE competition. An example of this would be the Electronic Throttle Control (ETC) system that the SAE organization requires. If the two Accelerator Pedal Position Sensors (APPS) read values that have a 10% or greater difference for a duration of 100 milliseconds, the powertrain must disable itself automatically. To test a specification like this example, an oscilloscope would be connected to the APPS sensors, and the throttle output. The inputs and outputs of the ETC system could then be used to prove that the system is rule compliant, and a goal of the project has been completed. All tests of rule compliance shall be run until the powertrain is in accordance with the Formula SAE Electric rules
+First, the electric powertrain’s success shall be measured by checking the specifications of the powertrain against the mandated rules by the Formula SAE competition. An example of this would be the Electronic Throttle Control (ETC) system that the SAE organization requires. If the two Accelerator Pedal Position Sensors (APPS) read values that have a 10% or greater difference for a duration of 100 milliseconds, the powertrain must disable itself automatically. To test a specification like this example, an oscilloscope would be connected to the APPS sensors, and the throttle output. The inputs and outputs of the ETC system could then be used to prove that the system is rule compliant, and a goal of the project has been completed. All tests of rule compliance shall be run until the powertrain is in accordance with the Formula SAE Electric rules.  [Specifications 2-11]
 
-Success shall also be measured by placing the operational electric powertrain on TTM’s dynameter table. From this dynameter table, the horsepower and torque of the EV powertrain will be measured to check if the outputted power is comparable to TTM’s IC engine. If the desired numbers are not obtained, re-gearing the motor or upgrading components may be necessary.
+Success shall also be measured by placing the operational electric powertrain on TTM’s dynameter table. From this dynameter table, the horsepower and torque of the EV powertrain will be measured to check if the outputted power is comparable to TTM’s IC engine. If the desired numbers are not obtained, re-gearing the motor or upgrading components may be necessary.  [Specification 1]
 
-Finally, success shall be measured by placing the EV powertrain into a formula SAE style vehicle to test its performance. Using the Upper Cumberland Regional Airport, a road course similar to the Formula SAE dynamic events can be laid out with cones, and the car shall be tested through this course. From this testing, the run time duration can be measured. At the Upper Cumberland Regional Airport, the top speed of the car can also be measured.
+Finally, success shall be measured by placing the EV powertrain into a formula SAE style vehicle to test its performance. Using the Upper Cumberland Regional Airport, a road course similar to the Formula SAE dynamic events can be laid out with cones, and the car shall be tested through this course. From this testing, the run time duration can be measured. At the Upper Cumberland Regional Airport, the top speed of the car can also be measured.  [Specification 1, 12]
 
 # Estimate Resources and Timeline
 
