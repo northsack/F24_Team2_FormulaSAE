@@ -90,7 +90,7 @@ Figure 1: Shutdown Circuit of a Formula SAE EV Car
 
 1. This electric powertrain shall be designed around the budget allotted by the engineering department.
 2. This electric powertrain shall be designed with regards to the available tools, resources, and professional expertise available to the College of Engineering students at Tennessee Tech University.
-3. This electric powertrain shall be designed to operate in environments ranging from 0 C to 25 C.  When competing in Michigan, the weather varies every year that the Formula SAE EV competetion is held.  The powertrain must be operational in a wide range of temperatures.
+3. This electric powertrain shall be designed to operate in environments ranging from 0 C to 25 C.  When competing in Michigan, the weather varies every year that the Formula SAE EV competition is held.  The powertrain must be operational in a wide range of temperatures.
 4. This electric powertrain shall be constrained by the Tennessee Tech shop policies.  To ensure the safety of students working on this vehicle, the battery shall not be charged unless the powertrain is ready for testing.  An alternate method of supplying voltage and power to the EV powertrain system must be used.
 
 # Identify Relevant Literature (Patents)
