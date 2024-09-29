@@ -82,9 +82,9 @@ A figure has been included to give a visual representation of all these systems:
 ![Figure 1: Shutdown Circuit of a Formula SAE EV Car](https://github.com/northsack/F24_Team2_FormulaSAE/blob/main/Documentation/Images/Fig.%201%20shutdown%20circuit.png)
 Figure 1: Shutdown Circuit of a Formula SAE EV Car
 
-10. An Accumulator Management System must monitor the Accumulator’s Voltage and Temperature when the Tractive System is Active, and/or when the Accumulator is connected to a charger.
-11. The vehicle must have an Insulation Monitoring Device (IMD) installed in the Tractive System
-12. The vehicle must have a standalone nonprogrammable circuit (Brake System Plausibility Device – BSPD) to check for simultaneous braking and high power output. The BSPD must open the shutdown circuit when both there is a demand for hard braking, and the motor/accumulator is at a level where 5 kW of electrical power in the DC circuit is delivered to the motor at the nominal battery voltage.
+10. An Accumulator Management System shall monitor the Accumulator’s Voltage and Temperature when the Tractive System is Active, and/or when the Accumulator is connected to a charger.
+11. The vehicle shall have an Insulation Monitoring Device (IMD) installed in the Tractive System
+12. The vehicle shall have a standalone nonprogrammable circuit (Brake System Plausibility Device – BSPD) to check for simultaneous braking and high power output. The BSPD shall open the shutdown circuit when both there is a demand for hard braking, and the motor/accumulator is at a level where 5 kW of electrical power in the DC circuit is delivered to the motor at the nominal battery voltage.
 
 ## Constraints of this project
 
