@@ -79,8 +79,8 @@ The stakeholders involved in this project are:
     8. Inertia Switch
 
 A figure from the Formula SAE Rulebook [1] has been included to give a visual representation of all these systems:
-![Figure 1: Shutdown Circuit of a Formula SAE EV Car](https://github.com/northsack/F24_Team2_FormulaSAE/blob/main/Documentation/Images/Fig.%201%20shutdown%20circuit.png)
-\Figure 1: Shutdown Circuit of a Formula SAE EV Car 
+![Figure 1: Shutdown Circuit of a Formula SAE EV Car](https://github.com/northsack/F24_Team2_FormulaSAE/blob/main/Documentation/Images/Fig.%201%20shutdown%20circuit.png)\
+Figure 1: Shutdown Circuit of a Formula SAE EV Car 
 
 10. An Accumulator Management System shall monitor the Accumulator’s Voltage and Temperature when the Tractive System is Active, and/or when the Accumulator is connected to a charger.
 11. The vehicle shall have an Insulation Monitoring Device (IMD) installed in the Tractive System
