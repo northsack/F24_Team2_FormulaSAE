@@ -97,7 +97,7 @@ Figure 1: Shutdown Circuit of a Formula SAE EV Car
 
 # Identify Relevant Literature (Patents)
 
-Patents are important for a Formula SAE electric car because they protect the unique technologies and innovations developed, such as improved battery systems and electric powertrains. Securing patents ensures that the team behind the design has exclusive rights to their work, preventing others from copying it without proper permission. Patents not only help safeguard their hard-earned research and investment, but it also opens doors for potential licensing and commercial opportunities beyond the field of motorsports. A noteworthy illustration that will need further research is the Electric Zero Motorcycle, which has a self-regenerative braking system. The technology effectively recovers energy during braking, which allows for more battery usage. Additional research will allow for more knowledge about the DVT configuration software and speed controller patents to allow for better wiring when the time comes.
+Relevant literature, including patents, academic papers, and industry reports, is crucial in developing a Formula SAE electric car. Insights from "Zero Motorcycles’ Advanced Electric Vehicle Powertrain Development and Pilot Manufacturing in California" provide valuable guidance on powertrain advancements that enhance efficiency and performance. By integrating components provided by Tennessee Technological University, we can apply techniques from this report to create an innovative powertrain system. Additionally, this information will help the team make more accurate calculations for a safer approach to building the Formula SAE vehicle.
 
 # Set Goals and Measurements
 
@@ -211,3 +211,9 @@ The team also needs to consider how this technology might impact both society an
 ##### References
 
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Sep 14, 2024)
+
+2. Zero Motorcycles’ Advanced Electric Vehicle Powertrain Development and Pilot Manufacturing in California. Retrieved from the California Energy Commission: [California Energy Commission Report](https://www.energy.ca.gov/sites/default/files/2021-05/CEC-600-2020-037.pdf)
+
+3. Zero Motorcycles. (2016). 2016 Zero Motorcycles Press Kit - US [PDF]. Retrieved from https://media.zeromotorcycles.com/press-2016/press-kits/2016-zero-press-kit-us-e.pdf
+
+4. Zero Motorcycles. (2016). 2016 Zero press kit [PDF]. Retrieved from https://media.zeromotorcycles.com/press-2016/press-kits/2016-zero-press-kit-us-e.pdf
