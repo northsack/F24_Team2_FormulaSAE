@@ -30,13 +30,13 @@ The main benefit of this project is its relation to Tennessee Tech Motorsports. 
 
 This project presents several key challenges that must be carefully managed to ensure its success:
 
-I. **Compliance with Formula SAE Regulations**:  
+    1. **Compliance with Formula SAE Regulations**:  
 The primary constraint is adhering to the rigorous rules and specifications set forth by the Formula SAE competition. All design decisions must align with these regulations to ensure the vehicle is eligible to compete. This requires a thorough understanding of the Formula SAE guidelines and frequent consultation to avoid violations.
     
-II. **Limited Control Over the Vehicle’s Structure**:  
+    2. **Limited Control Over the Vehicle’s Structure**:  
 As this project focuses on the powertrain and electrical systems, the team has limited ability to modify or redesign the physical structure of the vehicle. Tennessee Tech Motorsports is responsible for building the car, meaning that we must work within the constraints of their design choices. Any proposed modifications to the vehicle must be communicated clearly to Tennessee Tech Motorsports, and we may need to persuade them to adopt changes that will optimize system integration.
     
-III. **Iterative Development**: 
+    3. **Iterative Development**: 
 Given that this is Tennessee Tech Motorsports’ first electric vehicle, we anticipate a learning curve and a process of continuous iteration. The systems we design will likely be refined and adjusted in subsequent years, making it essential that we provide flexible and modular solutions that future teams can build upon.
     
 5. _Availability_
