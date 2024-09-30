@@ -61,14 +61,14 @@ The stakeholders involved in this project are:
     1. The EV powertrain of this project shall have a power output comparable to Tennessee Tech Motorsports' internal combustion engine.  TTM's internal combustion engine has a power output of 52 horsepower, and 55 ft*lbs of torque.  Thus, the EV powertrain shall have a similar power output to match these specifications.
     2. The car shall be able to operate for at least an hour to complete the FSAE endurance event before needing to recharge.
     3. The electric powertrain shall have the capability to reach a top speed of 60 miles per hour.
-3. This Formula SAE Electric powertrain shall comply with all rules and regulations specified in the Formula SAE rule book \[1\]. Some of these rules are listed below:
-4. The voltage measured between any two points shall not exceed 600 V DC.
-5. The car shall use electric motors only.
-6. The tractive system (every part connected to the motor and/or accumulator (battery)) motor shall be connected to the battery through a motor controller.
-7. The accumulator container shall be completely closed at all times, and removeable from the vehicle while staying rule compliant.
-8. The vehicle shall include a tractive systems active light that shall illuminate when the tractive system is active.
-9. The entire Tractive System and GLV System (Grounded Low Voltage) shall be completely galvanically separated.
-10. Shutdown System: The shutdown system consists of the following components connected in series.  The purpose of these systems is to ensure the safety of the car, the driver, and team members in the near viscinity of the vehicle.  If one of these safety systems encounters a fault, the system has the ability to shut down all power to the vehicle.  Each safety system is daisy chained to the previous/next safety system.  Thus, if one system disengages power, none of the main components on the vehicle will be powered.  The system shall only function when all contacts of the safety system are closed:
+2. This Formula SAE Electric powertrain shall comply with all rules and regulations specified in the Formula SAE rule book \[1\]. Some of these rules are listed below:
+3. The voltage measured between any two points shall not exceed 600 V DC.
+4. The car shall use electric motors only.
+5. The tractive system (every part connected to the motor and/or accumulator (battery)) motor shall be connected to the battery through a motor controller.
+6. The accumulator container shall be completely closed at all times, and removeable from the vehicle while staying rule compliant.
+7. The vehicle shall include a tractive systems active light that shall illuminate when the tractive system is active.
+8. The entire Tractive System and GLV System (Grounded Low Voltage) shall be completely galvanically separated.
+9. Shutdown System: The shutdown system consists of the following components connected in series.  The purpose of these systems is to ensure the safety of the car, the driver, and team members in the near viscinity of the vehicle.  If one of these safety systems encounters a fault, the system has the ability to shut down all power to the vehicle.  Each safety system is daisy chained to the previous/next safety system.  Thus, if one system disengages power, none of the main components on the vehicle will be powered.  The system shall only function when all contacts of the safety system are closed:
     1. Accumulator Management System
     2. Insulation Monitoring Device
     3. Brake System Plausibility Device
@@ -82,8 +82,8 @@ A figure from the Formula SAE Rulebook [1] has been included to give a visual re
 ![Figure 1: Shutdown Circuit of a Formula SAE EV Car](https://github.com/northsack/F24_Team2_FormulaSAE/blob/main/Documentation/Images/Fig.%201%20shutdown%20circuit.png)\
 Figure 1: Shutdown Circuit of a Formula SAE EV Car 
 
-11. The vehicle shall have an Insulation Monitoring Device (IMD) installed in the Tractive System
-12. The vehicle shall have a standalone nonprogrammable circuit (Brake System Plausibility Device – BSPD) to check for simultaneous braking and high power output. The BSPD shall open the shutdown circuit when both there is a demand for hard braking, and the motor/accumulator is at a level where 5 kW of electrical power in the DC circuit is delivered to the motor at the nominal battery voltage.
+10. The vehicle shall have an Insulation Monitoring Device (IMD) installed in the Tractive System
+11. The vehicle shall have a standalone nonprogrammable circuit (Brake System Plausibility Device – BSPD) to check for simultaneous braking and high power output. The BSPD shall open the shutdown circuit when both there is a demand for hard braking, and the motor/accumulator is at a level where 5 kW of electrical power in the DC circuit is delivered to the motor at the nominal battery voltage.
 
 ## Constraints of this project
 
