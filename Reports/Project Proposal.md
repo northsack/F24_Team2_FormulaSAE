@@ -18,25 +18,26 @@ Since this is Tennessee Tech’s first electric vehicle, much research and colla
 
 This project, and the Formula SAE Electric competition, gives new engineers exposure to the rapidly developing field of electric automotive engineering. With more engineers being introduced to the field the potential for innovation increases. Innovations that could have a positive impact on society. These potential effects will be discussed later in its own section.
 
-1. _Objective_
+2. _Objective_
 
 The main goal of this project is to design the powertrain, controls, and power system for the electric vehicle, so that it meets the specifications and constraints set by Formula SAE. To be more specific a tractive system to drive and stop the car will be designed. The tractive system, and any related subsystems should be in a state so that Tennessee Tech Motorsports can continue to adjust and develop the rest of the vehicle.
 
-1. _Benefits_
+3. _Benefits_
 
 The main benefit of this project is its relation to Tennessee Tech Motorsports. Completing this project will help the club enter the electric vehicle into the Formula SAE Electric competition. This will expose current and future members to the field of electric automotive engineering. Students and faculty of all engineering disciplines will learn more about electric vehicles and contribute new ideas to the field.
 
-1. _Challenges/Obstacles_
+4. _Challenges/Obstacles_
 
 This project presents several key challenges that must be carefully managed to ensure its success:
 
-1. **Compliance with Formula SAE Regulations**:  
+I. **Compliance with Formula SAE Regulations**:  
     The primary constraint is adhering to the rigorous rules and specifications set forth by the Formula SAE competition. All design decisions must align with these regulations to ensure the vehicle is eligible to compete. This requires a thorough understanding of the Formula SAE guidelines and frequent consultation to avoid violations.
-2. **Limited Control Over the Vehicle’s Structure**:  
+II. **Limited Control Over the Vehicle’s Structure**:  
     As this project focuses on the powertrain and electrical systems, the team has limited ability to modify or redesign the physical structure of the vehicle. Tennessee Tech Motorsports is responsible for building the car, meaning that we must work within the constraints of their design choices. Any proposed modifications to the vehicle must be communicated clearly to Tennessee Tech Motorsports, and we may need to persuade them to adopt changes that will optimize system integration.
-3. **Iterative Development**:  
+III. **Iterative Development**:  
     Given that this is Tennessee Tech Motorsports’ first electric vehicle, we anticipate a learning curve and a process of continuous iteration. The systems we design will likely be refined and adjusted in subsequent years, making it essential that we provide flexible and modular solutions that future teams can build upon.
-4. _Availability_
+    
+5. _Availability_
 
 Availability of resources, personnel, and time will be a significant factor in this project's success. The design and development of the powertrain and power system must be coordinated within the schedules of multiple teams and stakeholders. One key challenge will be working with mechanical engineers not directly involved in this project. Their availability will dictate how quickly certain aspects of the design can be integrated into the vehicle.
 
@@ -44,13 +45,13 @@ Additionally, members of Tennessee Tech Motorsports may have competing commitmen
 
 To mitigate availability issues, we plan to establish a regular communication schedule, prioritize tasks, and set clear milestones to keep the project on track despite potential delays or scheduling conflicts.
 
-1. _Stakeholders_
+6. _Stakeholders_
 
 The stakeholders involved in this project are:
 
-1. **Tennessee Tech Motorsports**:  
+I. **Tennessee Tech Motorsports**:  
     As the primary recipient of the powertrain and electrical systems, Tennessee Tech Motorsports will benefit from a working electric vehicle that meets the competition's specifications. Our work will empower the club to compete in future Formula SAE Electric competitions and pave the way for further development in electric vehicle technology.
-2. **Tennessee Tech University**:  
+II. **Tennessee Tech University**:  
     The university itself is also a key stakeholder, as successful competition outcomes could bring increased recognition and funding. Additionally, this project can generate greater interest in engineering programs, particularly in electric vehicles and renewable energy technologies. The university stands to benefit from both the academic and practical experiences gained by students working on this innovative project (refer to section "Timeline").
 
 # Specifications and Constraints
