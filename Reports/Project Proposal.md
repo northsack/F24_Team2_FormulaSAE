@@ -51,9 +51,9 @@ To mitigate availability issues, we plan to establish a regular communication sc
 
 The stakeholders involved in this project are:
 
-I. **Tennessee Tech Motorsports**:  
+1. **Tennessee Tech Motorsports**:  
     As the primary recipient of the powertrain and electrical systems, Tennessee Tech Motorsports will benefit from a working electric vehicle that meets the competition's specifications. Our work will empower the club to compete in future Formula SAE Electric competitions and pave the way for further development in electric vehicle technology.
-II. **Tennessee Tech University**:  
+2. **Tennessee Tech University**:  
     The university itself is also a key stakeholder, as successful competition outcomes could bring increased recognition and funding. Additionally, this project can generate greater interest in engineering programs, particularly in electric vehicles and renewable energy technologies. The university stands to benefit from both the academic and practical experiences gained by students working on this innovative project (refer to section "Timeline").
 
 # Specifications and Constraints
