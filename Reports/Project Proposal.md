@@ -197,6 +197,14 @@ When designing the Formula SAE electric vehicle's powertrain and power system, i
 
 The team also needs to consider how this technology might impact both society and the economy. While improving electric car technology can promote cleaner energy, it may upend sectors of the economy that depend on internal combustion engines, thus harming livelihoods and jobs. It will be vital to mitigate these effects by retraining workers in electric car technology. To ensure Tennessee Tech Motorsports' design is both innovative and ethically sound, we will evaluate the project based on its ability to create a tractive system that is efficient, effective, and accountable in terms of sustainability and societal impact. For feasibility, we must align the project with specific criteria, including available resources, team skills, and timeline, guaranteeing that the design remains practical and achievable within the Formula SAE constraints.
 
+# Statement of Contribution
+
+**Evan Morse**: Specifications and Constraints, Goals and Measurements, Statement of Contribution
+**Graham Robinson**: Patents, Broader Impacts, Literature
+**Zachary Holt**: Design Cost, Skills Needed, Timeline (Gantt Chart)
+**Jesse Munoz**: Introduction: Background, Objectives, Benefits
+**Erlind Boraj**: Introduction: Challenges and Obstacles, Availability, Stakeholders
+
 ##### References
 
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Sep 14, 2024)
