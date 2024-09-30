@@ -58,7 +58,7 @@ The stakeholders involved in this project are:
 ## Specifications of this project
 
 1. This electric powertrain shall have enough performance to be comparable to Tennessee Tech Motorsports internal combustion engine car.
-    - The EV powertrain of this project shall have a power output comparable to Tennessee Tech Motorsports' internal combustion engine.  TTM's internal combustion engine has a power output of 52 horsepower, and 55 ft*lbs of torque.  Thus, the EV powertrain shall have a similar power output to match these specifications.
+    1. The EV powertrain of this project shall have a power output comparable to Tennessee Tech Motorsports' internal combustion engine.  TTM's internal combustion engine has a power output of 52 horsepower, and 55 ft*lbs of torque.  Thus, the EV powertrain shall have a similar power output to match these specifications.
     2. The car shall be able to operate for at least an hour to complete the FSAE endurance event before needing to recharge.
     3. The electric powertrain shall have the capability to reach a top speed of 60 miles per hour.
 3. This Formula SAE Electric powertrain shall comply with all rules and regulations specified in the Formula SAE rule book \[1\]. Some of these rules are listed below:
@@ -82,7 +82,6 @@ A figure from the Formula SAE Rulebook [1] has been included to give a visual re
 ![Figure 1: Shutdown Circuit of a Formula SAE EV Car](https://github.com/northsack/F24_Team2_FormulaSAE/blob/main/Documentation/Images/Fig.%201%20shutdown%20circuit.png)\
 Figure 1: Shutdown Circuit of a Formula SAE EV Car 
 
-10. An Accumulator Management System shall monitor the Accumulator’s Voltage and Temperature when the Tractive System is Active, and/or when the Accumulator is connected to a charger.
 11. The vehicle shall have an Insulation Monitoring Device (IMD) installed in the Tractive System
 12. The vehicle shall have a standalone nonprogrammable circuit (Brake System Plausibility Device – BSPD) to check for simultaneous braking and high power output. The BSPD shall open the shutdown circuit when both there is a demand for hard braking, and the motor/accumulator is at a level where 5 kW of electrical power in the DC circuit is delivered to the motor at the nominal battery voltage.
 
@@ -102,25 +101,25 @@ Patents are important for a Formula SAE electric car because they protect the un
 ## Specification Goals and Measurements
 1. This electric powertrain shall have enough performance to be comparable to Tennessee Tech Motorsports internal combustion engine car.
     1. The EV powertrain of this project shall have a power output comparable to Tennessee Tech Motorsports' internal combustion engine.  TTM's internal combustion engine has a power output of 52 horsepower, and 55 ft*lbs of torque.  Thus, the EV powertrain shall have a similar power output to match these specifications.
-        1. Success shall also be measured by placing the operational electric powertrain on TTM’s dynameter table. From this dynameter table, the horsepower and torque of the EV powertrain shall be measured to check if the outputted power is comparable to TTM’s IC engine. If the desired numbers are not obtained, re-gearing the motor or upgrading components may be necessary.
-    3. The car shall be able to operate for at least an hour to complete the FSAE endurance event before needing to recharge.
-        1. Success shall be measured by installing the EV powertrain in an FSAE style vehicle similar to TTM's IC vehicle, and running the vehicle on a chassis dynameter until the battery reaches the lowest rated voltage.
-    5. The electric powertrain shall have the capability to reach a top speed of 60 miles per hour.
-        1. Success shall be measured by installing the EV powertrain in an FSAE style vehicle similar to TTM's IC vehicle, and running the vehicle at the maximum speed on a chassis dynameter 
-3. This Formula SAE Electric powertrain shall comply with all rules and regulations specified in the Formula SAE rule book \[1\]. Some of these rules are listed below:
-4. The voltage measured between any two points shall not exceed 600 V DC.
-    1.  Verify with a multimeter that the car does not have any two points that have a voltage difference of 600 V.
-6. The car shall use electric motors only.
-    1. Verify that the car only uses electric motors.
-8. The tractive system (every part connected to the motor and/or accumulator (battery)) motor shall be connected to the battery through a motor controller.
-    1. Verify that the motor has no connection to the battery other than through the motor controller.
-10. The accumulator container shall be completely closed at all times, and removeable from the vehicle while staying rule compliant.
-    1. Verify that the accumulator has a mechanical system to keep it closed.
-12. The vehicle shall include a tractive systems active light that shall illuminate when the tractive system is active.
-    1. Verify that when the tractive system is powered, the tractive systems active light is illuminated.
-14. The entire Tractive System and GLV System (Grounded Low Voltage) shall be completely galvanically separated.
-    1. Use data sheets and a multimeter to verify that the Tractive System and GLV System are galvanically seperated
-16. Shutdown System: The shutdown system consists of the following components connected in series.  The purpose of these systems is to ensure the safety of the car, the driver, and team members in the near viscinity of the vehicle.  If one of these safety systems encounters a fault, the system has the ability to shut down all power to the vehicle.  Each safety system is daisy chained to the previous/next safety system.  Thus, if one system disengages power, none of the main components on the vehicle will be powered.  The system shall only function when all contacts of the safety system are closed:
+       - Success shall also be measured by placing the operational electric powertrain on TTM’s dynameter table. From this dynameter table, the horsepower and torque of the EV powertrain shall be measured to check if the outputted power is comparable to TTM’s IC engine. If the desired numbers are not obtained, re-gearing the motor or upgrading components may be necessary.
+    2. The car shall be able to operate for at least an hour to complete the FSAE endurance event before needing to recharge.
+       - Success shall be measured by installing the EV powertrain in an FSAE style vehicle similar to TTM's IC vehicle, and running the vehicle on a chassis dynameter until the battery reaches the lowest rated voltage.
+    3. The electric powertrain shall have the capability to reach a top speed of 60 miles per hour.
+       - Success shall be measured by installing the EV powertrain in an FSAE style vehicle similar to TTM's IC vehicle, and running the vehicle at the maximum speed on a chassis dynameter 
+2. This Formula SAE Electric powertrain shall comply with all rules and regulations specified in the Formula SAE rule book \[1\]. Some of these rules are listed below:
+3. The voltage measured between any two points shall not exceed 600 V DC.
+    - Verify with a multimeter that the car does not have any two points that have a voltage difference of 600 V.
+4. The car shall use electric motors only.
+    - Verify that the car only uses electric motors.
+5. The tractive system (every part connected to the motor and/or accumulator (battery)) motor shall be connected to the battery through a motor controller.
+    - Verify that the motor has no connection to the battery other than through the motor controller.
+6. The accumulator container shall be completely closed at all times, and removeable from the vehicle while staying rule compliant.
+    - Verify that the accumulator has a mechanical system to keep it closed.
+8. The vehicle shall include a tractive systems active light that shall illuminate when the tractive system is active.
+    - Verify that when the tractive system is powered, the tractive systems active light is illuminated.
+9. The entire Tractive System and GLV System (Grounded Low Voltage) shall be completely galvanically separated.
+    - Use data sheets and a multimeter to verify that the Tractive System and GLV System are galvanically seperated
+10. Shutdown System: The shutdown system consists of the following components connected in series.  The purpose of these systems is to ensure the safety of the car, the driver, and team members in the near viscinity of the vehicle.  If one of these safety systems encounters a fault, the system has the ability to shut down all power to the vehicle.  Each safety system is daisy chained to the previous/next safety system.  Thus, if one system disengages power, none of the main components on the vehicle will be powered.  The system shall only function when all contacts of the safety system are closed:
     1. Accumulator Management System
     2. Insulation Monitoring Device
     3. Brake System Plausibility Device
@@ -129,20 +128,20 @@ Patents are important for a Formula SAE electric car because they protect the un
     6. Shutdown Buttons
     7. Brake Over Travel Switch
     8. Inertia Switch
-        1. Individually test each safety measure listed above by turning it off while keeping all of the others on to ensure that each system has the individual ability to disconnect the high voltage battery from powering the motor controller and motor.
+        - Individually test each safety measure listed above by turning it off while keeping all of the others on to ensure that each system has the individual ability to disconnect the high voltage battery from powering the motor controller and motor.
 
-10. The vehicle shall have an Insulation Monitoring Device (IMD) installed in the Tractive System
-    1. Test that the insulation monitoring device cuts power to the motor controller when there is a fault in the insulation between the GLV System and the Tractive System.
+11. The vehicle shall have an Insulation Monitoring Device (IMD) installed in the Tractive System
+    - Test that the insulation monitoring device cuts power to the motor controller when there is a fault in the insulation between the GLV System and the Tractive System.
 12. The vehicle shall have a standalone nonprogrammable circuit (Brake System Plausibility Device – BSPD) to check for simultaneous braking and high power output. The BSPD shall open the shutdown circuit when both there is a demand for hard braking, and the motor/accumulator is at a level where 5 kW of electrical power in the DC circuit is delivered to the motor at the nominal battery voltage.
-    1. Verify that when the brake pedal is pressed down farther than 80% of its travel and the motor is at a level of consuming 5 kW of power, the system shuts opens its part of the shutdown circuit listed above.
+    - Verify that when the brake pedal is pressed down farther than 80% of its travel and the motor is at a level of consuming 5 kW of power, the system shuts opens its part of the shutdown circuit listed above.
 
 ## Constraint Goals and Measurements
 1. This electric powertrain shall be designed around the budget allotted by the engineering department.
 2. This electric powertrain shall be designed with regards to the available tools, resources, and professional expertise available to the College of Engineering students at Tennessee Tech University.
 3. This electric powertrain shall be designed to operate in environments ranging from 0 C to 25 C.  When competing in Michigan, the weather varies every year that the Formula SAE EV competition is held.  The powertrain must be operational in a wide range of temperatures.
-    1. Temperature functionality shall be measured by placing the powertrain in a temperature controlled room, setting the temperature at intervals between the range of 0 C and 25 C, waiting 60 minutes for the powertrain components to absorb the ambient temperature, and then testing the components on a dynameter table.
-5. This electric powertrain shall be constrained by the Tennessee Tech shop policies.  To ensure the safety of students working on this vehicle, the battery shall not be charged unless the powertrain is ready for testing.  An alternate method of supplying voltage and power to the EV powertrain system must be used.
-    1. A power supply capable of outputting the same power as the battery needs to be purchased to fulfill this constraint.
+    - Temperature functionality shall be measured by placing the powertrain in a temperature controlled room, setting the temperature at intervals between the range of 0 C and 25 C, waiting 60 minutes for the powertrain components to absorb the ambient temperature, and then testing the components on a dynameter table.
+4. This electric powertrain shall be constrained by the Tennessee Tech shop policies.  To ensure the safety of students working on this vehicle, the battery shall not be charged unless the powertrain is ready for testing.  An alternate method of supplying voltage and power to the EV powertrain system must be used.
+    - A power supply capable of outputting the same power as the battery needs to be purchased to fulfill this constraint.
 
 # Estimate Resources and Timeline
 
