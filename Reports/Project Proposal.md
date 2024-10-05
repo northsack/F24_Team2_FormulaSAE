@@ -97,12 +97,11 @@ Figure 1: Shutdown Circuit of a Formula SAE EV Car
 
 # Identify Relevant Literature (Patents)
 
-Through our research on electric vehicle powertrains, particularly insights from "Zero Motorcycles’ Advanced Electric Vehicle Powertrain Development," we learned valuable strategies for optimizing battery usage and integrating braking methods. These insights will help us design a powertrain for Tennessee Tech Motorsports’ first electric vehicle that matches the performance of our current internal combustion engine, with a target of 52 horsepower and 55 ft-lbs of torque, while achieving a top speed of 60 miles per hour and lasting at least an hour during the Formula SAE endurance event.
+Through research on electric vehicle powertrains, particularly insights from "Zero Motorcycles’ Advanced Electric Vehicle Powertrain Development," [2] contained valuable strategies for optimizing battery usage and integrating braking methods. These insights will help to design a powertrain for Tennessee Tech Motorsports’ first electric vehicle that matches the performance of TTM's current internal combustion engine, with a target of 52 horsepower and 55 ft-lbs of torque, while achieving a top speed of 60 miles per hour and lasting at least an hour during the Formula SAE endurance event.
 
-We also examined projects from leading teams, like the University of Wisconsin-Madison and Rochester Institute of Technology (RIT), which highlighted the importance of lightweight design and effective cooling techniques. This knowledge will inform our design choices while adhering to Formula SAE regulations and ensuring safety through the implementation of an Insulation Monitoring Device (IMD) and a Brake System Plausibility Device (BSPD).
+Insights from other teams competing in the Formula SAE Electric, like the University of Wisconsin-Madison and Rochester Institute of Technology (RIT) [6], which highlighted the importance of lightweight design and effective cooling techniques [5]. This knowledge will inform design choices while adhering to Formula SAE regulations and ensuring safety through the implementation of an Insulation Monitoring Device (IMD) and a Brake System Plausibility Device (BSPD).
 
-To comply with Formula SAE regulations, we will maintain the system voltage below 600 V DC and ensure the accumulator is fully enclosed and removable. Additionally, we will implement a robust shutdown system that cuts power in the event of a fault while working on the design.
-
+To comply with Formula SAE regulations, system voltage shall remain below 600 V DC and ensure the accumulator is fully enclosed and removable. Additionally, a robust shutdown system that cuts power in the event of a fault while working on the design will be implemented.
 
 # Set Goals and Measurements
 
@@ -219,8 +218,10 @@ The team also needs to consider how this technology might impact both society an
 
 2. Zero Motorcycles’ Advanced Electric Vehicle Powertrain Development and Pilot Manufacturing in California. Retrieved from the California Energy Commission: [California Energy Commission Report](https://www.energy.ca.gov/sites/default/files/2021-05/CEC-600-2020-037.pdf)
 
-3. Zero Motorcycles. (2016). 2016 Zero Motorcycles Press Kit - US [PDF]. Retrieved from https://media.zeromotorcycles.com/press-2016/press-kits/2016-zero-press-kit-us-e.pdf
+3. Zero Motorcycles. (2016). 2016 Zero Motorcycles Press Kit - US [PDF]. Retrieved from <https://media.zeromotorcycles.com/press-2016/press-kits/2016-zero-press-kit-us-e.pdf> (accessed Oct. 10, 2024)
 
-4. Zero Motorcycles. (2016). 2016 Zero press kit [PDF]. Retrieved from https://media.zeromotorcycles.com/press-2016/press-kits/2016-zero-press-kit-us-e.pdf
+4. Zero Motorcycles. (2016). 2016 Zero press kit [PDF]. Retrieved from <https://media.zeromotorcycles.com/press-2016/press-kits/2016-zero-press-kit-us-e.pdf> (accessed Oct. 10, 2024)
 
-https://www.sae.org/binaries/content/assets/cm/content/attend/student-events/results/formula-sae/fsae_ev_2024_results.pdf
+5. Formula SAE, "Formula SAE Electric 2024 Results", <https://www.sae.org/binaries/content/assets/cm/content/attend/student-events/results/formula-sae/fsae_ev_2024_results.pdf> (accessed Oct. 10, 2024)
+
+6. The University of Wisconsin Madison, "Formula SAE", vehicles.wisc.edu, <https://vehicles.wisc.edu/formula/formulaabout.html> (accessed Oct. 10, 2024)
