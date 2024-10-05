@@ -222,3 +222,5 @@ The team also needs to consider how this technology might impact both society an
 3. Zero Motorcycles. (2016). 2016 Zero Motorcycles Press Kit - US [PDF]. Retrieved from https://media.zeromotorcycles.com/press-2016/press-kits/2016-zero-press-kit-us-e.pdf
 
 4. Zero Motorcycles. (2016). 2016 Zero press kit [PDF]. Retrieved from https://media.zeromotorcycles.com/press-2016/press-kits/2016-zero-press-kit-us-e.pdf
+
+https://www.sae.org/binaries/content/assets/cm/content/attend/student-events/results/formula-sae/fsae_ev_2024_results.pdf
