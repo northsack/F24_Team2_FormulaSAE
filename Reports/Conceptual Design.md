@@ -8,23 +8,11 @@ Cookeville, TN, USA
 
 _Abstract_—This project aims to assist Tennessee Tech’s Motorsports club by designing the powertrain, controls, and power systems for the club’s first electric vehicle. This project, for both the senior design team and Tennessee Tech Motorsports, serves as an introduction to the development of electric vehicles by exposing engineering students to the rapidly developing field of electric vehicles.
 
-# Define Problem
+# Intro
 
-1. _Background_
+This project’s main goal is to design the various electrical systems of an electric formula car for Tennessee Tech University’s Motorsports club, herein referred to as Tennessee Tech Motorsports (TTM). Formula SAE is the organization that hosts the competition that this EV needs to be designed for, so Formula SAE has a set of rules and guidelines. These rules are where the majority of our constraints and specifications will come from and will be discussed in a later section. However, since this is the first EV that TTM is making, it is important to note that the design will be modified and iterated on for years to come, and this will also influence the design decisions.
 
-The goal of this project is to design the power system and powertrain system of an electric formula SAE car for Tennessee Tech’s Formula SAE club, herein referred to as Tennessee Tech Motorsports (TTM). This will be the club’s first electric car, so it is crucial that these systems are designed to comply with the rules, specifications, and constraints of the Formula SAE guidelines which will be discussed in their own section.
-
-Since this is Tennessee Tech’s first electric vehicle, much research and collaboration with Tennessee Tech Motorsports is necessary. It is also important to note that these vehicles are very iterative and are modified and adjusted over the course of multiple years. This will be considered when designing the systems this project aims to complete.
-
-This project, and the Formula SAE Electric competition, gives new engineers exposure to the rapidly developing field of electric automotive engineering. With more engineers being introduced to the field the potential for innovation increases. Innovations that could have a positive impact on society. These potential effects will be discussed later in its own section.
-
-2. _Objective_
-
-The main goal of this project is to design the powertrain, controls, and power system for the electric vehicle, so that it meets the specifications and constraints set by Formula SAE. To be more specific a tractive system to drive and stop the car will be designed. The tractive system, and any related subsystems should be in a state so that Tennessee Tech Motorsports can continue to adjust and develop the rest of the vehicle.
-
-3. _Benefits_
-
-The main benefit of this project is its relation to Tennessee Tech Motorsports. Completing this project will help the club enter the electric vehicle into the Formula SAE Electric competition. This will expose current and future members to the field of electric automotive engineering. Students and faculty of all engineering disciplines will learn more about electric vehicles and contribute new ideas to the field.
+# Fully Formulated Problem
 
 4. _Challenges/Obstacles_
 
