@@ -50,8 +50,29 @@ Constraints of this project:
 3. This electric powertrain shall be designed to operate in environments ranging from 0 C to 25 C. When competing in Michigan, the weather varies every year that the Formula SAE EV competition is held. The powertrain must be operational in a wide range of temperatures. Origin: Location of competition.
 4. This electric powertrain shall be constrained by the Tennessee Tech shop policies. To ensure the safety of students working on this vehicle, the battery shall not be charged unless the powertrain is ready for testing. An alternate method of supplying voltage and power to the EV powertrain system must be used. Origin: TTM’s safety standards.
 
+# Comparative Analysis of Potential Solutions
 
-4. _Challenges/Obstacles_
+# High-Level Solution
+
+1. Hardware Block Diagram
+2. Operational Flow Chart
+
+# Atomic Subsystem Specifications
+
+# Ethical, Professional, and Standards Considerations
+
+# Resources
+1. Budget
+2. Skills
+3. Timeline
+
+# Statement of Contribution
+
+# References
+1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Oct 22, 2024)
+
+
+5. _Challenges/Obstacles_
 
 This project presents several key challenges that must be carefully managed to ensure its success:
 
