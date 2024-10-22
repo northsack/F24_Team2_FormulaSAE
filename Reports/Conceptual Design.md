@@ -12,7 +12,7 @@ _Abstract_—This project aims to assist Tennessee Tech’s Motorsports club by 
 
 This project’s main goal is to design the various electrical systems of an electric formula car for Tennessee Tech University’s Motorsports club, herein referred to as Tennessee Tech Motorsports (TTM). Formula SAE is the organization that hosts the competition that this EV needs to be designed for, so Formula SAE has a set of rules and guidelines. These rules are where the majority of our constraints and specifications will come from and will be discussed in a later section. However, since this is the first EV that TTM is making, it is important to note that the design will be modified and iterated on for years to come, and this will also influence the design decisions.
 
-# Fully Formulated Problem
+# Fully Formulated Problem (In progress)
 
 4. _Challenges/Obstacles_
 
