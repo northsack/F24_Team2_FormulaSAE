@@ -58,6 +58,22 @@ Constraints of this project:
 2. Operational Flow Chart
 
 # Atomic Subsystem Specifications
+1. Tractive System (High Voltage)​
+    1. Motor
+    2. Motor Controller
+    3. Accumulator
+    4. Tractive System Active Light
+    5. IMD
+    6. Charger
+2. Grounded Low Voltage (GLV) System
+    1. Safety Systems
+       1. Shutdown Circuit Function and Specs.
+          The function of the shutdown circuit is to cut off the power to the electrical systems of the car in the event of a failure or misalignment in one of the other systems that power or drive the car.
+          The input of the shutdown circuit is a power signal, the Grounded Low Voltage (GLV) system voltage. The GLV Master Switch, Tractive System Master Switch, BSPD, IMD, inertia switch, shutdown button, AMS,             BOTS, and HVD Interlock(s) are connected in series and when all these systems are functioning normally they will provide power to the AIR subsystem, thus closing the high voltage Tractive System circuit.
+          The shutdown circuit will receive power signals from each of the devices connected to it, in series, and send out a power signal to the AIR subsystem.
+          The user interface for the driver shall consist of the shutdown buttons which will open the shutdown circuit thus shutting down the car’s electrical system, and the active lights provide visual feedback             to what systems are operational or not.
+       2. BSPD
+
 
 # Ethical, Professional, and Standards Considerations
 
