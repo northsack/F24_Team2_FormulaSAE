@@ -62,7 +62,7 @@ Constraints of this project:
 1. Tractive System (High Voltage)​
     1. Motor
     2. Motor Controller
-3. Accumulator:
+    3. Accumulator:
 	    - *Interface with other subsystems:*
             
             <br>**High Voltage Connections**
