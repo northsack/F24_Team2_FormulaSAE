@@ -66,23 +66,23 @@ i. Motor
 
 The motor is a critical component of the electric powertrain, responsible for converting electrical energy into mechanical power to drive the vehicle. A breakdown of its requirements and operation is as follows:
 
-1. Power Output
+a. Power Output
 
 The electric motor shall provide a power output comparable to Tennessee Tech Motorsports' internal combustion engine (ICE) vehicle, which produces 52 horsepower and 55 ft-lbs of torque. The electric powertrain must meet or exceed these performance levels to ensure competitive performance in Formula SAE events.
 
-2. Endurance
+b. Endurance
 
 The motor and powertrain must be capable of operating for at least one hour without needing to recharge. This is essential for completing the Formula SAE endurance event, a key part of the competition.
 
-3. Top Speed
+c. Top Speed
 
 The motor shall be able to propel the vehicle to a top speed of 60 miles per hour, ensuring the vehicle can meet the speed demands of the competition.
 
-4. Safety and Shutdown System
+d. Safety and Shutdown System
 
 The motor must be integrated into the vehicle’s shutdown system, which ensures the safety of the driver, team, and vehicle. This system links various safety components in series, and a fault in any component will result in a complete power shutdown, preventing unsafe conditions. The shutdown system is essential for complying with Formula SAE safety regulations.
 
-5. Tractive System Active Light
+e. Tractive System Active Light
 
 The motor and tractive system must include a Tractive System Active Light, which illuminates when the system is powered on, alerting team members and safety officials to the operational status of the vehicle.
 
@@ -91,12 +91,15 @@ ii. Motor Controller
 	
  The motor controller serves as a fundamental element within the electric powertrain, tasked with overseeing the power distribution between the energy storage unit and the motor, thereby facilitating effective and accurate management of the vehicle's operational capabilities. A detailed examination of its roles and specifications is presented below:  
 
-1. Power Regulation  The motor controller is responsible for regulating the direct current (DC) power sourced from the energy storage unit, converting it to alternating current (AC) power when interfacing with an AC motor, or managing the DC power for a DC motor. This regulation allows for the modulation of the motor's speed and torque. It meticulously adjusts the voltage and current delivered to the motor in response to the driver's throttle input, promoting seamless acceleration and optimal power distribution.  
+a. Power Regulation  The motor controller is responsible for regulating the direct current (DC) power sourced from the energy storage unit, converting it to alternating current (AC) power when interfacing with an AC motor, or managing the DC power for a DC motor. This regulation allows for the modulation of the motor's speed and torque. It meticulously adjusts the voltage and current delivered to the motor in response to the driver's throttle input, promoting seamless acceleration and optimal power distribution.  
 
-2. Torque and Speed Control  The motor controller plays a crucial role in managing the torque produced by the motor by varying the current supplied, which allows for precise control over the power output directed to the vehicle's wheels. Furthermore, it regulates the rotational speed of the motor, ensuring that the vehicle can reach its maximum speed of 60 miles per hour while operating efficiently across diverse driving scenarios, from rapid acceleration to steady cruising.  
-3. Safety and Shutdown Functionality  Integrated within the shutdown system, the motor controller ensures that in the event of a malfunction—such as overheating, excessive current draw, or a failure in the Brake System Plausibility Device—the system can promptly disconnect power to the motor, thereby averting further operation. Additionally, the motor controller is equipped with multiple safety features, including overvoltage, overcurrent, and thermal protection mechanisms, to safeguard the motor and other components of the powertrain from potential damage.  
-4. Thermal Management  During operation, particularly under high load conditions, the motor controller generates heat. It is essential for the controller to incorporate a thermal management system, whether through air or liquid cooling, to sustain optimal operating temperatures and prevent overheating during high-power demands or extended operational periods.  
-5.  Control Algorithms and Efficiency  The motor controller employs sophisticated control algorithms, such as Field-Oriented Control for AC motors, to enhance performance and efficiency. These algorithms are designed to optimize the motor's response and energy consumption, contributing to the overall effectiveness of the electric powertrain.
+b. Torque and Speed Control  The motor controller plays a crucial role in managing the torque produced by the motor by varying the current supplied, which allows for precise control over the power output directed to the vehicle's wheels. Furthermore, it regulates the rotational speed of the motor, ensuring that the vehicle can reach its maximum speed of 60 miles per hour while operating efficiently across diverse driving scenarios, from rapid acceleration to steady cruising.
+
+c. Safety and Shutdown Functionality  Integrated within the shutdown system, the motor controller ensures that in the event of a malfunction—such as overheating, excessive current draw, or a failure in the Brake System Plausibility Device—the system can promptly disconnect power to the motor, thereby averting further operation. Additionally, the motor controller is equipped with multiple safety features, including overvoltage, overcurrent, and thermal protection mechanisms, to safeguard the motor and other components of the powertrain from potential damage.  
+
+d. Thermal Management  During operation, particularly under high load conditions, the motor controller generates heat. It is essential for the controller to incorporate a thermal management system, whether through air or liquid cooling, to sustain optimal operating temperatures and prevent overheating during high-power demands or extended operational periods.  
+
+e.  Control Algorithms and Efficiency  The motor controller employs sophisticated control algorithms, such as Field-Oriented Control for AC motors, to enhance performance and efficiency. These algorithms are designed to optimize the motor's response and energy consumption, contributing to the overall effectiveness of the electric powertrain.
 
  
 iii. Accumulator:
