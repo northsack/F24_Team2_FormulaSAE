@@ -64,7 +64,8 @@ Constraints of this project:
     2. Motor Controller
         3. Accumulator:
 	    - Interface with other subsystems:
-	| Connection                                         | Connection Type |
+	<br>
+ 	<br>| Connection                                         | Connection Type |
         |----------------------------------------------------|-----------------|
         | Motor Controller (+) and (-) Terminals             | DC Power        |
         | Insulation Monitoring Device (+) and (-) Terminals | DC Power        |
