@@ -102,16 +102,15 @@ Constraints of this project:
           - *Interface with other subsystems:*
          
           <br>**High Voltage Connections**
-
-           <br>**Low Voltage Connections**
           
-      | Connection      | Connection Type | Direction |
-| --------------- | --------------- | --------- |
-| GLV             | DC Power        | Input     |
-| GLV             | DC Power        | Output    |
-| BSE             | Digial Signal   | Input     |
-| Tractive System | DC Power        | Input     |
-| Tractive System | DC Power        | Input     |
+ 			| Connection                                         | Connection Type | Direction |
+        	|----------------------------------------------------|-----------------|-----------|
+        	| IMD            |        | Output    |
+
+            <br>**Low Voltage Connections**
+			| Connection                                         | Connection Type | Direction |
+        	|----------------------------------------------------|-----------------|-----------|
+        	| GVL             			 | DC Power        | Input     |
        
            Function and Specs.
           The function of the shutdown circuit is to cut off the power to the electrical systems of the car in the event of a failure or misalignment in one of the other systems that power or drive the car.
