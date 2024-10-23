@@ -124,31 +124,36 @@ Constraints of this project:
             3. HVD Interlock(s):
 
 3. Brake System Plausibility Device (BSPD)
-	i. Functionality of the BSPD
 
-		The Brake System Plausibility Device (BSPD) serves as an essential safety mechanism that oversees the braking system to avert 	hazardous situations, such as the simultaneous application of brakes and high power output. The following outlines its 			components and operational principles:
+i. Functionality of the BSPD
 
-		The BSPD guarantees that high power output from the tractive system is not permitted when the brakes are engaged, thereby preventing the vehicle from accelerating during braking, which poses significant safety risks. Should braking be detected while power output surpasses 5 kW, the BSPD activates the vehicle’s shutdown circuit.
+The Brake System Plausibility Device (BSPD) serves as an essential safety mechanism that oversees the braking system to avert hazardous situations, such as the simultaneous application of brakes and high power output. The following outlines its components and operational principles:
 
-	a. Brake Detection Mechanism
-		The BSPD continuously monitors the brake pedal position sensor to ascertain when the brake pedal is engaged. Upon application of the brakes, the BSPD evaluates the power output from the motor or accumulator to verify if the system is drawing more than 5 kW of power.
+The BSPD guarantees that high power output from the tractive system is not permitted when the brakes are engaged, thereby preventing the vehicle from accelerating during braking, which poses significant safety risks. Should braking be detected while power output surpasses 5 kW, the BSPD activates the vehicle’s shutdown circuit.
 
-	b. Monitoring Power Output
-		The BSPD is responsible for overseeing the electrical power delivered to the motor via the tractive system. If the power output exceeds 5 kW while the brakes are applied, the BSPD recognizes this as a fault condition.
+a. Brake Detection Mechanism
 
-	c. Activation of Shutdown Circuit
-		In instances where braking occurs concurrently with high power output, the BSPD activates the shutdown circuit, thereby disconnecting power to the tractive system and preventing the motor from receiving additional high voltage. This process is automatic and does not require driver intervention, ensuring a prompt response to potentially unsafe conditions.
+The BSPD continuously monitors the brake pedal position sensor to ascertain when the brake pedal is engaged. Upon application of the brakes, the BSPD evaluates the power output from the motor or accumulator to verify if the system is drawing more than 5 kW of power.
 
-	d. Autonomous Functionality
-		The BSPD functions as an independent, non-programmable device, distinct from the vehicle’s other electronic control units (ECUs), which enhances its reliability even in the event of failures in other systems. Its separation from software or programmable components further bolsters its safety profile.
+b. Monitoring Power Output
 
-	e. BSPD Indicator Light
-		When the BSPD is activated, an indicator light is illuminated to inform the driver and pit crew of the shutdown event. This light is clearly marked "BSPD" and is strategically located on the vehicle's dashboard within the driver’s line of sight.
+The BSPD is responsible for overseeing the electrical power delivered to the motor via the tractive system. If the power output exceeds 5 kW while the brakes are applied, the BSPD recognizes this as a fault condition.
 
-	f. Reset Procedure
-		After the BSPD has triggered the shutdown circuit, it must be manually reset before the vehicle can resume operation. This ensures that the fault condition has been properly addressed before the vehicle is restarted.
+c. Activation of Shutdown Circuit
 
+In instances where braking occurs concurrently with high power output, the BSPD activates the shutdown circuit, thereby disconnecting power to the tractive system and preventing the motor from receiving additional high voltage. This process is automatic and does not require driver intervention, ensuring a prompt response to potentially unsafe conditions.
 
+d. Autonomous Functionality
+
+The BSPD functions as an independent, non-programmable device, distinct from the vehicle’s other electronic control units (ECUs), which enhances its reliability even in the event of failures in other systems. Its separation from software or programmable components further bolsters its safety profile.
+
+e. BSPD Indicator Light
+
+When the BSPD is activated, an indicator light is illuminated to inform the driver and pit crew of the shutdown event. This light is clearly marked "BSPD" and is strategically located on the vehicle's dashboard within the driver’s line of sight.
+
+f. Reset Procedure
+
+After the BSPD has triggered the shutdown circuit, it must be manually reset before the vehicle can resume operation. This ensures that the fault condition has been properly addressed before the vehicle is restarted.
 
 # Ethical, Professional, and Standards Considerations
 
