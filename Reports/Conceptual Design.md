@@ -88,7 +88,8 @@ The motor and tractive system must include a Tractive System Active Light, which
 
 	
 ii. Motor Controller
-	The motor controller serves as a fundamental element within the electric powertrain, tasked with overseeing the power distribution between the energy storage unit and the motor, thereby facilitating effective and accurate management of the vehicle's operational capabilities. A detailed examination of its roles and specifications is presented below:  
+	
+ The motor controller serves as a fundamental element within the electric powertrain, tasked with overseeing the power distribution between the energy storage unit and the motor, thereby facilitating effective and accurate management of the vehicle's operational capabilities. A detailed examination of its roles and specifications is presented below:  
 
 1. Power Regulation  The motor controller is responsible for regulating the direct current (DC) power sourced from the energy storage unit, converting it to alternating current (AC) power when interfacing with an AC motor, or managing the DC power for a DC motor. This regulation allows for the modulation of the motor's speed and torque. It meticulously adjusts the voltage and current delivered to the motor in response to the driver's throttle input, promoting seamless acceleration and optimal power distribution.  
 
