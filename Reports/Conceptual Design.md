@@ -64,10 +64,14 @@ Constraints of this project:
     2. Motor Controller
         3. Accumulator:
 	    - Interface with other subsystems:
-	    | Connection                                         | Connection Type |
+	| Connection                                         | Connection Type |
         |----------------------------------------------------|-----------------|
         | Motor Controller (+) and (-) Terminals             | DC Power        |
         | Insulation Monitoring Device (+) and (-) Terminals | DC Power        |
+    	| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 		    1. High Voltage Connections:
 				1. Motor Controller (+) and (-) [DC power]
 				2. Insulation Monitoring Device (+) and (-) [DC Power]
