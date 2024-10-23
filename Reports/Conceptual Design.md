@@ -62,11 +62,12 @@ Constraints of this project:
 # Atomic Subsystem Specifications
 1. Tractive System (High Voltage)​
    	
-    2. Motor
+i. Motor
 	
- 3. Motor Controller
+ii. Motor Controller
 	
- 4. Accumulator:
+ 
+iii. Accumulator:
 	    - *Interface with other subsystems:*
             
             <br>**High Voltage Connections**
