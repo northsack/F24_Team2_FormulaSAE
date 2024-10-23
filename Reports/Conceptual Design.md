@@ -57,6 +57,7 @@ Constraints of this project:
 1. Hardware Block Diagram
 ![Figure 2: Hardware Block Diagram](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Block%20Diagram.png)
 2. Operational Flow Chart
+![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Vehicle%20Flow%20Chart.png)
 
 # Atomic Subsystem Specifications
 1. Tractive System (High Voltage)​
