@@ -161,13 +161,11 @@ ii. Brake System Encoder
 
 The Brake System Encoder plays a crucial role in precisely identifying the position of the brake pedal and transmitting this information to the vehicle's control systems. An overview of its components and functionality is presented below:  
 
-a. Brake Pedal Position Detection  The Brake System Encoder is affixed to the brake pedal assembly, where it gauges the position of the pedal during operation. It transforms the mechanical movement of the brake pedal into an electrical signal, delivering accurate data regarding the extent of braking force applied by the driver.  
+a. Brake Pedal Position Detection:  The Brake System Encoder is affixed to the brake pedal assembly, where it gauges the position of the pedal during operation. It transforms the mechanical movement of the brake pedal into an electrical signal, delivering accurate data regarding the extent of braking force applied by the driver.  
 
-b. Signal Relay  The encoder transmits the brake position signal to the vehicle's control system, which includes the Brake System Plausibility Device (BSPD). This signal is essential for determining the activation of braking, enabling the BSPD to effectively evaluate the system's safety.  
+b. Signal Relay:  The encoder transmits the brake position signal to the vehicle's control system, which includes the Brake System Plausibility Device (BSPD). This signal is essential for determining the activation of braking, enabling the BSPD to effectively evaluate the system's safety.  
 
-c. Continuous Monitoring  The Brake System Encoder perpetually tracks the brake pedal position in real time, facilitating an immediate response from the control system to any variations in braking force. This capability ensures that the vehicle behaves responsively, particularly in critical safety scenarios such as abrupt braking or simultaneous braking with high power output.  
-
-d. Integration with Safety Mechanisms  The information provided by the Brake System Encoder is utilized not only for brake management but also serves as input for the BSPD to identify potential malfunctions. This integration significantly enhances the overall safety of the tractive system by ensuring that braking actions are meticulously monitored and evaluated.
+c. Continuous Monitoring:  The Brake System Encoder perpetually tracks the brake pedal position in real time, facilitating an immediate response from the control system to any variations in braking force. This capability ensures that the vehicle behaves responsively, particularly in critical safety scenarios such as abrupt braking or simultaneous braking with high power output.  
 
 
 # Ethical, Professional, and Standards Considerations
