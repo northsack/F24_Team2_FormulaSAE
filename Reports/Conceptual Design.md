@@ -61,9 +61,28 @@ Constraints of this project:
 
 # Atomic Subsystem Specifications
 1. Tractive System (High Voltage)​
-    1. Motor
-    2. Motor Controller
-    3. Accumulator:
+    i. Motor
+The motor is a critical component of the electric powertrain, responsible for converting electrical energy into mechanical power to drive the vehicle. A breakdown of its requirements and operation is as follows:
+
+a. Power Output
+
+The electric motor shall provide a power output comparable to Tennessee Tech Motorsports' internal combustion engine (ICE) vehicle, which produces 52 horsepower and 55 ft-lbs of torque. The electric powertrain must meet or exceed these performance levels to ensure competitive performance in Formula SAE events.
+b. Endurance
+
+The motor and powertrain must be capable of operating for at least one hour without needing to recharge. This is essential for completing the Formula SAE endurance event, a key part of the competition.
+c. Top Speed
+
+The motor shall be able to propel the vehicle to a top speed of 60 miles per hour, ensuring the vehicle can meet the speed demands of the competition.
+
+d. Safety and Shutdown System
+
+The motor must be integrated into the vehicle’s shutdown system, which ensures the safety of the driver, team, and vehicle. This system links various safety components in series, and a fault in any component will result in a complete power shutdown, preventing unsafe conditions. The shutdown system is essential for complying with Formula SAE safety regulations.
+e. Tractive System Active Light
+
+The motor and tractive system must include a Tractive System Active Light, which illuminates when the system is powered on, alerting team members and safety officials to the operational status of the vehicle.
+    
+3. Motor Controller
+	4. Accumulator:
 	    - *Interface with other subsystems:*
             
             <br>**High Voltage Connections**
@@ -93,9 +112,9 @@ Constraints of this project:
 					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. HV Voltage values
 					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Protection devices tripped or blown
 					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Temperatures outside of the normal range of operation	
-    4. Tractive System Active Light
-    5. IMD
-    6. Charger
+    5. Tractive System Active Light
+    6. IMD
+    7. Charger
 2. Grounded Low Voltage (GLV) System
     1. Safety Systems
        1. Shutdown Circuit:
