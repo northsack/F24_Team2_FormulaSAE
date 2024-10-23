@@ -67,29 +67,29 @@ Constraints of this project:
             
             <br>**High Voltage Connections**
             
- 			| Connection                                         | Connection Type |
-        	|----------------------------------------------------|-----------------|
-        	| Motor Controller (+) and (-) Terminals             | DC Power        |
-        	| Insulation Monitoring Device (+) and (-) Terminals | DC Power        |
+ 			| Connection                                         | Connection Type | Direction |
+        	|----------------------------------------------------|-----------------|-----------|
+        	| Motor Controller (+) and (-) Terminals             | DC Power        | Output    |
+        	| Insulation Monitoring Device (+) and (-) Terminals | DC Power        | Output    |
 
             <br>**Low Voltage Connections**
-			| Connection                                         | Connection Type |
-        	|----------------------------------------------------|-----------------|
-        	| Shutdown Circuit (+) and (-)             			 | DC Power        |
+			| Connection                                         | Connection Type | Direction |
+        	|----------------------------------------------------|-----------------|-----------|
+        	| Shutdown Circuit (+) and (-)             			 | DC Power        | Input     |
 
 	   - *Operation:*
-		   The accumulator subsystem is responsible for providing high voltage power to the motor and motor controller to power the movement of the vehicle.  The functions that the accumulator must perform are as follows:
+		   The accumulator subsystem is responsible for providing high voltage power to the motor and motor controller of the vehicle.  A breakdown of the systems of the Accumulator are as follows:
 			1. Accumulator Isolation Relays:<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Relays shall be used inside of the Accumulator container to control the power provided to the external connectors of the Accumulator.  Relays shall be used to control both the positive and negative terminals of the Accumulator. These relays shall be normally open.
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Relays shall be used inside of the Accumulator container to control the power provided to the external connectors of the Accumulator.  Power shall only be provided to the external terminals when the Shutdown Circuit is closed (vehicle is ready to drive).  The AIRs shall be used to control both the positive and negative terminals of the Accumulator. The AIRs shall be normally open.
 			2. Precharge Circuit:<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As part of the motor controller's design, capacitors are installed at the main high voltage terminals.  When the Accumulator Isolation Relays (AIRs) are closed (High Voltage (HV) power is turned on), and power is provided to the motor controller, 1000s of Amps can flow through the wires to charge the capacitors inside the motor controller.  This can be dangerous because it can prematurely wear the AIRs, and possibly even weld the terminals of the AIRs together, preventing proper operation.  To prevent this, the accumulator shall have a system designed to precharge the HV system to 90% of the Accumulator voltage before closing the AIRs.
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As part of the motor controller's design, capacitors are installed at the main high voltage terminals.  When the Accumulator Isolation Relays (AIRs) are closed (High Voltage (HV) power is turned on), and power is provided to the motor controller.  Without a Precharge Circuit, thousands of Amps can flow through the wires to charge the capacitors inside the motor controller when the AIRs close.  This can be dangerous because it can prematurely wear the AIRs, and possibly even weld the terminals of the AIRs together, preventing proper operation.  To prevent this, the Accumulator shall have a system designed to precharge the HV system to 90% of the Accumulator voltage before closing the AIRs.
 			3. Discharge Circuit:<br>
-			    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The accumulator shall contain a circuit that can discharge the same capacitors mentioned in statement **b** above.  When the shutdown circuit is activated, the AIRs shall open, and the Discharge Circuit shall safely discharge the capacitors inside of the motor controller.
+			    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The accumulator shall contain a circuit that can discharge the same capacitors mentioned in statement **b** above.  When the shutdown circuit is open (vehicle is shutting down), the AIRs shall open, and the Discharge Circuit shall safely discharge the capacitors inside of the motor controller.
 			4. Voltage Indicator:<br> 
-			     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The accumulator shall have an indicator that will illuminate when high voltage is present on the external terminals of the accumulator container.
+			     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Accumulator shall have an Indicator that will illuminate when high voltage is present on the external terminals of the accumulator container.  This Indicator shall be controlled by hardware and not software.  Addionally, the Voltage Indicator shall be installed where it can be seen while connecting the Accumulator to the HV Circuit.  The Voltage Indicator shall also be labelled "High Voltage Present."
 			5. Accumulator Management System (AMS):<br> 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A system shall be built to monitor the conditions of the accumulator.  This system must monitor the Accumulator while the Tractive System is active, and also while the Accumulator is charging.  If a fault is detected in one of the monitored conditions, the AMS shall open the vehicle's shutdown circuit, cutting off the HV power to the Tractive System.  Additionally, on the occurrence of a fault, the AMS shall turn on the AMS indicator light which must be a red LED that is visible to the driver of the vehicle, and marked with the lettering "AMS".  The AMS shall monitor the following conditions
-					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Voltage values
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A system shall be built to monitor the conditions of the accumulator.  This system must monitor the Accumulator while the Tractive System is active, and also while the Accumulator is charging.  If a fault is detected in one of the monitored conditions, the AMS shall open the vehicle's shutdown circuit, cutting off the HV power to the Tractive System.  Additionally, on the occurrence of a fault, the AMS shall turn on the AMS indicator light which shall be a red LED that is visible to the driver of the vehicle and marked with the lettering "AMS".  The AMS shall monitor the following conditions
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. HV Voltage values
 					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Protection devices tripped or blown
 					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Temperatures outside of the normal range of operation	
     4. Tractive System Active Light
