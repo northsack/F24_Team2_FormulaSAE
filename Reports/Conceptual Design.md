@@ -126,6 +126,7 @@ Constraints of this project:
 3. Brake System Plausibility Device (BSPD)
 
 i. Functionality of the BSPD
+ii. Brake System Encoder
 
 The Brake System Plausibility Device (BSPD) serves as an essential safety mechanism that oversees the braking system to avert hazardous situations, such as the simultaneous application of brakes and high power output. The following outlines its components and operational principles:
 
