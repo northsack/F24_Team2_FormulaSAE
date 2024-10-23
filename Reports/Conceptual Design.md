@@ -97,7 +97,22 @@ Constraints of this project:
     6. Charger
 2. Grounded Low Voltage (GLV) System
     1. Safety Systems
-       1. Shutdown Circuit Function and Specs.
+       1. Shutdown Circuit:
+          - *Interface with other subsystems:*
+         
+          <br>**High Voltage Connections**
+
+           <br>**Low Voltage Connections**
+          
+      | Connection      | Connection Type | Direction |
+| --------------- | --------------- | --------- |
+| GLV             | DC Power        | Input     |
+| GLV             | DC Power        | Output    |
+| BSE             | Digial Signal   | Input     |
+| Tractive System | DC Power        | Input     |
+| Tractive System | DC Power        | Input     |
+       
+           Function and Specs.
           The function of the shutdown circuit is to cut off the power to the electrical systems of the car in the event of a failure or misalignment in one of the other systems that power or drive the car.
           The input of the shutdown circuit is a power signal, the Grounded Low Voltage (GLV) system voltage. The GLV Master Switch, Tractive System Master Switch, BSPD, IMD, inertia switch, shutdown button, AMS,             BOTS, and HVD Interlock(s) are connected in series and when all these systems are functioning normally they will provide power to the AIR subsystem, thus closing the high voltage Tractive System circuit.
           The shutdown circuit will receive power signals from each of the devices connected to it, in series, and send out a power signal to the AIR subsystem.
