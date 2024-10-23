@@ -113,10 +113,15 @@ Constraints of this project:
         	| GVL (+)         			 | DC Power        | Input     |
         	| GVL (-)         			 | DC Power        | Output    |
        	  - *Operation:*
-          	The shutdown circuit is responsible for cutting off power at the high voltage source (The Accumulator) in the event of a failure or misalignment in one of the other systems that power or drive the car. The shutdown circuit consists of 
-The input of the shutdown circuit is a power signal, the Grounded Low Voltage (GLV) system voltage. The GLV Master Switch, Tractive System Master Switch, BSPD, IMD, inertia switch, shutdown button, AMS, BOTS, and HVD Interlock(s) are connected in series and when all these systems are functioning normally they will provide power to the AIR subsystem, thus closing the high voltage Tractive System circuit.
-The shutdown circuit will receive power signals from each of the devices connected to it, in series, and send out a power signal to the AIR subsystem.
-The user interface for the driver shall consist of the shutdown buttons which will open the shutdown circuit thus shutting down the car’s electrical system, and the active lights provide visual feedback to what systems are operational or not.
+          	The shutdown circuit is responsible for cutting off power at the high voltage source (The Accumulator) in the event of a failure or misalignment in one of the other systems that power or drive the car. The shutdown circuit consists of other subsystems which will be described in their own section. The rest of the components are as follows:
+            
+            1. Inertia Switch:  
+		An inertia switch is a simple switch device designed to stop the flow of electricity in the event of a hard impact. In the case for this system that will be a collision. So if a crash happens the inertia switch will open the shutdown circuit and thus disconnect the Accumulator.
+                
+            2. Shutdown Buttons:
+            	The shutdown buttons are simple buttons that will open the shutdown circuit and thus disconnect the Accumulator.
+            
+            3. HVD Interlock(s):
        3. BSPD
 
 
