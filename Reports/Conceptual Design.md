@@ -128,9 +128,9 @@ iii. Accumulator:
 					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. HV Voltage values
 					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Protection devices tripped or blown
 					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Temperatures outside of the normal range of operation	
-    5. Tractive System Active Light
-    6. IMD
-    7. Charger
+5. Tractive System Active Light
+6. IMD   
+7. Charger
 2. Grounded Low Voltage (GLV) System
     1. Safety Systems
        1. Shutdown Circuit:
