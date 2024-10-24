@@ -63,6 +63,24 @@ Constraints of this project:
 1. Tractive System (High Voltage)​
    	
 i. Motor
+	    - *Interface with other subsystems:*
+     
+                | Connection                                         | Connection Type | Direction |
+        	|----------------------------------------------------|-----------------|-----------|
+        	| Phase A                                            | AC Power        | Input     |
+        	| Phase B                                            | AC Power        | Input     |
+                | Phase C                                            | AC Power        | Input     |
+        	| Thermistor                                         | Analog          | Output    |        
+	        | Sine Encoder                                       | Analog          | Output    |
+                | Cosine Encoder                                     | Analog          | Output    |
+
+			  1. Three-Phase Inputs (Phase A, Phase B, Phase C):<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The motor subsystem will be powered by a three-phase AC system, with Phase A, Phase B, and Phase C providing the alternating current required for motor operation. These inputs will work in synchronization to generate a rotating magnetic field inside the motor, driving the rotor and generating mechanical power to move the vehicle. These phases will be monitored and controlled by the motor controller to ensure smooth and efficient operation of the motor. Proper balancing of these phases is essential for optimal performance and to prevent overheating or damage to the motor windings.
+			  2. Thermistor (Temperature Monitoring):<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A thermistor will be installed in the motor housing to monitor the temperature of the motor during operation. This sensor will provide real-time temperature data to the motor controller, allowing for thermal management and protection. If the temperature exceeds safe operating limits, the motor controller will take necessary actions such as reducing power output or initiating a system shutdown to prevent motor damage due to overheating.
+			3. Sine Encoder (Sin) and Cosine Encoder (Cos):<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The motor subsystem will include a sine and cosine encoder, which are critical for providing accurate rotor position feedback to the motor controller. These encoders will generate sine and cosine signals that correspond to the rotor’s angular position, allowing the controller to precisely adjust the current delivered to each phase. This ensures efficient and accurate torque generation, which is vital for both high-performance driving and smooth operation of the vehicle. The encoder system will also play a key role in controlling the motor's speed and synchronization, enabling seamless transitions in power delivery.
+Accurate rotor position feedback ensures the motor operates at peak efficiency, delivering the right amount of torque and preventing misalignment. This directly impacts vehicle performance, especially in terms of acceleration and handling during cornering.
 
 ii. Motor Controller
 	
@@ -185,6 +203,28 @@ c. Continuous Monitoring:  The Brake System Encoder perpetually tracks the brake
 
 
 # Ethical, Professional, and Standards Considerations
+Designing the electronics for a Formula SAE car requires not only technical expertise but also adherence to a set of ethical, professional, and industry standards that ensure safety, integrity, and responsibility throughout the design and implementation process. These considerations include:
+
+1. Safety and Risk Mitigation:
+The foremost ethical obligation in designing the car’s electronics is ensuring the safety of the driver, team members, and anyone interacting with the vehicle. High-voltage systems, such as the accumulator and motor subsystems, must be designed with robust safeguards, such as proper insulation, fail-safes, and emergency shutdown circuits. Ethical engineering practice mandates that potential hazards be identified early and mitigated through careful design and rigorous testing, including adherence to fail-safe principles like precharge and discharge circuits.
+
+2. Compliance with Standards and Regulations:
+Formula SAE competition rules require compliance with specific technical and safety standards, including those related to high-voltage systems, wiring, and energy storage. Additionally, industry standards, such as those from the Institute of Electrical and Electronics Engineers (IEEE), International Electrotechnical Commission (IEC), and automotive standards like ISO 26262 (functional safety for road vehicles), guide the design and verification processes. Engineers must ensure that the car's electronics comply with these standards to prevent accidents and ensure the integrity of the competition.
+
+3. Environmental Responsibility:
+The shift toward electric vehicles (EVs), including Formula SAE electric cars, brings environmental responsibility into focus. Ethical design decisions should consider the environmental impact of materials used, energy efficiency, and waste management, including the disposal and recycling of electronic components and batteries. The design should aim to minimize the car’s ecological footprint while maximizing energy efficiency during operation.
+
+4. Data Privacy and Security:
+As the electronics system collects data for vehicle performance monitoring, telemetry, and diagnostics, engineers must consider the ethical implications of data collection, storage, and usage. Ensuring the security of data, especially in the context of wireless communications or during competition, is critical to protect proprietary information and the privacy of the team.
+
+5. Honesty and Transparency in Reporting:
+Engineers must practice honesty and transparency when documenting and reporting design decisions, performance metrics, and any faults or issues discovered during testing. Any potential risks or design limitations must be disclosed to avoid harm and ensure accountability. Ethical responsibility also involves not misrepresenting test results or overstating the capabilities of the system, as this can lead to dangerous situations in competition.
+
+6. Team Collaboration and Professionalism:
+In a multidisciplinary team, engineers must maintain professionalism, respecting the expertise and contributions of others while promoting an open and collaborative environment. Ethical considerations extend to the fair distribution of work, giving credit where due, and fostering a culture of continuous learning and ethical responsibility. Following professional codes of conduct, such as those outlined by the National Society of Professional Engineers (NSPE) or IEEE, ensures that team members act with integrity and responsibility.
+
+7. Responsibility to Future Engineers and Society:
+The Formula SAE competition serves as a learning platform for future engineers. Ethical considerations include mentoring and educating less-experienced team members, ensuring that knowledge transfer happens responsibly. The design decisions made today also set a precedent for the future of automotive and electric vehicle engineering. Designing with long-term societal impact in mind, including promoting safer, more sustainable technologies, is an ethical obligation for engineers working on such projects.
 
 # Resources
 1. Budget
