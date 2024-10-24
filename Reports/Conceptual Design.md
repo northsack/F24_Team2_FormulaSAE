@@ -221,7 +221,7 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
             	The shutdown buttons are simple buttons that will open the shutdown circuit and thus disconnect the Accumulator.
             
             3. HVD Interlock(s):
-                This device(s) provide an added safety measure to the car itself. The HCD Interlocks prevents someone from making contact to the high voltage in the system, as well as provided safety for when the high voltage is being disconnected.
+                This device(s) provide an added safety measure to the car itself. The HVD Interlocks prevents someone from making contact to the high voltage in the system, as well as provided safety for when the high voltage is being disconnected.
 
 	2. Brake System Plausibility Device (BSPD)
 	3. Insulation Monitoring Device (IMD)
