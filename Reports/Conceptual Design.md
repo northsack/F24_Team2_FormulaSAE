@@ -156,6 +156,7 @@ iii. Accumulator:
             	The shutdown buttons are simple buttons that will open the shutdown circuit and thus disconnect the Accumulator.
             
             3. HVD Interlock(s):
+                This device(s) provide an added safety measure to the car itself. The HCD Interlocks prevents someone from making contact to the high voltage in the system, as well as provided safety for when the high voltage is being disconnected.
 
 Brake System Plausibility Device (BSPD)
 
