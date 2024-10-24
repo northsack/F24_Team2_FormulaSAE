@@ -232,30 +232,19 @@ The Formula SAE competition serves as a learning platform for future engineers. 
 **Budget Overview**
 The budget for the Formula SAE electric vehicle project is designed to cover critical components for the powertrain, safety systems, and required tools. This breakdown outlines the costs for key items necessary to meet both performance targets and regulatory compliance.
 
-1. Motor and Motor Controller
+
 
 2022 Zero FXE Motorcycle (Battery & Electric Motor): $7,050
+
 Speed Controller: $925
 
-The 2022 Zero FXE motorcycle’s motor and battery serve as the primary power source for the electric vehicle, providing the required horsepower and torque. The speed controller regulates the power delivered to the motor, ensuring efficient operation.
-2. Powertrain Mounting
-
 Aluminum Motor Plate: $125
-
-The motor plate provides a secure mounting solution for integrating the motor into the vehicle chassis.
-3. Safety and Fire Protection
 
 Fire Blanket: $120
 
 Buckets to Hold Sand (3): $75
 
-These safety items are required to comply with fire safety regulations and ensure the team is prepared for emergencies during testing and competition.
-
-4. Software and Programming Tools
-
 DVT Configuration Software and Specialized Cable: $650
-
-This software and cable are essential for programming and configuring the speed controller to optimize motor performance and ensure compliance with Formula SAE rules.
 
 Total Current Budget:
 $8,945
@@ -273,6 +262,7 @@ Data Acquisition: Proficiency in using telemetry systems to monitor motor and co
 Safety Compliance: Familiarity with Formula SAE regulations and experience in integrating shutdown systems and protective devices.
 
 **Timeline: Gaant Chart**
+
 
 
 # Statement of Contribution
