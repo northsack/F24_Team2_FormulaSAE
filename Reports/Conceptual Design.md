@@ -52,6 +52,37 @@ Constraints of this project:
 
 # Comparative Analysis of Potential Solutions
 
+**Hypothesized Solutions**
+
+**Solution A: Custom-Built Battery and Motor System**
+
+This solution involves designing and building a custom battery pack and motor system specifically for the Formula SAE vehicle.
+Advantages: Allows for full control over the specifications, such as battery capacity and motor power, potentially optimizing performance for endurance and power output.
+Disadvantages: This solution requires significant design and development time, along with a steep learning curve for building a high-performance electric powertrain. Testing and validation time is limited, increasing the risk of performance issues or failures during competition.
+
+**Solution B: Pre-Assembled Electric Motorcycle Powertrain (2022 Zero FXE)**
+
+This solution utilizes the pre-assembled electric powertrain from a 2022 Zero FXE motorcycle, including the motor and battery system.
+Advantages: Proven, reliable technology that already meets performance targets (52 horsepower and 55 ft-lbs of torque), reducing design and development time. The off-the-shelf solution minimizes the risk of failure and simplifies integration.
+Disadvantages: Higher upfront cost and less flexibility for customization compared to a custom-built system. Additionally, modifications may be limited due to the pre-assembled nature of the system.
+
+**Chosen Solution**
+
+After comparing the two solutions, Solution B: Pre-Assembled Electric Motorcycle Powertrain (2022 Zero FXE) has been selected for the following reasons:
+
+Proven Technology: 
+
+The Zero FXE powertrain offers a reliable, tested system that meets the required power output and endurance criteria.
+Reduced Development Risk: Leveraging a pre-assembled system minimizes the risks associated with designing a custom battery and motor system, which could lead to unforeseen challenges during testing and competition.
+
+Focus on Optimization: 
+
+With the powertrain already assembled, the team can concentrate on integrating the system into the vehicle and optimizing performance, reducing time spent on design and manufacturing.
+
+**Conclusion**
+
+The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most practical and reliable solution for Tennessee Tech Motorsports’ Formula SAE Electric vehicle. It balances performance with reliability and allows the team to focus on fine-tuning and testing, ensuring compliance with competition rules and regulations.
+
 # High-Level Solution
 
 1. Hardware Block Diagram
