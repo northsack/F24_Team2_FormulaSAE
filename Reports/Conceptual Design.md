@@ -149,7 +149,23 @@ Safety Compliance:
 The TSAL ensures compliance with Formula SAE Electric rules, which mandate the use of an indicator light to signal an active high-voltage tractive system. This is a key aspect of the safety system, reducing the risk of accidental exposure to high-voltage components.
 
 6. IMD   
-7. Charger
+
+7. **Charger**  
+
+The charger serves the essential function of safely recharging the accumulator (battery pack) of the Formula SAE electric vehicle. Its significance lies in maintaining the energy levels of the high-voltage battery, thereby ensuring the vehicle's readiness for endurance competitions and testing scenarios. The design of the charging system must adhere to safety regulations while optimizing operational efficiency.  
+
+**Design Requirements:**  
+
+The charger must align with the voltage and current specifications of the accumulator to avert risks of overcharging or overheating. It should be capable of supplying a regulated current to the battery while simultaneously monitoring its state of charge, temperature, and voltage levels. Compliance with Formula SAE regulations is imperative, which mandates galvanic isolation between the charger and the accumulator to mitigate the risk of electric shocks.  
+
+**Operation:**  
+
+The charging system interfaces with the vehicle’s accumulator through external terminals, facilitating battery charging without necessitating its removal from the vehicle. The charger will interact with the Accumulator Management System (AMS) to oversee battery conditions throughout the charging process, ceasing operation if any anomalies, such as over-temperature or over-voltage, are identified. Charging will only initiate when the tractive system is inactive, in accordance with safety protocols that prohibit charging during testing or active operation.  
+
+**Safety Features:**  
+
+The charger incorporates safety interlocks to ensure operation only occurs when the vehicle’s shutdown system is activated, thereby minimizing the risk of unintended high-voltage exposure. It is engineered to safeguard against short circuits, overheating, and overcharging, thereby enhancing the longevity and safety of the accumulator.
+
 2. Grounded Low Voltage (GLV) System
     1. Safety Systems
        1. Shutdown Circuit:
