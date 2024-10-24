@@ -179,8 +179,6 @@ Safety Compliance:
 
 The TSAL ensures compliance with Formula SAE Electric rules, which mandate the use of an indicator light to signal an active high-voltage tractive system. This is a key aspect of the safety system, reducing the risk of accidental exposure to high-voltage components.
 
-	6. IMD   
-
 	7. **Charger**  
 
 The charger serves the essential function of safely recharging the accumulator (battery pack) of the Formula SAE electric vehicle. Its significance lies in maintaining the energy levels of the high-voltage battery, thereby ensuring the vehicle's readiness for endurance competitions and testing scenarios. The design of the charging system must adhere to safety regulations while optimizing operational efficiency.  
@@ -226,6 +224,23 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
                 This device(s) provide an added safety measure to the car itself. The HCD Interlocks prevents someone from making contact to the high voltage in the system, as well as provided safety for when the high voltage is being disconnected.
 
 	2. Brake System Plausibility Device (BSPD)
+	3. Insulation Monitoring Device (IMD)
+		- *Interface with other subsystems:*
+  
+  		<br>**High Voltage Connections**
+          
+ 			| Connection                                         | Connection Type | Direction |
+        	|----------------------------------------------------|-----------------|-----------|
+        	| HV (+)(-)            | DC Power       | Input    |
+    
+           <br>**Low Voltage Connections**
+			| Connection                                         | Connection Type | Direction |
+        	|----------------------------------------------------|-----------------|-----------|
+        	| GLV From BSPD (+)        		 | DC Power        | Input     |
+        	| GLV (-)         			 | DC Power        | Output    |
+		
+		- *Operation:*
+		The IMD monitors the insulation resistance between the high voltage system and the ground. If there were to be a fault in the high voltage systems of the vehicle, the IMD would detect it and trigger the shutdown circuit.
 
 i.  Functionality of the BSPD
 
