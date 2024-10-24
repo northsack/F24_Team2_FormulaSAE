@@ -65,7 +65,8 @@ Constraints of this project:
 i. Motor
 	    - *Interface with other subsystems:*
      
-                | Connection                                         | Connection Type | Direction |
+     
+                	| Connection                                         | Connection Type | Direction |
         	|----------------------------------------------------|-----------------|-----------|
         	| Phase A                                            | AC Power        | Input     |
         	| Phase B                                            | AC Power        | Input     |
@@ -158,11 +159,11 @@ iii. Accumulator:
             3. HVD Interlock(s):
                 This device(s) provide an added safety measure to the car itself. The HCD Interlocks prevents someone from making contact to the high voltage in the system, as well as provided safety for when the high voltage is being disconnected.
 
-Brake System Plausibility Device (BSPD)
+	2. Brake System Plausibility Device (BSPD)
 
 i.  Functionality of the BSPD
 
-ii. Brake System Encoder
+ii. Brake System Encoder:
 
 The Brake System Plausibility Device (BSPD) serves as an essential safety mechanism that oversees the braking system to avert hazardous situations, such as the simultaneous application of brakes and high power output. The following outlines its components and operational principles:
 
