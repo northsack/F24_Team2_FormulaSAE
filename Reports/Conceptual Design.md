@@ -240,7 +240,7 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
         	| GLV (-)         			 | DC Power        | Output    |
 		
 		- *Operation:*
-		The IMD monitors the insulation resistance between the high voltage system and the ground. If there were to be a fault in the high voltage systems of the vehicle, the IMD would detect it and trigger the shutdown circuit.
+		The IMD monitors the insulation resistance between the high voltage system and the ground. If there were to be a fault in the high voltage systems of the vehicle, the IMD would detect it and open the shutdown circuit. When the IMD opens the shutdown circuit, a red indicator light turns on and stays on until the IMD is reset.
 
 i.  Functionality of the BSPD
 
