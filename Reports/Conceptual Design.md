@@ -99,21 +99,21 @@ e.  Control Algorithms and Efficiency  The motor controller employs sophisticate
 
  
 iii. Accumulator:
-	    - *Interface with other subsystems:*
+	- *Interface with other subsystems:*
             
-            <br>**High Voltage Connections**
+<br>**High Voltage Connections**
             
- 			| Connection                                         | Connection Type | Direction |
-        	|----------------------------------------------------|-----------------|-----------|
-        	| Motor Controller (+) and (-) Terminals             | DC Power        | Output    |
-        	| Insulation Monitoring Device (+) and (-) Terminals | DC Power        | Output    |
+ | Connection                                         | Connection Type | Direction |
+ |----------------------------------------------------|-----------------|-----------|
+ | Motor Controller (+) and (-) Terminals             | DC Power        | Output    |
+ | Insulation Monitoring Device (+) and (-) Terminals | DC Power        | Output    |
 
-            <br>**Low Voltage Connections**
-			| Connection                                         | Connection Type | Direction |
-        	|----------------------------------------------------|-----------------|-----------|
-        	| Shutdown Circuit (+) and (-)             			 | DC Power        | Input     |
+<br>**Low Voltage Connections**
+ | Connection                                         | Connection Type | Direction |
+ |----------------------------------------------------|-----------------|-----------|
+ | Shutdown Circuit (+) and (-)             	      | DC Power        | Input     |
 
-	   - *Operation:*
+- *Operation:*
 		   The accumulator subsystem is responsible for providing high voltage power to the motor and motor controller of the vehicle.  A breakdown of the systems of the Accumulator are as follows:
 			1. Accumulator Isolation Relays:<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Relays shall be used inside of the Accumulator container to control the power provided to the external connectors of the Accumulator.  Power shall only be provided to the external terminals when the Shutdown Circuit is closed (vehicle is ready to drive).  The AIRs shall be used to control both the positive and negative terminals of the Accumulator. The AIRs shall be normally open.
