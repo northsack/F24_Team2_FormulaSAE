@@ -229,7 +229,8 @@ The Formula SAE competition serves as a learning platform for future engineers. 
 
 # Resources
 
-**Budget Overview**
+**Budget Overview**:
+
 The budget for the Formula SAE electric vehicle project is designed to cover critical components for the powertrain, safety systems, and required tools. This breakdown outlines the costs for key items necessary to meet both performance targets and regulatory compliance.
 
 
@@ -250,7 +251,7 @@ Total Current Budget:
 $8,945
 
 
-**Required Skills**
+**Required Skills**:
 
 Electrical Systems Design: Understanding of high-voltage power systems, motor control circuits, and safety protocols.
 
