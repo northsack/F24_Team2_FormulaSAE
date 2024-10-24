@@ -229,7 +229,17 @@ The Formula SAE competition serves as a learning platform for future engineers. 
 # Resources
 1. Budget
 2. Skills
-3. Timeline
+
+Electrical Systems Design: Understanding of high-voltage power systems, motor control circuits, and safety protocols.
+
+Control Systems: Knowledge of motor control algorithms (e.g., Field-Oriented Control), regenerative braking, and torque management.
+
+Thermal Management: Ability to design and implement cooling solutions for motor and motor controller components.
+Data Acquisition: Proficiency in using telemetry systems to monitor motor and controller performance.
+
+Safety Compliance: Familiarity with Formula SAE regulations and experience in integrating shutdown systems and protective devices.
+
+4. Timeline
 
 # Statement of Contribution
 
