@@ -264,6 +264,22 @@ Safety Compliance: Familiarity with Formula SAE regulations and experience in in
 
 **Timeline: Gaant Chart**
 
+A broad look at the current timeline of events is as follows:
+
+August – December 2024: Design Project
+January – May 2025: Build project
+A more detailed look at the current timeline of events is as follows:
+
+2024:
+
+October 28: Conceptual Design Finished
+November 30: Detailed Design Finished
+2025:
+
+January 20: Start putting the project together
+April 11: Have the planned project scope finished and ready for tweaking
+May 2: Project finished and ready to present
+
 
 
 # Statement of Contribution
