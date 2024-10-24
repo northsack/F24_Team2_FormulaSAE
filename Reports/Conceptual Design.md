@@ -93,7 +93,7 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
 # Atomic Subsystem Specifications
 1. Tractive System (High Voltage)​
    	
-1. Motor
+	1. Motor
 	    - *Interface with other subsystems:*
      
      
@@ -114,7 +114,7 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The motor subsystem will include a sine and cosine encoder, which are critical for providing accurate rotor position feedback to the motor controller. These encoders will generate sine and cosine signals that correspond to the rotor’s angular position, allowing the controller to precisely adjust the current delivered to each phase. This ensures efficient and accurate torque generation, which is vital for both high-performance driving and smooth operation of the vehicle. The encoder system will also play a key role in controlling the motor's speed and synchronization, enabling seamless transitions in power delivery.
 Accurate rotor position feedback ensures the motor operates at peak efficiency, delivering the right amount of torque and preventing misalignment. This directly impacts vehicle performance, especially in terms of acceleration and handling during cornering.
 
-2. Motor Controller
+	2. Motor Controller
 	
  The motor controller serves as a fundamental element within the electric powertrain, tasked with overseeing the power distribution between the energy storage unit and the motor, thereby facilitating effective and accurate management of the vehicle's operational capabilities. A detailed examination of its roles and specifications is presented below:  
 
@@ -129,7 +129,7 @@ d. Thermal Management  During operation, particularly under high load conditions
 e.  Control Algorithms and Efficiency  The motor controller employs sophisticated control algorithms, such as Field-Oriented Control for AC motors, to enhance performance and efficiency. These algorithms are designed to optimize the motor's response and energy consumption, contributing to the overall effectiveness of the electric powertrain.
 
  
-3. Accumulator:
+	3. Accumulator:
 	    - *Interface with other subsystems:*
             
             <br>**High Voltage Connections**
@@ -160,7 +160,7 @@ e.  Control Algorithms and Efficiency  The motor controller employs sophisticate
 					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Protection devices tripped or blown
 					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Temperatures outside of the normal range of operation	
 
-5. **Tractive System Active Light (TSAL):**
+	5. **Tractive System Active Light (TSAL):**
 
 The Tractive System Active Light (TSAL) is a critical safety feature required by Formula SAE Electric rules to indicate when the vehicle’s high-voltage tractive system is live and energized. The purpose of the TSAL is to alert team members, track officials, and nearby personnel that the vehicle’s high-voltage system is active, ensuring safe handling and operation at all times.
 
@@ -179,9 +179,9 @@ Safety Compliance:
 
 The TSAL ensures compliance with Formula SAE Electric rules, which mandate the use of an indicator light to signal an active high-voltage tractive system. This is a key aspect of the safety system, reducing the risk of accidental exposure to high-voltage components.
 
-6. IMD   
+	6. IMD   
 
-7. **Charger**  
+	7. **Charger**  
 
 The charger serves the essential function of safely recharging the accumulator (battery pack) of the Formula SAE electric vehicle. Its significance lies in maintaining the energy levels of the high-voltage battery, thereby ensuring the vehicle's readiness for endurance competitions and testing scenarios. The design of the charging system must adhere to safety regulations while optimizing operational efficiency.  
 
