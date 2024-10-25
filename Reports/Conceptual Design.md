@@ -94,23 +94,21 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
 1. Tractive System (High Voltage)​
    	
 	1. Motor
-	    - *Interface with other subsystems:*
-     
-     
-                	| Connection                                         | Connection Type | Direction |
-        	|----------------------------------------------------|-----------------|-----------|
-        	| Phase A                                            | AC Power        | Input     |
-        	| Phase B                                            | AC Power        | Input     |
-                | Phase C                                            | AC Power        | Input     |
-        	| Thermistor                                         | Analog          | Output    |        
-	        | Sine Encoder                                       | Analog          | Output    |
-                | Cosine Encoder                                     | Analog          | Output    |
+	    - *Interface with other subsystems:*<br>
+     		| Connection                                         | Connection Type | Direction |
+	|----------------------------------------------------|-----------------|-----------|
+	| Phase A                                            | AC Power        | Input     |
+	| Phase B                                            | AC Power        | Input     |
+     	| Phase C                                            | AC Power        | Input     |
+	| Thermistor                                         | Analog          | Output    |
+	| Sine Encoder                                       | Analog          | Output    |
+	| Cosine Encoder                                     | Analog          | Output    |
 
-			  1. Three-Phase Inputs (Phase A, Phase B, Phase C):<br>
+		1. Three-Phase Inputs (Phase A, Phase B, Phase C):<br>
 				The motor subsystem will be powered by a three-phase AC system, with Phase A, Phase B, and Phase C providing the alternating current required for motor operation. These inputs will work in synchronization to generate a rotating magnetic field inside the motor, driving the rotor and generating mechanical power to move the vehicle. These phases will be monitored and controlled by the motor controller to ensure smooth and efficient operation of the motor. Proper balancing of these phases is essential for optimal performance and to prevent overheating or damage to the motor windings.
-			  2. Thermistor (Temperature Monitoring):<br>
+		2. Thermistor (Temperature Monitoring):<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A thermistor will be installed in the motor housing to monitor the temperature of the motor during operation. This sensor will provide real-time temperature data to the motor controller, allowing for thermal management and protection. If the temperature exceeds safe operating limits, the motor controller will take necessary actions such as reducing power output or initiating a system shutdown to prevent motor damage due to overheating.
-			3. Sine Encoder (Sin) and Cosine Encoder (Cos):<br>
+		3. Sine Encoder (Sin) and Cosine Encoder (Cos):<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The motor subsystem will include a sine and cosine encoder, which are critical for providing accurate rotor position feedback to the motor controller. These encoders will generate sine and cosine signals that correspond to the rotor’s angular position, allowing the controller to precisely adjust the current delivered to each phase. This ensures efficient and accurate torque generation, which is vital for both high-performance driving and smooth operation of the vehicle. The encoder system will also play a key role in controlling the motor's speed and synchronization, enabling seamless transitions in power delivery.
 Accurate rotor position feedback ensures the motor operates at peak efficiency, delivering the right amount of torque and preventing misalignment. This directly impacts vehicle performance, especially in terms of acceleration and handling during cornering.
 
@@ -223,11 +221,65 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
             3. HVD Interlock(s):
                 This device(s) provide an added safety measure to the car itself. The HVD Interlocks prevents someone from making contact to the high voltage in the system, as well as provided safety for when the high voltage is being disconnected.
 
-	2. Brake System Plausibility Device (BSPD)
+	2. Brake System Plausibility Device (BSPD)<br>
+
+		  - *Interface with other subsystems:*
+		  
+          	**Low Voltage Connections**
+			| Connection                                         | Connection Type | Direction |
+        	|----------------------------------------------------|-----------------|-----------|
+        	| GVL (+)         			 | DC Power        | Input     |
+            | Brake Presure Sensor        			 | Analog        | Input     |
+            | Current Sensor         			 | Analog        | Input     |
+            | GVL (-)         			 | DC Power        | Output     |
+        	
+          - *Operation*<br>
+          	 The Brake System Plausibility Device (BSPD) serves as an essential safety mechanism that oversees the braking system to avert hazardous situations, such as the simultaneous application of brakes and high power output. The following outlines its components and operational principles:
+             1. Brake System Encoder:
+             
+             The BSPD guarantees that high power output from the tractive system is not permitted when the brakes are engaged, thereby preventing the vehicle from accelerating during braking, which poses significant safety risks. Should braking be detected while power output surpasses 5 kW, the BSPD activates the vehicle’s shutdown circuit.
+             
+             2. Brake Detection Mechanism
+
+			 The BSPD continuously monitors the brake pedal position sensor to ascertain when the brake pedal is engaged. Upon application of the brakes, the BSPD evaluates the power output from the motor or accumulator to verify if the system is drawing more than 5 kW of power.
+             
+             3.  Monitoring Power Output
+
+			 The BSPD is responsible for overseeing the electrical power delivered to the motor via the tractive system. If the power output exceeds 5 kW while the brakes are applied, the BSPD recognizes this as a fault condition.
+             
+             4.  Activation of Shutdown Circuit
+
+			 In instances where braking occurs concurrently with high power output, the BSPD activates the shutdown circuit, thereby disconnecting power to the tractive system and preventing the motor from receiving additional high voltage. This process is automatic and does not require driver intervention, ensuring a prompt response to potentially unsafe conditions.
+             
+             5.  Autonomous Functionality
+
+			 The BSPD functions as an independent, non-programmable device, distinct from the vehicle’s other electronic control units (ECUs), which enhances its reliability even in the event of failures in other systems. Its separation from software or programmable components further bolsters its safety profile.
+             
+             6. BSPD Indicator Light
+
+			 When the BSPD is activated, an indicator light is illuminated to inform the driver and pit crew of the shutdown event. This light is clearly marked "BSPD" and is strategically located on the vehicle's dashboard within the driver’s line of sight.
+             
+             7. Reset Procedure
+
+			 After the BSPD has triggered the shutdown circuit, it must be manually reset before the vehicle can resume operation. This ensures that the fault condition has been properly addressed before the vehicle is restarted.
+             
+             8. Brake System Encoder 
+
+			 The Brake System Encoder plays a crucial role in precisely identifying the position of the brake pedal and transmitting this information to the vehicle's control systems. An overview of its components and functionality is presented below:<br>
+             
+             1. Brake Pedal Position Detection:  
+             	The Brake System Encoder is affixed to the brake pedal assembly, where it gauges the position of the pedal during operation. It transforms the mechanical movement of the brake pedal into an electrical signal, delivering accurate data regarding the extent of braking force applied by the driver.
+             	
+             2. Signal Relay:  
+             	The encoder transmits the brake position signal to the vehicle's control system, which includes the Brake System Plausibility Device (BSPD). This signal is essential for determining the activation of braking, enabling the BSPD to effectively evaluate the system's safety. 
+
+			3. Continuous Monitoring:  
+				The Brake System Encoder perpetually tracks the brake pedal position in real time, facilitating an immediate response from the control system to any variations in braking force. This capability ensures that the vehicle behaves responsively, particularly in critical safety scenarios such as abrupt braking or simultaneous braking with high power output.
+        
 	3. Insulation Monitoring Device (IMD)
 		- *Interface with other subsystems:*
   
-  		<br>**High Voltage Connections**
+  			<br>**High Voltage Connections**
           
  			| Connection                                         | Connection Type | Direction |
         	|----------------------------------------------------|-----------------|-----------|
@@ -242,47 +294,29 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
 		- *Operation:*
 		The IMD monitors the insulation resistance between the high voltage system and the ground. If there were to be a fault in the high voltage systems of the vehicle, the IMD would detect it and open the shutdown circuit. When the IMD opens the shutdown circuit, a red indicator light turns on and stays on until the IMD is reset.
 
-i.  Functionality of the BSPD
+# Ethical, Professional, and Standards Considerations
+Designing the electronics for a Formula SAE car requires not only technical expertise but also adherence to a set of ethical, professional, and industry standards that ensure safety, integrity, and responsibility throughout the design and implementation process. These considerations include:
 
-ii. Brake System Encoder:
+1. Safety and Risk Mitigation:
+The foremost ethical obligation in designing the car’s electronics is ensuring the safety of the driver, team members, and anyone interacting with the vehicle. High-voltage systems, such as the accumulator and motor subsystems, must be designed with robust safeguards, such as proper insulation, fail-safes, and emergency shutdown circuits. Ethical engineering practice mandates that potential hazards be identified early and mitigated through careful design and rigorous testing, including adherence to fail-safe principles like precharge and discharge circuits.
 
-The Brake System Plausibility Device (BSPD) serves as an essential safety mechanism that oversees the braking system to avert hazardous situations, such as the simultaneous application of brakes and high power output. The following outlines its components and operational principles:
+2. Compliance with Standards and Regulations:
+Formula SAE competition rules require compliance with specific technical and safety standards, including those related to high-voltage systems, wiring, and energy storage. Additionally, industry standards, such as those from the Institute of Electrical and Electronics Engineers (IEEE), International Electrotechnical Commission (IEC), and automotive standards like ISO 26262 (functional safety for road vehicles), guide the design and verification processes. Engineers must ensure that the car's electronics comply with these standards to prevent accidents and ensure the integrity of the competition.
 
-The BSPD guarantees that high power output from the tractive system is not permitted when the brakes are engaged, thereby preventing the vehicle from accelerating during braking, which poses significant safety risks. Should braking be detected while power output surpasses 5 kW, the BSPD activates the vehicle’s shutdown circuit.
+3. Environmental Responsibility:
+The shift toward electric vehicles (EVs), including Formula SAE electric cars, brings environmental responsibility into focus. Ethical design decisions should consider the environmental impact of materials used, energy efficiency, and waste management, including the disposal and recycling of electronic components and batteries. The design should aim to minimize the car’s ecological footprint while maximizing energy efficiency during operation.
 
-a. Brake Detection Mechanism
+4. Data Privacy and Security:
+As the electronics system collects data for vehicle performance monitoring, telemetry, and diagnostics, engineers must consider the ethical implications of data collection, storage, and usage. Ensuring the security of data, especially in the context of wireless communications or during competition, is critical to protect proprietary information and the privacy of the team.
 
-The BSPD continuously monitors the brake pedal position sensor to ascertain when the brake pedal is engaged. Upon application of the brakes, the BSPD evaluates the power output from the motor or accumulator to verify if the system is drawing more than 5 kW of power.
+5. Honesty and Transparency in Reporting:
+Engineers must practice honesty and transparency when documenting and reporting design decisions, performance metrics, and any faults or issues discovered during testing. Any potential risks or design limitations must be disclosed to avoid harm and ensure accountability. Ethical responsibility also involves not misrepresenting test results or overstating the capabilities of the system, as this can lead to dangerous situations in competition.
 
-b. Monitoring Power Output
+6. Team Collaboration and Professionalism:
+In a multidisciplinary team, engineers must maintain professionalism, respecting the expertise and contributions of others while promoting an open and collaborative environment. Ethical considerations extend to the fair distribution of work, giving credit where due, and fostering a culture of continuous learning and ethical responsibility. Following professional codes of conduct, such as those outlined by the National Society of Professional Engineers (NSPE) or IEEE, ensures that team members act with integrity and responsibility.
 
-The BSPD is responsible for overseeing the electrical power delivered to the motor via the tractive system. If the power output exceeds 5 kW while the brakes are applied, the BSPD recognizes this as a fault condition.
-
-c. Activation of Shutdown Circuit
-
-In instances where braking occurs concurrently with high power output, the BSPD activates the shutdown circuit, thereby disconnecting power to the tractive system and preventing the motor from receiving additional high voltage. This process is automatic and does not require driver intervention, ensuring a prompt response to potentially unsafe conditions.
-
-d. Autonomous Functionality
-
-The BSPD functions as an independent, non-programmable device, distinct from the vehicle’s other electronic control units (ECUs), which enhances its reliability even in the event of failures in other systems. Its separation from software or programmable components further bolsters its safety profile.
-
-e. BSPD Indicator Light
-
-When the BSPD is activated, an indicator light is illuminated to inform the driver and pit crew of the shutdown event. This light is clearly marked "BSPD" and is strategically located on the vehicle's dashboard within the driver’s line of sight.
-
-f. Reset Procedure
-
-After the BSPD has triggered the shutdown circuit, it must be manually reset before the vehicle can resume operation. This ensures that the fault condition has been properly addressed before the vehicle is restarted.
-
-ii. Brake System Encoder  
-
-The Brake System Encoder plays a crucial role in precisely identifying the position of the brake pedal and transmitting this information to the vehicle's control systems. An overview of its components and functionality is presented below:  
-
-a. Brake Pedal Position Detection:  The Brake System Encoder is affixed to the brake pedal assembly, where it gauges the position of the pedal during operation. It transforms the mechanical movement of the brake pedal into an electrical signal, delivering accurate data regarding the extent of braking force applied by the driver.  
-
-b. Signal Relay:  The encoder transmits the brake position signal to the vehicle's control system, which includes the Brake System Plausibility Device (BSPD). This signal is essential for determining the activation of braking, enabling the BSPD to effectively evaluate the system's safety.  
-
-c. Continuous Monitoring:  The Brake System Encoder perpetually tracks the brake pedal position in real time, facilitating an immediate response from the control system to any variations in braking force. This capability ensures that the vehicle behaves responsively, particularly in critical safety scenarios such as abrupt braking or simultaneous braking with high power output.  
+7. Responsibility to Future Engineers and Society:
+The Formula SAE competition serves as a learning platform for future engineers. Ethical considerations include mentoring and educating less-experienced team members, ensuring that knowledge transfer happens responsibly. The design decisions made today also set a precedent for the future of automotive and electric vehicle engineering. Designing with long-term societal impact in mind, including promoting safer, more sustainable technologies, is an ethical obligation for engineers working on such projects.
 
 
 # Ethical, Professional, and Standards Considerations
