@@ -94,15 +94,16 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
 1. Tractive System (High Voltage)​
    	
 	1. Motor
-	    - *Interface with other subsystems:*<br>
-     		| Connection                                         | Connection Type | Direction |
-	|----------------------------------------------------|-----------------|-----------|
-	| Phase A                                            | AC Power        | Input     |
-	| Phase B                                            | AC Power        | Input     |
-     	| Phase C                                            | AC Power        | Input     |
-	| Thermistor                                         | Analog          | Output    |
-	| Sine Encoder                                       | Analog          | Output    |
-	| Cosine Encoder                                     | Analog          | Output    |
+		- *Interface with other subsystems*
+		
+			| Connection     | Connection Type | Direction |
+			| -------------- | --------------- | --------- |
+			| Phase A        | AC Power        | Input     |
+			| Phase B        | AC Power        | Input     |
+			| Phase C        | AC Power        | Input     |
+			| Thermistor     | Analog          | Output    |
+			| Sine Encoder   | Analog          | Output    |
+			| Cosine Encoder | Analog          | Output    |
 
 		1. Three-Phase Inputs (Phase A, Phase B, Phase C):<br>
 				The motor subsystem will be powered by a three-phase AC system, with Phase A, Phase B, and Phase C providing the alternating current required for motor operation. These inputs will work in synchronization to generate a rotating magnetic field inside the motor, driving the rotor and generating mechanical power to move the vehicle. These phases will be monitored and controlled by the motor controller to ensure smooth and efficient operation of the motor. Proper balancing of these phases is essential for optimal performance and to prevent overheating or damage to the motor windings.
