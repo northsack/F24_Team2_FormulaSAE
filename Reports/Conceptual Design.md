@@ -112,9 +112,9 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
 		3. Sine Encoder (Sin) and Cosine Encoder (Cos):<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The motor subsystem will include a sine and cosine encoder, which are critical for providing accurate rotor position feedback to the motor controller. These encoders will generate sine and cosine signals that correspond to the rotor’s angular position, allowing the controller to precisely adjust the current delivered to each phase. This ensures efficient and accurate torque generation, which is vital for both high-performance driving and smooth operation of the vehicle. The encoder system will also play a key role in controlling the motor's speed and synchronization, enabling seamless transitions in power delivery.
                 
-	Sine and cosine encoders enhance performance in applications like Formula SAE vehicles by providing high-resolution feedback on motor position and velocity. These encoders generate continuous analog signals that represent the motor’s rotational position. Their design allows fine interpolation, improving the precision of position readings and reducing errors compared to standard incremental encoders. This precision is crucial in high-performance electric vehicles, where accurate position data ensures smooth motor control and efficient power usage, especially at high speeds.
+	Sine and cosine encoders enhance performance in applications like Formula SAE vehicles by providing high-resolution feedback on motor position and velocity. These encoders generate continuous analog signals that represent the motor’s rotational position. Their design allows fine interpolation, improving the precision of position readings and reducing errors compared to standard incremental encoders. This precision is crucial in high-performance electric vehicles, where accurate position data ensures smooth motor control and efficient power usage, especially at high speeds [2], [3].
 
-	One key advantage of sine-cosine encoders is their ability to use tan⁻¹ fine interpolation within a signal period, yielding higher accuracy in position readings. This reduces position error and ensures smoother control when the vehicle accelerates or decelerates. Additionally, sine-cosine encoders support high-resolution feedback loops, which enhance velocity control and stability, resulting in a more responsive and efficient drivetrain—important factors in racing scenarios​ [2].
+	One key advantage of sine-cosine encoders is their ability to use tan⁻¹ fine interpolation within a signal period, yielding higher accuracy in position readings. This reduces position error and ensures smoother control when the vehicle accelerates or decelerates. Additionally, sine-cosine encoders support high-resolution feedback loops, which enhance velocity control and stability, resulting in a more responsive and efficient drivetrain—important factors in racing scenarios​ [2], [3].
 
 **Motor Controller**
 	
@@ -332,30 +332,47 @@ In a multidisciplinary team, engineers must maintain professionalism, respecting
 7. Responsibility to Future Engineers and Society:
 The Formula SAE competition serves as a learning platform for future engineers. Ethical considerations include mentoring and educating less-experienced team members, ensuring that knowledge transfer happens responsibly. The design decisions made today also set a precedent for the future of automotive and electric vehicle engineering. Designing with long-term societal impact in mind, including promoting safer, more sustainable technologies, is an ethical obligation for engineers working on such projects.
 
+To address the consideration above, the following changes shall be implemented in our design:
 
-# Ethical, Professional, and Standards Considerations
-Designing the electronics for a Formula SAE car requires not only technical expertise but also adherence to a set of ethical, professional, and industry standards that ensure safety, integrity, and responsibility throughout the design and implementation process. These considerations include:
+1.Enhanced Safety Mechanisms:
 
-1. Safety and Risk Mitigation:
-The foremost ethical obligation in designing the car’s electronics is ensuring the safety of the driver, team members, and anyone interacting with the vehicle. High-voltage systems, such as the accumulator and motor subsystems, must be designed with robust safeguards, such as proper insulation, fail-safes, and emergency shutdown circuits. Ethical engineering practice mandates that potential hazards be identified early and mitigated through careful design and rigorous testing, including adherence to fail-safe principles like precharge and discharge circuits.
+	We may need to incorporate additional safety features or redundancies to mitigate risks.
 
-2. Compliance with Standards and Regulations:
-Formula SAE competition rules require compliance with specific technical and safety standards, including those related to high-voltage systems, wiring, and energy storage. Additionally, industry standards, such as those from the Institute of Electrical and Electronics Engineers (IEEE), International Electrotechnical Commission (IEC), and automotive standards like ISO 26262 (functional safety for road vehicles), guide the design and verification processes. Engineers must ensure that the car's electronics comply with these standards to prevent accidents and ensure the integrity of the competition.
+	Implementing more rigorous isolation measures around high-voltage systems to protect against electrical shock. This will be the shut down circuits in the subsystems specifications.
+        
+	Including overcurrent protection, such as fuses or circuit breakers, to prevent damage or dangerous situations in case of electrical faults.
 
-3. Environmental Responsibility:
-The shift toward electric vehicles (EVs), including Formula SAE electric cars, brings environmental responsibility into focus. Ethical design decisions should consider the environmental impact of materials used, energy efficiency, and waste management, including the disposal and recycling of electronic components and batteries. The design should aim to minimize the car’s ecological footprint while maximizing energy efficiency during operation.
+	Adding detailed interlock systems in the shutdown circuit to ensure rapid and safe disconnection in emergencies.
 
-4. Data Privacy and Security:
-As the electronics system collects data for vehicle performance monitoring, telemetry, and diagnostics, engineers must consider the ethical implications of data collection, storage, and usage. Ensuring the security of data, especially in the context of wireless communications or during competition, is critical to protect proprietary information and the privacy of the team.
+2. Increased Design Complexity to Meet Standards:
 
-5. Honesty and Transparency in Reporting:
-Engineers must practice honesty and transparency when documenting and reporting design decisions, performance metrics, and any faults or issues discovered during testing. Any potential risks or design limitations must be disclosed to avoid harm and ensure accountability. Ethical responsibility also involves not misrepresenting test results or overstating the capabilities of the system, as this can lead to dangerous situations in competition.
+	A modular design that simplifies testing and replacement, ensuring each component adheres to required safety and performance standards. Most of the components were already tested on the 2022 Zero FXE bike and were easily movable and replaceable. All that is needed is reassembling and connecting the components together [4].
+    
+	Adding a thermistor for monitoring critical parameters such as temperature and voltage in real time.
 
-6. Team Collaboration and Professionalism:
-In a multidisciplinary team, engineers must maintain professionalism, respecting the expertise and contributions of others while promoting an open and collaborative environment. Ethical considerations extend to the fair distribution of work, giving credit where due, and fostering a culture of continuous learning and ethical responsibility. Following professional codes of conduct, such as those outlined by the National Society of Professional Engineers (NSPE) or IEEE, ensures that team members act with integrity and responsibility.
+3. Environmental Considerations in Component Selection:
 
-7. Responsibility to Future Engineers and Society:
-The Formula SAE competition serves as a learning platform for future engineers. Ethical considerations include mentoring and educating less-experienced team members, ensuring that knowledge transfer happens responsibly. The design decisions made today also set a precedent for the future of automotive and electric vehicle engineering. Designing with long-term societal impact in mind, including promoting safer, more sustainable technologies, is an ethical obligation for engineers working on such projects.
+	Considering a design with minimal electronic waste. This was done by reusing the system 2022 Zero FXE  bike.
+
+4. Transparency in Documentation and Testing:
+
+	Ethical standards emphasize the accuracy and transparency of documentation.
+	Detailed, accessible design documentation that clearly outlines the functioning of each subsystem and records all design decisions. This is demonstrated in our GitHub documentation.
+
+	Clear records of test results and protocols, highlighting any potential system limitations or issues found during testing.
+
+5. Design for Knowledge Transfer and Team Continuity:
+
+	Since Formula SAE projects often pass to new team members each year, prioritizing clear, modular, and well-documented design can ease transitions.
+
+	A design that’s modular enough for easy component replacement, troubleshooting, and upgrades.
+    
+	Comprehensive user and maintenance guides that help future team members understand the system and make modifications without compromising safety or performance.
+
+
+
+
+
 
 # Resources
 
