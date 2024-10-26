@@ -111,7 +111,10 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A thermistor will be installed in the motor housing to monitor the temperature of the motor during operation. This sensor will provide real-time temperature data to the motor controller, allowing for thermal management and protection. If the temperature exceeds safe operating limits, the motor controller will take necessary actions such as reducing power output or initiating a system shutdown to prevent motor damage due to overheating.
 		3. Sine Encoder (Sin) and Cosine Encoder (Cos):<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The motor subsystem will include a sine and cosine encoder, which are critical for providing accurate rotor position feedback to the motor controller. These encoders will generate sine and cosine signals that correspond to the rotor’s angular position, allowing the controller to precisely adjust the current delivered to each phase. This ensures efficient and accurate torque generation, which is vital for both high-performance driving and smooth operation of the vehicle. The encoder system will also play a key role in controlling the motor's speed and synchronization, enabling seamless transitions in power delivery.
-Accurate rotor position feedback ensures the motor operates at peak efficiency, delivering the right amount of torque and preventing misalignment. This directly impacts vehicle performance, especially in terms of acceleration and handling during cornering.
+                
+	Sine and cosine encoders enhance performance in applications like Formula SAE vehicles by providing high-resolution feedback on motor position and velocity. These encoders generate continuous analog signals that represent the motor’s rotational position. Their design allows fine interpolation, improving the precision of position readings and reducing errors compared to standard incremental encoders. This precision is crucial in high-performance electric vehicles, where accurate position data ensures smooth motor control and efficient power usage, especially at high speeds.
+
+	One key advantage of sine-cosine encoders is their ability to use tan⁻¹ fine interpolation within a signal period, yielding higher accuracy in position readings. This reduces position error and ensures smoother control when the vehicle accelerates or decelerates. Additionally, sine-cosine encoders support high-resolution feedback loops, which enhance velocity control and stability, resulting in a more responsive and efficient drivetrain—important factors in racing scenarios​ [2].
 
 2. Motor Controller
 	
@@ -404,3 +407,5 @@ May 2: Project finished and ready to present
 
 # References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Oct 22, 2024)
+2. Kollmorgen, "FPGA-Based Sin/Cos Encoder Processing," Kollmorgen Developer Network, Accessed: Oct. 23, 2024. <https://www.kollmorgen.com/en-us/developer-network/fpga-based-sin-cos-encoder-processing>
+
