@@ -418,4 +418,6 @@ May 2: Project finished and ready to present
 # References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Oct 22, 2024)
 2. Kollmorgen, "FPGA-Based Sin/Cos Encoder Processing," Kollmorgen Developer Network, Accessed: Oct. 23, 2024. <https://www.kollmorgen.com/en-us/developer-network/fpga-based-sin-cos-encoder-processing>
+3. linearmotiontips, "What are the differences between incremental and sine-cosine encoders?" linearmotiontips.com, Accessed: Oct. 26, 2024. <https://www.linearmotiontips.com/differences-between-incremental-and-sine-cosine-encoders/>
+4. Zero Motorcycles, "Zero Motorcycles FXE", zeromotorcycles.com, Accessed: Oct. 26, 2024. <https://zeromotorcycles.com/model/zero-fxe>
 
