@@ -336,13 +336,13 @@ To address the consideration above, the following changes shall be implemented i
 
 1.Enhanced Safety Mechanisms:
 
-	We may need to incorporate additional safety features or redundancies to mitigate risks.
+   We may need to incorporate additional safety features or redundancies to mitigate risks.
 
-	Implementing more rigorous isolation measures around high-voltage systems to protect against electrical shock. This will be the shut down circuits in the subsystems specifications.
+   Implementing more rigorous isolation measures around high-voltage systems to protect against electrical shock. This will be the shut down circuits in the subsystems specifications.
         
-	Including overcurrent protection, such as fuses or circuit breakers, to prevent damage or dangerous situations in case of electrical faults.
+   Including overcurrent protection, such as fuses or circuit breakers, to prevent damage or dangerous situations in case of electrical faults.
 
-	Adding detailed interlock systems in the shutdown circuit to ensure rapid and safe disconnection in emergencies.
+   Adding detailed interlock systems in the shutdown circuit to ensure rapid and safe disconnection in emergencies.
 
 2. Increased Design Complexity to Meet Standards:
 
