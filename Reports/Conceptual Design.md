@@ -86,9 +86,9 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
 # High-Level Solution
 
 1. Hardware Block Diagram
-![Figure 2: Hardware Block Diagram](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Block%20Diagram.png)
+![Figure 2: Hardware Block Diagram](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Block%20Diagram%202.png)
 2. Operational Flow Chart
-![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Vehicle%20Flow%20Chart.png)
+![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Vehicle%20Flow%20Chart%202.png)
 
 # Atomic Subsystem Specifications
 1. Tractive System (High Voltage)​
@@ -419,21 +419,7 @@ Safety Compliance: Familiarity with Formula SAE regulations and experience in in
 
 **Timeline: Gaant Chart**
 
-A broad look at the current timeline of events is as follows:
-
-August – December 2024: Design Project
-January – May 2025: Build project
-A more detailed look at the current timeline of events is as follows:
-
-2024:
-
-October 28: Conceptual Design Finished
-November 30: Detailed Design Finished
-2025:
-
-January 20: Start putting the project together
-April 11: Have the planned project scope finished and ready for tweaking
-May 2: Project finished and ready to present
+![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Online%20Gantt%2020241026.png)
 
 
 
