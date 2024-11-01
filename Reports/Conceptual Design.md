@@ -237,10 +237,10 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
             1. Inertia Switch:  
 		An inertia switch is a simple switch device designed to stop the flow of electricity in the event of a hard impact. In the case for this system that will be a collision. So if a crash happens the inertia switch will open the shutdown circuit and thus disconnect the Accumulator.
                 
-            2. Shutdown Buttons:
+            2. Shutdown Buttons:  
             	The shutdown buttons are simple buttons that will open the shutdown circuit and thus disconnect the Accumulator.
             
-            3. HVD Interlock(s):
+            3. HVD Interlock(s):  
                 This device(s) provide an added safety measure to the car itself. The HVD Interlocks prevents someone from making contact to the high voltage in the system, as well as provided safety for when the high voltage is being disconnected.
 
 	2. Brake System Plausibility Device (BSPD)<br>
