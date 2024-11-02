@@ -393,20 +393,16 @@ The budget for the Formula SAE electric vehicle project is designed to cover cri
 
 
 
-2022 Zero FXE Motorcycle (Battery & Electric Motor): $7,050
+| Item                                              | Cost   |
+|---------------------------------------------------|--------|
+| 2022 Zero FXE Motorcycle (Battery & Electric Motor) | $7,050 |
+| Speed Controller                                  | $925   |
+| Aluminum Motor Plate                              | $125   |
+| Fire Blanket                                      | $120   |
+| Buckets to Hold Sand (3)                          | $75    |
+| DVT Configuration Software and Specialized Cable  | $650   |
+| **Total Current Budget**                          | **$8,945** |
 
-Speed Controller: $925
-
-Aluminum Motor Plate: $125
-
-Fire Blanket: $120
-
-Buckets to Hold Sand (3): $75
-
-DVT Configuration Software and Specialized Cable: $650
-
-Total Current Budget:
-$8,945
 
 
 **Required Skills**:
