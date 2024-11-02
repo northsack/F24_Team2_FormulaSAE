@@ -314,7 +314,7 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
           | GLV (-)         			 | DC Power        | Output    |
 
       - *Operation:*
-      The IMD shall monitor the insulation resistance between the high voltage system and the ground. If there were to be a fault in the high voltage systems of the vehicle, the IMD shall detect and open the shutdown circuit. When the IMD opens the shutdown circuit, a red indicator light turns on and stays on until the IMD is reset.
+      The IMD shall monitor the insulation resistance between the high voltage system and the ground. If there were to be a fault in the high voltage systems of the vehicle, the IMD shall detect and open the shutdown circuit. When the IMD opens the shutdown circuit, a red indicator light shall turn on and stay on until the IMD is reset.
 
 # Ethical, Professional, and Standards Considerations
 Designing the electronics for a Formula SAE car requires not only technical expertise but also adherence to a set of ethical, professional, and industry standards that ensure safety, integrity, and responsibility throughout the design and implementation process. These considerations include:
