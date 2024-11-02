@@ -235,13 +235,13 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
           	The shutdown circuit is responsible for cutting off power at the high voltage source (The Accumulator) in the event of a failure or misalignment in one of the other systems that power or drive the car. The shutdown circuit consists of other subsystems which will be described in their own section. The rest of the components are as follows:
             
             1. Inertia Switch:  
-		An inertia switch is a simple switch device designed to stop the flow of electricity in the event of a hard impact. In the case for this system that will be a collision. So if a crash happens the inertia switch will open the shutdown circuit and thus disconnect the Accumulator.
+		An inertia switch is a simple switch device designed to stop the flow of electricity in the event of a hard impact. In the case for this system that will be a collision. So if a crash happens the inertia switch shall open the shutdown circuit and thus disconnect the Accumulator.
                 
             2. Shutdown Buttons:  
-            	The shutdown buttons are simple buttons that will open the shutdown circuit and thus disconnect the Accumulator.
+            	The shutdown buttons are simple buttons that shall open the shutdown circuit and thus disconnect the Accumulator.
             
             3. HVD Interlock(s):  
-                This device(s) provide an added safety measure to the car itself. The HVD Interlocks prevents someone from making contact to the high voltage in the system, as well as provided safety for when the high voltage is being disconnected.
+                This device(s) provide an added safety measure to the car itself. The HVD Interlocks shall prevent someone from making contact to the high voltage in the system, as well as provided safety for when the high voltage is being disconnected.
 
 	**2. Brake System Plausibility Device (BSPD):**<br>
 
@@ -256,47 +256,47 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
         | GVL (-)         			 | DC Power        | Output     |
 
       - *Operation*<br>
-         The Brake System Plausibility Device (BSPD) serves as an essential safety mechanism that oversees the braking system to avert hazardous situations, such as the simultaneous application of brakes and high power output. The following outlines its components and operational principles:
+         The Brake System Plausibility Device (BSPD) serves as an essential safety mechanism that shall oversee the braking system to avert hazardous situations, such as the simultaneous application of brakes and high power output. The following outlines its components and operational principles:
          1. Brake System Encoder:
 
-         The BSPD guarantees that high power output from the tractive system is not permitted when the brakes are engaged, thereby preventing the vehicle from accelerating during braking, which poses significant safety risks. Should braking be detected while power output surpasses 5 kW, the BSPD activates the vehicle’s shutdown circuit.
+         The BSPD guarantees that high power output from the tractive system is not permitted when the brakes are engaged, thereby preventing the vehicle from accelerating during braking, which poses significant safety risks. Should braking be detected while power output surpasses 5 kW, the BSPD shall open the vehicle’s shutdown circuit.
 
          2. Brake Detection Mechanism
 
-         The BSPD continuously monitors the brake pedal position sensor to ascertain when the brake pedal is engaged. Upon application of the brakes, the BSPD evaluates the power output from the motor or accumulator to verify if the system is drawing more than 5 kW of power.
+         The BSPD continuously monitors the brake pedal position sensor to ascertain when the brake pedal is engaged. Upon application of the brakes, the BSPD shall evaluate the power output from the motor or accumulator to verify if the system is drawing more than 5 kW of power.
 
          3.  Monitoring Power Output
 
-         The BSPD is responsible for overseeing the electrical power delivered to the motor via the tractive system. If the power output exceeds 5 kW while the brakes are applied, the BSPD recognizes this as a fault condition.
+         The BSPD is responsible for overseeing the electrical power delivered to the motor via the tractive system. If the power output exceeds 5 kW while the brakes are applied, the BSPD shall recognize this as a fault condition.
 
          4.  Activation of Shutdown Circuit
 
-         In instances where braking occurs concurrently with high power output, the BSPD activates the shutdown circuit, thereby disconnecting power to the tractive system and preventing the motor from receiving additional high voltage. This process is automatic and does not require driver intervention, ensuring a prompt response to potentially unsafe conditions.
+         In instances where braking occurs concurrently with high power output, the BSPD shall open the shutdown circuit, thereby disconnecting power to the tractive system and preventing the motor from receiving additional high voltage. This process is automatic and does not require driver intervention, ensuring a prompt response to potentially unsafe conditions.
 
          5.  Autonomous Functionality
 
-         The BSPD functions as an independent, non-programmable device, distinct from the vehicle’s other electronic control units (ECUs), which enhances its reliability even in the event of failures in other systems. Its separation from software or programmable components further bolsters its safety profile.
+         The BSPD shall function as an independent, non-programmable device, distinct from the vehicle’s other electronic control units (ECUs), which enhances its reliability even in the event of failures in other systems. Its separation from software or programmable components further bolsters its safety profile.
 
          6. BSPD Indicator Light
 
-         When the BSPD is activated, an indicator light is illuminated to inform the driver and pit crew of the shutdown event. This light is clearly marked "BSPD" and is strategically located on the vehicle's dashboard within the driver’s line of sight.
+         When the BSPD is activated, an indicator light shall be illuminated to inform the driver and pit crew of the shutdown event. This light shall be clearly marked "BSPD" and strategically located on the vehicle's dashboard within the driver’s line of sight.
 
          7. Reset Procedure
 
-         After the BSPD has triggered the shutdown circuit, it must be manually reset before the vehicle can resume operation. This ensures that the fault condition has been properly addressed before the vehicle is restarted.
+         After the BSPD has triggered the shutdown circuit, it shall be manually reset before the vehicle can resume operation. This ensures that the fault condition has been properly addressed before the vehicle is restarted.
 
          8. Brake System Encoder 
 
          The Brake System Encoder plays a crucial role in precisely identifying the position of the brake pedal and transmitting this information to the vehicle's control systems. An overview of its components and functionality is presented below:<br>
 
          1. Brake Pedal Position Detection:  
-            The Brake System Encoder is affixed to the brake pedal assembly, where it gauges the position of the pedal during operation. It transforms the mechanical movement of the brake pedal into an electrical signal, delivering accurate data regarding the extent of braking force applied by the driver.
+            The Brake System Encoder is affixed to the brake pedal assembly, where it gauges the position of the pedal during operation. It shall transform the mechanical movement of the brake pedal into an electrical signal, delivering accurate data regarding the extent of braking force applied by the driver.
 
          2. Signal Relay:  
-            The encoder transmits the brake position signal to the vehicle's control system, which includes the Brake System Plausibility Device (BSPD). This signal is essential for determining the activation of braking, enabling the BSPD to effectively evaluate the system's safety. 
+            The encoder shall transmit the brake position signal to the vehicle's control system, which includes the Brake System Plausibility Device (BSPD). This signal is essential for determining the activation of braking, enabling the BSPD to effectively evaluate the system's safety. 
 
         3. Continuous Monitoring:  
-            The Brake System Encoder perpetually tracks the brake pedal position in real time, facilitating an immediate response from the control system to any variations in braking force. This capability ensures that the vehicle behaves responsively, particularly in critical safety scenarios such as abrupt braking or simultaneous braking with high power output.
+            The Brake System Encoder shall perpetually track the brake pedal position in real time, facilitating an immediate response from the control system to any variations in braking force. This capability ensures that the vehicle behaves responsively, particularly in critical safety scenarios such as abrupt braking or simultaneous braking with high power output.
         
 	**3. Insulation Monitoring Device (IMD):**
       - *Interface with other subsystems:*
@@ -314,7 +314,7 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
           | GLV (-)         			 | DC Power        | Output    |
 
       - *Operation:*
-      The IMD monitors the insulation resistance between the high voltage system and the ground. If there were to be a fault in the high voltage systems of the vehicle, the IMD would detect it and open the shutdown circuit. When the IMD opens the shutdown circuit, a red indicator light turns on and stays on until the IMD is reset.
+      The IMD shall monitor the insulation resistance between the high voltage system and the ground. If there were to be a fault in the high voltage systems of the vehicle, the IMD shall detect and open the shutdown circuit. When the IMD opens the shutdown circuit, a red indicator light turns on and stays on until the IMD is reset.
 
 # Ethical, Professional, and Standards Considerations
 Designing the electronics for a Formula SAE car requires not only technical expertise but also adherence to a set of ethical, professional, and industry standards that ensure safety, integrity, and responsibility throughout the design and implementation process. These considerations include:
