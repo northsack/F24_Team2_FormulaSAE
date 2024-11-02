@@ -88,7 +88,7 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
 1. Hardware Block Diagram
 ![Figure 2: Hardware Block Diagram](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Block%20Diagram%203.png)
 2. Operational Flow Chart
-![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Vehicle%20Flow%20Chart%202.png)
+![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Vehicle%20Flow%20Chart%203.png)
 
 # Atomic Subsystem Specifications
 1. Tractive System (High Voltage)​
