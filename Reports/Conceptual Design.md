@@ -342,40 +342,43 @@ The Formula SAE competition serves as a learning platform for future engineers. 
 
 To address the consideration above, the following changes shall be implemented in our design:
 
-1.Enhanced Safety Mechanisms:
+1. Enhanced Safety Mechanisms:
 
-   We may need to incorporate additional safety features or redundancies to mitigate risks.
+	a. We may need to incorporate additional safety features or redundancies to mitigate risks. Implementing more rigorous isolation measures around high-voltage systems to protect against electrical shock. This will be the shut down circuits in the subsystems specifications.
+   
+	b. Including overcurrent protection, such as fuses or circuit breakers, to prevent damage or dangerous situations in case of electrical faults.
 
-   Implementing more rigorous isolation measures around high-voltage systems to protect against electrical shock. This will be the shut down circuits in the subsystems specifications.
-        
-   Including overcurrent protection, such as fuses or circuit breakers, to prevent damage or dangerous situations in case of electrical faults.
-
-   Adding detailed interlock systems in the shutdown circuit to ensure rapid and safe disconnection in emergencies.
+	c. Adding detailed interlock systems in the shutdown circuit to ensure rapid and safe disconnection in emergencies.
 
 2. Increased Design Complexity to Meet Standards:
 
-	A modular design that simplifies testing and replacement, ensuring each component adheres to required safety and performance standards. Most of the components were already tested on the 2022 Zero FXE bike and were easily movable and replaceable. All that is needed is reassembling and connecting the components together [4].
+	a. A modular design that simplifies testing and replacement, ensuring each component adheres to required safety and performance standards. Most of the components were already tested on the 2022 Zero FXE bike and were easily movable and replaceable. All that is needed is reassembling and connecting the components together [4].
     
-	Adding a thermistor for monitoring critical parameters such as temperature and voltage in real time.
+	b. Adding a thermistor for monitoring critical parameters such as temperature and voltage in real time.
 
 3. Environmental Considerations in Component Selection:
 
-	Considering a design with minimal electronic waste. This was done by reusing the system 2022 Zero FXE  bike.
+	a. Considering a design with minimal electronic waste. This was done by reusing the system 2022 Zero FXE  bike.
 
 4. Transparency in Documentation and Testing:
 
-	Ethical standards emphasize the accuracy and transparency of documentation.
+	a. Ethical standards emphasize the accuracy and transparency of documentation.
 	Detailed, accessible design documentation that clearly outlines the functioning of each subsystem and records all design decisions. This is demonstrated in our GitHub documentation.
-
-	Clear records of test results and protocols, highlighting any potential system limitations or issues found during testing.
+    
+	b. Clear records of test results and protocols, highlighting any potential system 	  limitations or issues found during testing.
 
 5. Design for Knowledge Transfer and Team Continuity:
 
-	Since Formula SAE projects often pass to new team members each year, prioritizing clear, modular, and well-documented design can ease transitions.
+	a. Since Formula SAE projects often pass to new team members each year, prioritizing clear, modular, and well-documented design can ease transitions.
 
-	A design that’s modular enough for easy component replacement, troubleshooting, and upgrades.
+	b. A design that’s modular enough for easy component replacement, troubleshooting, and upgrades.
     
-	Comprehensive user and maintenance guides that help future team members understand the system and make modifications without compromising safety or performance.
+	c. Comprehensive user and maintenance guides that help future team members understand the system and make modifications without compromising safety or performance.
+
+
+
+
+
 
 
 
