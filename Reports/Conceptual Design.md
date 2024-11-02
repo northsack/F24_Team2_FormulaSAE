@@ -393,15 +393,32 @@ The budget for the Formula SAE electric vehicle project is designed to cover cri
 
 
 
-| Item                                              | Cost   |
-|---------------------------------------------------|--------|
-| 2022 Zero FXE Motorcycle (Battery & Electric Motor) | $7,050 |
-| Speed Controller                                  | $925   |
-| Aluminum Motor Plate                              | $125   |
-| Fire Blanket                                      | $120   |
-| Buckets to Hold Sand (3)                          | $75    |
-| DVT Configuration Software and Specialized Cable  | $650   |
-| **Total Current Budget**                          | **$8,945** |
+| Description                                | Quantity | Unit Cost | Total     |
+|--------------------------------------------|----------|-----------|-----------|
+| **COE Lab Request/ Sponsorship**           |          |           | **$1,600.40** |
+| Start Up Tools/ Safety                     |          |           | $1,600.40 |
+| U.S. General 30 in., 5-Drawer Mechanics Cart, Green |        |           | $279.00   |
+| Kobalt 300-Piece Standard and Metric Tool Set |       |           | $249.00   |
+| Kobalt 10-Piece Assorted Pliers            |          |           | $49.98    |
+| Kobalt 18-Piece Plastic Handle Magnetic Screwdriver Set | |       | $19.98    |
+| Sevcon DVT Configuration Software & IXXAT Cable |    |           | $502.32   |
+| McMaster-Carr Vehicle Wire Assortments     |          |           | $47.00    |
+| Jrready ST6359 Deutsch Connector Kit       |          |           | $185.00   |
+| Sevcon Wiring Harness -- Dual Signal Throttle |     |           | $268.12   |
+| Battery Blanket                            | 2        | $109.00   | $218.00    |
+| Tractive system active light               |          |           | $60.00     |
+| Buzzer for tractive system active          |          |           | $63.00     |
+| ISOMETER® IR155 3204 (IMD)                 |          |           | $25.00     |
+| Sensata Resettable Crash Sensor (Inertia Switch) | |           | $60.00     |
+| HT-010402 Throttle Position Sensor         | 2        | $160.00   | $320.00    |
+| T-Shirts work Shirts                       | 20       | $50.00    | $1,000.00   |
+| Dress Shirts                               | 20       | $50.00    | $1,000.00   |
+| Office Supplies                            |          |           | $200.00     |
+| Presentation Material                      |          |           | $400.00     |
+| Design Competition Banners                 |          |           | $750.00     |
+| SAE mandated and sponsor decals            |          |           | $850.00     |
+| **COE Budget Total**                       |          |           | **$6,546.40** |
+
 
 
 
