@@ -86,7 +86,7 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
 # High-Level Solution
 
 1. Hardware Block Diagram
-![Figure 2: Hardware Block Diagram](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Block%20Diagram%202.png)
+![Figure 2: Hardware Block Diagram](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Block%20Diagram%203.png)
 2. Operational Flow Chart
 ![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Vehicle%20Flow%20Chart%202.png)
 
@@ -435,7 +435,7 @@ Safety Compliance: Familiarity with Formula SAE regulations and experience in in
 
 **Timeline: Gaant Chart**
 
-![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Online%20Gantt%2020241026.png)
+![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Online%20Gantt%2020241102.png)
 
 
 
