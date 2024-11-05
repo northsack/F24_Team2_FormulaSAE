@@ -91,150 +91,169 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
 ![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Vehicle%20Flow%20Chart%204.png)
 
 # Atomic Subsystem Specifications
-1. Tractive System (High Voltage)​
-   	
-	1. Motor
-		- *Interface with other subsystems*
-		
-			| Connection     | Connection Type | Direction |
-			| -------------- | --------------- | --------- |
-			| Phase A        | AC Power        | Input     |
-			| Phase B        | AC Power        | Input     |
-			| Phase C        | AC Power        | Input     |
-			| Thermistor     | Analog          | Output    |
-			| Sine Encoder   | Analog          | Output    |
-			| Cosine Encoder | Analog          | Output    |
+#### 1. Tractive System (High Voltage):  
+The high voltage system will also be the tractive system of the car, which deals with driving the motor, controlling the motor, powering the motor, and providing feedback, of what is and is not working, to the driver.  
+- **Motor:**
+  - *Interface with other subsystems*
 
-		1. Three-Phase Inputs (Phase A, Phase B, Phase C):<br>
-				The motor subsystem will be powered by a three-phase AC system, with Phase A, Phase B, and Phase C providing the alternating current required for motor operation. These inputs will work in synchronization to generate a rotating magnetic field inside the motor, driving the rotor and generating mechanical power to move the vehicle. These phases will be monitored and controlled by the motor controller to ensure smooth and efficient operation of the motor. Proper balancing of these phases is essential for optimal performance and to prevent overheating or damage to the motor windings.
-		2. Thermistor (Temperature Monitoring):<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A thermistor will be installed in the motor housing to monitor the temperature of the motor during operation. This sensor will provide real-time temperature data to the motor controller, allowing for thermal management and protection. If the temperature exceeds safe operating limits, the motor controller will take necessary actions such as reducing power output or initiating a system shutdown to prevent motor damage due to overheating.
-		3. Sine Encoder (Sin) and Cosine Encoder (Cos):<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The motor subsystem will include a sine and cosine encoder, which are critical for providing accurate rotor position feedback to the motor controller. These encoders will generate sine and cosine signals that correspond to the rotor’s angular position, allowing the controller to precisely adjust the current delivered to each phase. This ensures efficient and accurate torque generation, which is vital for both high-performance driving and smooth operation of the vehicle. The encoder system will also play a key role in controlling the motor's speed and synchronization, enabling seamless transitions in power delivery.
-                
-	Sine and cosine encoders enhance performance in applications like Formula SAE vehicles by providing high-resolution feedback on motor position and velocity. These encoders generate continuous analog signals that represent the motor’s rotational position. Their design allows fine interpolation, improving the precision of position readings and reducing errors compared to standard incremental encoders. This precision is crucial in high-performance electric vehicles, where accurate position data ensures smooth motor control and efficient power usage, especially at high speeds [2], [3].
+      | Connection     | Connection Type | Direction |
+      | -------------- | --------------- | --------- |
+      | Phase A        | AC Power        | Input     |
+      | Phase B        | AC Power        | Input     |
+      | Phase C        | AC Power        | Input     |
+      | Thermistor     | Analog          | Output    |
+      | Sine Encoder   | Analog          | Output    |
+      | Cosine Encoder | Analog          | Output    |
+  - *Operation:*  
+  	1. Three-Phase Inputs (Phase A, Phase B, Phase C):  
+  The motor subsystem will be powered by a three-phase AC system, with Phase A, Phase B, and Phase C providing the alternating current required for motor operation. These inputs will work in synchronization to generate a rotating magnetic field inside the motor, driving the rotor and generating mechanical power to move the vehicle. These phases will be monitored and controlled by the motor controller to ensure smooth and efficient operation of the motor. Proper balancing of these phases is essential for optimal performance and to prevent overheating or damage to the motor windings.
+          
+  	2. Thermistor (Temperature Monitoring):  
+  A thermistor will be installed in the motor housing to monitor the temperature of the motor during operation. This sensor will provide real-time temperature data to the motor controller, allowing for thermal management and protection. If the temperature exceeds safe operating limits, the motor controller will take necessary actions such as reducing power output or initiating a system shutdown to prevent motor damage due to overheating.
+  
+  	3. Sine Encoder (Sin) and Cosine Encoder (Cos):  
+  The motor subsystem will include a sine and cosine encoder, which are critical for providing accurate rotor position feedback to the motor controller. These encoders will generate sine and cosine signals that correspond to the rotor’s angular position, allowing the controller to precisely adjust the current delivered to each phase. This ensures efficient and accurate torque generation, which is vital for both high-performance driving and smooth operation of the vehicle. The encoder system will also play a key role in controlling the motor's speed and synchronization, enabling seamless transitions in power delivery.  
+  Sine and cosine encoders enhance performance in applications like Formula SAE vehicles by providing high-resolution feedback on motor position and velocity. These encoders generate continuous analog signals that represent the motor’s rotational position. Their design allows fine interpolation, improving the precision of position readings and reducing errors compared to standard incremental encoders. This precision is crucial in high-performance electric vehicles, where accurate position data ensures smooth motor control and efficient power usage, especially at high speeds [2], [3].  
+  One key advantage of sine-cosine encoders is their ability to use tan⁻¹ fine interpolation within a signal period, yielding higher accuracy in position readings. This reduces position error and ensures smoother control when the vehicle accelerates or decelerates. Additionally, sine-cosine encoders support high-resolution feedback loops, which enhance velocity control and stability, resulting in a more responsive and efficient drivetrain—important factors in racing scenarios​ [2], [3].
 
-	One key advantage of sine-cosine encoders is their ability to use tan⁻¹ fine interpolation within a signal period, yielding higher accuracy in position readings. This reduces position error and ensures smoother control when the vehicle accelerates or decelerates. Additionally, sine-cosine encoders support high-resolution feedback loops, which enhance velocity control and stability, resulting in a more responsive and efficient drivetrain—important factors in racing scenarios​ [2], [3].
+- **Motor Controller:**
+  - *Interface with other subsystems*
 
-	2. *Motor Controller*
-		- *Interface with other subsystems*
-		
-        	| Connection     | Connection Type | Direction |
-			| -------------- | --------------- | --------- |
-			| Battery		 | DC Power        | Input     |
-			| Low Voltage    | DC Power        | Input     |
-			| APP 1          | Analog          | Input     |  
-			| App 2     	 | Analog          | Input     |   
-			| BSE            | Analog          | Input     |  
-			| Phase A        | AC Power        | Output    |   
-			| Phase B        | AC Power        | Output    |   
-			| Phase C        | AC Power        | Output    |    
-			| Thermistor     | Analog          | Input     |   
-			| Sine Encoder   | Analog          | Input     | 
-			| Cosine Encoder | Analog          | Input     |
-           
-	a. Power Regulation:
-			The motor controller is responsible for regulating the direct current (DC) power sourced from the energy storage unit, converting it to alternating current (AC) power when interfacing with an AC motor, or managing the DC power for a DC motor. This regulation allows for the modulation of the motor's speed and torque. It meticulously adjusts the voltage and current delivered to the motor in response to the driver's throttle input, promoting seamless acceleration and optimal power distribution.
+      | Connection     | Connection Type | Direction |
+      | -------------- | --------------- | --------- |
+      | Battery		 | DC Power        | Input     |
+      | Low Voltage    | DC Power        | Input     |
+      | APP 1          | Analog          | Input     |  
+      | App 2     	 | Analog          | Input     |   
+      | BSE            | Analog          | Input     |  
+      | Phase A        | AC Power        | Output    |   
+      | Phase B        | AC Power        | Output    |   
+      | Phase C        | AC Power        | Output    |    
+      | Thermistor     | Analog          | Input     |   
+      | Sine Encoder   | Analog          | Input     | 
+      | Cosine Encoder | Analog          | Input     |
 
-	b. Torque and Speed Control: 
-			The motor controller plays a crucial role in managing the torque produced by the motor by varying the current supplied, which allows for precise control over the power output directed to the vehicle's wheels. Furthermore, it regulates the rotational speed of the motor, ensuring that the vehicle can reach its maximum speed of 60 miles per hour while operating efficiently across diverse driving scenarios, from rapid acceleration to steady cruising.
+  - *Operation:*  
+  	1. Power Regulation:  
+  The motor controller is responsible for regulating the direct current (DC) power sourced from the energy storage unit, converting it to alternating current (AC) power when interfacing with an AC motor, or managing the DC power for a DC motor. This regulation allows for the modulation of the motor's speed and torque. It meticulously adjusts the voltage and current delivered to the motor in response to the driver's throttle input, promoting seamless acceleration and optimal power distribution.
 
-	c. Safety and Shutdown Functionality:
-			Integrated within the shutdown system, the motor controller ensures that in the event of a malfunction—such as overheating, excessive current draw, or a failure in the Brake System Plausibility Device—the system can promptly disconnect power to the motor, thereby averting further operation. Additionally, the motor controller is equipped with multiple safety features, including overvoltage, overcurrent, and thermal protection mechanisms, to safeguard the motor and other components of the powertrain from potential damage.
+  	2. Torque and Speed Control:  
+  The motor controller plays a crucial role in managing the torque produced by the motor by varying the current supplied, which allows for precise control over the power output directed to the vehicle's wheels. Furthermore, it regulates the rotational speed of the motor, ensuring that the vehicle can reach its maximum speed of 60 miles per hour while operating efficiently across diverse driving scenarios, from rapid acceleration to steady cruising.
 
-	d. Thermal Management 
-			During operation, particularly under high load conditions, the motor controller generates heat. It is essential for the controller to incorporate a thermal management system, whether through air or liquid cooling, to sustain optimal operating temperatures and prevent overheating during high-power demands or extended operational periods.
+  	3. Safety and Shutdown Functionality:  
+  Integrated within the shutdown system, the motor controller ensures that in the event of a malfunction—such as overheating, excessive current draw, or a failure in the Brake System Plausibility Device—the system can promptly disconnect power to the motor, thereby averting further operation. Additionally, the motor controller is equipped with multiple safety features, including overvoltage, overcurrent, and thermal protection mechanisms, to safeguard the motor and other components of the powertrain from potential damage.
 
-	e. Control Algorithms and Efficiency 
-			The motor controller employs sophisticated control algorithms, such as Field-Oriented Control for AC motors, to enhance performance and efficiency. These algorithms are designed to optimize the motor's response and energy consumption, contributing to the overall effectiveness of the electric powertrain.
+  	4. Thermal Management:  
+  During operation, particularly under high load conditions, the motor controller generates heat. It is essential for the controller to incorporate a thermal management system, whether through air or liquid cooling, to sustain optimal operating temperatures and prevent overheating during high-power demands or extended operational periods.
+
+  	5. Control Algorithms and Efficiency:  
+  The motor controller employs sophisticated control algorithms, such as Field-Oriented Control for AC motors, to enhance performance and efficiency. These algorithms are designed to optimize the motor's response and energy consumption, contributing to the overall effectiveness of the electric powertrain.
 
  
-3. Accumulator:
-    - *Interface with other subsystems:*
-    
-    <br>**High Voltage Connections**
-    
-	| Connection                                         | Connection Type | Direction |
-	|----------------------------------------------------|-----------------|-----------|
-	| Motor Controller (+) and (-) Terminals             | DC Power        | Output    |
-	| Insulation Monitoring Device (+) and (-) Terminals | DC Power        | Output    |
+- **Accumulator:**
+  - *Interface with other subsystems:*
+  
+  	**High Voltage Connections**
+
+    | Connection                                         | Connection Type | Direction |
+    |----------------------------------------------------|-----------------|-----------|
+    | Motor Controller (+) and (-) Terminals             | DC Power        | Output    |
+    | Insulation Monitoring Device (+) and (-) Terminals | DC Power        | Output    |
 
     <br>**Low Voltage Connections**
-	| Connection                                         | Connection Type | Direction |
-	|----------------------------------------------------|-----------------|-----------|
-	| Shutdown Circuit (+) and (-)             	     | DC Power        | Input     |
+    | Connection                                         | Connection Type | Direction |
+    |----------------------------------------------------|-----------------|-----------|
+    | Shutdown Circuit (+) and (-)             	     | DC Power        | Input     |
 
    - *Operation:*
 	   The accumulator subsystem is responsible for providing high voltage power to the motor and motor controller of the vehicle.  A breakdown of the systems of the Accumulator are as follows:
-		1. Accumulator Isolation Relays:<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Relays shall be used inside of the Accumulator container to control the power provided to the external connectors of the Accumulator.  Power shall only be provided to the external terminals when the Shutdown Circuit is closed (vehicle is ready to drive).  The AIRs shall be used to control both the positive and negative terminals of the Accumulator. The AIRs shall be normally open.
-		2. Precharge Circuit:<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As part of the motor controller's design, capacitors are installed at the main high voltage terminals.  When the Accumulator Isolation Relays (AIRs) are closed (High Voltage (HV) power is turned on), and power is provided to the motor controller.  Without a Precharge Circuit, thousands of Amps can flow through the wires to charge the capacitors inside the motor controller when the AIRs close.  This can be dangerous because it can prematurely wear the AIRs, and possibly even weld the terminals of the AIRs together, preventing proper operation.  To prevent this, the Accumulator shall have a system designed to precharge the HV system to 90% of the Accumulator voltage before closing the AIRs.
-		3. Discharge Circuit:<br>
-		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The accumulator shall contain a circuit that can discharge the same capacitors mentioned in statement **b** above.  When the shutdown circuit is open (vehicle is shutting down), the AIRs shall open, and the Discharge Circuit shall safely discharge the capacitors inside of the motor controller.
-		4. Voltage Indicator:<br> 
-		     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Accumulator shall have an Indicator that will illuminate when high voltage is present on the external terminals of the accumulator container.  This Indicator shall be controlled by hardware and not software.  Addionally, the Voltage Indicator shall be installed where it can be seen while connecting the Accumulator to the HV Circuit.  The Voltage Indicator shall also be labelled "High Voltage Present."
-		5. Accumulator Management System (AMS):<br> 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A system shall be built to monitor the conditions of the accumulator.  This system must monitor the Accumulator while the Tractive System is active, and also while the Accumulator is charging.  If a fault is detected in one of the monitored conditions, the AMS shall open the vehicle's shutdown circuit, cutting off the HV power to the Tractive System.  Additionally, on the occurrence of a fault, the AMS shall turn on the AMS indicator light which shall be a red LED that is visible to the driver of the vehicle and marked with the lettering "AMS".  The AMS shall monitor the following conditions
-				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. HV Voltage values
-				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Protection devices tripped or blown
-				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Temperatures outside of the normal range of operation
+		1. Accumulator Isolation Relays:  
+		Relays shall be used inside of the Accumulator container to control the power provided to the external connectors of the Accumulator.  Power shall only be provided to the external terminals when the Shutdown Circuit is closed (vehicle is ready to drive).  The AIRs shall be used to control both the positive and negative terminals of the Accumulator. The AIRs shall be normally open.
+		2. Precharge Circuit:  
+		As part of the motor controller's design, capacitors are installed at the main high voltage terminals.  When the Accumulator Isolation Relays (AIRs) are closed (High Voltage (HV) power is turned on), and power is provided to the motor controller.  Without a Precharge Circuit, thousands of Amps can flow through the wires to charge the capacitors inside the motor controller when the AIRs close.  This can be dangerous because it can prematurely wear the AIRs, and possibly even weld the terminals of the AIRs together, preventing proper operation.  To prevent this, the Accumulator shall have a system designed to precharge the HV system to 90% of the Accumulator voltage before closing the AIRs.
+            
+		3. Discharge Circuit:  
+		The accumulator shall contain a circuit that can discharge the same capacitors mentioned in statement **b** above.  When the shutdown circuit is open (vehicle is shutting down), the AIRs shall open, and the Discharge Circuit shall safely discharge the capacitors inside of the motor controller.
+            
+		4. Voltage Indicator:  
+		The Accumulator shall have an Indicator that will illuminate when high voltage is present on the external terminals of the accumulator container.  This Indicator shall be controlled by hardware and not software.  Addionally, the Voltage Indicator shall be installed where it can be seen while connecting the Accumulator to the HV Circuit.  The Voltage Indicator shall also be labelled "High Voltage Present."
+             
+		5. Accumulator Management System (AMS):  
+		A system shall be built to monitor the conditions of the accumulator.  This system must monitor the Accumulator while the Tractive System is active, and also while the Accumulator is charging.  If a fault is detected in one of the monitored conditions, the AMS shall open the vehicle's shutdown circuit, cutting off the HV power to the Tractive System.  Additionally, on the occurrence of a fault, the AMS shall turn on the AMS indicator light which shall be a red LED that is visible to the driver of the vehicle and marked with the lettering "AMS".  The AMS shall monitor the following conditions  
+            1. HV Voltage values
+            2. Protection devices tripped or blown
+            3. Temperatures outside of the normal range of operation
 	
- 5. **Tractive System Active Light (TSAL):**
+ - **Tractive System Active Light (TSAL):**  
+ 	- *Interface with other subsystems:*
+  
+      **High Voltage Connections**
 
-The Tractive System Active Light (TSAL) is a critical safety feature required by Formula SAE Electric rules to indicate when the vehicle’s high-voltage tractive system is live and energized. The purpose of the TSAL is to alert team members, track officials, and nearby personnel that the vehicle’s high-voltage system is active, ensuring safe handling and operation at all times.
+      | Connection                                         | Connection Type | Direction |
+      |----------------------------------------------------|-----------------|-----------|
+      | Accumulator            | AC Power       | Input    |
 
-**Design Requirements:**
-
+      <br>**Low Voltage Connections**
+      | Connection                                         | Connection Type | Direction |
+      |----------------------------------------------------|-----------------|-----------|
+      | Shutdown Circuit (+)             	     | DC Power        | Input     |
+    
+      The Tractive System Active Light (TSAL) is a critical safety feature required by Formula SAE Electric rules to indicate when the vehicle’s high-voltage tractive system is live and energized. The purpose of the TSAL is to alert team members, track officials, and nearby personnel that the vehicle’s high-voltage system is active, ensuring safe handling and operation at all times.  
+      
+      Design Requirements:  
 The TSAL must be clearly visible to all individuals in proximity to the vehicle.
 The light shall illuminate when the tractive system voltage exceeds 60V.
 It must be controlled entirely by hardware and not by software, ensuring it remains functional even during software or system failures.
-The TSAL must be located such that it is visible from all angles while the vehicle is being worked on or during operation on the track.
+The TSAL must be located such that it is visible from all angles while the vehicle is being worked on or during operation on the track.  
 
-**Operation:**
-
-When the accumulator is connected to the motor and the tractive system is powered, the TSAL will automatically turn on to indicate the presence of high voltage.
-Once the shutdown circuit is triggered and the tractive system is no longer active, the TSAL will turn off, signaling that the high-voltage components are safe to interact with.
-Safety Compliance:
-
+		Safety Compliance:  
 The TSAL ensures compliance with Formula SAE Electric rules, which mandate the use of an indicator light to signal an active high-voltage tractive system. This is a key aspect of the safety system, reducing the risk of accidental exposure to high-voltage components.
 
-7. **Charger**  
+	- Operation:  
+When the accumulator is connected to the motor and the tractive system is powered, the TSAL will automatically turn on to indicate the presence of high voltage.
+Once the shutdown circuit is triggered and the tractive system is no longer active, the TSAL will turn off, signaling that the high-voltage components are safe to interact with.
 
-The charger serves the essential function of safely recharging the accumulator (battery pack) of the Formula SAE electric vehicle. Its significance lies in maintaining the energy levels of the high-voltage battery, thereby ensuring the vehicle's readiness for endurance competitions and testing scenarios. The design of the charging system must adhere to safety regulations while optimizing operational efficiency.  
+- **Charger:**  
+	- *Interface with other subsystems:*
+  
+      **High Voltage Connections**
 
-**Design Requirements:**  
-
+      | Connection                                         | Connection Type | Direction |
+      |----------------------------------------------------|-----------------|-----------|
+      | Accumulator            | AC Power       | Output    |
+        
+        The charger serves the essential function of safely recharging the accumulator (battery pack) of the Formula SAE electric vehicle. Its significance lies in maintaining the energy levels of the high-voltage battery, thereby ensuring the vehicle's readiness for endurance competitions and testing scenarios. The design of the charging system must adhere to safety regulations while optimizing operational efficiency.  
+        
+        Design Requirements:  
 The charger must align with the voltage and current specifications of the accumulator to avert risks of overcharging or overheating. It should be capable of supplying a regulated current to the battery while simultaneously monitoring its state of charge, temperature, and voltage levels. Compliance with Formula SAE regulations is imperative, which mandates galvanic isolation between the charger and the accumulator to mitigate the risk of electric shocks.  
 
-**Operation:**  
+		Safety Features:  
+The charger incorporates safety interlocks to ensure operation only occurs when the vehicle’s shutdown system is activated, thereby minimizing the risk of unintended high-voltage exposure. It is engineered to safeguard against short circuits, overheating, and overcharging, thereby enhancing the longevity and safety of the accumulator.  
 
-The charging system interfaces with the vehicle’s accumulator through external terminals, facilitating battery charging without necessitating its removal from the vehicle. The charger will interact with the Accumulator Management System (AMS) to oversee battery conditions throughout the charging process, ceasing operation if any anomalies, such as over-temperature or over-voltage, are identified. Charging will only initiate when the tractive system is inactive, in accordance with safety protocols that prohibit charging during testing or active operation.  
+	- Operation:  
+The charging system interfaces with the vehicle’s accumulator through external terminals, facilitating battery charging without necessitating its removal from the vehicle. The charger will interact with the Accumulator Management System (AMS) to oversee battery conditions throughout the charging process, ceasing operation if any anomalies, such as over-temperature or over-voltage, are identified. Charging will only initiate when the tractive system is inactive, in accordance with safety protocols that prohibit charging during testing or active operation.
 
-**Safety Features:**  
+#### 2. Grounded Low Voltage (GLV) System and Safety Systems:  
+Within the GLV system is the car's safety systems such as the shutdown circuit.
+- **Shutdown Circuit**  
+The shutdown circuit is mostly made up of components that can be purchased and connected to the circuit. However, some components are more involved and require a more detailed description. These components are the Brake System Plausibility Device (BSPD) and the Insulation Monitoring Device (IMD).
+	- *Interface with other subsystems:*
 
-The charger incorporates safety interlocks to ensure operation only occurs when the vehicle’s shutdown system is activated, thereby minimizing the risk of unintended high-voltage exposure. It is engineered to safeguard against short circuits, overheating, and overcharging, thereby enhancing the longevity and safety of the accumulator.
+        **High Voltage Connections**
 
-2. Grounded Low Voltage (GLV) System
-    1. Safety Systems:<br>
-       **1. Shutdown Circuit:**
-          - *Interface with other subsystems:*
-         
-          <br>**High Voltage Connections**
+        | Connection                                         | Connection Type | Direction |
+        |----------------------------------------------------|-----------------|-----------|
+        | IMD            | DC Power       | Output    |
 
-          | Connection                                         | Connection Type | Direction |
-          |----------------------------------------------------|-----------------|-----------|
-          | IMD            | DC Power       | Output    |
+       <br>**Low Voltage Connections**
+        | Connection                                         | Connection Type | Direction |
+        |----------------------------------------------------|-----------------|-----------|
+        | GVL (+)         			 | DC Power        | Input     |
+        | GVL (-)         			 | DC Power        | Output    |
+        - *Operation:*
+          The shutdown circuit is responsible for cutting off power at the high voltage source (The Accumulator) in the event of a failure or misalignment in one of the other systems that power or drive the car. The shutdown circuit consists of other subsystems which will be described in their own section. The rest of the components are as follows:
 
-         <br>**Low Voltage Connections**
-          | Connection                                         | Connection Type | Direction |
-          |----------------------------------------------------|-----------------|-----------|
-          | GVL (+)         			 | DC Power        | Input     |
-          | GVL (-)         			 | DC Power        | Output    |
-       	  - *Operation:*
-          	The shutdown circuit is responsible for cutting off power at the high voltage source (The Accumulator) in the event of a failure or misalignment in one of the other systems that power or drive the car. The shutdown circuit consists of other subsystems which will be described in their own section. The rest of the components are as follows:
-            
-            1. Inertia Switch:  
+          1. Inertia Switch:  
 		An inertia switch is a simple switch device designed to stop the flow of electricity in the event of a hard impact. In the case for this system that will be a collision. So if a crash happens the inertia switch shall open the shutdown circuit and thus disconnect the Accumulator.
                 
             2. Shutdown Buttons:  
@@ -243,9 +262,10 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
             3. HVD Interlock(s):  
                 This device(s) provide an added safety measure to the car itself. The HVD Interlocks shall prevent someone from making contact to the high voltage in the system, as well as provided safety for when the high voltage is being disconnected.
 
-	**2. Brake System Plausibility Device (BSPD):**<br>
+-	**Brake System Plausibility Device (BSPD):**  
+The BSPD is a component in the shutdown circuit and is one of the more complex pieces of the circuit.
 
-      - *Interface with other subsystems:*
+	- *Interface with other subsystems:*
 
         **Low Voltage Connections**
         | Connection                                         | Connection Type | Direction |
@@ -255,51 +275,45 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
         | Current Sensor         			 | Analog        | Input     |
         | GVL (-)         			 | DC Power        | Output     |
 
-      - *Operation*<br>
+      - *Operation:*<br>
          The Brake System Plausibility Device (BSPD) serves as an essential safety mechanism that shall oversee the braking system to avert hazardous situations, such as the simultaneous application of brakes and high power output. The following outlines its components and operational principles:
-         1. Brake System Encoder:
+         
+          1. Brake System Encoder:  
+          The BSPD guarantees that high power output from the tractive system is not permitted when the brakes are engaged, thereby preventing the vehicle from accelerating during braking, which poses significant safety risks. Should braking be detected while power output surpasses 5 kW, the BSPD shall open the vehicle’s shutdown circuit.
 
-         The BSPD guarantees that high power output from the tractive system is not permitted when the brakes are engaged, thereby preventing the vehicle from accelerating during braking, which poses significant safety risks. Should braking be detected while power output surpasses 5 kW, the BSPD shall open the vehicle’s shutdown circuit.
-
-         2. Brake Detection Mechanism
-
+         2. Brake Detection Mechanism:  
          The BSPD continuously monitors the brake pedal position sensor to ascertain when the brake pedal is engaged. Upon application of the brakes, the BSPD shall evaluate the power output from the motor or accumulator to verify if the system is drawing more than 5 kW of power.
 
-         3.  Monitoring Power Output
-
+         3.  Monitoring Power Output:  
          The BSPD is responsible for overseeing the electrical power delivered to the motor via the tractive system. If the power output exceeds 5 kW while the brakes are applied, the BSPD shall recognize this as a fault condition.
 
-         4.  Activation of Shutdown Circuit
-
+         4.  Activation of Shutdown Circuit:  
          In instances where braking occurs concurrently with high power output, the BSPD shall open the shutdown circuit, thereby disconnecting power to the tractive system and preventing the motor from receiving additional high voltage. This process is automatic and does not require driver intervention, ensuring a prompt response to potentially unsafe conditions.
 
-         5.  Autonomous Functionality
-
+         5.  Autonomous Functionality:  
          The BSPD shall function as an independent, non-programmable device, distinct from the vehicle’s other electronic control units (ECUs), which enhances its reliability even in the event of failures in other systems. Its separation from software or programmable components further bolsters its safety profile.
 
-         6. BSPD Indicator Light
-
+         6. BSPD Indicator Light:  
          When the BSPD is activated, an indicator light shall be illuminated to inform the driver and pit crew of the shutdown event. This light shall be clearly marked "BSPD" and strategically located on the vehicle's dashboard within the driver’s line of sight.
 
-         7. Reset Procedure
-
+         7. Reset Procedure:  
          After the BSPD has triggered the shutdown circuit, it shall be manually reset before the vehicle can resume operation. This ensures that the fault condition has been properly addressed before the vehicle is restarted.
 
-         8. Brake System Encoder 
-
+         8. Brake System Encoder:  
          The Brake System Encoder plays a crucial role in precisely identifying the position of the brake pedal and transmitting this information to the vehicle's control systems. An overview of its components and functionality is presented below:<br>
 
-         1. Brake Pedal Position Detection:  
+         	1. Brake Pedal Position Detection:  
             The Brake System Encoder is affixed to the brake pedal assembly, where it gauges the position of the pedal during operation. It shall transform the mechanical movement of the brake pedal into an electrical signal, delivering accurate data regarding the extent of braking force applied by the driver.
 
-         2. Signal Relay:  
+         	2. Signal Relay:  
             The encoder shall transmit the brake position signal to the vehicle's control system, which includes the Brake System Plausibility Device (BSPD). This signal is essential for determining the activation of braking, enabling the BSPD to effectively evaluate the system's safety. 
 
-        3. Continuous Monitoring:  
+        	3. Continuous Monitoring:  
             The Brake System Encoder shall perpetually track the brake pedal position in real time, facilitating an immediate response from the control system to any variations in braking force. This capability ensures that the vehicle behaves responsively, particularly in critical safety scenarios such as abrupt braking or simultaneous braking with high power output.
-        
-	**3. Insulation Monitoring Device (IMD):**
-      - *Interface with other subsystems:*
+            
+- **Insulation Monitoring Device (IMD):**  
+The IMD is a component in the shutdown circuit and will be purchased but its inclusion in the circuit is more involved.
+	 - *Interface with other subsystems:*
 
           <br>**High Voltage Connections**
 
@@ -313,7 +327,7 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
           | GLV From BSPD (+)        		 | DC Power        | Input     |
           | GLV (-)         			 | DC Power        | Output    |
 
-      - *Operation:*
+    - *Operation:*
       The IMD shall monitor the insulation resistance between the high voltage system and the ground. If there were to be a fault in the high voltage systems of the vehicle, the IMD shall detect and open the shutdown circuit. When the IMD opens the shutdown circuit, a red indicator light shall turn on and stay on until the IMD is reset.
 
 # Ethical, Professional, and Standards Considerations
@@ -451,4 +465,3 @@ Safety Compliance: Familiarity with Formula SAE regulations and experience in in
 2. Kollmorgen, "FPGA-Based Sin/Cos Encoder Processing," Kollmorgen Developer Network, Accessed: Oct. 23, 2024. <https://www.kollmorgen.com/en-us/developer-network/fpga-based-sin-cos-encoder-processing>
 3. linearmotiontips, "What are the differences between incremental and sine-cosine encoders?" linearmotiontips.com, Accessed: Oct. 26, 2024. <https://www.linearmotiontips.com/differences-between-incremental-and-sine-cosine-encoders/>
 4. Zero Motorcycles, "Zero Motorcycles FXE", zeromotorcycles.com, Accessed: Oct. 26, 2024. <https://zeromotorcycles.com/model/zero-fxe>
-
