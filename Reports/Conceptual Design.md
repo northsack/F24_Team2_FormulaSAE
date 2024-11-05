@@ -405,11 +405,11 @@ To address the consideration above, the following changes shall be implemented i
 
 The budget for the Formula SAE electric vehicle project is designed to cover critical components for the powertrain, safety systems, and required tools. This breakdown outlines the costs for key items necessary to meet both performance targets and regulatory compliance.
 
--**Evan Morse:**      Subsystem: Accumulator 
--**Graham Robinson:** Subsystem: Motor Controller, charger, tractive system active light
--**Zachary Holt:**    Subsystem: Safety systems
--**Erlind Boraj:**    Subsystem: Motor and IMD
--**Jesse Munoz:**     Subsystem: Safety Systems
+- **Evan Morse:**      Subsystem: Accumulator 
+- **Graham Robinson:** Subsystem: Motor Controller, charger, tractive system active light
+- **Zachary Holt:**    Subsystem: Safety systems
+- **Erlind Boraj:**    Subsystem: Motor and IMD
+- **Jesse Munoz:**     Subsystem: Safety Systems
 
 
 
