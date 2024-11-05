@@ -444,7 +444,7 @@ The budget for the Formula SAE electric vehicle project is designed to cover cri
 
 
 
-**Required Skills**:
+# **Required Skills**:
 
 Electrical Systems Design: Understanding of high-voltage power systems, motor control circuits, and safety protocols.
 
@@ -455,7 +455,7 @@ Data Acquisition: Proficiency in using telemetry systems to monitor motor and co
 
 Safety Compliance: Familiarity with Formula SAE regulations and experience in integrating shutdown systems and protective devices.
 
-**Timeline: Gaant Chart**
+# **Timeline: Gaant Chart**
 
 ![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Online%20Gantt%2020241102.png)
 
