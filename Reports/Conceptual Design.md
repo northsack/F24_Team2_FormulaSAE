@@ -463,11 +463,11 @@ Safety Compliance: Familiarity with Formula SAE regulations and experience in in
 
 
 # Statement of Contribution
-- **Evan Morse:** Operational flow chart, hardware block diagram. Subsystem: Accumulator 
-- **Graham Robinson:** Compare solutions, resources Subsystem: Motor Controller, charger, tractive system active light
-- **Zachary Holt:** Operational flow chart, hardware block diagram. PowerPoint documentation for the Conceptual Design, including detailed charts, Timeline (Gantt Chart) Subsystem: Safety systems
-- **Erlind Boraj:** Ethical, professional, and standards considerations. Subsystem: Motor and IMD
-- **Jesse Munoz:** Introduction and Fully Formulating the Problem. Subsystem: Safety Systems
+- **Evan Morse:** Operational flow chart, hardware block diagram. Subsystem assignment: Accumulator 
+- **Graham Robinson:** Compare solutions, resources Subsystem assignment: Motor Controller, charger
+- **Zachary Holt:** Operational flow chart, hardware block diagram. PowerPoint documentation for the Conceptual Design, including detailed charts, Timeline (Gantt Chart) Subsystem assignment: Safety systems
+- **Erlind Boraj:** Ethical, professional, and standards considerations. Subsystem assignment: Motor, tractive system active light
+- **Jesse Munoz:** Introduction and Fully Formulating the Problem. Subsystem assignment: Safety Systems
 
 # References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Oct 22, 2024)
