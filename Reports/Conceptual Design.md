@@ -134,19 +134,19 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
 
   - *Operation:*  
   	1. Power Regulation:  
-  The motor controller is responsible for regulating the direct current (DC) power sourced from the energy storage unit, converting it to alternating current (AC) power when interfacing with an AC motor, or managing the DC power for a DC motor. This regulation allows for the modulation of the motor's speed and torque. It meticulously adjusts the voltage and current delivered to the motor in response to the driver's throttle input, promoting seamless acceleration and optimal power distribution.
+  The motor controller shall regulate the direct current (DC) power sourced from the energy storage unit, converting it to alternating current (AC) power for an AC motor or managing DC power for a DC motor. This regulation shall enable the modulation of motor speed and torque, with the controller adjusting voltage and current in response to the driver's throttle input to ensure seamless acceleration and optimal power distribution.
 
   	2. Torque and Speed Control:  
-  The motor controller plays a crucial role in managing the torque produced by the motor by varying the current supplied, which allows for precise control over the power output directed to the vehicle's wheels. Furthermore, it regulates the rotational speed of the motor, ensuring that the vehicle can reach its maximum speed of 60 miles per hour while operating efficiently across diverse driving scenarios, from rapid acceleration to steady cruising.
+  The motor controller shall manage the motor’s torque by varying the current supplied, allowing precise control over power output to the vehicle’s wheels. Additionally, it shall regulate the motor’s rotational speed, enabling the vehicle to reach its maximum speed of 60 miles per hour and operate efficiently across varied driving scenarios, including rapid acceleration and steady cruising.
 
   	3. Safety and Shutdown Functionality:  
-  Integrated within the shutdown system, the motor controller ensures that in the event of a malfunction—such as overheating, excessive current draw, or a failure in the Brake System Plausibility Device—the system can promptly disconnect power to the motor, thereby averting further operation. Additionally, the motor controller is equipped with multiple safety features, including overvoltage, overcurrent, and thermal protection mechanisms, to safeguard the motor and other components of the powertrain from potential damage.
+  The motor controller shall be integrated within the shutdown system, ensuring that in the event of a malfunction—such as overheating, excessive current draw, or a Brake System Plausibility Device failure—the system shall promptly disconnect power to the motor, preventing further operation. The motor controller shall also include multiple safety features, such as overvoltage, overcurrent, and thermal protection, to safeguard the motor and powertrain components from potential damage.
 
   	4. Thermal Management:  
-  During operation, particularly under high load conditions, the motor controller generates heat. It is essential for the controller to incorporate a thermal management system, whether through air or liquid cooling, to sustain optimal operating temperatures and prevent overheating during high-power demands or extended operational periods.
+  The motor controller shall incorporate a thermal management system, whether through air or liquid cooling, to maintain optimal operating temperatures and prevent overheating, especially under high-power demands or prolonged operation.
 
   	5. Control Algorithms and Efficiency:  
-  The motor controller employs sophisticated control algorithms, such as Field-Oriented Control for AC motors, to enhance performance and efficiency. These algorithms are designed to optimize the motor's response and energy consumption, contributing to the overall effectiveness of the electric powertrain.
+  The motor controller shall employ advanced control algorithms, such as Field-Oriented Control for AC motors, to maximize performance and efficiency. These algorithms shall be designed to optimize motor response and energy consumption, contributing to the overall effectiveness of the electric powertrain.
 
  
 - **Accumulator:**
