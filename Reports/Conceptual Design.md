@@ -221,17 +221,21 @@ Once the shutdown circuit is triggered and the tractive system is no longer acti
       |----------------------------------------------------|-----------------|-----------|
       | Accumulator            | AC Power       | Output    |
         
-        The charger serves the essential function of safely recharging the accumulator (battery pack) of the Formula SAE electric vehicle. Its significance lies in maintaining the energy levels of the high-voltage battery, thereby ensuring the vehicle's readiness for endurance competitions and testing scenarios. The design of the charging system must adhere to safety regulations while optimizing operational efficiency.  
-        
-        Design Requirements:  
-The charger must align with the voltage and current specifications of the accumulator to avert risks of overcharging or overheating. It should be capable of supplying a regulated current to the battery while simultaneously monitoring its state of charge, temperature, and voltage levels. Compliance with Formula SAE regulations is imperative, which mandates galvanic isolation between the charger and the accumulator to mitigate the risk of electric shocks.  
+		a. Interface with other subsystems:
 
-		Safety Features:  
-The charger incorporates safety interlocks to ensure operation only occurs when the vehicle’s shutdown system is activated, thereby minimizing the risk of unintended high-voltage exposure. It is engineered to safeguard against short circuits, overheating, and overcharging, thereby enhancing the longevity and safety of the accumulator.  
+		The charger shall serve the essential function of safely recharging the accumulator (battery pack) of the Formula SAE electric vehicle, ensuring energy levels are maintained for endurance competitions and testing scenarios. The charging system shall adhere to all safety regulations while optimizing operational efficiency.
 
-	- Operation:  
-The charging system interfaces with the vehicle’s accumulator through external terminals, facilitating battery charging without necessitating its removal from the vehicle. The charger will interact with the Accumulator Management System (AMS) to oversee battery conditions throughout the charging process, ceasing operation if any anomalies, such as over-temperature or over-voltage, are identified. Charging will only initiate when the tractive system is inactive, in accordance with safety protocols that prohibit charging during testing or active operation.
+		b. Design Requirements:
 
+		The charger shall align with the voltage and current specifications of the accumulator to avoid risks of overcharging or overheating. It shall be capable of supplying a regulated current while monitoring state of charge, temperature, and voltage levels. Compliance with Formula SAE regulations shall be ensured, requiring galvanic isolation between the charger and the accumulator to mitigate electric shock risk.
+
+		c. Safety Features:
+
+		The charger shall incorporate safety interlocks to ensure operation occurs only when the vehicle’s shutdown system is active, minimizing high-voltage exposure risks. It shall include protections against short circuits, overheating, and overcharging to enhance the accumulator’s safety and longevity.
+
+		d. Operation:
+
+		The charger shall interface with the accumulator through external terminals, allowing charging without removal from the vehicle. It shall interact with the Accumulator Management System (AMS) to monitor battery conditions throughout charging, ceasing operation if anomalies, such as over-temperature or over-voltage, are detected. Charging shall only initiate when the tractive system is inactive, per safety protocols prohibiting charging during testing or active operation.
 
 - **Shutdown Circuit**  
 The shutdown circuit is mostly made up of components that can be purchased and connected to the circuit. However, some components are more involved and require a more detailed description. These components are the Brake System Plausibility Device (BSPD) and the Insulation Monitoring Device (IMD).
