@@ -17,8 +17,8 @@ This project’s main goal is to design the various electrical systems of an ele
 Specifications of this project:
 1. This electric powertrain shall have enough performance to be comparable to Tennessee Tech Motorsports internal combustion engine car.
     1. The EV powertrain of this project shall have a power output comparable to Tennessee Tech Motorsports' internal combustion engine. TTM's internal combustion engine has a power output of 52 horsepower, and 55 ft*lbs of torque. Thus, the EV powertrain shall have a similar power output to match these specifications.
-    2.The car shall be able to operate for at least an hour to complete the FSAE endurance event before needing to recharge.
-    3.The electric powertrain shall have the capability to reach a top speed of 60 miles per hour.
+    2.	The car shall be able to operate for at least an hour to complete the FSAE endurance event before needing to recharge.
+    3.	The electric powertrain shall have the capability to reach a top speed of 60 miles per hour.
 2. This Formula SAE Electric powertrain shall comply with all rules and regulations specified in the Formula SAE rule book [1]. Some of these rules are listed below:
 3. The voltage measured between any two points shall not exceed 600 V DC.
 4. The car shall use electric motors only.
@@ -91,8 +91,7 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
 ![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/conceptual_design/Documentation/Images/Vehicle%20Flow%20Chart%204.png)
 
 # Atomic Subsystem Specifications
-#### 1. Tractive System (High Voltage):  
-The high voltage system will also be the tractive system of the car, which deals with driving the motor, controlling the motor, powering the motor, and providing feedback, of what is and is not working, to the driver.  
+
 - **Motor:**
   - *Interface with other subsystems*
 
@@ -233,8 +232,7 @@ The charger incorporates safety interlocks to ensure operation only occurs when 
 	- Operation:  
 The charging system interfaces with the vehicle’s accumulator through external terminals, facilitating battery charging without necessitating its removal from the vehicle. The charger will interact with the Accumulator Management System (AMS) to oversee battery conditions throughout the charging process, ceasing operation if any anomalies, such as over-temperature or over-voltage, are identified. Charging will only initiate when the tractive system is inactive, in accordance with safety protocols that prohibit charging during testing or active operation.
 
-#### 2. Grounded Low Voltage (GLV) System and Safety Systems:  
-Within the GLV system is the car's safety systems such as the shutdown circuit.
+
 - **Shutdown Circuit**  
 The shutdown circuit is mostly made up of components that can be purchased and connected to the circuit. However, some components are more involved and require a more detailed description. These components are the Brake System Plausibility Device (BSPD) and the Insulation Monitoring Device (IMD).
 	- *Interface with other subsystems:*
