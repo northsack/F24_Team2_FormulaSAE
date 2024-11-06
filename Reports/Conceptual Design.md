@@ -197,20 +197,22 @@ The pre-assembled powertrain from the 2022 Zero FXE motorcycle provides the most
       |----------------------------------------------------|-----------------|-----------|
       | Shutdown Circuit (+)             	     | DC Power        | Input     |
     
-      The Tractive System Active Light (TSAL) is a critical safety feature required by Formula SAE Electric rules to indicate when the vehicle’s high-voltage tractive system is live and energized. The purpose of the TSAL is to alert team members, track officials, and nearby personnel that the vehicle’s high-voltage system is active, ensuring safe handling and operation at all times.  
-      
-      Design Requirements:  
-The TSAL must be clearly visible to all individuals in proximity to the vehicle.
-The light shall illuminate when the tractive system voltage exceeds 60V.
-It must be controlled entirely by hardware and not by software, ensuring it remains functional even during software or system failures.
-The TSAL must be located such that it is visible from all angles while the vehicle is being worked on or during operation on the track.  
+		a. The Tractive System Active Light
 
-		Safety Compliance:  
-The TSAL ensures compliance with Formula SAE Electric rules, which mandate the use of an indicator light to signal an active high-voltage tractive system. This is a key aspect of the safety system, reducing the risk of accidental exposure to high-voltage components.
+		(TSAL) shall serve as a critical safety feature, as required by Formula SAE Electric rules, to indicate when the vehicle’s high-voltage tractive system is live and energized. The TSAL shall alert team members, track officials, and nearby personnel to the active status of the high-voltage system, ensuring safe handling and operation at all times.
 
-	- Operation:  
-When the accumulator is connected to the motor and the tractive system is powered, the TSAL will automatically turn on to indicate the presence of high voltage.
-Once the shutdown circuit is triggered and the tractive system is no longer active, the TSAL will turn off, signaling that the high-voltage components are safe to interact with.
+		b. Design Requirements:
+
+		The TSAL shall be clearly visible to all individuals near the vehicle. It shall illuminate whenever the tractive system voltage exceeds 60V. The TSAL shall be controlled entirely by hardware, not by software, ensuring functionality even in the event of software or system failures. Additionally, the TSAL shall be positioned to remain visible from all angles during vehicle maintenance and operation on the track.
+
+		c. Safety Compliance:
+
+		The TSAL shall ensure compliance with Formula SAE Electric rules, which mandate an indicator light to signal an active high-voltage tractive system. This feature shall be integral to the vehicle's safety system, reducing the risk of accidental exposure to high-voltage components.
+
+		d. Operation:
+
+		When the accumulator is connected to the motor and the tractive system is powered, the TSAL shall automatically turn on to indicate the presence of high voltage. Once the shutdown circuit is triggered and the tractive system is no longer active, the TSAL shall turn off, signaling that the high-voltage components are safe to interact with.
+
 
 - **Charger:**  
 	- *Interface with other subsystems:*
