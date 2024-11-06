@@ -409,7 +409,7 @@ To address the consideration above, the following changes shall be implemented i
 | **Erlind Boraj**       | Motor and IMD                     |
 | **Jesse Munoz**        | Safety Systems                    |
 
-The budget for the Formula SAE electric vehicle project is designed to cover critical components for the powertrain, safety systems, and required tools. This breakdown outlines the costs for key items necessary to meet both performance targets and regulatory compliance.
+The budget for the Formula SAE electric vehicle project shall cover all critical components necessary for the powertrain, safety systems, and required tools to ensure that performance targets and regulatory compliance are met.
 
 
 
