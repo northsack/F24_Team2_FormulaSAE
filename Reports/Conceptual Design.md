@@ -304,7 +304,7 @@ The BSPD is a component in the shutdown circuit and is one of the more complex p
          After the BSPD has triggered the shutdown circuit, it shall be manually reset before the vehicle can resume operation. This ensures that the fault condition has been properly addressed before the vehicle is restarted.
 
          8. Brake System Encoder:  
-         The Brake System Encoder plays a crucial role in precisely identifying the position of the brake pedal and transmitting this information to the vehicle's control systems. An overview of its components and functionality is presented below:<br>
+         The Brake System Encoder shall precisely identify the position of the brake pedal and transmitting this information to the vehicle's control systems. An overview of its components and functionality is presented below:<br>
 
          	1. Brake Pedal Position Detection:  
             The Brake System Encoder is affixed to the brake pedal assembly, where it gauges the position of the pedal during operation. It shall transform the mechanical movement of the brake pedal into an electrical signal, delivering accurate data regarding the extent of braking force applied by the driver.
