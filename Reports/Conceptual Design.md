@@ -255,7 +255,7 @@ The shutdown circuit is mostly made up of components that can be purchased and c
         | GVL (+)         			 | DC Power        | Input     |
         | GVL (-)         			 | DC Power        | Output    |
         - *Operation:*
-          The shutdown circuit is responsible for cutting off power at the high voltage source (The Accumulator) in the event of a failure or misalignment in one of the other systems that power or drive the car. The shutdown circuit consists of other subsystems which will be described in their own section. The rest of the components are as follows:
+          The shutdown circuit shall cut off power at the high voltage source (The Accumulator) in the event of a failure or misalignment in one of the other systems that power or drive the car. The shutdown circuit consists of other subsystems which will be described in their own section. The rest of the components are as follows:
 
           1. Inertia Switch:  
 		An inertia switch is a simple switch device designed to stop the flow of electricity in the event of a hard impact. In the case for this system that will be a collision. So if a crash happens the inertia switch shall open the shutdown circuit and thus disconnect the Accumulator.
