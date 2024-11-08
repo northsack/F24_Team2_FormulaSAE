@@ -447,9 +447,9 @@ The budget for the Formula SAE electric vehicle project shall cover all critical
 |------------------------|-----------------------------------|
 | **Evan Morse**         | Accumulator                       |
 | **Graham Robinson**    | Motor Controller, charger, tractive system active light |
-| **Zachary Holt**       | Safety systems                    |
+| **Zachary Holt**       | Safety systems, BOTS              |
 | **Erlind Boraj**       | Motor and IMD                     |
-| **Jesse Munoz**        | Safety Systems                    |
+| **Jesse Munoz**        | Safety Systems, BSPD              |
 
 Electrical Systems Design: Understanding of high-voltage power systems, motor control circuits, and safety protocols.
 
