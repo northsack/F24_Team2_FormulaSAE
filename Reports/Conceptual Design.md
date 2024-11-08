@@ -407,6 +407,14 @@ To address the consideration above, the following changes shall be implemented i
 
 **Budget Overview**:
 
+| **Team Member**        | **Subsystem**                     |
+|------------------------|-----------------------------------|
+| **Evan Morse**         | Accumulator                       |
+| **Graham Robinson**    | Motor Controller, charger, tractive system active light |
+| **Zachary Holt**       | Safety systems                    |
+| **Erlind Boraj**       | Motor and IMD                     |
+| **Jesse Munoz**        | Safety Systems                    |
+
 The budget for the Formula SAE electric vehicle project shall cover all critical components necessary for the powertrain, safety systems, and required tools to ensure that performance targets and regulatory compliance are met.
 
 
