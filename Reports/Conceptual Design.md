@@ -451,6 +451,14 @@ The budget for the Formula SAE electric vehicle project shall cover all critical
 
 # **Required Skills**:
 
+| **Team Member**        | **Subsystem**                     |
+|------------------------|-----------------------------------|
+| **Evan Morse**         | Accumulator                       |
+| **Graham Robinson**    | Motor Controller, charger, tractive system active light |
+| **Zachary Holt**       | Safety systems                    |
+| **Erlind Boraj**       | Motor and IMD                     |
+| **Jesse Munoz**        | Safety Systems                    |
+
 Electrical Systems Design: Understanding of high-voltage power systems, motor control circuits, and safety protocols.
 
 Control Systems: Knowledge of motor control algorithms (e.g., Field-Oriented Control), regenerative braking, and torque management.
