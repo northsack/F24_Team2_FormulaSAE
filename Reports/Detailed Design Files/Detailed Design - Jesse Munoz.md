@@ -1,5 +1,5 @@
 
-_Formula SAE Electric Vehicle Conceptual Design_
+_Formula SAE Electric Vehicle Detailed Design_
 
 Jesse Munoz  
 Tennessee Technological University, ECE Department  
