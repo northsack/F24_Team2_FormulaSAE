@@ -65,8 +65,14 @@ The BSPD is a component in the shutdown circuit and is one of the more complex p
     | Current Sensor         			 | Analog        | Input     |
     | GVL (-)         			 | DC Power        | Output     |
 
-## Bill of Materials (BOM)
-
+## Bill of Materials (BOM)       **(IN PROGRESS)**
+| Item                            | Price    |   
+|---------------------------------|----------|
+| BSPD FSAE 2025/2024 - EV ONLY   |          |
+| HO 200-S-0100	 (current Sensor) |          |
+|           			          |          |
+|           			          |          |
+    
 ## Analysis
 
 ## References
