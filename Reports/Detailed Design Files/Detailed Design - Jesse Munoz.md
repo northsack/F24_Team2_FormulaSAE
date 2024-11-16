@@ -11,7 +11,7 @@ Cookeville, TN, USA
 The function of the BSPD subsystem is open the vehicle's shutdown circuit when a open or short circuit is detected in the input sensors or when two condidtions true, for 0.5 seconds [1]. The BSPD will be placed in series with the other components of the vehicle's shutdown circuit [1].
 
 ## Specifications and Constraints
-1. Shutdown System:  
+#### Shutdown System Specifications:
 The shutdown system consists of the following components connected in series. The purpose of this systems is to ensure the safety of the driver, team members in the near viscinity of the vehicle, and the vehicle itself. If one of these safety systems encounters a fault, the system has the ability to shut down all power to the vehicle. Each safety system is daisy chained to the previous/next safety system. Thus, if one system disengages power, none of the main components on the vehicle will be powered. The system shall only function when all contacts of the safety system are closed:
     1. Accumulator Management System
     2. Insulation Monitoring Device
@@ -21,7 +21,7 @@ The shutdown system consists of the following components connected in series. Th
     6. Shutdown Buttons
     7. Brake Over Travel Switch (BOTS)
     8. Inertia Switch 
-2. BSPD System:  
+#### BSPD System Specifications:  
    The BSPD shall comply with all rules and regulations specified in the Formula SAE rule book [1]. The specifications for this subsystems are listed below:
    1. The BSPD shall open the shutdown circuit when one or more of the input sensors has an open or short circuit.
    2. The BSPD shall open the shutdown circuit when both of the following conditions are met for a minimun of 0.5 seconds:
@@ -31,6 +31,9 @@ The shutdown system consists of the following components connected in series. Th
   This figure from the Formula SAE Rulebook [1] shows how the shutdown circuit is connected: 
 ![Figure 1: Shutdown Circuit of a Formula SAE EV Car](https://github.com/northsack/F24_Team2_FormulaSAE/blob/main/Documentation/Images/Fig.%201%20shutdown%20circuit.png)\
 Figure 1: Shutdown Circuit of a Formula SAE EV Car
+
+#### BSPD System Constraints:
+    
 
 ## Overview of Proposed Solution
 There are mainly two possible solutions to the problem this subsystem aims to solve for. The first possible solution is to the design, from scratch, an original BSPD, and the second solution is to find and purchase a BSPD module.  
