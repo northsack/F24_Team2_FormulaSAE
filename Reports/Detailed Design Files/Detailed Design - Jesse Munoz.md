@@ -33,6 +33,12 @@ The shutdown system consists of the following components connected in series. Th
 Figure 1: Shutdown Circuit of a Formula SAE EV Car
 
 ## Overview of Proposed Solution
+There are mainly two possible solutions to the problem this subsystem aims to solve for. The first possible solution is to the design, from scratch, an original BSPD, and the second solution is to find and purchase a BSPD module.  
+The benefits of the first option is that the BSPD would be developed to fit our vehicle perfectly, however the disadvantage of this solution would be take much more time, and would be difficult to change, if an unexpected change is necceassary. 
+The benefits of the second option is that the BSPD module is a complete and ready made device, and it is also known that other teams in the Formula SAE competition are successful in their use of a premade BSPD module. The disadvatages of this solution is that more research is needed to confirm the premade BSPD module fits the specs set by the Formula SAE competition as well as integrating a premade device into the rest of the project.  
+For this subsystem purchaceing a premade BSPD module would be the simplest solution. Integrating a premade module would be a much more time efficient soultion compared to designing a new one.
+
+The current selection for a premade BSPD module says that it is made to comply with current Formula SAE [2].
 
 ## Interface with Other Subsystems
 **Shutdown Circuit:**  
@@ -77,3 +83,5 @@ The BSPD is a component in the shutdown circuit and is one of the more complex p
 
 ## References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Nov 15, 2024)
+2. q_tronic_engineering, "BSPD FSAE 2025/2024 - EV ONLY", ebay.com, <https://www.ebay.com/itm/266497060229?_trksid=p2332490.c101224.m-1> (accessed Nov 15, 2024)
+3. 
