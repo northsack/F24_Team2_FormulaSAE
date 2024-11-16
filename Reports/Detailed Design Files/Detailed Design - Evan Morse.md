@@ -23,14 +23,11 @@ To safely store energy, the Accumulator has internal temperature sensors and vol
 	1. Accumulator Isolation Relays:  
 		Relays shall be used inside of the Accumulator container to control the power provided to the external connectors of the Accumulator.  Power shall only be provided to the external terminals when the Shutdown Circuit is closed (vehicle is ready to drive).  The AIRs shall be used to control both the positive and negative terminals of the Accumulator. The AIRs shall be normally open.
 	2. Precharge Circuit:  
-		As part of the motor controller's design, capacitors are installed at the main high voltage terminals.  When the Accumulator Isolation Relays (AIRs) are closed (High Voltage (HV) power is turned on), and power is provided to the motor controller.  Without a Precharge Circuit, thousands of Amps can flow through the wires to charge the capacitors inside the motor controller when the AIRs close.  This can be dangerous because it can prematurely wear the AIRs, and possibly even weld the terminals of the AIRs together, preventing proper operation.  To prevent this, the Accumulator shall have a system designed to precharge the HV system to 90% of the Accumulator voltage before closing the AIRs.
-            
+		As part of the motor controller's design, capacitors are installed at the main high voltage terminals.  When the Accumulator Isolation Relays (AIRs) are closed (High Voltage (HV) power is turned on), and power is provided to the motor controller.  Without a Precharge Circuit, thousands of Amps can flow through the wires to charge the capacitors inside the motor controller when the AIRs close.  This can be dangerous because it can prematurely wear the AIRs, and possibly even weld the terminals of the AIRs together, preventing proper operation.  To prevent this, the Accumulator shall have a system designed to precharge the HV system to 90% of the Accumulator voltage before closing the AIRs.    
 	3. Discharge Circuit:  
 		The accumulator shall contain a circuit that can discharge the same capacitors mentioned in statement **b** above.  When the shutdown circuit is open (vehicle is shutting down), the AIRs shall open, and the Discharge Circuit shall safely discharge the capacitors inside of the motor controller.
-            
 	4. Voltage Indicator:  
-		The Accumulator shall have an Indicator that will illuminate when high voltage is present on the external terminals of the accumulator container.  This Indicator shall be controlled by hardware and not software.  Addionally, the Voltage Indicator shall be installed where it can be seen while connecting the Accumulator to the HV Circuit.  The Voltage Indicator shall also be labelled "High Voltage Present."
-             
+		The Accumulator shall have an Indicator that will illuminate when high voltage is present on the external terminals of the accumulator container.  This Indicator shall be controlled by hardware and not software.  Addionally, the Voltage Indicator shall be installed where it can be seen while connecting the Accumulator to the HV Circuit.  The Voltage Indicator shall also be labelled "High Voltage Present."   
 	5. Accumulator Management System (AMS):  
 		A system shall be built to monitor the conditions of the accumulator.  This system must monitor the Accumulator while the Tractive System is active, and also while the Accumulator is charging.  If a fault is detected in one of the monitored conditions, the AMS shall open the vehicle's shutdown circuit, cutting off the HV power to the Tractive System.  Additionally, on the occurrence of a fault, the AMS shall turn on the AMS indicator light which shall be a red LED that is visible to the driver of the vehicle and marked with the lettering "AMS".  The AMS shall monitor the following conditions  
          1. HV Voltage values
@@ -52,11 +49,12 @@ To safely store energy, the Accumulator has internal temperature sensors and vol
 
 The Accumulator subsystem can be broken down into three subsequent subsystems.  
 1. Battery Cells  
-	The battery cells are the part of the Accumulator that store the electrical energy.  For this project, off the shelf battery cells shall be used.  Designing these battery cells so that they are arranged to deliver the capacity of power for the required duration is what will make this subsystem of the Accumulator successful.  The two factors that will influence how the cells of the battery are arranged are as follows:
+	The battery cells are the part of the Accumulator that store the electrical energy.  For this project, off the shelf battery cells shall be used.  Designing these battery cells so that they are arranged to deliver the capacity of power for the required duration is what will make this subsystem of the Accumulator successful.  When placed in series, the individual battery cell voltage will be added, increasing the voltage.  When placed in parallel, the load is split between the parallel paths, thus increasing the run time of the battery.  The two factors that will influence how the cells of the battery are arranged are as follows:
+    
     1. The voltage and current draw of the motor.  
-    2. How long does the motor need to operate.
+    2. The duration of operation of the motor.
    
-  The final cell arrangement for the Formula SAE Electric vehicle is a 28s2p.
+	The final battery cell arrangement for the Accumulator shall be 28s2p.
 
 2. Precharge & Discharge Circuits  
 	The precharge and discharge circuits will be located on a PCB installed on the inside of the Accumulator container.  The precharge and discharge circuits will take high voltage inputs from the output of the battery cells inside the accumulator, and then slowly output increasing voltage to charge the capacitor of the motor controller.  The voltage of the output of the battery cells needs to be measured , the size of the capacitors 
@@ -66,7 +64,7 @@ The Accumulator subsystem can be broken down into three subsequent subsystems.
 
 # Interface with Other Subsystems
 
-The Accumulator has the following physical connections with other subsystems of the vehicle.  
+The Accumulator will have the following connections to other subsystems in the electric vehicle.  
   
   **High Voltage Connections**
   | Connection                                         | Connection Type | Direction |
