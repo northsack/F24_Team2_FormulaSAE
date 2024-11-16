@@ -38,7 +38,7 @@ The benefits of the first option is that the BSPD would be developed to fit our 
 The benefits of the second option is that the BSPD module is a complete and ready made device, and it is also known that other teams in the Formula SAE competition are successful in their use of a premade BSPD module. The disadvatages of this solution is that more research is needed to confirm the premade BSPD module fits the specs set by the Formula SAE competition as well as integrating a premade device into the rest of the project.  
 For this subsystem purchaceing a premade BSPD module would be the simplest solution. Integrating a premade module would be a much more time efficient soultion compared to designing a new one.
 
-The current selection for a premade BSPD module says that it is made to comply with current Formula SAE [2]. The module's datasheet says that it meets the specifcations set by Formula SAE [3].
+The current selection for a premade BSPD module says that it is made to comply with current Formula SAE [2]. The specifications of the module, stated in its datasheet, seems to match witht he current Formula SAE EV competetion rules and contraints [3].
 
 ## Interface with Other Subsystems
 **Shutdown Circuit:**  
