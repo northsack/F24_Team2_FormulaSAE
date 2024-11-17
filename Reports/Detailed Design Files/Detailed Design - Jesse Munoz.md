@@ -33,7 +33,7 @@ The shutdown system consists of the following components connected in series. Th
 Figure 1: Shutdown Circuit of a Formula SAE EV Car
 
 #### BSPD System Constraints:
-    
+ - The BSPD shall have a 0.5 sec delay after the two shutdown condidtions are met. This debouncing is to prevent the BSPD from opening the shutdown circuit in the event of a very short current spike or signal spike in the APPS.
 
 ## Overview of Proposed Solution
 There are mainly two possible solutions to the problem this subsystem aims to solve for. The first possible solution is to the design, from scratch, an original BSPD, and the second solution is to find and purchase a BSPD module.  
