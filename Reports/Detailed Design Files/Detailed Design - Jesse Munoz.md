@@ -34,6 +34,8 @@ Figure 1: Shutdown Circuit of a Formula SAE EV Car
 
 #### BSPD System Constraints:
  - The BSPD shall have a 0.5 sec delay after the two shutdown condidtions are met. This debouncing is to prevent the BSPD from opening the shutdown circuit in the event of a very short current spike or signal spike in the APPS.
+ - The BSPD shall only open the shutdown circuit after both shutdown condidtions are true for 0.1 sec.
+ - The brake pressure sensor shall send an analog signal to the BSPD when demanding hard braking. This may be a voltage signal ≥ 4.5 V.
 
 ## Overview of Proposed Solution
 There are mainly two possible solutions to the problem this subsystem aims to solve for. The first possible solution is to the design, from scratch, an original BSPD, and the second solution is to find and purchase a BSPD module.  
@@ -45,15 +47,15 @@ The current selection for a premade BSPD module says that it is made to comply w
 
 ## Interface with Other Subsystems
 **Shutdown Circuit:**  
-The shutdown circuit is mostly made up of components that can be purchased and connected to the circuit. However, some components are more involved and require a more detailed description. These components are the Brake System Plausibility Device (BSPD) and the Insulation Monitoring Device (IMD).
+The shutdown circuit is mostly made up of components that can be purchased and connected to the circuit. However, some components are more involved and require a more detailed description. One of these components is the Brake System Plausibility Device (BSPD).
 
 - *Interface with other subsystems:*
 
   **High Voltage Connections**
 
-  | Connection                                         | Connection Type | Direction |
-  |----------------------------------------------------|-----------------|-----------|
-  | IMD            | DC Power       | Output    |
+  | Connection     | Connection Type | Direction |
+  |----------------|-----------------|-----------|
+  | IMD            | DC Power        | Output    |
 
    <br>**Low Voltage Connections**
     | Connection                                         | Connection Type | Direction |
@@ -61,26 +63,34 @@ The shutdown circuit is mostly made up of components that can be purchased and c
     | GVL (+)         			 | DC Power        | Input     |
     | GVL (-)         			 | DC Power        | Output    |
 
+    - The high voltage IMD connection will output the GLV current. As long as the IMD does not detect a fault in it's high voltage connections it will continue to flow the DC current through the shutdown circuit.  
+    - The shutdown circuit's low voltage connections will be the power supply for the GLV system.
+
 **Brake System Plausibility Device (BSPD):**  
 The BSPD is a component in the shutdown circuit and is one of the more complex pieces of the circuit.
 
 - *Interface with other subsystems:*
 
     **Low Voltage Connections**
-    | Connection                                         | Connection Type | Direction |
-    |----------------------------------------------------|-----------------|-----------|
+    | Connection                 | Connection Type | Direction |
+    |----------------------------|-----------------|-----------|
     | GVL (+)         			 | DC Power        | Input     |
-    | Brake Presure Sensor        			 | Analog        | Input     |
-    | Current Sensor         			 | Analog        | Input     |
-    | GVL (-)         			 | DC Power        | Output     |
+    | Brake Presure Sensor       | Analog          | Input     |
+    | Current Sensor         	 | Analog          | Input     |
+    | GVL (-)         			 | DC Power        | Output    |
+
+    - The BSPD will have three inputs, as shown in the table above. The first will be the the GLV system's DC power signal. This is the current that opens and closes the shutdown circuit. If this current flow is stopped then the shutdown circuit is opened and the high voltage power supply will be cut off.
+    - The second input is the brake pressure sensor, this sensor tells the BSPD, though the current/voltage value, if the brake pedel is passed a certain angle.
+    - The third sensor is the current sensor. This sensor will detect if current from motor/accumulator subsystems. It will detect the current value and send that signal to the BSPD which will then determine if the motor/accumulator subsystems' power usage is ≥ 5 kW.
+    - The BSPD will have one output and that is the GLV DC power signal. As long as the BSPD does not detect the 2 shutdown conditions, as described in the BSPD specs, for 100 ms, the GLV current will flow thus keeping the shutdown circuit closed.
 
 ## Bill of Materials (BOM)       **(IN PROGRESS)**
 | Item                            | Price    |   
 |---------------------------------|----------|
-| BSPD FSAE 2025/2024 - EV ONLY   |          |
-| HO 200-S-0100	 (current Sensor) |          |
+| BSPD FSAE 2025/2024 - EV ONLY   | $200.00  |
+| HO 200-S-0100	 (current Sensor) | $60.00   |
 |           			          |          |
-|           			          |          |
+| **Total**          			  | $260.00  |
     
 ## Analysis
 
