@@ -85,12 +85,12 @@ The BSPD is a component in the shutdown circuit and is one of the more complex p
     - The BSPD will have one output and that is the GLV DC power signal. As long as the BSPD does not detect the 2 shutdown conditions, as described in the BSPD specs, for 100 ms, the GLV current will flow thus keeping the shutdown circuit closed.
 
 ## Bill of Materials (BOM)       **(IN PROGRESS)**
-| Item                            | Price    |   
-|---------------------------------|----------|
-| BSPD FSAE 2025/2024 - EV ONLY   | $200.00  |
-| HO 200-S-0100	 (current Sensor) | $60.00   |
-|           			          |          |
-| **Total**          			  | $260.00  |
+| Item                            | Manufacteror       | Part Number           | Distributor  | Distributor part number  | Quantity  | Price    |
+|---------------------------------|--------------------|-----------------------|--------------|--------------------------|-----------|----------|
+| BSPD FSAE 2025/2024 - EV ONLY   | Qtronic Engineering| BSPD FSAE 2021-2 v0.5 | Ebay         | 266497060229             | 1         | $200.00  |
+| Current Sensor                  | LEM                | HO 200-S-0100         | Newark       | 64AH3657                 | 1         | $60.00   |
+|           			          |                    |                       |              |                          |           |          |
+| **Total**          			  |                    |                       |              |                          |           | $260.00  |
     
 ## Analysis
 
