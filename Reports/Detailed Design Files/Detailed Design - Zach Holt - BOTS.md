@@ -19,7 +19,7 @@ As the BOTS is a part of the shutdown circuit, it is bound by the rules and regu
 The proposed solution is to purchase a BOTS and integrate it within our vehicle. The switch we have chosen can be purshaed online at Mouser Electronics [2]. This solution makes sense for our project as it will save time and resources for our team. The BOTS we choose shall follow the constraints specified in the Formula SAE rulebook.
 
 ## Interface With Other Subsystems
-The BOTS is part of the shutdown circuit. It is connected in series with the Shutdown Buttons and the Master Tractive System Switch. The input will come from the Shutdown Buttons, and the output will go to the Tractive System Master Switch.
+The BOTS is part of the shutdown circuit. It is connected in series with the Shutdown Buttons and the Tractive System Master Switch. The input will come from the Shutdown Buttons, and the output will go to the Tractive System Master Switch.
 
 **BOTS Connections**
 
