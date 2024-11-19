@@ -80,7 +80,7 @@ The BSPD is a component in the shutdown circuit and is one of the more complex p
     | GVL (-)         			 | DC Power        | Output    |
 
     - The BSPD will have three inputs, as shown in the table above. The first will be the the GLV system's DC power signal. This is the current that opens and closes the shutdown circuit. If this current flow is stopped then the shutdown circuit is opened and the high voltage power supply will be cut off.
-    - The second input is the brake pressure sensor, this sensor tells the BSPD, though the current/voltage value, if the brake pedel is passed a certain angle.
+    - The second input is the brake pressure sensor, this sensor tells the BSPD, though the current/voltage value, if the brake pedal is presses with enough pressure.
     - The third sensor is the current sensor. This sensor will detect if current from motor/accumulator subsystems. It will detect the current value and send that signal to the BSPD which will then determine if the motor/accumulator subsystems' power usage is ≥ 5 kW.
     - The BSPD will have one output and that is the GLV DC power signal. As long as the BSPD does not detect the 2 shutdown conditions, as described in the BSPD specs, for 100 ms, the GLV current will flow thus keeping the shutdown circuit closed.
 
@@ -89,12 +89,14 @@ The BSPD is a component in the shutdown circuit and is one of the more complex p
 |---------------------------------|--------------------|-----------------------|--------------|--------------------------|-----------|----------|
 | BSPD FSAE 2025/2024 - EV ONLY   | Qtronic Engineering| BSPD FSAE 2021-2 v0.5 | Ebay         | 266497060229             | 1         | $200.00  |
 | Current Sensor                  | LEM                | HO 200-S-0100         | Newark       | 64AH3657                 | 1         | $60.00   |
-|           			          |                    |                       |              |                          |           |          |
-| **Total**          			  |                    |                       |              |                          |           | $260.00  |
+| 150 Psi Pressure Transducer     | AUTEX              | GSND-0556629788       | Amazon       | B00NIK98O8               | 1         | $50.00   |
+| **Total**          			  |                    |                       |              |                          |           | $310.00  |
     
 ## Analysis
+
 
 ## References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Nov 15, 2024)
 2. Q-tronic Engineering, "BSPD FSAE 2025/2024 - EV ONLY", ebay.com, <https://www.ebay.com/itm/266497060229?_trksid=p2332490.c101224.m-1> (accessed Nov 15, 2024)
 3. Q-tronic Engineering, "BSPD FSAE 2021-22 Datasheet:, (accessed Nov 15, 2024)
+4. AUTEX, "150 Psi Pressure Transducer", Amazon.com, <https://www.amazon.com/AUTEX-Pressure-Transducer-Stainless-Compatible/dp/B00NIK98O8/ref=asc_df_B00NIK98O8> (accessed Nov 18, 2024)
