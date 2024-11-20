@@ -84,37 +84,15 @@ The Accumulator will have the following connections to other subsystems in the e
 
 
 
-| **Description**                                | **Quantity** | **Unit Cost** | **Total** | **Assigned Team Member**              |
-|------------------------------------------------|--------------|---------------|-----------|---------------------------------------|
-| Zero FX                |              |               | **$1,600.40** |                                       |
-| Start Up Tools/ Safety                         |              |               | $1,600.40 | All Team Members                      |
-| U.S. General 30 in., 5-Drawer Mechanics Cart, Green |            |               | $279.00    | All Team Members                      |
-| Kobalt 300-Piece Standard and Metric Tool Set  |              |               | $249.00    | All Team Members                      |
-| Kobalt 10-Piece Assorted Pliers                |              |               | $49.98     | All Team Members                      |
-| Kobalt 18-Piece Plastic Handle Magnetic Screwdriver Set | |            | $19.98     | All Team Members                      |
-| Sevcon DVT Configuration Software & IXXAT Cable|              |               | $502.32    | **Graham Robinson**                   |
-| McMaster-Carr Vehicle Wire Assortments         |              |               | $47.00     | **All Team Members**                  |
-| Jrready ST6359 Deutsch Connector Kit           |              |               | $185.00    | **All Team Members**                  |
-| Sevcon Wiring Harness -- Dual Signal Throttle  |              |               | $268.12    | **Graham Robinson**                   |
-| Battery Blanket                                | 2            | $109.00       | $218.00    | **Evan Morse**                        |
-| Tractive system active light                   |              |               | $60.00     | **Graham Robinson**                   |
-| Buzzer for tractive system active              |              |               | $63.00     | **Graham Robinson**                   |
-| ISOMETER® IR155 3204 (IMD)                     |              |               | $25.00     | **Erlind Boraj**                      |
-| Sensata Resettable Crash Sensor (Inertia Switch)|            |               | $60.00     | **Zachary Holt**                      |
-| HT-010402 Throttle Position Sensor             | 2            | $160.00       | $320.00    | **Graham Robinson**                   |
-| T-Shirts work Shirts                           | 20           | $50.00        | $1,000.00  | **All Team Members**                  |
-| Dress Shirts                                   | 20           | $50.00        | $1,000.00  | **All Team Members**                  |
-| Office Supplies                                |              |               | $200.00    | **All Team Members**                  |
-| Presentation Material                          |              |               | $400.00    | **All Team Members**                  |
-| Design Competition Banners                     |              |               | $750.00    | **All Team Members**                  |
-| SAE mandated and sponsor decals                |              |               | $850.00    | **All Team Members**                  |
-| **COE Budget Total**                           |              |               | **$6,546.40** |                                       |
-
+| Manufacturer     | Part Number | Distributor     | Quantity | Price |
+|------------------|-------------|-----------------|----------|-------|
+| Zero Motorcycles | 46-08228    | Max Motorsports | 1        | $3600 |                                    
 
 
 
 # References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Oct 22, 2024)
-2. Kollmorgen, "FPGA-Based Sin/Cos Encoder Processing," Kollmorgen Developer Network, Accessed: Oct. 23, 2024. <https://www.kollmorgen.com/en-us/developer-network/fpga-based-sin-cos-encoder-processing>
-3. linearmotiontips, "What are the differences between incremental and sine-cosine encoders?" linearmotiontips.com, Accessed: Oct. 26, 2024. <https://www.linearmotiontips.com/differences-between-incremental-and-sine-cosine-encoders/>
-4. Zero Motorcycles, "Zero Motorcycles FXE", zeromotorcycles.com, Accessed: Oct. 26, 2024. <https://zeromotorcycles.com/model/zero-fxe>
+2. <http://omeganaught.com/2014/05/sevcon-gen4-ac-motor-controller-teardown/>
+3. <https://www.wisconsinracing.org/wp-content/uploads/2020/10/2018_ESF_Submission.pdf>
+4. <https://www.wisconsinracing.org/wp-content/uploads/2024/05/Release-of-223E-Electrical-Designs.pdf>
+5. <https://www.thunderstruck-ev.com/images/companies/1/Switch-Relay/EV200%20Kilovac.pdf?1660688661072>
