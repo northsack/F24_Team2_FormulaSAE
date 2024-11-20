@@ -102,3 +102,4 @@ By checking the proposed BSPD's pinout in its datasheet, it has 6 pins [3]. Pin 
 2. Q-tronic Engineering, "BSPD FSAE 2025/2024 - EV ONLY", ebay.com, <https://www.ebay.com/itm/266497060229?_trksid=p2332490.c101224.m-1> (accessed Nov 15, 2024)
 3. Q-tronic Engineering, "BSPD FSAE 2021-22 Datasheet:, (accessed Nov 15, 2024)
 4. AUTEX, "150 Psi Pressure Transducer", Amazon.com, <https://www.amazon.com/AUTEX-Pressure-Transducer-Stainless-Compatible/dp/B00NIK98O8/ref=asc_df_B00NIK98O8> (accessed Nov 18, 2024)
+5. LEM, "Current Transducer HO-S series Datasheet", (accessed Nov 19, 2024)
