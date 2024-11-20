@@ -260,3 +260,11 @@ Here’s the updated **Bill of Materials (BOM)** with the added **Throttle Posit
 
 6. McMaster-Carr, "Vehicle Wire Assortments," 2023. [6]  
    Accessed: Nov. 20, 2024. [https://www.mcmaster.com](https://www.mcmaster.com)
+
+7. Sevcon Motor Controller [Sevcon](https://www.sevcon.com)
+
+8. Sevcon DVT Software [Sevcon](https://www.sevcon.com)
+   
+9. Honeywell Thermistor [Digi-Key](https://www.digikey.com)
+
+10. Haltech Throttle Position Sensor [Haltech](https://www.haltech.com/product/ht-010402-throttle-position-sensor-grey/)
