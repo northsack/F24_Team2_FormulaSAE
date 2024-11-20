@@ -92,9 +92,9 @@ The first step of designing the optimized battery cell structure is to determine
 
 The second step for designing a battery is to determine the voltage and current that the battery needs to supply.  The Sevcon Gen 4 controller that will be used in the FSAE Electric vehicle requires 48-150 V, and it's nominal voltage rating is 110 V.  For this battery, the nominal voltage will be 102 V.  The maximum voltage will be 116 V.  The continuous current draw from the Sevcon Gen 4 controller is 120 A, and the burst (10 Second) current draw is 360 Amps.  Thus our power requirements for the batteries are:
 
-| Battery Run Time | Battery Voltage | Battery Current              |
+| Battery Run Time | Motor Controller Voltage Range| Motor Controller Current Consumption             |
 |------------------|-----------------|------------------------------|
-| 45 Minutes       | (48V - 150V)    | 120 Amps Continuous, 360 Amps Burst |
+| 45 Minutes       | (48V - 150V)    | 120 Amps Continuous, 300 Amps Burst |
 
 ##### Battery Cell Specifications
 Off the shelf battery cells will be used for this accumulator.  These cells are documented well, cost effective, and proven to be reliable.  The specific cells that will be used for this project are Farasis 29Ah 3.65V Lithium Polymer batteries.
@@ -114,20 +114,22 @@ In order to provide a nominal 102 V, we must calculate how many cells in series 
         Series Battery Cells = 27.95
         Series Battery Cells = 28
 
-The maximum voltage of the Accumulator with 28 cells in series will be
+The maximum voltage of the Accumulator with **28 cells** in series will be
 
-		Max Voltage = 28 * 4.25 V
+		Max Voltage = 28 (# of Cells) * 4.25 V (Maximum Cell Voltage)
         Max Voltage = 119 V
         
 From this calculation, the maximum voltage falls within range of our motor controller's specification
 
 Finally, the minimum voltage value will be calculated
 
-		Minimum Voltage = 28 * 2.75 V
+		Minimum Voltage = 28 (# of Cells) * 2.75 V (Minimum Cell Voltage)
         Minumum Voltage = 77 V
 From this calculation, the minimum voltage falls within range of our motor controller's specification
 
 ###### Parallel Calculation
+
+In order to 
 
 ### Precharge and Discharge Circuit
 
