@@ -94,24 +94,44 @@ The second step for designing a battery is to determine the voltage and current 
 
 | Battery Run Time | Battery Voltage | Battery Current              |
 |------------------|-----------------|------------------------------|
-| 45 Minutes       | 102 V           | 120 Amps Continuous, 360 Amps Burst |
+| 45 Minutes       | (48V - 150V)    | 120 Amps Continuous, 360 Amps Burst |
 
 ##### Battery Cell Specifications
-Off the shelf battery cells will be used for this accumulator.  These cells are cost effective, proven to be reliable, and documented well.  The specific cells that will be used for this project are Farasis 29Ah 3.65V Lithium Polymer batteries.  When we arrange the battery cells, installing them in series adds the cell voltage, and installing them in parallel divides the power load, thus increasing run time.
+Off the shelf battery cells will be used for this accumulator.  These cells are documented well, cost effective, and proven to be reliable.  The specific cells that will be used for this project are Farasis 29Ah 3.65V Lithium Polymer batteries.
 
 | Max Voltage  | Nominal Voltage | Max Discharge Current  | Continuous Discharge Current |
 |--------------|-----------------|------------------------|------------------------------|
 | 4.25 V       | 3.65 V          | 174 Amps               | 87 Amps                      |
 
 ##### Battery Cell Arrangement Calculations
+In order to build an Accumulator to power this vehicle, the battery cells must be arranged to provide the required voltage, current, and run time.  When the battery cells are arranged in series the battery cells in series' voltage is added, thus increasing the overall battery output voltage.  Installing the battery cells in parallel increases the current capacity of the Accumulator, as well as increasing the run time of the Accumulator.
+
+###### Series Calculation
+
 In order to provide a nominal 102 V, we must calculate how many cells in series are required.  
 
 		Series Battery Cells = 102 V (Battery Voltage) / 3.65 V (Individual Cell Voltage)
         Series Battery Cells = 27.95
         Series Battery Cells = 28
 
-Next, the number of parallel batteries needs to be calculated
-##### Precharge and Discharge Circuit
+The maximum voltage of the Accumulator with 28 cells in series will be
+
+		Max Voltage = 28 * 4.25 V
+        Max Voltage = 119 V
+        
+From this calculation, the maximum voltage falls within range of our motor controller's specification
+
+Finally, the minimum voltage value will be calculated
+
+		Minimum Voltage = 28 * 2.75 V
+        Minumum Voltage = 77 V
+From this calculation, the minimum voltage falls within range of our motor controller's specification
+
+###### Parallel Calculation
+
+### Precharge and Discharge Circuit
+
+
 # References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Oct 22, 2024)
 2. Tesla500, "Sevcon Gen4 AC motor controller teardown", omeganaught.com, <http://omeganaught.com/2014/05/sevcon-gen4-ac-motor-controller-teardown/> (accessed Nov 17, 2024)
