@@ -10,10 +10,7 @@ Cookeville, TN, USA
 
 # Function of the Subsystem
 
-The Accumulator (Battery) subsystem is responsible for safely storing and providing high voltage DC power to the motor controller of the Formula SAE Electric vehicle.  The Accumulator is an closed container that houses battery cells, isolation relays (AIRs), temperature sensors, and voltage sensors.  Externally, two terminals provide the high voltage power for the motor controller, two low voltage terminals connected to the shutdown circuit are used to control the AIRs, and finally, a voltage indicator LED turns on when high voltage is present at the output terminals.
-
-To safely store energy, the Accumulator has internal temperature sensors and voltage sensors to monitor the condition of the battery cells.  The Accumulator must be able to turn off high voltage power to the external terminals if these voltage or temperature sensors read values too high or too low.  The Accumulator must also be able to turn off external high voltage power if the shutdown circuit is opened.
-
+The Accumulator (Battery) subsystem is responsible for safely storing and providing high voltage DC power to the motor controller of the Formula SAE Electric vehicle.  The Accumulator is an closed container that houses battery cells, isolation relays (AIRs), temperature sensors, voltage sensors, precharge circuits, discharge circuits, and a battery managemeny system (BMS).  Externally, two terminals provide the high voltage power for the motor controller, two low voltage terminals connected to the shutdown circuit are used to control the AIRs, and finally, a voltage indicator LED turns on when high voltage is present at the output terminals.
 
 
 # Specifications and Constraints
@@ -51,16 +48,18 @@ The Accumulator subsystem can be broken down into three subsequent subsystems.
 1. Battery Cells  
 	The battery cells are the part of the Accumulator that store the electrical energy.  For this project, off the shelf battery cells shall be used.  Designing these battery cells so that they are arranged to deliver the capacity of power for the required duration is what will make this subsystem of the Accumulator successful.  When placed in series, the individual battery cell voltage will be added, increasing the voltage.  When placed in parallel, the load is split between the parallel paths, thus increasing the run time of the battery.  The two factors that will influence how the cells of the battery are arranged are as follows:
     
-    1. The voltage and current draw of the motor.  
-    2. The duration of operation of the motor.
+    1. The voltage and current draw of the motor.  [100 V & 
+    2. The duration of operation of the motor.  [40 minutes]
    
-	The final battery cell arrangement for the Accumulator shall be 28s2p.
+	The final battery cell arrangement for the Accumulator shall be 28s4p.  Farasis 29Ah 3.65V Lithium Polymer batteries will be used as the battery cells.
 
 2. Precharge & Discharge Circuits  
-	The precharge and discharge circuits will be located on a PCB installed on the inside of the Accumulator container.  The precharge and discharge circuits will take high voltage inputs from the output of the battery cells inside the accumulator, and then slowly output increasing voltage to charge the capacitor of the motor controller.  The voltage of the output of the battery cells needs to be measured , the size of the capacitors 
+	The precharge and discharge circuits will be located on a PCB installed on the inside of the Accumulator container.  The precharge and discharge circuits will take high voltage inputs from the output of the battery cells inside the accumulator, and the voltage across the motor controller.  Digital logic and a seperate relay to send current through a resistor shall be used to slowly charge the capacitors in the motor controller to at least 90% of the Accumulator's voltage.  
     
-3. Accumulator Management System  
-	The Accumulator Mangement System shall be 
+3. Battery Management System  
+	The Battery Mangement System consists of temperature and voltage sensors inside of the Accumulator container.  If the voltage of battery cells does not meet the normal operating range, the battery management system will turn off the AIRs to prevent the Accumulator from being discharged/overcharged.  Likewise, if the temperature of the accumulator does not meet the normal operating range, the BMS will turn off the AIRs.
+    
+    The BMS sensors will be controlled with a low power microcontroller that programmed to periodically wake up and check the values of the sensors.
 
 # Interface with Other Subsystems
 
@@ -81,15 +80,22 @@ The Accumulator will have the following connections to other subsystems in the e
 
 
 # BOM
-
-
-
 | Manufacturer     | Part Number | Distributor     | Quantity | Price |
 |------------------|-------------|-----------------|----------|-------|
-| Zero Motorcycles | 46-08228    | Max Motorsports | 1        | $3600 |                                    
+| Zero Motorcycles | 46-08228    | Max Motorsports | 1        | $3549 |                                    
+
+# Analysis
+##### Battery Cells 
+The first step of designing the optimized battery cell structure is to determine the required power and run time of the battery.  For the Formula SAE Electric competition, the longest event is the Endurance event which can take teams 30-45 minutes to complete.  Thus the battery needs to be designed to run for at least 45 minutes.
+
+The second step for designing a battery is to determine the voltage and current that the battery needs to supply.  The Sevcon Gen 4 controller that will be used in the FSAE Electric vehicle requires 48-150 V, and it's nominal voltage rating is 110 V.  For this battery, the nominal voltage will be 102 V.  The maximum voltage will be 116 V.  The continuous current draw from the Sevcon Gen 4 controller is 120 A, and the burst (10 Second) current draw is 360 Amps.  Thus our power requirements for the batteries are:
+
+| Battery Run Time | Battery Voltage | Battery Current              |
+|------------------|-----------------|------------------------------|
+| 45 Minutes       | 102 V           | 120 Amps Continuous, 360 Amps Burst |
 
 
-
+##### Precharge and Discharge Circuit
 # References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Oct 22, 2024)
 2. <http://omeganaught.com/2014/05/sevcon-gen4-ac-motor-controller-teardown/>
