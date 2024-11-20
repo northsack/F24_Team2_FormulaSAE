@@ -48,7 +48,7 @@ The Accumulator subsystem can be broken down into three subsequent subsystems.
 1. Battery Cells  
 	The battery cells are the part of the Accumulator that store the electrical energy.  For this project, off the shelf battery cells shall be used.  Designing these battery cells so that they are arranged to deliver the capacity of power for the required duration is what will make this subsystem of the Accumulator successful.  When placed in series, the individual battery cell voltage will be added, increasing the voltage.  When placed in parallel, the load is split between the parallel paths, thus increasing the run time of the battery.  The two factors that will influence how the cells of the battery are arranged are as follows:
     
-    1. The voltage and current draw of the motor.  [100 V & 
+    1. The voltage and current draw of the motor.  [100 V & 120 Amps Continuous, 360 Amps Burst]
     2. The duration of operation of the motor.  [40 minutes]
    
 	The final battery cell arrangement for the Accumulator shall be 28s4p.  Farasis 29Ah 3.65V Lithium Polymer batteries will be used as the battery cells.
@@ -85,7 +85,9 @@ The Accumulator will have the following connections to other subsystems in the e
 | Zero Motorcycles | 46-08228    | Max Motorsports | 1        | $3549 |                                    
 
 # Analysis
-##### Battery Cells 
+### Battery Cells  
+##### Requirements:
+
 The first step of designing the optimized battery cell structure is to determine the required power and run time of the battery.  For the Formula SAE Electric competition, the longest event is the Endurance event which can take teams 30-45 minutes to complete.  Thus the battery needs to be designed to run for at least 45 minutes.
 
 The second step for designing a battery is to determine the voltage and current that the battery needs to supply.  The Sevcon Gen 4 controller that will be used in the FSAE Electric vehicle requires 48-150 V, and it's nominal voltage rating is 110 V.  For this battery, the nominal voltage will be 102 V.  The maximum voltage will be 116 V.  The continuous current draw from the Sevcon Gen 4 controller is 120 A, and the burst (10 Second) current draw is 360 Amps.  Thus our power requirements for the batteries are:
@@ -94,11 +96,25 @@ The second step for designing a battery is to determine the voltage and current 
 |------------------|-----------------|------------------------------|
 | 45 Minutes       | 102 V           | 120 Amps Continuous, 360 Amps Burst |
 
+##### Battery Cell Specifications
+Off the shelf battery cells will be used for this accumulator.  These cells are cost effective, proven to be reliable, and documented well.  The specific cells that will be used for this project are Farasis 29Ah 3.65V Lithium Polymer batteries.  When we arrange the battery cells, installing them in series adds the cell voltage, and installing them in parallel divides the power load, thus increasing run time.
 
+| Max Voltage  | Nominal Voltage | Max Discharge Current  | Continuous Discharge Current |
+|--------------|-----------------|------------------------|------------------------------|
+| 4.25 V       | 3.65 V          | 174 Amps               | 87 Amps                      |
+
+##### Battery Cell Arrangement Calculations
+In order to provide a nominal 102 V, we must calculate how many cells in series are required.  
+
+		Series Battery Cells = 102 V (Battery Voltage) / 3.65 V (Individual Cell Voltage)
+        Series Battery Cells = 27.95
+        Series Battery Cells = 28
+
+Next, the number of parallel batteries needs to be calculated
 ##### Precharge and Discharge Circuit
 # References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Oct 22, 2024)
-2. <http://omeganaught.com/2014/05/sevcon-gen4-ac-motor-controller-teardown/>
-3. <https://www.wisconsinracing.org/wp-content/uploads/2020/10/2018_ESF_Submission.pdf>
-4. <https://www.wisconsinracing.org/wp-content/uploads/2024/05/Release-of-223E-Electrical-Designs.pdf>
-5. <https://www.thunderstruck-ev.com/images/companies/1/Switch-Relay/EV200%20Kilovac.pdf?1660688661072>
+2. Tesla500, "Sevcon Gen4 AC motor controller teardown", omeganaught.com, <http://omeganaught.com/2014/05/sevcon-gen4-ac-motor-controller-teardown/> (accessed Nov 17, 2024)
+3. Jason Sylvestre, "Electrical System Form FSAE-E2018", wisconsinracing.org, <https://www.wisconsinracing.org/wp-content/uploads/2020/10/2018_ESF_Submission.pdf> (accessed Nov 17, 2024)
+4. Wisconsin Racing, "WISCONSIN RACING 223E ELECTRICAL DESIGNS", wisconsinracing.com, <https://www.wisconsinracing.org/wp-content/uploads/2024/05/Release-of-223E-Electrical-Designs.pdf> (accessed Nov 17, 2024)
+5. <https://www.thunderstruck-ev.com/images/companies/1/Switch-Relay/EV200%20Kilovac.pdf?1660688661072> (accessed Nov 17, 2024)
