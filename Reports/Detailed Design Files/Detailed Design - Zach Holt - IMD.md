@@ -12,11 +12,11 @@ The function of the IMD inside the shutdown circuit is to detect any possible el
 
 ## Specifications and Restraints
 As the IMD is a part of the shutdown circuit, it is bound by the rules and regulations specified in the FSAE-EV Rulebook [1]. The rules pertaining to the IMD are as follows:
-1. The IMD must detect insulation resistance below 500 Ohms/Volt of the maximum tractive system voltage and trigger the shutdown circuit accordingly.
-2. It must continuously monitor the isolation resistance between the high-voltage system and the chassis ground during all operational phases.
-3. The IMD must be connected in the shutdown circuit to disable the tractive system if an isolation fault is detected.
-4. The IMD must not rely on programmable logic or software for safety-critical functionality, ensuring it operates independently and reliably.
-5. In the event of an IMD failure, the system must default to a safe state, interrupting the shutdown circuit to disable the vehicle.
+1. The IMD shall detect insulation resistance below 500 Ohms/Volt of the maximum tractive system voltage and trigger the shutdown circuit accordingly.
+2. It shall continuously monitor the isolation resistance between the high-voltage system and the chassis ground during all operational phases.
+3. The IMD shall be connected in the shutdown circuit to disable the tractive system if an isolation fault is detected.
+4. The IMD shall not rely on programmable logic or software for safety-critical functionality, ensuring it operates independently and reliably.
+5. In the event of an IMD failure, the system shall default to a safe state, interrupting the shutdown circuit to disable the vehicle.
 
 
 ## Overview of Proposed Solution
