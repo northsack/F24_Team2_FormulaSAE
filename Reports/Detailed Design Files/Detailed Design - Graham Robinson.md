@@ -1,9 +1,13 @@
 Formula SAE Electric Vehicle Detailed Design
 
 Graham Robinson
+
 Tennessee Technological University, ECE Department
+
 Tennessee Tech Motorsports
+
 Cookeville, TN, USA
+
 glrobinson42@tntech.edu
 
 Motor Controller.
