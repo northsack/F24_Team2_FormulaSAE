@@ -66,15 +66,22 @@ The Accumulator subsystem can be broken down into three subsequent subsystems.
 The Accumulator will have the following connections to other subsystems in the electric vehicle.  
   
   **High Voltage Connections**
+  
+  In order to power the high voltage components of the Electric vehicle, the Accumulator will output high voltage to the following systems.
   | Connection                                         | Connection Type | Direction |
   |----------------------------------------------------|-----------------|-----------|
   | Motor Controller (+) and (-) Terminals             | DC Power        | Output    |
   | Insulation Monitoring Device (+) and (-) Terminals | DC Power        | Output    |
 
-  **Low Voltage Connections**
-  | Connection                                         | Connection Type | Direction |
+  
+  
+ **Low Voltage Connections**
+ 
+ The following low voltage connections are required for the Accumulator to control itself.  The Shutdown Circuit controls whether the Accumulator provides high voltage power at the output terminals, and the Low Voltage Battery connection supplies the required power to control the internal microcontroller and relays.
+ | Connection                                         | Connection Type | Direction |
   |----------------------------------------------------|-----------------|-----------|
   | Shutdown Circuit (+) and (-)             	     | DC Power        | Input     |
+  | 12 V Low Voltage Battery (+) and (-)				| DC Power 		 | Input 	|
 
 # Buildable Schematic
 
@@ -153,9 +160,32 @@ From the calculations of the load and run time, the Accumulator's battery cell s
 
 ### Precharge and Discharge Circuit
 
-To design the precharge and discharge circuits, the value of the motor controller capacitors must be known.  The capacitors for the Sevcon Gen 4 controller are 2400 microFarads.  Since the nominal battery voltage is 102 V, an RC circuit can be designed to slowly charge the motor controller capacitors.
+When the shutdown circuit is closed, the Accumulator will begin precharging the capacitors inside the motor controller.  Once the capacitors have been precharged, then the Accumulator will turn off the precharge circuit by opening the precharge relay, and then the Accumulator will close the AIR relays to provide full high voltage power to the external terminals.
 
-![Figure 1: LTSpice simulation of Precharge Circuit](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Precharge.PNG)\
+###### Microcontroller Behavior
+To operate the internal relays and monitor voltage, an Arduino Nano microcontroller will be used inside of the Accumulator.  The Arduino Nano will use digital outputs to control transistors to operate the relays for precharging, discharging, and normal operation.  
+
+Transistors are necessary because the relay coils for the Accumulator require 12 V to operate.  Thus the 5 V digital output of the Arduino will not be sufficient to control these relays.  
+
+The operations of the microcontroller are as follows:
+
+1. Shutdown Circuit open ---> closed (Car is ready to drive):
+	1. Microcontroller will open the discharge circuit relay, and will close the precharge relay which will begin charging the capacitors
+	2. Micricontroller will monitor the voltage across the motor controller
+	3. Once the monitored voltage is greater than or equal to 92 V, the microcontroller will open the precharge relay and close the + and - terminal AIRs.  
+	
+2. Shutdown Circuit closed ---> open (Car needs to stop):
+	1. Microcontroller will open the + and - terminal AIR and will close discharge relay.
+
+###### Precharge Circuit Design
+Once the microcontroller has been programmed to operate the relays in the described behavior above, the next step for designing the precharge and discharge circuit is determining the values of the precharge and discharge resistors.  To find these resistance values, the value of the motor controller capacitors must be known.  The capacitors for the Sevcon Gen 4 controller are 2400 microFarads.  Since the nominal battery voltage is 102 V, an RC circuit can be designed to slowly charge the motor controller capacitors.
+
+![Figure 1: LTSpice simulation of Precharge Circuit](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Precharge.PNG)
+
+From this LTSpice simulation, it can be observed that with a 400 Ohm resistor, the precharge circuit will charge the motor controller capacitors to 92 Volts (90 % of the Accumulator voltage) in roughly 2.3 seconds.
+
+###### Discharge Circuit Design
+
 
 # References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Oct 22, 2024)
