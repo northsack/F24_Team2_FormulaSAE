@@ -1,4 +1,4 @@
-# Formula SAE Electric- Motor
+# Formula SAE Electric - Motor
 
 **Erlind Boraj**  
 *Tennessee Technological University, ECE Department*  
@@ -114,6 +114,8 @@ The motor subsystem is designed to fulfill the performance, reliability, and saf
 
 - #### Regulatory Compliance:
 1. The subsystem adheres to Formula SAE safety and performance regulations, ensuring the vehicle’s eligibility for competition. Features such as high-voltage isolation and thermal management contribute to meeting these standards.
+
+   
 # References
 
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0,” *fsaeonline.com*,  
@@ -121,4 +123,8 @@ The motor subsystem is designed to fulfill the performance, reliability, and saf
 
 2. Wisconsin Formula SAE Racing, "Electrical System Form FSAE-E2018," *wisconsinracing.org*,  
    [https://www.wisconsinracing.org/wp-content/uploads/2020/10/2018_ESF_Submission.pdf](https://www.wisconsinracing.org/wp-content/uploads/2020/10/2018_ESF_Submission.pdf) (accessed Nov 21, 2024).
+   
+3. [Motion Control Tips, "What is a sine encoder (aka sine-cosine encoder)?"](https://www.motioncontroltips.com), Oct. 16, 2019.
+
+4. [Control.com, "Encoders vs. Resolvers: Applications and Characteristics"](https://www.control.com).
 
