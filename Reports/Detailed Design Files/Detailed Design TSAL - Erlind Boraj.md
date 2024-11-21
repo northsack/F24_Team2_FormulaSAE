@@ -171,6 +171,19 @@ The TSAL circuit is built on a single control board and consists of HV connectio
 5. LEM, "Current Transducer HO-S series Datasheet," *LEM*.  
    [https://www.lem.com](https://www.lem.com) (accessed Nov 21, 2024).
 
-[6] "Video Title," *YouTube*, published by [Channel Name], [Video Length]. Available: [https://www.youtube.com/watch?v=5dQUlfogNlM](https://www.youtube.com/watch?v=5dQUlfogNlM). [Accessed: Nov. 21, 2024].
+6. "Video Title," *YouTube*, published by [Channel Name], [Video Length]. Available: [https://www.youtube.com/watch?v=5dQUlfogNlM](https://www.youtube.com/watch?v=5dQUlfogNlM). [Accessed: Nov. 21, 2024].
+
+7. FormulaElectricRacingNUST. "Tractive System Activation Light 2024." Hackster.io, 16 July 2024. [Online]. Available: https://www.hackster.io/formulaelectricracingnust/tractive-system-activation-light-2024-fbaa8f. [Accessed: 21 Nov 2024].
+
+8. vsdave1616. "Schematic for TSAL_KE1_Green: Designing a Tractive System Active Light." Flux.ai, [Online]. Available: https://www.flux.ai/vsdave1616/tsalke1green. [Accessed: 21 Nov 2024].
+
+9. Susanto, R. "The Electrical Circuitry for Formula SAE-Electric 2012." ROBLAB.org, 2012. [Online]. Available: https://roblab.org/theses/2012-REV-SAE-Electrics-Susanto.pdf. [Accessed: 21 Nov 2024].
+
+10. ephrenm. "tt08-tsal: Semiconductor design for FSAE EV Tractive System Active Light (TSAL)." GitHub, [Online]. Available: https://github.com/ephrenm/tt08-tsal. [Accessed: 21 Nov 2024].
+
+11. Eurocircuits. "Formula Cruisers Season 20/21." Eurocircuits, 2021. [Online]. Available: https://www.eurocircuits.com/blog/formula-cruisers-season-20-21/. [Accessed: 21 Nov 2024].
+
+
+
 
 
