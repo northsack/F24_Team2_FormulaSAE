@@ -90,7 +90,7 @@ The Accumulator will have the following connections to other subsystems in the e
 
 The first step of designing the optimized battery cell structure is to determine the required power and run time of the battery.  For the Formula SAE Electric competition, the longest event is the Endurance event which can take teams 30-45 minutes to complete.  Thus the battery needs to be designed to run for at least 45 minutes.
 
-The second step for designing a battery is to determine the voltage and current that the battery needs to supply.  The Sevcon Gen 4 controller that will be used in the FSAE Electric vehicle requires 48-150 V, and it's nominal voltage rating is 110 V.  For this battery, the nominal voltage will be 102 V.  The maximum voltage will be 116 V.  The continuous current draw from the Sevcon Gen 4 controller is 120 A, and the burst (10 Second) current draw is 360 Amps.  Thus our power requirements for the batteries are:
+The second step for designing a battery is to determine the voltage and current that the battery needs to supply.  The Sevcon Gen 4 controller that will be used in the FSAE Electric vehicle requires 48-150 V, and it's nominal voltage rating is 110 V.  For this battery, the nominal voltage will be 102 V.  The maximum voltage will be 116 V.  The continuous current draw from the Sevcon Gen 4 controller is 120 A, and the burst (10 Second) current draw is 360 Amps.  Thus the power requirements for the batteries are:
 
 | Battery Run Time | Motor Controller Voltage Range| Motor Controller Current Consumption             |
 |------------------|-----------------|------------------------------|
@@ -99,16 +99,16 @@ The second step for designing a battery is to determine the voltage and current 
 ##### Battery Cell Specifications
 Off the shelf battery cells will be used for this accumulator.  These cells are documented well, cost effective, and proven to be reliable.  The specific cells that will be used for this project are Farasis 29Ah 3.65V Lithium Polymer batteries.
 
-| Max Voltage  | Nominal Voltage | Max Discharge Current  | Continuous Discharge Current |
-|--------------|-----------------|------------------------|------------------------------|
-| 4.25 V       | 3.65 V          | 174 Amps               | 87 Amps                      |
+| Max Voltage  | Nominal Voltage | Max Discharge Current  | Continuous Discharge Current | Ah Rating |
+|--------------|-----------------|------------------------|------------------------------|------|
+| 4.25 V       | 3.65 V          | 174 Amps               | 87 Amps                      | 29 Ah|
 
 ##### Battery Cell Arrangement Calculations
 In order to build an Accumulator to power this vehicle, the battery cells must be arranged to provide the required voltage, current, and run time.  When the battery cells are arranged in series the battery cells in series' voltage is added, thus increasing the overall battery output voltage.  Installing the battery cells in parallel increases the current capacity of the Accumulator, as well as increasing the run time of the Accumulator.
 
 ###### Series Calculation
 
-In order to provide a nominal 102 V, we must calculate how many cells in series are required.  
+In order to provide a nominal 102 V, the number of cells in series must be calculated.  
 
 		Series Battery Cells = 102 V (Battery Voltage) / 3.65 V (Individual Cell Voltage)
         Series Battery Cells = 27.95
@@ -119,20 +119,43 @@ The maximum voltage of the Accumulator with **28 cells** in series will be
 		Max Voltage = 28 (# of Cells) * 4.25 V (Maximum Cell Voltage)
         Max Voltage = 119 V
         
-From this calculation, the maximum voltage falls within range of our motor controller's specification
+From this calculation, the maximum voltage falls within range of the motor controller's specification.
 
 Finally, the minimum voltage value will be calculated
 
 		Minimum Voltage = 28 (# of Cells) * 2.75 V (Minimum Cell Voltage)
         Minumum Voltage = 77 V
-From this calculation, the minimum voltage falls within range of our motor controller's specification
+From this calculation, the minimum voltage falls within range of the motor controller's specification.  
 
 ###### Parallel Calculation
 
-In order to 
+In order to deliver the required current and desired runtime, battery cells must be placed in parallel.  The available current is added for each parallel segement.  The number of parallel cells can be calculated as follows:
+		
+        Parallel Battery Cells = 300 (Max Motor Burst Current) / 174 (Max Battery Cell Burst Current)
+        Parallel Battery Cells = 1.72
+        Parallel Battery Cells = 2
+        
+Thus, based on maximum burst current, the required parallel cells are two.
+
+The last calculation that effects parallel cells is the desired run time.  The run time needs to be 45 minutes.
+		
+        Parallel Battery Cells = [0.75 (Desired Run Time in Hours) * 120 Amps (Motor Controller Constant Current)] / 29 Ah (Individual Cell aH)
+        Parallel Battery Cells = 3.10
+        Parallel Battery Cells = 4
+		
+        Run Time of 4 Battery Cells in Parallel = 4 (# of Parallel Cells) * 29 aH (Individual Cell aH) / 120 Amps
+        Run Time of 4 Battery Cells in Parallel = 0.96 Hours = 58 Minutes
+  
+Based off of this calculation, the battery needs four parallel runs of batteries.
+
+##### Summary
+From the calculations of the load and run time, the Accumulator's battery cell structure will be 28 cells in series in 4 parallel runs (28s4p).
 
 ### Precharge and Discharge Circuit
 
+To design the precharge and discharge circuits, the value of the motor controller capacitors must be known.  The capacitors for the Sevcon Gen 4 controller are 2400 microFarads.  Since the nominal battery voltage is 102 V, an RC circuit can be designed to slowly charge the motor controller capacitors.
+
+![Figure 1: LTSpice simulation of Precharge Circuit](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Precharge.PNG)\
 
 # References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Oct 22, 2024)
