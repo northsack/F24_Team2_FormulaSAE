@@ -158,7 +158,7 @@ Based off of this calculation, the battery needs four parallel runs of batteries
 ##### Summary
 From the calculations of the load and run time, the Accumulator's battery cell structure will be 28 cells in series in 4 parallel runs (28s4p).
 
-### Precharge and Discharge Circuit
+### Precharge and Discharge Circuits
 
 When the shutdown circuit is closed, the Accumulator will begin precharging the capacitors inside the motor controller.  Once the capacitors have been precharged, then the Accumulator will turn off the precharge circuit by opening the precharge relay, and then the Accumulator will close the AIR relays to provide full high voltage power to the external terminals.
 
@@ -178,14 +178,14 @@ The operations of the microcontroller are as follows:
 	1. Microcontroller will open the + and - terminal AIR and will close discharge relay.
 
 ###### Precharge Circuit Design
-Once the microcontroller has been programmed to operate the relays in the described behavior above, the next step for designing the precharge and discharge circuit is determining the values of the precharge and discharge resistors.  To find these resistance values, the value of the motor controller capacitors must be known.  The capacitors for the Sevcon Gen 4 controller are 2400 microFarads.  Since the nominal battery voltage is 102 V, an RC circuit can be designed to slowly charge the motor controller capacitors.
+After programming the microcontroller, the precharge circuit must be designed.  The precharge circuit is an RC circuit that consists of a resistor in series with the motor controller capacitors.  The resistor will provide a small current to slowly charge the capacitors of the motor controller to 90 % of the Accumulator voltage (As per mandated in the FSAE Rulebook.)  The main design objective for this circuit to determine what size resistor To find these resistance values, the value of the motor controller capacitors must be known.  The capacitors for the Sevcon Gen 4 controller are 2400 microFarads.  Since the nominal battery voltage is 102 V, an RC circuit can be designed to slowly charge the motor controller capacitors.
 
 ![Figure 1: LTSpice simulation of Precharge Circuit](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Precharge.PNG)
 
-From this LTSpice simulation, it can be observed that with a 400 Ohm resistor, the precharge circuit will charge the motor controller capacitors to 92 Volts (90 % of the Accumulator voltage) in roughly 2.3 seconds.
+From this LTSpice simulation, it can be observed that with a 400 Ohm resistor, the precharge circuit will charge the motor controller capacitors to 92 Volts (90 % of the Accumulator voltage as mandated in the Formula SAE Rulebook) in roughly 2.3 seconds.  
 
 ###### Discharge Circuit Design
-
+The discharge circuit is required to 
 
 # References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Oct 22, 2024)
