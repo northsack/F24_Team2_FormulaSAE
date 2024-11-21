@@ -162,3 +162,12 @@ The TSAL circuit is built on a single control board and consists of HV connectio
 2. Wisconsin Formula SAE Racing, "Electrical System Form FSAE-E2018," *wisconsinracing.org*,  
    [https://www.wisconsinracing.org/wp-content/uploads/2020/10/2018_ESF_Submission.pdf](https://www.wisconsinracing.org/wp-content/uploads/2020/10/2018_ESF_Submission.pdf) (accessed Nov 21, 2024).
 
+3. MIT, "Formula SAE EV Battery Design," *MIT DSpace*.  
+   [https://dspace.mit.edu](https://dspace.mit.edu). (accessed Nov 21, 2024).
+
+4. Meah, S., et al., "Design, build, and test drive a FSAE electric vehicle," *The Journal of Engineering*, vol. 2020, no. 1, pp. 1-12, 2020.  
+   [https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/joe.2020.0015](https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/joe.2020.0015) (accessed Nov 21, 2024).
+
+5. LEM, "Current Transducer HO-S series Datasheet," *LEM*.  
+   [https://www.lem.com](https://www.lem.com) (accessed Nov 21, 2024).
+
