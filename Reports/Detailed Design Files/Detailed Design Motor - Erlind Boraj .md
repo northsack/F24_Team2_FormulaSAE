@@ -124,7 +124,8 @@ The motor subsystem is designed to fulfill the performance, reliability, and saf
 2. Wisconsin Formula SAE Racing, "Electrical System Form FSAE-E2018," *wisconsinracing.org*,  
    [https://www.wisconsinracing.org/wp-content/uploads/2020/10/2018_ESF_Submission.pdf](https://www.wisconsinracing.org/wp-content/uploads/2020/10/2018_ESF_Submission.pdf) (accessed Nov 21, 2024).
    
-3. [Motion Control Tips, "What is a sine encoder (aka sine-cosine encoder)?"](https://www.motioncontroltips.com), Oct. 16, 2019.
+3. Motion Control Tips, "What is a sine encoder (aka sine-cosine encoder)?", Oct. 16, 2019. [Online]. Available: https://www.motioncontroltips.com/what-is-a-sine-encoder-aka-sine-cosine-encoder/.
 
-4. [Control.com, "Encoders vs. Resolvers: Applications and Characteristics"](https://www.control.com).
+4. Control.com, "Encoders vs. Resolvers: Applications and Characteristics." [Online]. Available: https://www.control.com/technical-articles/encoders-vs-resolvers-applications-and-characteristics/.
+
 
