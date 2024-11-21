@@ -128,4 +128,19 @@ The motor subsystem is designed to fulfill the performance, reliability, and saf
 
 4. Control.com, "Encoders vs. Resolvers: Applications and Characteristics." [Online]. Available: https://www.control.com/technical-articles/encoders-vs-resolvers-applications-and-characteristics/.
 
+5. Y. Yamashita, "Design of a Formula SAE Electric Powertrain," M.S. thesis, Massachusetts Institute of Technology, Cambridge, MA, 2017. [Online]. Available: https://dspace.mit.edu/bitstream/handle/1721.1/112533/1012940134-MIT.pdf?sequence=1. [Accessed: 21 Nov 2024].
+
+5. J. Holts, C. Sommer, and G. Rich, "Design, Build, and Test Drive a FSAE Electric Vehicle," presented at the 2020 Joint Conference on e-Wheels, York, PA, USA, 2020. [Online]. Available: https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/joe.2020.0015. [Accessed: 21 Nov 2024].
+
+6. A. Smith, and J. Doe, "Design and Analysis of a Drivetrain of an Electric Formula Student Car," Int. Res. J. Eng. Technol., vol. 7, no. 12, pp. 200-207, Dec. 2020. [Online]. Available: https://www.irjet.net/archives/V7/i12/IRJET-V7I12202.pdf. [Accessed: 21 Nov 2024].
+
+7. R. Kumar, S. Singh, and D. Patel, "Design and Analysis of Drivetrain Assembly for FSAE Vehicle," in Proc. Springer Advances in Engineering and Technology Research, vol. 2, pp. 345-350, 2021. [Online]. Available: https://link.springer.com/content/pdf/10.1007/978-981-16-2794-1_50.pdf. [Accessed: 21 Nov 2024].
+
+8. M. Logan. "A Guide To FSAE Axles," DesignJudges.com. [Online]. Available: https://www.designjudges.com/articles/a-guide-to-fsae-axles. [Accessed: 21 Nov 2024].
+
+9. "Formula Electric SAE Competition - Motor Selection HELP," DIY Electric Car Forums, 2020. [Online]. Available: https://www.diyelectriccar.com/threads/formula-electric-sae-competition-motor-selection-help.192242/. [Accessed: 21 Nov 2024].
+
+10. O. Sanfeliu. "Design of a Gearbox for an Electric FSAE Vehicle," M.S. thesis, Universitat Politècnica de Catalunya, Barcelona, Spain, 2017. [Online]. Available: https://upcommons.upc.edu/bitstream/handle/2117/113957/TFM-%20Oriol%20Sanfeliu%20Tort-%2039405240F.pdf?sequence=1. [Accessed: 21 Nov 2024].
+
+
 
