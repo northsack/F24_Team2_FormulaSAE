@@ -171,3 +171,6 @@ The TSAL circuit is built on a single control board and consists of HV connectio
 5. LEM, "Current Transducer HO-S series Datasheet," *LEM*.  
    [https://www.lem.com](https://www.lem.com) (accessed Nov 21, 2024).
 
+[6] "Video Title," *YouTube*, published by [Channel Name], [Video Length]. Available: [https://www.youtube.com/watch?v=5dQUlfogNlM](https://www.youtube.com/watch?v=5dQUlfogNlM). [Accessed: Nov. 21, 2024].
+
+
