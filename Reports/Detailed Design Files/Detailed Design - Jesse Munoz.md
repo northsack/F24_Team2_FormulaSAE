@@ -83,6 +83,10 @@ The BSPD is a component in the shutdown circuit and is one of the more complex p
     - The third sensor is the current sensor. This sensor will detect if current from motor/accumulator subsystems. It will detect the current value and send that signal to the BSPD which will then determine if the motor/accumulator subsystems' power usage is ≥ 5 kW.
     - The BSPD will have one output and that is the GLV DC power signal. As long as the BSPD does not detect the 2 shutdown conditions, as described in the BSPD specs, for 100 ms, the GLV current will flow thus keeping the shutdown circuit closed.
 
+## Buildable Schematic
+![Figure 2: Vhehicle Diagram](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/overall-vehicle-diagram.PNG)\
+Figure 2: Vhehicle Diagram
+
 ## Bill of Materials (BOM)       **(IN PROGRESS)**
 | Item                            | Manufacteror       | Part Number           | Distributor  | Distributor part number  | Quantity  | Price    |
 |---------------------------------|--------------------|-----------------------|--------------|--------------------------|-----------|----------|
