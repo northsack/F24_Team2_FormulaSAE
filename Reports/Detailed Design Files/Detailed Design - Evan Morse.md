@@ -84,7 +84,7 @@ The Accumulator will have the following connections to other subsystems in the e
   | 12 V Low Voltage Battery (+) and (-)				| DC Power 		 | Input 	|
 
 # Buildable Schematic
-![Figure 1: Overall Schematic of Vehicle](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Buildable-Schematic-Evan.PNG)
+![Figure 1: Overall Schematic of Vehicle](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/overall-vehicle-diagram.PNG)
 ![Figure 2: Buildable Schematic of Accumulator](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Buildable-Schematic-Evan.PNG)
 
 # BOM
