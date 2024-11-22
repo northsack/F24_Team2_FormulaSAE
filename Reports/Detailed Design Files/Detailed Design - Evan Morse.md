@@ -202,4 +202,3 @@ From this LTSpice simulation, it can be observed that it will take roughly 5 sec
 2. Tesla500, "Sevcon Gen4 AC motor controller teardown", omeganaught.com, <http://omeganaught.com/2014/05/sevcon-gen4-ac-motor-controller-teardown/> (accessed Nov 17, 2024)
 3. Jason Sylvestre, "Electrical System Form FSAE-E2018", wisconsinracing.org, <https://www.wisconsinracing.org/wp-content/uploads/2020/10/2018_ESF_Submission.pdf> (accessed Nov 17, 2024)
 4. Wisconsin Racing, "WISCONSIN RACING 223E ELECTRICAL DESIGNS", wisconsinracing.com, <https://www.wisconsinracing.org/wp-content/uploads/2024/05/Release-of-223E-Electrical-Designs.pdf> (accessed Nov 17, 2024)
-5. <https://www.thunderstruck-ev.com/images/companies/1/Switch-Relay/EV200%20Kilovac.pdf?1660688661072> (accessed Nov 17, 2024)
