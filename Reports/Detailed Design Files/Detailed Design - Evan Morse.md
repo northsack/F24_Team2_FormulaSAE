@@ -171,7 +171,7 @@ In order to provide power to the external terminals of the Accumulator, Accumula
 ###### Microcontroller Behavior
 To operate the internal relays and monitor the motor controller voltage, an Arduino Nano microcontroller will be used inside of the Accumulator.  The Arduino Nano will use digital outputs to control transistors to operate the relays for precharging, discharging, and normal operation. The Arduino Nano will also use an analogue input to monitor the voltage of the motor controller.  This analogue input will act as the feedback in the precharge system. 
 
-A voltage divider circuit is necessary to step down the voltage from 102 V to within a 0-5 V range so that the microcontroller can monitor the voltage of the motor controller.  Once the microcontroller observes that the monitored voltage is at least 90% of the Accumulator voltage, then the microcontroller can turn off the precharge circuit.
+A voltage divider circuit is necessary to step down the voltage across the motor controller from 102 V to within a 0-5 V range so that the microcontroller can monitor the voltage of the motor controller.  Once the microcontroller observes that the monitored voltage is at least 90% of the Accumulator voltage, then the microcontroller can turn off the precharge circuit.
 
 Transistors are necessary because the Arduino's digital outputs are only 5 Volts, but relay coils for the Accumulator require 12 Volts.  Thus the 5 Volt digital output of the Arduino will not be sufficient to control these relays.  Each output of the microcontroller is connected to the base of a BJT NpN transistor.  The Emitter of the BJT is connected to the relay, and the Collector of the BJT is connected to the 12 Volt supply.
 
