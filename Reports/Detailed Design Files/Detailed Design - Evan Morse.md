@@ -191,7 +191,11 @@ After programming the microcontroller, the precharge circuit must be designed.  
 From this LTSpice simulation, it can be observed that with a 400 Ohm resistor, the precharge circuit will charge the motor controller capacitors to 92 Volts (90 % of the Accumulator voltage as mandated in the Formula SAE Rulebook) in roughly 2.3 seconds.  
 
 ###### Discharge Circuit Design
-The discharge circuit is required to discharge the capacitors inside the motor controller 
+Similar to the precharge circuit, the discharge circuit is an RC circuit that is supposed to fully discharge the capacitors inside of the motor controller in 15 seconds.  If the same resistor is used for the discharge circuit as the precharge circuit, the circuit will discharge the capacitors in
+
+![Figure 3: LTSpice simulation of Precharge Circuit](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Discharge.PNG)
+
+From this LTSpice simulation, it can be observed that it will take roughly 5 second to discharge the capacitors with a 400 Ohm resistor.  This will pass the requirement of discharging within 15 seconds that the FSAE rules mandate.
 
 # References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Oct 22, 2024)
