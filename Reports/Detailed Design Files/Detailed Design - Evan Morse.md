@@ -10,7 +10,7 @@ Cookeville, TN, USA
 
 # Function of the Subsystem
 
-The Accumulator (Battery) subsystem is responsible for safely storing and providing high voltage DC power to the motor controller of the Formula SAE Electric vehicle.  The Accumulator is an enclosed container that houses battery cells, isolation relays (AIRs), temperature sensors, voltage sensors, precharge circuits, discharge circuits, and a battery managemeny system (BMS).  Externally, two terminals provide the high voltage power for the motor controller, two low voltage terminals connected to the shutdown circuit are used to control the AIRs, and finally, a voltage indicator LED turns on when high voltage is present at the output terminals.
+The Accumulator (Battery) subsystem is responsible for safely storing and providing high voltage DC power to the motor controller of the Formula SAE Electric vehicle.  The Accumulator is an enclosed container that houses battery cells, isolation relays (AIRs), temperature sensors, voltage sensors, precharge circuits, discharge circuits, and a battery managemeny system (BMS).  Externally, two terminals provide the high voltage power for the motor controller, three low voltage terminals connected to the shutdown circuit and low voltage battery are used to control the AIRs, and finally, a voltage indicator LED turns on when high voltage is present at the output terminals.
 
 
 # Specifications and Constraints
