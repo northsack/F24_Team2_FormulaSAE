@@ -12,83 +12,97 @@ glrobinson42@tntech.edu
 
 # The Revieew Person
 
-# **Detailed Design Motor Controller**
+# **Detailed Design: Motor Controller**
 
-#### **Function of the Subsystem:**
+#### **Function of the Subsystem**
 
-The motor controller plays a critical role in regulating the power supplied to the motor by the accumulator, converting the direct current (DC) from the battery into alternating current (AC) for AC motors or managing DC power directly for DC motors. It modulates motor speed and torque by adjusting the voltage and current in response to the driver’s input, ensuring smooth acceleration, precise torque control, and optimal power distribution across varying driving conditions. The motor controller ensures that the electric vehicle can reach its target performance goals, including a top speed of 60 miles per hour, and safely manage the motor’s power and thermal limits during operation.
+The motor controller is one of the most critical components of the electric powertrain. Its primary function is to regulate the power delivered from the accumulator to the motor. For AC motors, it converts the DC power from the battery into AC power. For DC motors, it modulates the direct current directly. This regulation allows the motor to produce the desired speed and torque based on the driver's input. By adjusting voltage and current, the motor controller ensures smooth acceleration, precise torque control, and efficient power distribution under different driving conditions.
 
----
-
-#### **Specifications and Constraints:**
-
-- **Power Input:** Must support a range of DC input voltages (48V - 96V) and output accordingly to either an AC or DC motor.
-- **Safety Requirements:** Must integrate with the vehicle’s shutdown system, including overvoltage, overcurrent, and thermal protection features to prevent damage to the motor and other powertrain components.
-- **Thermal Management:** Requires a cooling system (either air or liquid) to keep the controller within safe operating temperatures, especially during high-power demands.
-- **Regulatory Compliance:** Must adhere to Formula SAE standards, including compatibility with required safety features such as the Brake System Plausibility Device (BSPD) and Insulation Monitoring Device (IMD).
-- **Torque Control:** Must allow for precise control of motor torque and speed, providing real-time adjustments based on throttle input.
-- **Efficiency:** Must optimize power usage and efficiency, employing control algorithms like Field-Oriented Control (FOC) for AC motors.
-- **Subsystem Integration:** Needs seamless integration with the accumulator, throttle system, and other powertrain components to ensure smooth vehicle operation.
+In addition to power regulation, the motor controller also helps the vehicle meet specific performance targets, like reaching a top speed of 60 miles per hour. It incorporates built-in safety and thermal management features to prevent overheating or powertrain failures during operation.
 
 ---
 
-#### **Overview of Proposed Solution:**
+#### **Specifications and Constraints**
 
-The motor controller selected for this system will fulfill the subsystem’s specifications by converting DC power from the accumulator into the necessary form (AC or DC) to power the motor, allowing the vehicle to achieve its desired speed and torque. It will be equipped with essential safety features, including thermal protection, overcurrent protection, and real-time diagnostics for system monitoring. The motor controller will employ advanced control algorithms such as Field-Oriented Control (FOC) to maximize motor efficiency, and it will be integrated with a robust cooling system to prevent overheating during intense operation.
-
-The solution meets the specifications of torque and speed control, safety, and thermal management while ensuring the vehicle operates within the defined parameters of Formula SAE. By optimizing power distribution and controlling the motor's performance, the motor controller will enable the vehicle to meet the competition’s performance requirements and safety regulations.
-
----
-
-#### **Interface with Other Subsystems:**
-
-The motor controller interfaces with several other subsystems within the electric powertrain:
-
-| Connection     | Connection Type | Direction |
-|----------------|-----------------|-----------|
-| Battery        | DC Power        | Input     |
-| Low Voltage    | DC Power        | Input     |
-| APP 1          | Analog          | Input     |
-| APP 2          | Analog          | Input     |
-| BSE            | Analog          | Input     |
-| Phase A        | AC Power        | Output    |
-| Phase B        | AC Power        | Output    |
-| Phase C        | AC Power        | Output    |
-| Thermistor     | Analog          | Input     |
-| Sine Encoder   | Analog          | Input     |
-| Cosine Encoder | Analog          | Input     |
-
-- **Battery Input:** The motor controller receives DC power from the accumulator, which is converted to AC or DC output for the motor.
-- **Throttle Input (APP 1 & APP 2):** Analog signals from the throttle position sensors provide feedback to the motor controller, dictating the required torque and speed.
-- **BSE (Brake System Input):** The brake system provides an analog signal to the motor controller, indicating braking status.
-- **Motor Outputs (Phase A, B, C):** The motor controller sends AC power to the motor through three-phase outputs (A, B, C) to control the motor's speed and torque.
-- **Thermal and Encoder Inputs:** The motor controller monitors thermal conditions (via thermistor) and motor position (via sine and cosine encoders) to adjust the motor’s performance and prevent overheating.
+- **Power Input:** Operates within a DC voltage range of 48V to 96V to accommodate the energy supplied by the accumulator.  
+- **Safety Integration:** Must be compatible with the shutdown system, including safety mechanisms like overvoltage, overcurrent, and thermal protection.  
+- **Cooling System:** Requires efficient cooling (air or liquid) to maintain safe operating temperatures during prolonged use.  
+- **Compliance:** Adheres to Formula SAE safety standards, such as the inclusion of a Brake System Plausibility Device (BSPD) and Insulation Monitoring Device (IMD).  
+- **Torque and Speed Control:** Ensures precise adjustments based on the driver's throttle input to meet performance requirements.  
+- **Efficiency:** Implements advanced algorithms, like Field-Oriented Control (FOC), to optimize power delivery and reduce energy loss.  
+- **Subsystem Integration:** Must interface smoothly with other components, such as the accumulator, throttle sensors, and brake system.  
 
 ---
 
-#### **Bill of Materials (BOM):**
+#### **APP Sensors (Accelerator Pedal Position Sensors)**
 
-| Component Name               | Manufacturer | Part Number       | Distributor    | Distributor Part Number | Quantity | Price   | URL                                                           |
-|------------------------------|--------------|-------------------|----------------|-------------------------|----------|---------|---------------------------------------------------------------|
-| **Motor Controller**          | Sevcon       | 6585-503-001      | Sevcon         | 6585-503-001            | 1        | $800.00 | [Sevcon](https://www.sevcon.com)                               |
-| **Sevcon DVT Software**       | Sevcon       | DVT-2023          | Sevcon         | DVT-2023                | 1        | $502.32 | [Sevcon](https://www.sevcon.com)                               |
-| **Wiring Harness**            | McMaster-Carr| 7099K12           | McMaster-Carr  | 7099K12                 | 1        | $47.00  | [McMaster-Carr](https://www.mcmaster.com)                      |
-| **Thermistor**                | Honeywell    | 15TS08-302        | Digi-Key       | 15TS08-302              | 1        | $40.00  | [Digi-Key](https://www.digikey.com)                            |
-| **Throttle Position Sensor**  | Haltech      | HT-010402         | Haltech        | HT-010402               | 1        | $160.00 | [Haltech](https://www.haltech.com/product/ht-010402-throttle-position-sensor-grey/) |
+The Accelerator Pedal Position Sensors (APP sensors) are essential for communicating the driver’s throttle input to the motor controller. Two independent analog sensors (APP1 and APP2) are used for redundancy and safety.  
 
-#### **Total Subsystem Cost:**
+- **How They Work:**  
+  APP1 and APP2 send proportional signals to the motor controller, which interprets the data to determine the driver’s desired speed and torque.  
 
-**$1,549.32**
+- **Safety Redundancy:**  
+  The system constantly cross-checks the signals from both sensors. If a discrepancy is detected, the motor controller triggers a fault state to prevent unintentional acceleration.  
+
+- **Specifications:**  
+  - Dual-sensor redundancy for fault tolerance  
+  - Analog signal output ranging from 0V to 5V  
+  - Designed to meet ISO 26262 safety standards  
+
+- **Subsystem Integration:**  
+  APP sensors connect directly to the motor controller, ensuring that the driver’s input is translated into reliable motor performance.  
 
 ---
 
-#### **Analysis:**
+#### **Overview of Proposed Solution**
 
-The design of the motor controller effectively meets the system’s requirements by incorporating key features such as power regulation, safety, and thermal management. The integration of advanced control algorithms like Field-Oriented Control (FOC) maximizes motor efficiency, contributing to the vehicle’s overall performance. The motor controller’s ability to manage both speed and torque ensures the vehicle can achieve its required top speed of 60 miles per hour while maintaining control over the power distribution.
+The motor controller chosen for this design meets all necessary specifications and constraints. It is designed to convert DC power from the accumulator into the appropriate output (AC or DC) for the motor. Safety features such as thermal protection, overcurrent protection, and fault diagnostics are built in to protect the system during operation. 
 
-The system’s safety features, including overcurrent protection, overvoltage protection, and thermal management, ensure the motor and powertrain are safeguarded against potential failures. Additionally, by incorporating real-time feedback through encoders and sensors, the motor controller can adjust its operations dynamically, ensuring optimal performance in varying conditions.
+To maximize performance and efficiency, the controller uses Field-Oriented Control (FOC) algorithms, allowing it to adjust torque and speed dynamically. The integration of a robust cooling system ensures the controller operates safely under high-power demands. Overall, this solution enables the electric powertrain to meet Formula SAE competition standards while achieving reliable performance.
 
-Given the carefully selected components, the motor controller will integrate seamlessly with the overall electric powertrain and meet all Formula SAE regulations, ensuring the vehicle’s competitiveness and safety during operation.
+---
+
+#### **Interface with Other Subsystems**
+
+The motor controller communicates with various subsystems, as shown below:
+
+| **Connection**       | **Connection Type** | **Direction** |  
+|-----------------------|---------------------|---------------|  
+| Battery              | DC Power            | Input         |  
+| Low Voltage          | DC Power            | Input         |  
+| APP 1                | Analog              | Input         |  
+| APP 2                | Analog              | Input         |  
+| BSE                  | Analog              | Input         |  
+| Phase A              | AC Power            | Output        |  
+| Phase B              | AC Power            | Output        |  
+| Phase C              | AC Power            | Output        |  
+| Thermistor           | Analog              | Input         |  
+| Sine Encoder         | Analog              | Input         |  
+| Cosine Encoder       | Analog              | Input         |  
+
+---
+
+#### **Bill of Materials (BOM)**
+
+| **Component Name**          | **Manufacturer** | **Part Number**  | **Distributor** | **Distributor Part Number** | **Quantity** | **Price** | **URL**                                                       |  
+|-----------------------------|------------------|------------------|-----------------|----------------------------|--------------|-----------|--------------------------------------------------------------|  
+| Motor Controller            | Sevcon          | 6585-503-001     | Sevcon          | 6585-503-001               | 1            | $800.00   | [Sevcon](https://www.sevcon.com)                              |  
+| Sevcon DVT Software         | Sevcon          | DVT-2023         | Sevcon          | DVT-2023                   | 1            | $502.32   | [Sevcon](https://www.sevcon.com)                              |  
+| Wiring Harness              | McMaster-Carr   | 7099K12          | McMaster-Carr   | 7099K12                    | 1            | $47.00    | [McMaster-Carr](https://www.mcmaster.com)                     |  
+| Thermistor                  | Honeywell       | 15TS08-302       | Digi-Key        | 15TS08-302                 | 1            | $40.00    | [Digi-Key](https://www.digikey.com)                           |  
+| Throttle Position Sensor    | Haltech         | HT-010402        | Haltech         | HT-010402                  | 1            | $160.00   | [Haltech](https://www.haltech.com/product/ht-010402-throttle-position-sensor-grey/) |  
+
+**Total Cost:** $1,549.32  
+
+---
+
+#### **Analysis**
+
+The motor controller design successfully meets the subsystem’s constraints and performance goals. Its ability to regulate power, manage torque, and adjust speed ensures the vehicle can perform under various conditions, including achieving a top speed of 60 mph.  
+
+Safety features like overcurrent, overvoltage, and thermal protection prevent failures and extend the lifespan of components. The integration of APP sensors and control algorithms ensures reliable response to driver input while maximizing energy efficiency.  
+
+By meeting Formula SAE standards, this motor controller provides the functionality and reliability required to compete effectively.  
 
 ---
 
