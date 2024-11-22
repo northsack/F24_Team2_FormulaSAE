@@ -57,7 +57,7 @@ The Accumulator subsystem can be broken down into three subsequent subsystems.
 	The precharge and discharge circuits will be circuits located inside of the Accumulator container.  The precharge and discharge circuits will take high voltage inputs from the output of the battery cells inside the accumulator, and the voltage across the motor controller.  Digital logic and a seperate relay to send current through a resistor shall be used to slowly charge the capacitors in the motor controller to at least 90% of the Accumulator's voltage.  
     
 3. Battery Management System  
-	The Battery Mangement System consists of temperature and voltage sensors inside of the Accumulator container.  If the voltage of battery cells does not meet the normal operating range, the battery management system will turn off the AIRs to prevent the Accumulator from being discharged/overcharged.  Likewise, if the temperature of the accumulator does not meet the normal operating range, the BMS will turn off the AIRs.
+	The Battery Mangement System consists of temperature and voltage sensors inside of the Accumulator container.  If the voltage of the battery cells does not meet the normal operating range, the battery management system will turn off the AIRs to prevent the Accumulator from being discharged/overcharged.  Likewise, if the temperature of the accumulator does not meet the normal operating range, the BMS will turn off the AIRs.
     
     The BMS sensors will be controlled with a low power microcontroller that programmed to periodically wake up and check the values of the sensors.
 
