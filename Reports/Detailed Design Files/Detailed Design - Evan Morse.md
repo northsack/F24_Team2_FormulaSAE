@@ -97,7 +97,7 @@ The Accumulator will have the following connections to other subsystems in the e
 
 The first step of designing the optimized battery cell structure is to determine the required power and run time of the battery.  For the Formula SAE Electric competition, the longest event is the Endurance event which can take teams 30-45 minutes to complete.  Thus the battery needs to be designed to run for at least 45 minutes.
 
-The second step for designing a battery is to determine the voltage and current that the battery needs to supply.  The Sevcon Gen 4 controller that will be used in the FSAE Electric vehicle requires 48-150 V, and it's nominal voltage rating is 110 V.  For this battery, the nominal voltage will be 102 V.  The maximum voltage will be 116 V.  The continuous current draw from the Sevcon Gen 4 controller is 120 A, and the burst (10 Second) current draw is 360 Amps.  Thus the power requirements for the batteries are:
+The second step for designing a battery is to determine the voltage and current that the battery needs to supply.  The Sevcon Gen 4 controller that will be used in the FSAE Electric vehicle requires 48-150 V, and it's nominal voltage rating is 110 V.  For this battery, the nominal voltage will be 102 V.  The maximum voltage will be 116 V.  The continuous current draw from the Sevcon Gen 4 controller is 120 A, and the burst (10 Second) current draw is 300 Amps.  Thus the power requirements for the batteries are:
 
 | Battery Run Time | Motor Controller Voltage Range| Motor Controller Current Consumption             |
 |------------------|-----------------|------------------------------|
