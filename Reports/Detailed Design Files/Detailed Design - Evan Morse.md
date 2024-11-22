@@ -183,7 +183,7 @@ The operations of the microcontroller are as follows:
 	3. Once the monitored voltage is greater than or equal to 92 V (90 % of the Accumulator's voltage), the microcontroller will open the precharge relay and close the + and - terminal AIRs.  
 	
 2. Shutdown Circuit closed ---> open (Car needs to stop):
-	1. Microcontroller will open the + and - terminal AIR and will close discharge relay.
+	1. Microcontroller will keep the - terminal AIR closed, but will open the + terminal AIR as well as close the discharge relay.
 
 ###### Precharge Circuit Design
 After programming the microcontroller, the precharge circuit must be designed.  The precharge circuit is an RC circuit that consists of a resistor in series with the motor controller capacitors.  The resistor will provide a small current to slowly charge the capacitors of the motor controller to 90% of the Accumulator voltage (As per mandated in the FSAE Rulebook.)  The main design objective for this circuit to determine what size resistor is required for the precharge circuit.  To find the resistance value, the capacitance of the motor controller capacitors must be known.  The capacitors for the Sevcon Gen 4 controller are 2400 microFarads.  Since the nominal battery voltage is 102 V, an RC circuit can be designed to slowly charge the motor controller capacitors.
