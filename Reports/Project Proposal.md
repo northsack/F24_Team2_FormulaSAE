@@ -1,216 +1,227 @@
+_Formula SAE Electric Vehicle Project Proposal_
 
-## This Document - Project Proposal Specification
+Evan Morse, Jesse Munoz, Zach Holt, Erlind Boraj, Graham Robinson  
+Tennessee Technological University, ECE Department  
+Tennessee Tech Motorsports  
+Cookeville, TN, USA  
+[emorse42@tntech.edu](mailto:emorse42@tntech.edu), [jdmunoz42@tntech.edu](mailto:jdmunoz42@tntech.edu), [eboraj42@tntech.edu](mailto:eboraj42@tntech.edu), [zsholt42@tntech.edu](mailto:zsholt42@tntech.edu), [glrobinson42@tntech.edu](mailto:glrobinson42@tntech.edu)
 
-This document is not an outline for the project proposal. This is an explanation of what a project proposal is intended to be. It is up to each team to understand the role the project proposal plays and to construct their proposal appropriately. There are some requirements given herein that **must** be met. However, not all required items are marked by a "**must**". Further, a project proposal that attempted to only include these requirements will not be graded favorably. This document is detailed and should be read with a goal of understanding the guiding principles rather than simply a list of expectations.
+_Abstract_—This project aims to assist Tennessee Tech’s Motorsports club by designing the powertrain, controls, and power systems for the club’s first electric vehicle. This project, for both the senior design team and Tennessee Tech Motorsports, serves as an introduction to the development of electric vehicles by exposing engineering students to the rapidly developing field of electric vehicles.
 
-Regarding examples that are given, keep in mind that they should not be considered complete. That is, if an example is given for the objective, you should not think that this example would suffice for the entire objective section.
+# Define Problem
 
-In the sections that follow you will find all the information that is necessary to understand the expectations for the project proposal.
+1. _Background_
 
-### The Project Proposal
+The goal of this project is to design the power system and powertrain system of an electric formula SAE car for Tennessee Tech’s Formula SAE club, herein referred to as Tennessee Tech Motorsports (TTM). This will be the club’s first electric car, so it is crucial that these systems are designed to comply with the rules, specifications, and constraints of the Formula SAE guidelines which will be discussed in their own section.
 
-In this section, an overview of the broad goals for the project proposal is discussed. In the subsections that follow you will find some specific requirements regarding format and team member contribution.
+Since this is Tennessee Tech’s first electric vehicle, much research and collaboration with Tennessee Tech Motorsports is necessary. It is also important to note that these vehicles are very iterative and are modified and adjusted over the course of multiple years. This will be considered when designing the systems this project aims to complete.
 
-The goal of a project proposal in general is to convince someone/some organization that a project is worth undertaking and (typically) that you are the right person/group to undertake the project.
+This project, and the Formula SAE Electric competition, gives new engineers exposure to the rapidly developing field of electric automotive engineering. With more engineers being introduced to the field the potential for innovation increases. Innovations that could have a positive impact on society. These potential effects will be discussed later in its own section.
 
-So, in the broadest sense, a project proposal is persuasive writing. However, in this context persuasion does not primarily rely on an argument. Rather, persuasion is accomplished by formulating the problem, measures of success, and feasibility in a manner that considers resources and unintended consequences. 
+2. _Objective_
 
-A good project proposal will leave the reader clearly understanding
+The main goal of this project is to design the powertrain, controls, and power system for the electric vehicle, so that it meets the specifications and constraints set by Formula SAE. To be more specific a tractive system to drive and stop the car will be designed. The tractive system, and any related subsystems should be in a state so that Tennessee Tech Motorsports can continue to adjust and develop the rest of the vehicle.
 
-1. the identified and formulated objective (Often this is some problem to be solved and the relevant specs and constraints) 
+3. _Benefits_
 
-2. the background (Background includes everything necessary to understand: what the objective is specifically, why the objective is important, what will be required to address or solve the objective, how success will be measured)
+The main benefit of this project is its relation to Tennessee Tech Motorsports. Completing this project will help the club enter the electric vehicle into the Formula SAE Electric competition. This will expose current and future members to the field of electric automotive engineering. Students and faculty of all engineering disciplines will learn more about electric vehicles and contribute new ideas to the field.
 
-3. the unknowns and obstacles that may interfere with the success of the project and how the team intends to address them.
+4. _Challenges/Obstacles_
 
-4. the measures of success that will be used, why they are appropriate, and how the measurement will be made.
+This project presents several key challenges that must be carefully managed to ensure its success:
 
-5. the things which are anticipated to be needed for the completion of the project (detailed consideration of components, testing machinery, skills, et al.).
+    1. **Compliance with Formula SAE Regulations**:  
+The primary constraint is adhering to the rigorous rules and specifications set forth by the Formula SAE competition. All design decisions must align with these regulations to ensure the vehicle is eligible to compete. This requires a thorough understanding of the Formula SAE guidelines and frequent consultation to avoid violations.
+    
+    2. **Limited Control Over the Vehicle’s Structure**:  
+As this project focuses on the powertrain and electrical systems, the team has limited ability to modify or redesign the physical structure of the vehicle. Tennessee Tech Motorsports is responsible for building the car, meaning that we must work within the constraints of their design choices. Any proposed modifications to the vehicle must be communicated clearly to Tennessee Tech Motorsports, and we may need to persuade them to adopt changes that will optimize system integration.
+    
+    3. **Iterative Development**: 
+Given that this is Tennessee Tech Motorsports’ first electric vehicle, we anticipate a learning curve and a process of continuous iteration. The systems we design will likely be refined and adjusted in subsequent years, making it essential that we provide flexible and modular solutions that future teams can build upon.
+    
+5. _Availability_
+
+Availability of resources, personnel, and time will be a significant factor in this project's success. The design and development of the powertrain and power system must be coordinated within the schedules of multiple teams and stakeholders. One key challenge will be working with mechanical engineers not directly involved in this project. Their availability will dictate how quickly certain aspects of the design can be integrated into the vehicle.
+
+Additionally, members of Tennessee Tech Motorsports may have competing commitments that could limit their availability for collaboration, requiring careful planning and clear communication to ensure the project progresses smoothly. Our team will need to remain flexible and adaptable, balancing tight deadlines and resource constraints while ensuring that the systems are delivered on time and meet the required standards.
+
+To mitigate availability issues, we plan to establish a regular communication schedule, prioritize tasks, and set clear milestones to keep the project on track despite potential delays or scheduling conflicts.
+
+6. _Stakeholders_
+
+The stakeholders involved in this project are:
+
+1. **Tennessee Tech Motorsports**:  
+    As the primary recipient of the powertrain and electrical systems, Tennessee Tech Motorsports will benefit from a working electric vehicle that meets the competition's specifications. Our work will empower the club to compete in future Formula SAE Electric competitions and pave the way for further development in electric vehicle technology.
+2. **Tennessee Tech University**:  
+    The university itself is also a key stakeholder, as successful competition outcomes could bring increased recognition and funding. Additionally, this project can generate greater interest in engineering programs, particularly in electric vehicles and renewable energy technologies. The university stands to benefit from both the academic and practical experiences gained by students working on this innovative project (refer to section "Timeline").
+
+# Specifications and Constraints
+
+## Specifications of this project
+
+1. This electric powertrain shall have enough performance to be comparable to Tennessee Tech Motorsports internal combustion engine car.
+    1. The EV powertrain of this project shall have a power output comparable to Tennessee Tech Motorsports' internal combustion engine.  TTM's internal combustion engine has a power output of 52 horsepower, and 55 ft*lbs of torque.  Thus, the EV powertrain shall have a similar power output to match these specifications.
+    2. The car shall be able to operate for at least an hour to complete the FSAE endurance event before needing to recharge.
+    3. The electric powertrain shall have the capability to reach a top speed of 60 miles per hour.
+2. This Formula SAE Electric powertrain shall comply with all rules and regulations specified in the Formula SAE rule book \[1\]. Some of these rules are listed below:
+3. The voltage measured between any two points shall not exceed 600 V DC.
+4. The car shall use electric motors only.
+5. The tractive system (every part connected to the motor and/or accumulator (battery)) motor shall be connected to the battery through a motor controller.
+6. The accumulator container shall be completely closed at all times, and removeable from the vehicle while staying rule compliant.
+7. The vehicle shall include a tractive systems active light that shall illuminate when the tractive system is active.
+8. The entire Tractive System and GLV System (Grounded Low Voltage) shall be completely galvanically separated.
+9. Shutdown System: The shutdown system consists of the following components connected in series.  The purpose of these systems is to ensure the safety of the car, the driver, and team members in the near viscinity of the vehicle.  If one of these safety systems encounters a fault, the system has the ability to shut down all power to the vehicle.  Each safety system is daisy chained to the previous/next safety system.  Thus, if one system disengages power, none of the main components on the vehicle will be powered.  The system shall only function when all contacts of the safety system are closed:
+    1. Accumulator Management System
+    2. Insulation Monitoring Device
+    3. Brake System Plausibility Device
+    4. Interlocks
+    5. Master Switches
+    6. Shutdown Buttons
+    7. Brake Over Travel Switch
+    8. Inertia Switch
 
-6. the anticipated timeline (detailed outline of how long the project is likely to take based on the tasks to be completed and the personnel available to complete them).
+A figure from the Formula SAE Rulebook [1] has been included to give a visual representation of all these systems:
+![Figure 1: Shutdown Circuit of a Formula SAE EV Car](https://github.com/northsack/F24_Team2_FormulaSAE/blob/main/Documentation/Images/Fig.%201%20shutdown%20circuit.png)\
+Figure 1: Shutdown Circuit of a Formula SAE EV Car 
 
-7. the broader impacts (how will the project and its completion impact the society, economy, environment, culture, public health and safety, etc).
+10. The vehicle shall have an Insulation Monitoring Device (IMD) installed in the Tractive System
+11. The vehicle shall have a standalone nonprogrammable circuit (Brake System Plausibility Device – BSPD) to check for simultaneous braking and high power output. The BSPD shall open the shutdown circuit when both there is a demand for hard braking, and the motor/accumulator is at a level where 5 kW of electrical power in the DC circuit is delivered to the motor at the nominal battery voltage.
 
-#### Required Format and Style
+## Constraints of this project
 
-##### Citations
+1. This electric powertrain shall be designed around the budget allotted by the engineering department.
+2. This electric powertrain shall be designed with regards to the available tools, resources, and professional expertise available to the College of Engineering students at Tennessee Tech University.
+3. This electric powertrain shall be designed to operate in environments ranging from 0 C to 25 C.  When competing in Michigan, the weather varies every year that the Formula SAE EV competition is held.  The powertrain must be operational in a wide range of temperatures.
+4. This electric powertrain shall be constrained by the Tennessee Tech shop policies.  To ensure the safety of students working on this vehicle, the battery shall not be charged unless the powertrain is ready for testing.  An alternate method of supplying voltage and power to the EV powertrain system must be used.
 
-All sources used to lend information to the project proposal **must** be cited. Many citations are expected, as without citations information that is not common knowledge to those in ECE seems to be the opinion of the team members rather than a substantiated fact.
+# Identify Relevant Literature (Patents)
 
-##### Writing Point of View
+Through research on electric vehicle powertrains, particularly insights from "Zero Motorcycles’ Advanced Electric Vehicle Powertrain Development," [2] contained valuable strategies for optimizing battery usage and integrating braking methods. These insights will help to design a powertrain for Tennessee Tech Motorsports’ first electric vehicle that matches the performance of TTM's current internal combustion engine, with a target of 52 horsepower and 55 ft-lbs of torque, while achieving a top speed of 60 miles per hour and lasting at least an hour during the Formula SAE endurance event.
 
-It is more professional to use third person. However, there are times when deviating from third person improves clarity and readability.
+Insights from other teams competing in the Formula SAE Electric, like the University of Wisconsin-Madison and Rochester Institute of Technology (RIT) [6], which highlighted the importance of lightweight design and effective cooling techniques [5]. This knowledge will inform design choices while adhering to Formula SAE regulations and ensuring safety through the implementation of an Insulation Monitoring Device (IMD) and a Brake System Plausibility Device (BSPD).
 
-As an example: Each team should primarily write in third person unless one finds oneself in a situation which is clearly better suited to first person.
+To comply with Formula SAE regulations, system voltage shall remain below 600 V DC and ensure the accumulator is fully enclosed and removable. Additionally, a robust shutdown system that cuts power in the event of a fault while working on the design will be implemented.
 
-Better: Each team should primarily write in third person unless you find yourself in a situation which is clearly better suited to first person.
+# Set Goals and Measurements
 
-Best: Each team should primarily write in third person unless a specific situation is clearly better suited to first person.
+## Specification Goals and Measurements
+1. This electric powertrain shall have enough performance to be comparable to Tennessee Tech Motorsports internal combustion engine car.
+    1. The EV powertrain of this project shall have a power output comparable to Tennessee Tech Motorsports' internal combustion engine.  TTM's internal combustion engine has a power output of 52 horsepower, and 55 ft*lbs of torque.  Thus, the EV powertrain shall have a similar power output to match these specifications.
+       - Success shall also be measured by placing the operational electric powertrain on TTM’s dynameter table. From this dynameter table, the horsepower and torque of the EV powertrain shall be measured to check if the outputted power is comparable to TTM’s IC engine. If the desired numbers are not obtained, re-gearing the motor or upgrading components may be necessary.
+    2. The car shall be able to operate for at least an hour to complete the FSAE endurance event before needing to recharge.
+       - Success shall be measured by installing the EV powertrain in an FSAE style vehicle similar to TTM's IC vehicle, and running the vehicle on a chassis dynameter until the battery reaches the lowest rated voltage.
+    3. The electric powertrain shall have the capability to reach a top speed of 60 miles per hour.
+       - Success shall be measured by installing the EV powertrain in an FSAE style vehicle similar to TTM's IC vehicle, and running the vehicle at the maximum speed on a chassis dynameter 
+2. This Formula SAE Electric powertrain shall comply with all rules and regulations specified in the Formula SAE rule book \[1\]. Some of these rules are listed below:
+3. The voltage measured between any two points shall not exceed 600 V DC.
+    - Verify with a multimeter that the car does not have any two points that have a voltage difference of 600 V.
+4. The car shall use electric motors only.
+    - Verify that the car only uses electric motors.
+5. The tractive system (every part connected to the motor and/or accumulator (battery)) motor shall be connected to the battery through a motor controller.
+    - Verify that the motor has no connection to the battery other than through the motor controller.
+6. The accumulator container shall be completely closed at all times, and removeable from the vehicle while staying rule compliant.
+    - Verify that the accumulator has a mechanical system to keep it closed.
+8. The vehicle shall include a tractive systems active light that shall illuminate when the tractive system is active.
+    - Verify that when the tractive system is powered, the tractive systems active light is illuminated.
+9. The entire Tractive System and GLV System (Grounded Low Voltage) shall be completely galvanically separated.
+    - Use data sheets and a multimeter to verify that the Tractive System and GLV System are galvanically seperated
+10. Shutdown System: The shutdown system consists of the following components connected in series.  The purpose of these systems is to ensure the safety of the car, the driver, and team members in the near viscinity of the vehicle.  If one of these safety systems encounters a fault, the system has the ability to shut down all power to the vehicle.  Each safety system is daisy chained to the previous/next safety system.  Thus, if one system disengages power, none of the main components on the vehicle will be powered.  The system shall only function when all contacts of the safety system are closed:
+    1. Accumulator Management System
+    2. Insulation Monitoring Device
+    3. Brake System Plausibility Device
+    4. Interlocks
+    5. Master Switches
+    6. Shutdown Buttons
+    7. Brake Over Travel Switch
+    8. Inertia Switch
+        - Individually test each safety measure listed above by turning it off while keeping all of the others on to ensure that each system has the individual ability to disconnect the high voltage battery from powering the motor controller and motor.
 
-#### Required Contribution from Each Team Member
+11. The vehicle shall have an Insulation Monitoring Device (IMD) installed in the Tractive System
+    - Test that the insulation monitoring device cuts power to the motor controller when there is a fault in the insulation between the GLV System and the Tractive System.
+12. The vehicle shall have a standalone nonprogrammable circuit (Brake System Plausibility Device – BSPD) to check for simultaneous braking and high power output. The BSPD shall open the shutdown circuit when both there is a demand for hard braking, and the motor/accumulator is at a level where 5 kW of electrical power in the DC circuit is delivered to the motor at the nominal battery voltage.
+    - Verify that when the brake pedal is pressed down farther than 80% of its travel and the motor is at a level of consuming 5 kW of power, the system shuts opens its part of the shutdown circuit listed above.
 
-It is up to each team to designate tasks and work together toward the completion of the capstone project. However, each team member must contribute meaningfully to each part of the project. Each team member **must** contribute meaningfully to the writing of project proposal. The work of each team member toward the completion of the project proposal **must** be clearly documented at the end of the project proposal.
+## Constraint Goals and Measurements
+1. This electric powertrain shall be designed around the budget allotted by the engineering department.
+2. This electric powertrain shall be designed with regards to the available tools, resources, and professional expertise available to the College of Engineering students at Tennessee Tech University.
+3. This electric powertrain shall be designed to operate in environments ranging from 0 C to 25 C.  When competing in Michigan, the weather varies every year that the Formula SAE EV competition is held.  The powertrain must be operational in a wide range of temperatures.
+    - Temperature functionality shall be measured by placing the powertrain in a temperature controlled room, setting the temperature at intervals between the range of 0 C and 25 C, waiting 60 minutes for the powertrain components to absorb the ambient temperature, and then testing the components on a dynameter table.
+4. This electric powertrain shall be constrained by the Tennessee Tech shop policies.  To ensure the safety of students working on this vehicle, the battery shall not be charged unless the powertrain is ready for testing.  An alternate method of supplying voltage and power to the EV powertrain system must be used.
+    - A power supply capable of outputting the same power as the battery needs to be purchased to fulfill this constraint.
 
-### The Introduction
+# Estimate Resources and Timeline
 
-The introduction **must** be the first section in a proposal (and any paper in general). The introduction is the "elevator pitch" of the entire project. The explicit purpose is to introduce the objective, why it is important (briefly), and what you propose to do about it. In some cases, the introduction of a paper may be all that a reader sees (often by their own choice). So, the introduction should get the reader's attention and convince them that the rest of what you have written is important and worth reading.
+## Design Cost
 
-#### Helping the Reader Know What to Expect
+Tennessee Tech Motorsports has many parts and materials for us to use, but there will be parts and materials that we will have to purchase. The following table details an itemized list of parts or other materials needed for the completion of the electrical portion of this project:
 
-Keep in mind that your readers may not have access to the document you are currently reading. So, toward the end of the introduction, it is best to include a subsection specifically to give the reader some sense of what the proposal is going to tell them moving forward. Then, in each of the sections in the proposal you should tell the reader what to expect from the given section somewhere near the beginning. This isn't a hard rule but is a best practice. In general, this is done at the beginning of sections but not subsections as they are contributors to what you have already said the enclosing section is going to do. 
+# Table I – Cost of Materials
 
- ### Formulating the Problem
+| **Item/Material** | **Quantity** | **Cost (USD)** |
+| --- | --- | --- |
+| Aluminum Motor Plate | 1   | $125 |
+| Speed Controller | 1   | $925 |
+| 2022 Zero FXE Motorcycle (Battery & Electric Motor) | 1   | $7,050 |
+| Fire Blanket | 1   | $120 |
+| Buckets to Hold Sand | 3   | $75 |
+| DVT Configuration Software and Specialized Cable (For Programming Speed Controller) | 1   | $650 |
 
-Formulating a problem/objective means to clearly define the objective through the inclusion of background information, specifications, and constraints. A (potentially) helpful analogy would be this: formulating a problem is the process of using background information, specifications, and constraints to "fence in" the objective, so that it is unambiguously clear what is and is not being addressed and why.
+## Skills Needed
 
-As an example, a past project's objective was to build a telemetry system that would function at the end of an oil drilling tip. This statement identifies the objective, but it is not formulated. 
+The skills required for this project are more hardware based than software based. Hardware skills for this project include but are not limited to soldering, circuit design, the ability to understand wiring diagrams, and having knowledge of the parts we are working with. Collaboration with Tennessee Tech Motorsports is necessary for knowing what will be required. Software skills include being able to program a micro controller such as an Arduino to track certain metrics and give a response based on said metrics. There is plenty of documentation online that could be helpful in making progress with this project. Being able to scan through and find relevant information is beneficial as well.
 
-- Why do we want something that does that?
+## Timeline
 
-- What is so hard about this that it requires a dedicated, multi-person engineering project?
+A broad look at the current timeline of events is as follows:
 
-- Why can't we use something off the shelf?
+- August – December 2024: Design Project
+- January – May 2025: Build project
 
-The background information provides context and detail which helps to answer questions like those above and allows the team to define the boundaries of the problem (objective).
+A more detailed look at the current timeline of events is as follows:
 
-##### A Quick Example: Including background information
+**2024:**
 
-Oil drills don't go straight down because as they go past layers of rock the drill may follow a path of least resistance, so it is necessary to monitor the direction of the drill (This piece of background helps the reader to understand why a drill telemetry system is needed). Monitoring the direction is made difficult by the fact that the rock through which the drill passes is often magnetic, thus preventing magnetic sensing of direction (The more relevant background that is included, the more clearly the problem can be defined). Worse, the drill will generate significant heat (over 150C) at the tip which is where the telemetry system must be located. The drill will also produce continuous vibration that may interfere with the electronics. Therefore, typical electronics wouldn't be suited to the environment.
+- October 28: Conceptual Design Finished
+- November 30: Detailed Design Finished
 
-The problem is further complicated by the need to send information from the tip of the oil drill to the surface will be a non-trivial task due to the depth in the earth, magnetic interference, and heat. Wires running from the tip to the surface will melt or break and wireless transmission is impractical due to the environment. The conventional solution for sending signals from the tip on most oil drills is a method based on changing the rate of runoff flow. As the drill works, it generates runoff. This runoff is pumped to the surface. So, the inlet to the pump can be adjusted to restrict or augment flow. Restricted flow is analogous to a zero and augmented flow is analogous to a one. This method of communication creates a very low speed of data transmission, making it difficult to know the drill position in close to real time. If the positioning information lags, the position control system may become unstable.
+**2025:**
 
-#### Specifications and Constraints
+- January 20: Start putting the project together
+- April 11: Have the planned project scope finished and ready for tweaking
+- May 2: Project finished and ready to present
 
-Take the time to present the specifications clearly and concisely, referencing the background material briefly as needed for explanation. 
+![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/project_proposal/Documentation/Images/Gantt%20Chart-1.png)
+Figure 2: Gantt Chart
 
-##### Specifications
+Disclaimer: This Gantt Chart will be updated with individual tasks when we start assigning them.
 
-The specifications are traits imposed by stakeholders for the project to meet their requirements. Stakeholder specifications constrain the solution and provide required expectations. Through the course of the project, it may become clear that a specification is not attainable. If this occurs, discussion with the stakeholders on how to compromise is necessary.
+The excel file for this Gantt Chart can be viewed on github.
 
-As an example, the specifications for the oil drill telemetry system were that the system must fit on a commercial oil drill, be able to operate in the typical environment, and provide accurate location information quick enough for the direction control system to maintain the desired drilling direction. 
+# Broader Impacts
 
-All of the specifications given are very fuzzy. It is the engineer's job to take a fuzzy specification and distill it into something more useful. For instance, through background research it can be determined that drill tips are built to be space efficient to limit the diameter of the hole that must be drilled. Therefore, the size of the drill tip storage compartment is very limited. In the target drill the compartment is 1 inch wide. 
+When designing the Formula SAE electric vehicle's powertrain and power system, it's not only about following the technical requirements; it also involves considering a much wider approach. For example, the development of electric car technology does considerably lower greenhouse gas emissions. However, battery production and disposal present environmental risks, especially concerning the sourcing of lithium and cobalt. It is our ethical duty as engineers to take research into account when selecting materials to reduce harm to the environment, encourage recycling, and support sustainable practices. The team also needs to recognize the potential unknowns, such as technological limitations or unforeseen environmental impacts, when acquiring new materials.
 
-- Verbal spec: fit in the tip of the target drill (fuzzy)
-- Formulating the spec using background info: the system shall be less than 1 inch in diameter such that it fits in a 1 inch cylinder (measureable)
+The team also needs to consider how this technology might impact both society and the economy. While improving electric car technology can promote cleaner energy, it may upend sectors of the economy that depend on internal combustion engines, thus harming livelihoods and jobs. It will be vital to mitigate these effects by retraining workers in electric car technology. To ensure Tennessee Tech Motorsports' design is both innovative and ethically sound, we will evaluate the project based on its ability to create a tractive system that is efficient, effective, and accountable in terms of sustainability and societal impact. For feasibility, we must align the project with specific criteria, including available resources, team skills, and timeline, guaranteeing that the design remains practical and achievable within the Formula SAE constraints.
 
-So, using background information, engineers are able to formulate fuzzy, verbal specifications into precise constraints.
+# Statement of Contribution
 
-##### Other sources of constraints: Standards
+**Evan Morse**: Specifications and Constraints, Goals and Measurements, Statement of Contribution
+**Graham Robinson**: Patents, Broader Impacts, Literature
+**Zachary Holt**: Design Cost, Skills Needed, Timeline (Gantt Chart)
+**Jesse Munoz**: Introduction: Background, Objectives, Benefits
+**Erlind Boraj**: Introduction: Challenges and Obstacles, Availability, Stakeholders
 
-The stakeholders are not the only source of constraints for the project. Many will be imposed by governing bodies and standards organizations. Perhaps to make a device that operates in certain locations, the government may require the components which are included in the construction be CE certified. This would then be a standard that constrained the solution which is to be designed.
+##### References
 
-As an example of a standard which would impose a constraint, if Wi-Fi is to be used, there are specific standards that govern the operational frequency of the protocol. The engineering world is full of standards and it is the responsibility of the engineer to seek them out and adhere to them. Therefore, each team must search for standards which apply to the project and ensure that the design conforms to the standard. It will be impossible to find and adhere to all possible standards. Instead, focus on discovering and including **relevant** standards.
+1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Sep 14, 2024)
 
-Every industry and project type has many types of standards. These range from the most obvious (the national electric code) to the obscure (ISO 18646:2016 - locomotion for wheeled industrial robots). It is the responsibility of the engineer to become aware of the applicable standards and to constrain the project appropriately so that standards are met.
+2. Zero Motorcycles’ Advanced Electric Vehicle Powertrain Development and Pilot Manufacturing in California. Retrieved from the California Energy Commission: [California Energy Commission Report](https://www.energy.ca.gov/sites/default/files/2021-05/CEC-600-2020-037.pdf)
 
+3. Zero Motorcycles. (2016). 2016 Zero Motorcycles Press Kit - US [PDF]. Retrieved from <https://media.zeromotorcycles.com/press-2016/press-kits/2016-zero-press-kit-us-e.pdf> (accessed Oct. 10, 2024)
 
-##### Other sources of constraints: Externalities
+4. Zero Motorcycles. (2016). 2016 Zero press kit [PDF]. Retrieved from <https://media.zeromotorcycles.com/press-2016/press-kits/2016-zero-press-kit-us-e.pdf> (accessed Oct. 10, 2024)
 
-It is obviously important to consider the direct/intended implications of the work to be completed. ie. How would a better oil drill telemetry system affect the drilling industry? But it is also important to consider the externalities. That is the impact that the engineering, manufacturing, or final product may have on public health, safety, welfare, as well as global, cultural, social, environmental, and economic factors.
+5. Formula SAE, "Formula SAE Electric 2024 Results", <https://www.sae.org/binaries/content/assets/cm/content/attend/student-events/results/formula-sae/fsae_ev_2024_results.pdf> (accessed Oct. 10, 2024)
 
-These broader impacts will again be discussed in the path to solution section. However, here the focus is on identifying ways which these externalities should impose constraints on the project.
-
-As an example, perhaps there are two sensing devices that could be used to detect a specific signal in an aquatic environment. However, one of the sensors has a tendency to leach lead as it ages. In the long term the sensor that introduces heavy metals into waterways will have negative impacts on the environment and public health and safety. So, it would be appropriate to constrain the design so that all components are either environmentally safe for long term submersion or sealed to prevent leakage.
-
-Design should always be done in a manner that considers potential unintended consequences and is constrained to minimize the potential risks.
-
-##### A little more about constraints
-
-Constraints (regardless of their origin) must be unambiguous and impose measureable requirements on the design. At times, conforming to the constraints can be difficult. However, they are beneficial in that they provide clear expectations. When considering what makes an engineering project a success, the most important factor is whether or not the specifications and constraints were met.
-
-#### Survey of Solutions
-
-As a part of the proposal each team should research what is already available in the research literature, on the market, and in the industry. Then those findings should be curated and presented. The information should not be presented idiosyncratically. Rather, you should make sense of it and present it in a digestible manner utilizing subsections as appropriate.
-
-Other solutions to similar problems often are a great source of information about what sort of background information and standards apply. If a project were to seek to build an RFID reader, it would be helpful to look at the list of standards with which existing RFID readers comply. Further, reading a few research papers on RFID systems would yield helpful insight into the background information and the associated challenges. 
-
-Remember, it is required that any information which is not common knowledge (taught in an ECE course) be cited. 
-
-#### Summarizing the Problem
-
-In this subsection you should draw on the information already given in the background, specs and constraints, and the survey of existing solutions to summarize why the objective is important, non-trivial, and distinct.
-
-Often what makes a project different from other available solutions is the set of specifications. Even though a commercial solution may exist, it may be too costly. And it may be a specification that the total cost be kept below a certain number. Similiarly, the function of existing solutions may not meet the stakeholder specifications.
-
-### Looking Down the Path Toward Solution
-
-Now that the problem has been clearly identified and formulated with all specifications and constraints, observing all relevant standards and considering the externalities, it is possible to consider what a solution may look like. To explain the potential solution, provide all relevant science, engineering, and mathematical detail so that the reader can clearly understand how the solution may work.
-
-This section is not intended to be a full explanation of a proposed solution (If you already had a full solution, the project is probably not necessary). Rather, it provides the skeleton of what a solution will likely involve as seen from early on. Returning to the oil drill example, if we rule out magnetic positioning, research quickly yields two alternatives: accelerometer detection of gravity or gyroscopic detection of rotation. So, from the outset it is apparent that the solution will likely involve one of these solutions. For the reader to have confidence in these potential solutions, detail should be given as to how each of these could contribute to a solution from a science, engineering, and math perspective.
-
-#### Unknowns/obstacles, implications, necessary experiments
-
-In most projects there are unknowns. These pose a risk to the potential success of the project. As an example, perhaps the company which funded the oil drill telemetry system could not give vibration magnitude or frequency information for how the oil drill will shake. If this is the case, how can the team be certain that the electronics can function in the environment? They can't without first understanding the vibrations.
-
-Often, unknowns require experimentation to form a clearer image of what will be required. Sometimes typical lab experiments are viable. Other times, it may be necessary to utilize modeling and mathematics to make conservative estimates. The team should identify unkwnowns and suggest experiments, simulations, and analysis which can address these unknowns.
-
-Further, each team should consider how these unknowns could affect the solution. As an example, it may be that after simulation and analysis it is found that the oil drill is capable of producing vibrations which are greater than what any electronics can withstand. Then it may be necessary to amend the specifications appropriately.
-
-#### The Measures of Success
-
-The last component to formulating an image of the solution is to explain how the constraints (the things required for success) will be evaluated. It is insufficient that the original design was intended to produce a system which is capable of meeting the constraints. A method for experimentally validating that the constraints are met must be employed. As with any experiment, the experimental design (what you intend to do and how you intend to do it) must be statistically informed (getting the desired result once does not prove much). 
-
-In the Nasa Systems Engineering Handbook, this is discussed in section 4.2. They refer to the measures of success as measures of effectiveness (MOE).
-
-Each team is to explain the experiments that are to be employed to establish success and why they are appropriate. 
-
-As a note, would it be ethical to claim that a solution met specifications without any validation?
-
-#### Broader Implications, Ethics, and Responsibility as Engineers
-
-It is important that each team consider the impact that a solution may have in global, economic, environmental, and societal contexts. It is impossible to predict all consequences. However, failing to consider possible externalities at all leads to major issues. As an example, theoretically, if the oil drilling process were largely random (due to poor control of the drill) and it employed many people, then perhaps communities that were largely employed by oil companies as drilling workers would be negatively impacted if the process were made more efficient. Negative impacts should be identified and a plan for mitigation should be proposed if it is impossible to prevent the potential negative.
-
-The consideration of broader impacts flows naturally from the expectation that each engineer will conduct their work ethically. Significant consideration should be given to what ethical considerations are involved in and what each individual's responsibility as an engineer imposes on this project. These responsibilities and ethical considerations **must** be detailed appropriately.
-
-### The Resources
-
-Each project proposal **must** include a detailed explanation regarding what resources will be necessary and a budget proposal with justification. The resources include, but aren't limited to, necessary software, equipment, components, testing machinery, and prototyping costs.
-
-#### Personnel
-
-Each team should also consider the team members and the skills which are represented. This should be compared to the skills expected to be necessary to complete the project. Some skills will be important for each team member to possess while other skills may only be needed by a single team member. Identify skills that must be obtained. Then, provide a plan by which the team intends to close those skill gaps.
-
-Do not make the mistake of expecting that the team already knows all the relevant theoretical and technical knowledge necessary to complete the project. This is almost never the case. Even if the task were to design a simple amplification circuit, doing so in practice is always more difficult than expected and typically requires deepening the team's existing understanding.
-
-#### Timeline
-
-The last component of a proposal is the proposed timeline. This timeline should be detailed, giving all the important deadlines and tasks to be completed. The timeline should also establish a viable task assignment. This does not mean that the team member listed with the task at this point will definitely complete that task. This timeline is only intended to substantiate that the team has the personnel to complete the set of tasks by the necessary dates. Many specific tasks will likely be unknown at this point. However, those tasks will likely fall into broad categories that will be able to be foreseen.
-
-The timeline should include a professional looking Gantt chart showing the team members, their tasks, and the completion dates. It should also show milestones which mark significant events or accomplishments that demonstrate progress and completion of specific phases or tasks (design complete, ordering, final presentation, etc).
-
-If it becomes apparent that it is not possible to meet the dates, it will be necessary to limit the scope of the project and appropriately target a subset of the specifications. Then it would be necessary to update the project proposal to reflect the personnel constraint. The process of building the proposal (and the design, later) is extremely iterative.
-
-### Rubric Questions
-
-Was the project proposal written without grammatical errors?
-
-Was first person perspective used where not appropriate?
-
-Was the project proposal submitted late?
-
-Are claims made or information included that is not appropriately supported by citation?
-
-Was a proposal submitted?
-
-Does this proposal clearly present the elevator pitch of the project (persuasive summary) in the introduction?
-
-Does this proposal clearly state the objective/problem?
-
-Does this proposal sufficiently discuss the background information necessary to understand any and all objectives, specifications, constraints, context, desired outcomes, and measures of success?
-
-Does this proposal clearly formulate and consider all constraints arising from stakeholders, standards, and broader considerations?
-
-Does the proposal significantly discuss existing solutions and relevant literature?
-
-Is the formulated problem summarized well?
-
-Does the proposal consider unknowns and sources of risk and how to address them?
-
-Does the proposal consider the broader implications?
-
-Does the proposal develop appropriate measures of success that are justified based on the constraints?
-
-Is the feasibility of the project considered (resources, personnel, and timeline)?
-
-Does the project proposal work together to establish that the project (objective, background, desired outcomes, measures of success, required resources, timeline, feasibility, and broader impacts) is worth undertaking?
+6. The University of Wisconsin Madison, "Formula SAE", vehicles.wisc.edu, <https://vehicles.wisc.edu/formula/formulaabout.html> (accessed Oct. 10, 2024)
