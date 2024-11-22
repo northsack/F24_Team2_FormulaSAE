@@ -30,7 +30,7 @@ The Tractive System Active Light (TSAL) serves as a mandated safety indicator, r
 
 # Overview of Proposed Solution
 
-The proposed TSAL subsystem utilizes hardware-based activation triggered by the shutdown circuit and high-voltage connections. The TSAL integrates directly with the accumulator and the DC power input from the shutdown circuit to ensure precise activation when the tractive system is live. It automatically illuminates when the tractive system voltage exceeds 60V and turns off when the shutdown circuit disables the high-voltage system. This design complies with all Formula SAE Electric safety requirements, ensuring reliability and safety during operation and maintenance while maintaining a straightforward and robust hardware configuration.
+The proposed TSAL subsystem utilizes hardware-based activation triggered by the shutdown circuit and high-voltage connections. This design integrates directly with the accumulator and the DC power input from the shutdown circuit to ensure precise activation when the tractive system is live. It automatically illuminates when the tractive system voltage exceeds 60V and turns off when the shutdown circuit disables the high-voltage system. This design complies with all Formula SAE Electric safety requirements, ensuring reliability and safety during operation and maintenance while maintaining a straightforward and robust hardware configuration.
 
 # Interface with Other Subsystems
 
