@@ -20,7 +20,7 @@ As the IMD is a part of the shutdown circuit, it is bound by the rules and regul
 
 
 ## Overview of Proposed Solution
-The proposed solution is to purchase an IMD and integrate it within our vehicle. The IMD we have chosen can be purshaed online from  Bender [2]. This solution makes sense for our project as buying the part is a complete solution. The part is approved and recommended by the Formula SAE rulebook.
+The proposed solution is to purchase an IMD and integrate it within our vehicle. The IMD we have chosen can be purshaed online from Bender [2]. This solution makes sense for our project as buying the part is a complete solution. The part is approved and recommended by the Formula SAE rulebook.
 
 ## Interface With Other Subsystems
 The IMD is part of the shutdown circuit. It is connected in series with the inertia switch and the Brake System Plausibility Device. The input will come from the Inertia Switch, and the output will go to the BSPD.
@@ -33,7 +33,6 @@ The IMD is part of the shutdown circuit. It is connected in series with the iner
 | HV (-)   | DC Power        | Input    |
 | Pin 1  | Ground        | Input     |
 | Pin 2  | LV Battery      | Input    |
-| Pin 1  | Ground        | Input     |
 | Pin 3  | Ground       | Input    |
 | Pin 4  | Ground        | Input     |
 | Pin 8  | Status Signal      | Output    |
@@ -42,11 +41,11 @@ The IMD is part of the shutdown circuit. It is connected in series with the iner
 
 | Item                            | Manufacturer       | Part Number           | Distributor  | Distributor part number  | Quantity  | Price    | URL |
 |---------------------------------|--------------------|-----------------------|--------------|--------------------------|-----------|----------|--------|
-|  ISOMETER® IR155-3203/IR155-3204 (IMD)  | Bender | part # | Bender | Distr.#   | 1         | $xx.xx  | <https://www.bender.de/en/products/insulation-monitoring/isometer-ir155-3203-ir155-3204/> |
+|  ISOMETER® IR155-3203/IR155-3204 (IMD)  | Bender | Part # | Bender | Distr.#   | 1         | $xx.xx  | <https://www.bender.de/en/products/insulation-monitoring/isometer-ir155-3203-ir155-3204/> |
 | **Total**          			  |                    |                       |              |                          |           | $xx.xx |   |
 
 ## Analysis
-The choice to purchase an alrady manufactured BOTS aims to save the team time and resources. Since we are on a schedule, and this is only a small part of the whole, this decision will prove to be valuable. The chosed switch meets the requirements of the Formula SAE Rulebook, explained from the datasheet [2],[3] as follows: It operates as a normally closed (NC) switch, meaning that it opens the circuit upon being triggered. It is also rated for up to 5A 125-250VAC, which is capable of handling a comparable DC current in the shutdown circuit.
+The choice to purchase an IMD is intended to speed up the building process for the vehicle and to be able to adhere to the rules and constraints of Formula SAE. Since we are on a schedule, and this is only a small part of the whole, this decision will allow us to easier incorporate this part into our vehicle. The IMD meets the requirements of the Formula SAE Rulebook, as it is one of the IMDs listed in the approved parts list for Formula SAE. Overall, this is the best solution for all intended purposes as it does not make sense for us to design our own IMD. By going thiis route with the IMD, we just need to know how to connect it to the shutdown circuit.
 
 ## References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Nov 15, 2024)
