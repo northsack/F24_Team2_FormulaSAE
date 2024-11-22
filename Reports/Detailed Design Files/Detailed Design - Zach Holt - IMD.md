@@ -20,7 +20,7 @@ As the IMD is a part of the shutdown circuit, it is bound by the rules and regul
 
 
 ## Overview of Proposed Solution
-The proposed solution is to purchase an IMD and integrate it within our vehicle. The IMD we have chosen can be purshaed online from Bender [2]. This solution makes sense for our project as buying the part is a complete solution. The part is approved and recommended by the Formula SAE rulebook.
+The proposed solution is to purchase an IMD and integrate it within our vehicle. The IMD we have chosen can be purchased online from Bender [2]. This solution makes sense for our project as buying the part is a complete solution. The part is approved and recommended by the Formula SAE rulebook.
 
 ## Interface With Other Subsystems
 The IMD is part of the shutdown circuit. It is connected in series with the inertia switch and the Brake System Plausibility Device. The input will come from the Inertia Switch, and the output will go to the BSPD.
