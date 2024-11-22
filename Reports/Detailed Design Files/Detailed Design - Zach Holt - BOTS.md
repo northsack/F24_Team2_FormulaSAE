@@ -13,10 +13,10 @@ The function of the BOTS inside the shutdown circuit is to detect movement of a 
 ## Specifications and Restraints
 As the BOTS is a part of the shutdown circuit, it is bound by the rules and regulations specified in the FSAE-EV Rulebook [1]. The rules pertaining to the BOTS are as follows:
 1. The BOTS shall directly carry the shutdown circuit current.
-2. The BOTS shall open the shutdown circuit when acivated, stopping all accumulator current and ensuring the tractive system shuts down.
+2. The BOTS shall open the shutdown circuit when activated, stopping all accumulator current and ensuring the tractive system shuts down.
 
 ## Overview of Proposed Solution
-The proposed solution is to purchase a BOTS and integrate it within our vehicle. The switch we have chosen can be purshaed online at Mouser Electronics [2]. This solution makes sense for our project as it will save time and resources for our team. The BOTS we choose shall follow the constraints specified in the Formula SAE rulebook.
+The proposed solution is to purchase a BOTS and integrate it within our vehicle. The switch we have chosen can be purchased online at Mouser Electronics [2]. This solution makes sense for our project as it will save time and resources for our team. The BOTS we choose shall follow the constraints specified in the Formula SAE rulebook.
 
 ## Interface With Other Subsystems
 The BOTS is part of the shutdown circuit. It is connected in series with the Shutdown Buttons and the Tractive System Master Switch. The input will come from the Shutdown Buttons, and the output will go to the Tractive System Master Switch.
@@ -36,7 +36,7 @@ The BOTS is part of the shutdown circuit. It is connected in series with the Shu
 | **Total**          			  |                    |                       |              |                          |           | $20.00  |   |
 
 ## Analysis
-The choice to purchase an alrady manufactured BOTS aims to save the team time and resources. Since we are on a schedule, and this is only a small part of the whole, this decision will prove to be valuable. The chosed switch meets the requirements of the Formula SAE Rulebook, explained from the datasheet [2],[3] as follows: It operates as a normally closed (NC) switch, meaning that it opens the circuit upon being triggered. It is also rated for up to 5A 125-250VAC, which is capable of handling a comparable DC current in the shutdown circuit.
+The choice to purchase an already manufactured BOTS aims to save the team time and resources. Since we are on a schedule, and this is only a small part of the whole, this decision will prove to be valuable. The chosen switch meets the requirements of the Formula SAE Rulebook, explained from the datasheet [2],[3] as follows: It operates as a normally closed (NC) switch, meaning that it opens the circuit upon being triggered. It is also rated for up to 5A 125-250VAC, which is capable of handling a comparable DC current in the shutdown circuit.
 
 Apart from the SAE rules, it is also a good choice for these additional reasons: It has an IP67 rating, meaning it operates reliably in harsh conditions. It is also able to operate in a temperature range of -25C to 150C.
 
