@@ -48,7 +48,7 @@ The Accumulator subsystem can be broken down into three subsequent subsystems.
 1. Battery Cells  
 	The battery cells are the part of the Accumulator that store the electrical energy.  For this project, off the shelf battery cells shall be used.  Designing these battery cells so that they are arranged to deliver the capacity of power for the required duration is what will make this subsystem of the Accumulator successful.  When placed in series, the individual battery cell voltage will be added, increasing the voltage.  When placed in parallel, the load is split between the parallel paths, thus increasing the run time of the battery.  The two factors that will influence how the cells of the battery are arranged are as follows:
     
-    1. The voltage and current draw of the motor.  [100 V & 120 Amps Continuous, 360 Amps Burst]
+    1. The voltage and current draw of the motor.  [100 V & 120 Amps Continuous, 300 Amps Burst]
     2. The duration of operation of the motor.  [40 minutes]
    
 	The final battery cell arrangement for the Accumulator shall be 28s4p.  Farasis 29Ah 3.65V Lithium Polymer batteries will be used as the battery cells.
