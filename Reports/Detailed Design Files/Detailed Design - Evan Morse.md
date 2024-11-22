@@ -134,6 +134,8 @@ Finally, the minimum voltage value will be calculated
         Minumum Voltage = 77 V
 From this calculation, the minimum voltage falls within range of the motor controller's specification.  
 
+All of these voltages also are legal under the FSAE Rulebook.  No voltage greater than 600 V DC is present in the Accumulator.
+
 ###### Parallel Calculation
 
 In order to deliver the required current and desired runtime, battery cells must be placed in parallel.  The available current is added for each parallel segement.  The number of parallel cells can be calculated as follows:
