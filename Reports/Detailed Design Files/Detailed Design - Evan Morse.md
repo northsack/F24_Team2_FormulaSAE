@@ -84,7 +84,8 @@ The Accumulator will have the following connections to other subsystems in the e
   | 12 V Low Voltage Battery (+) and (-)				| DC Power 		 | Input 	|
 
 # Buildable Schematic
-![Figure 1: Buildable Schematic of Accumulator](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Buildable-Schematic-Evan.PNG)
+![Figure 1: Overall Schematic of Vehicle](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Buildable-Schematic-Evan.PNG)
+![Figure 2: Buildable Schematic of Accumulator](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Buildable-Schematic-Evan.PNG)
 
 # BOM
 | Manufacturer     | Part Number | Distributor     | Quantity | Price |
@@ -188,14 +189,14 @@ The operations of the microcontroller are as follows:
 ###### Precharge Circuit Design
 After programming the microcontroller, the precharge circuit must be designed.  The precharge circuit is an RC circuit that consists of a resistor in series with the motor controller capacitors.  The resistor will provide a small current to slowly charge the capacitors of the motor controller to 90% of the Accumulator voltage (As per mandated in the FSAE Rulebook.)  The main design objective for this circuit to determine what size resistor is required for the precharge circuit.  To find the resistance value, the capacitance of the motor controller capacitors must be known.  The capacitors for the Sevcon Gen 4 controller are 2400 microFarads.  Since the nominal battery voltage is 102 V, an RC circuit can be designed to slowly charge the motor controller capacitors.
 
-![Figure 2: LTSpice simulation of Precharge Circuit](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Precharge.PNG)
+![Figure 3: LTSpice simulation of Precharge Circuit](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Precharge.PNG)
 
 From this LTSpice simulation, it can be observed that with a 400 Ohm resistor, the precharge circuit will charge the motor controller capacitors to 92 Volts (90 % of the Accumulator voltage as mandated in the Formula SAE Rulebook) in roughly 2.3 seconds.  
 
 ###### Discharge Circuit Design
 Similar to the precharge circuit, the discharge circuit is an RC circuit that is supposed to fully discharge the capacitors inside of the motor controller in 15 seconds.  If the same resistor is used for the discharge circuit as the precharge circuit, the circuit will discharge the capacitors in roughly 5 seconds.  This meets the FSAE Rules, and will safely discharge all high voltage power from the vehicle, so that work can safely be performed.
 
-![Figure 3: LTSpice simulation of Precharge Circuit](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Discharge.PNG)
+![Figure 4: LTSpice simulation of Precharge Circuit](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Discharge.PNG)
 
 From this LTSpice simulation, it can be observed that it will take roughly 5 second to discharge the capacitors with a 400 Ohm resistor.  This will pass the requirement of discharging within 15 seconds that the FSAE rules mandate.
 
