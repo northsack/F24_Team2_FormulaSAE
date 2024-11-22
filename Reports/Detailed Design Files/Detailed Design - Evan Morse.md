@@ -173,14 +173,14 @@ To operate the internal relays and monitor the motor controller voltage, an Ardu
 
 A voltage divider circuit is necessary to step down the voltage across the motor controller from 102 V to within a 0-5 V range so that the microcontroller can monitor the voltage of the motor controller.  Once the microcontroller observes that the monitored voltage is at least 90% of the Accumulator voltage, then the microcontroller can turn off the precharge circuit.
 
-Transistors are necessary because the Arduino's digital outputs are only 5 Volts, but relay coils for the Accumulator require 12 Volts.  Thus the 5 Volt digital output of the Arduino will not be sufficient to control these relays.  Each output of the microcontroller is connected to the base of a BJT NpN transistor.  The Emitter of the BJT is connected to the relay, and the Collector of the BJT is connected to the 12 Volt supply.
+Transistors are necessary because the Arduino's digital outputs are only 5 Volts, but the relay coils for the Accumulator require 12 Volts.  Thus the 5 Volt digital output of the Arduino will not be sufficient to control these relays.  Each output of the microcontroller is connected to the base of a BJT NpN transistor.  The Emitter of the BJT is connected to the relay, and the Collector of the BJT is connected to the 12 Volt supply.
 
 The operations of the microcontroller are as follows:
 
 1. Shutdown Circuit open ---> closed (Car is ready to drive):
 	1. Microcontroller will open the discharge circuit relay, and will close the precharge relay which will begin charging the capacitors
-	2. Micricontroller will monitor the voltage across the motor controller
-	3. Once the monitored voltage is greater than or equal to 92 V, the microcontroller will open the precharge relay and close the + and - terminal AIRs.  
+	2. Microcontroller will monitor the voltage across the motor controller
+	3. Once the monitored voltage is greater than or equal to 92 V (90 % of the Accumulator's voltage), the microcontroller will open the precharge relay and close the + and - terminal AIRs.  
 	
 2. Shutdown Circuit closed ---> open (Car needs to stop):
 	1. Microcontroller will open the + and - terminal AIR and will close discharge relay.
