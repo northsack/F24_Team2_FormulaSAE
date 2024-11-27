@@ -3,12 +3,12 @@
 **Graham Robinson**  
 Tennessee Technological University, ECE Department  
 Tennessee Tech Motorsports  
-Cookeville, TN, USA  
+Cookeville, TN  
 glrobinson42@tntech.edu
 
 # **Detailed Design: Motor Controller Subsystem**
 
-#### **Function of the Subsystem**
+### **Function of the Subsystem**
 
 The motor controller is one of the most critical components of the electric powertrain. Its primary function is to regulate the power delivered from the accumulator to the motor. For AC motors, it converts the DC power from the battery into AC power. For DC motors, it modulates the direct current directly. This regulation allows the motor to produce the desired speed and torque based on the driver's input. By adjusting voltage and current, the motor controller ensures smooth acceleration, precise torque control, and efficient power distribution under different driving conditions.
 
@@ -16,7 +16,7 @@ In addition to power regulation, the motor controller also helps the vehicle mee
 
 ---
 
-#### **Specifications and Constraints**
+### **Specifications and Constraints**
 
 - **Power Input:** Operates within a DC voltage range of 48V to 96V to accommodate the energy supplied by the accumulator.  
 - **Safety Integration:** Must be compatible with the shutdown system, including safety mechanisms like overvoltage, overcurrent, and thermal protection.  
@@ -25,10 +25,10 @@ In addition to power regulation, the motor controller also helps the vehicle mee
 - **Torque and Speed Control:** Ensures precise adjustments based on the driver's throttle input to meet performance requirements.  
 - **Efficiency:** Implements advanced algorithms, like Field-Oriented Control (FOC), to optimize power delivery and reduce energy loss.  
 - **Subsystem Integration:** Must interface smoothly with other components, such as the accumulator, throttle sensors, and brake system.  
-
+ 
 ---
 
-#### **APP Sensors (Accelerator Pedal Position Sensors)**
+### **APP Sensors (Accelerator Pedal Position Sensors)**
 
 The Accelerator Pedal Position Sensors (APP sensors) are essential for communicating the driver’s throttle input to the motor controller. Two independent analog sensors (APP1 and APP2) are used for redundancy and safety.  
 
@@ -44,11 +44,10 @@ The Accelerator Pedal Position Sensors (APP sensors) are essential for communica
   - Designed to meet ISO 26262 safety standards  
 
 - **Subsystem Integration:**  
-  APP sensors connect directly to the motor controller, ensuring that the driver’s input is translated into reliable motor performance.  
-
+  APP sensors connect directly to the motor controller, ensuring that the driver’s input is translated into reliable motor performance.    
 ---
 
-#### **Overview of Proposed Solution**
+### **Overview of Proposed Solution**
 
 The motor controller chosen for this design meets all necessary specifications and constraints. It is designed to convert DC power from the accumulator into the appropriate output (AC or DC) for the motor. Safety features such as thermal protection, overcurrent protection, and fault diagnostics are built in to protect the system during operation. 
 
@@ -56,7 +55,7 @@ To maximize performance and efficiency, the controller uses Field-Oriented Contr
 
 ---
 
-#### **Interface with Other Subsystems**
+### **Interface with Other Subsystems**
 
 The motor controller communicates with various subsystems, as shown below:
 
@@ -76,7 +75,7 @@ The motor controller communicates with various subsystems, as shown below:
 
 ---
 
-#### **Bill of Materials (BOM)**
+### **Bill of Materials (BOM)**
 
 | **Component Name**          | **Manufacturer** | **Part Number**  | **Distributor** | **Distributor Part Number** | **Quantity** | **Price** | **URL**                                                       |  
 |-----------------------------|------------------|------------------|-----------------|----------------------------|--------------|-----------|--------------------------------------------------------------|  
@@ -90,13 +89,13 @@ The motor controller communicates with various subsystems, as shown below:
 
 ---
 
-#### **Analysis**
+### **Analysis**
 
 The motor controller design successfully meets the subsystem’s constraints and performance goals. Its ability to regulate power, manage torque, and adjust speed ensures the vehicle can perform under various conditions, including achieving a top speed of 60 mph.  
 
 Safety features like overcurrent, overvoltage, and thermal protection prevent failures and extend the lifespan of components. The integration of APP sensors and control algorithms ensures reliable response to driver input while maximizing energy efficiency.  
 
-By meeting Formula SAE standards, this motor controller provides the functionality and reliability required to compete effectively.  
+By meeting Formula SAE standards, this motor controller provides the functionality and reliability required to compete effectively.    
 
 ---
 
@@ -125,7 +124,8 @@ The proposed charger design is optimized to ensure the accumulator is charged sa
 - **Galvanic Isolation** is integrated to prevent high-voltage risks.
 - **Regulated Power Delivery** ensures the accumulator is charged without risk of overvoltage or excessive current.
 - **Temperature Resilience** ensures reliable operation in various environmental conditions.
-- **AMS Integration** enables continuous monitoring of charging parameters, and **Safety Interlocks** prevent charging if unsafe conditions are detected.
+- **AMS Integration** enables continuous monitoring of charging parameters.
+- **Safety Interlocks** prevent charging if unsafe conditions are detected.
 
 This solution ensures the charger meets all functional requirements while adhering to safety protocols and Formula SAE standards.
 
@@ -181,6 +181,8 @@ The charger subsystem fulfills all necessary specifications, ensuring the accumu
 5. Digi-Key, "Throttle Position Sensor Specifications," 2023.  
    Accessed: Nov. 20, 2024. [https://www.digikey.com](https://www.digikey.com)
 
+6. McMaster-Carr, "Wiring Harness 7099K12," 2024.
+   Accessed: Nov. 20, 2024. [https://www.mcmaster.com](ttps://www.mcmaster.com)
 
 ---
 
