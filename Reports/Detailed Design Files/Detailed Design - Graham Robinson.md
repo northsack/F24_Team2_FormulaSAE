@@ -167,22 +167,22 @@ The charger subsystem fulfills all necessary specifications, ensuring the accumu
 ### **References**
 
 1. Formula SAE, "Formula SAE Electric Rules," SAE International, 2024.  
-   Accessed: Nov. 20, 2024. [https://www.sae.org/](https://www.sae.org/)
-  
+   Accessed: Nov. 20, 2024. [https://www.sae.org/](https://www.sae.org/)  
+
 2. Sevcon, "DVT Configuration Software Manual," 2022.  
-   Accessed: Nov. 20, 2024. [https://www.sevcon.com](https://www.sevcon.com)
+   Accessed: Nov. 20, 2024. [https://www.sevcon.com](https://www.sevcon.com)  
 
 3. Vicor, "AC-DC Converter Specifications," 2023.  
-   Accessed: Nov. 20, 2024. [https://www.vicorpower.com](https://www.vicorpower.com)
+   Accessed: Nov. 20, 2024. [https://www.vicorpower.com](https://www.vicorpower.com)  
 
 4. Bender, "ISOMETER® IR155 3204 User Manual," 2021.  
-   Accessed: Nov. 20, 2024. [https://www.bender-usa.com](https://www.bender-usa.com)
+   Accessed: Nov. 20, 2024. [https://www.bender-usa.com](https://www.bender-usa.com)  
 
 5. Digi-Key, "Throttle Position Sensor Specifications," 2023.  
-   Accessed: Nov. 20, 2024. [https://www.digikey.com](https://www.digikey.com)
+   Accessed: Nov. 20, 2024. [https://www.digikey.com](https://www.digikey.com)  
 
-6. McMaster-Carr, "Wiring Harness 7099K12," 2024.
-   Accessed: Nov. 20, 2024. [https://www.mcmaster.com](ttps://www.mcmaster.com)
+6. McMaster-Carr, "Wiring Harness 7099K12," 2024.  
+   Accessed: Nov. 20, 2024. [https://www.mcmaster.com](https://www.mcmaster.com)  
 
 ---
 
