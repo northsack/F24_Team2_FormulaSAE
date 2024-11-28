@@ -87,13 +87,18 @@ The BSPD is a component in the shutdown circuit and is one of the more complex p
 ![Figure 2: Vhehicle Diagram](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/overall-vehicle-diagram.PNG)\
 Figure 2: Vhehicle Diagram
 
-## Bill of Materials (BOM)       **(IN PROGRESS)**
-| Item                            | Manufacteror       | Part Number           | Distributor  | Distributor part number  | Quantity  | Price    |
-|---------------------------------|--------------------|-----------------------|--------------|--------------------------|-----------|----------|
-| BSPD FSAE 2025/2024 - EV ONLY   | Qtronic Engineering| BSPD FSAE 2021-2 v0.5 | Ebay         | 266497060229             | 1         | $200.00  |
-| Current Sensor                  | LEM                | HO 200-S-0100         | Newark       | 64AH3657                 | 1         | $60.00   |
-| 150 Psi Pressure Transducer     | AUTEX              | GSND-0556629788       | Amazon       | B00NIK98O8               | 1         | $50.00   |
-| **Total**          			  |                    |                       |              |                          |           | $310.00  |
+## Bill of Materials (BOM)
+| Item                               | Manufacteror       | Part Number           | Distributor  | Distributor part number  | Quantity  | Price    |
+|------------------------------------|--------------------|-----------------------|--------------|--------------------------|-----------|----------|
+| 1. BSPD FSAE 2025/2024 - EV ONLY   | Qtronic Engineering| BSPD FSAE 2021-2 v0.5 | Ebay         | 266497060229             | 1         | $200.00  |
+| 2. Current Sensor                  | LEM                | HO 200-S-0100         | Newark       | 64AH3657                 | 1         | $60.00   |
+| 3. 150 Psi Pressure Transducer     | AUTEX              | GSND-0556629788       | Amazon       | B00NIK98O8               | 1         | $50.00   |
+|    **Total**          			 |                    |                       |              |                          |           | $310.00  |
+
+URLs for items in the same order as they appear:
+1. <>
+2. <https://www.newark.com/lem/hoys-200-s-0100/current-sensor-voltage-500a-to/dp/64AH3657>
+3. <https://www.amazon.com/AUTEX-Pressure-Transducer-Stainless-Compatible/dp/B00NIK98O8/ref=asc_df_B00NIK98O8>
     
 ## Analysis
 Overall the shutdown circuit is a circuit of constant checks of the different subsystems of the car. As long as each of the subsystems in the car function as intended and no sensors have any faults or short circuits, the shutdown circuit will continue to remain closed thus keeping the high voltage power supply connected to the motor. As long as each of the components of the shutdown circuit fit their own specifications and constraints, and the GLV power supplies enough energy to power these components, there should be no issue that this solution should not work.
