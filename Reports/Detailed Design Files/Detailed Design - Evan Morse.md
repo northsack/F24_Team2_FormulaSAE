@@ -20,7 +20,7 @@ The Accumulator (Battery) subsystem is responsible for safely storing and provid
 	1. Accumulator Isolation Relays:  
 		Relays shall be used inside of the Accumulator container to control the power provided to the external connectors of the Accumulator.  Power shall only be provided to the external terminals when the Shutdown Circuit is closed (vehicle is ready to drive).  The AIRs shall be used to control both the positive and negative terminals of the Accumulator. The AIRs shall be normally open.
 	2. Precharge Circuit:  
-		As part of the motor controller's design, capacitors are installed at the main high voltage terminals.  When the Accumulator Isolation Relays (AIRs) are closed (High Voltage (HV) power is turned on), and power is provided to the motor controller.  Without a Precharge Circuit, thousands of Amps can flow through the wires to charge the capacitors inside the motor controller when the AIRs close.  This can be dangerous because it can prematurely wear the AIRs, and possibly even weld the terminals of the AIRs together, preventing proper operation.  To prevent this, the Accumulator shall have a system designed to precharge the HV system to 90% of the Accumulator voltage before closing the AIRs.    
+		As part of the motor controller's design, capacitors are installed at the main high voltage terminals.  When the Accumulator Isolation Relays (AIRs) are closed (High Voltage (HV) power is turned on), and power is provided to the motor controller.  Without a Precharge Circuit, thousands of Amps can flow through the wires to charge the capacitors inside the motor controller when the AIRs close.  This can be dangerous because it can prematurely wear the AIRs, and possibly even weld the terminals of the AIRs together, preventing proper operation.  To prevent this, the Accumulator shall have a system designed to precharge the HV system to 90% of the current Accumulator voltage before closing the AIRs.      
 	3. Discharge Circuit:  
 		The accumulator shall contain a circuit that can discharge the same capacitors mentioned in statement **ii** above.  When the shutdown circuit is open (vehicle is shutting down), the AIRs shall open, and the Discharge Circuit shall safely discharge the capacitors inside of the motor controller.
 	4. Voltage Indicator:  
@@ -181,7 +181,7 @@ The operations of the microcontroller are as follows:
 1. Shutdown Circuit open ---> closed (Car is ready to drive):
 	1. Microcontroller will open the discharge circuit relay, and will close the precharge relay which will begin charging the capacitors
 	2. Microcontroller will monitor the voltage across the motor controller
-	3. Once the monitored voltage is greater than or equal to 92 V (90 % of the Accumulator's voltage), the microcontroller will open the precharge relay and close the + and - terminal AIRs.  
+	3. Once the monitored voltage is greater than or equal to 90 % of the Accumulator's current voltage, the microcontroller will open the precharge relay and close the + and - terminal AIRs.  As an example, if the Accumulator's voltage is 102 V, this precharge circuit would charge the capacitors to 92 V before closing the AIRs.  
 	
 2. Shutdown Circuit closed ---> open (Car needs to stop):
 	1. Microcontroller will keep the - terminal AIR closed, but will open the + terminal AIR as well as close the discharge relay.
