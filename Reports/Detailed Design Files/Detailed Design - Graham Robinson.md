@@ -18,7 +18,7 @@ In addition to power regulation, the motor controller also helps the vehicle mee
 
 ### **Specifications and Constraints**
 
-- **Power Input:** Operates within a DC voltage range of 48V to 96V to accommodate the energy supplied by the accumulator.  
+- **Power Input:** Operates within a DC voltage range of 48V to 120V to accommodate the energy supplied by the accumulator.  
 - **Safety Integration:** Must be compatible with the shutdown system, including safety mechanisms like overvoltage, overcurrent, and thermal protection.  
 - **Cooling System:** Requires efficient cooling (air or liquid) to maintain safe operating temperatures during prolonged use.  
 - **Compliance:** Adheres to Formula SAE safety standards, such as the inclusion of a Brake System Plausibility Device (BSPD) and Insulation Monitoring Device (IMD).  
@@ -64,8 +64,7 @@ The motor controller communicates with various subsystems, as shown below:
 | Battery              | DC Power            | Input         |  
 | Low Voltage          | DC Power            | Input         |  
 | APP 1                | Analog              | Input         |  
-| APP 2                | Analog              | Input         |  
-| BSE                  | Analog              | Input         |  
+| APP 2                | Analog              | Input         |   
 | Phase A              | AC Power            | Output        |  
 | Phase B              | AC Power            | Output        |  
 | Phase C              | AC Power            | Output        |  
@@ -81,11 +80,9 @@ The motor controller communicates with various subsystems, as shown below:
 |-----------------------------|------------------|------------------|-----------------|----------------------------|--------------|-----------|--------------------------------------------------------------|  
 | Motor Controller            | Sevcon          | 6585-503-001     | Sevcon          | 6585-503-001               | 1            | $800.00   | [Sevcon](https://www.sevcon.com)                              |  
 | Sevcon DVT Software         | Sevcon          | DVT-2023         | Sevcon          | DVT-2023                   | 1            | $502.32   | [Sevcon](https://www.sevcon.com)                              |  
-| Wiring Harness              | McMaster-Carr   | 7099K12          | McMaster-Carr   | 7099K12                    | 1            | $47.00    | [McMaster-Carr](https://www.mcmaster.com)                     |  
-| Thermistor                  | Honeywell       | 15TS08-302       | Digi-Key        | 15TS08-302                 | 1            | $40.00    | [Digi-Key](https://www.digikey.com)                           |  
 | Throttle Position Sensor    | Haltech         | HT-010402        | Haltech         | HT-010402                  | 1            | $160.00   | [Haltech](https://www.haltech.com/product/ht-010402-throttle-position-sensor-grey/) |  
 
-**Total Cost:** $1,549.32  
+**Total Cost:** $1,462.32  
 
 ---
 
