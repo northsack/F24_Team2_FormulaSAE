@@ -85,7 +85,7 @@ The Accumulator will have the following connections to other subsystems in the e
 
 # Buildable Schematic
 ![Figure 1: Overall Schematic of Vehicle](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/overall-vehicle-diagram.PNG)
-![Figure 2: Buildable Schematic of Accumulator](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/Buildable-Schematic-Evan.PNG)
+![Figure 2: Buildable Schematic of Accumulator](https://github.com/northsack/F24_Team2_FormulaSAE/blob/Evan-Morse--DD/Documentation/Images/Buildable-Schematic-Evan.PNG)
 
 # BOM
 | Manufacturer     | Part Number | Distributor     | Quantity | Price |
