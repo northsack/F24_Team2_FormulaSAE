@@ -7,7 +7,7 @@ Cookeville, TN, USA
 [jdmunoz42@tntech.edu](mailto:jdmunoz42@tntech.edu)
 
 ## Function of the Subsystem - Shutdown Circuit/Brake System Plausibility Device (BSPD)
-The function of the BSPD subsystem is open the vehicle's shutdown circuit when a open or short circuit is detected in the input sensors or when two condidtions true, for 0.5 seconds [1]. The BSPD will be placed in series with the other components of the vehicle's shutdown circuit [1].
+The function of the BSPD subsystem is open the vehicle's shutdown circuit when a open or short circuit is detected in the input sensors or when the two shutdown condidtions are true, for 0.5 seconds [1]. The BSPD will be placed in series with the other components of the vehicle's shutdown circuit [1].
 
 ## Specifications and Constraints
 #### Shutdown System Specifications:
@@ -23,16 +23,16 @@ The shutdown system consists of the following components connected in series. Th
 #### BSPD System Specifications:  
    The BSPD shall comply with all rules and regulations specified in the Formula SAE rule book [1]. The specifications for this subsystems are listed below:
    1. The BSPD shall open the shutdown circuit when one or more of the input sensors has an open or short circuit.
-   2. The BSPD shall open the shutdown circuit when both of the following conditions are met for a minimun of 0.5 seconds:
-       - When the driver has pressed the brakes far enough.
-       - When the motor/accumulator current is at a level so that the motor's DC circuit is at or above 5 kW.
+   2. The BSPD shall open the shutdown circuit when both of the following shutdown conditions are met for a minimun of 0.1 seconds:
+       - When the driver has pressed the brake pedal to or passed 50% [1].
+       - When the motor/accumulator current is at a level so that the motor's DC circuit is at or above 5 kW [1].
      
   This figure from the Formula SAE Rulebook [1] shows how the shutdown circuit is connected: 
 ![Figure 1: Shutdown Circuit of a Formula SAE EV Car](https://github.com/northsack/F24_Team2_FormulaSAE/blob/main/Documentation/Images/Fig.%201%20shutdown%20circuit.png)\
 Figure 1: Shutdown Circuit of a Formula SAE EV Car
 
 #### BSPD System Constraints:
- - The BSPD shall have a 0.5 sec delay after the two shutdown condidtions are met. This debouncing is to prevent the BSPD from opening the shutdown circuit in the event of a very short current spike or signal spike in the APPS.
+ - The BSPD shall have a 0.5 sec delay after the two shutdown conditions are met. These 2 shutdown conditions are described in the "BSPD System Specifications" section. This debouncing is to prevent the BSPD from opening the shutdown circuit in the event of a very short current spike or signal spike in the APPS.
  - The BSPD shall only open the shutdown circuit after both shutdown condidtions are true for 0.1 sec.
  - The brake pressure sensor shall send an analog signal to the BSPD when demanding hard braking. This may be a voltage signal ≥ 4.5 V.
 
@@ -62,7 +62,7 @@ The shutdown circuit is mostly made up of components that can be purchased and c
     | GVL (+)         			 | DC Power        | Input     |
     | GVL (-)         			 | DC Power        | Output    |
 
-    - The high voltage IMD connection will output the GLV current. As long as the IMD does not detect a fault in it's high voltage connections it will continue to flow the DC current through the shutdown circuit.  
+    - The high voltage IMD connection will output the GLV current. The GVL current is the current in the Grounded Low Voltage circuit. As long as the IMD does not detect a fault in it's high voltage connections it will continue to flow the DC current through the shutdown circuit.  
     - The shutdown circuit's low voltage connections will be the power supply for the GLV system.
 
 **Brake System Plausibility Device (BSPD):**  
