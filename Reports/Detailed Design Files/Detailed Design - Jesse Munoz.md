@@ -96,7 +96,7 @@ Figure 2: Vhehicle Diagram
 |    **Total**          			 |                    |                       |              |                          |           | $310.00  |
 
 URLs for items in the same order as they appear:
-1. <>
+1. <https://www.ebay.com/itm/266497060229?_trksid=p4481478.c101506.m1851>
 2. <https://www.newark.com/lem/hoys-200-s-0100/current-sensor-voltage-500a-to/dp/64AH3657>
 3. <https://www.amazon.com/AUTEX-Pressure-Transducer-Stainless-Compatible/dp/B00NIK98O8/ref=asc_df_B00NIK98O8>
     
