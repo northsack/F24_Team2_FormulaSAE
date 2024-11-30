@@ -80,7 +80,7 @@ The BSPD is a component in the shutdown circuit and is one of the more complex p
 
     - The BSPD will have three inputs, as shown in the table above. The first will be the the GLV system's DC power signal. This is the current that opens and closes the shutdown circuit. If this current flow is stopped then the shutdown circuit is opened and the high voltage power supply will be cut off.
     - The second input is the brake pressure sensor, this sensor tells the BSPD, though the current/voltage value, if the brake pedal is presses with enough pressure.
-    - The third sensor is the current sensor. This sensor will detect if current from motor/accumulator subsystems. It will detect the current value and send that signal to the BSPD which will then determine if the motor/accumulator subsystems' power usage is ≥ 5 kW.
+    - The third sensor is the current sensor. This sensor will detect the current from motor/accumulator subsystems, and needs to be able to fit a wire with an 8.2 mm diameter. It will detect the current value and send that signal to the BSPD which will then determine if the motor/accumulator subsystems' power usage is ≥ 5 kW.
     - The BSPD will have one output and that is the GLV DC power signal. As long as the BSPD does not detect the 2 shutdown conditions, as described in the BSPD specs, for 100 ms, the GLV current will flow thus keeping the shutdown circuit closed.
 
 ## Buildable Schematic
