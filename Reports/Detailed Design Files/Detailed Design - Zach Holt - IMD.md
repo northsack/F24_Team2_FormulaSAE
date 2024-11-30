@@ -37,6 +37,12 @@ The IMD is part of the shutdown circuit. It is connected in series with the iner
 | Pin 4  | Ground        | Input     |
 | Pin 8  | Status Signal      | Output    |
 
+![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/overall-vehicle-diagram.PNG)
+Figure 1: Vehicle Wiring Diagram
+
+The IMD is shown on the left side of the wiring diagram and is connected in series with the BOTS and Accumulator.
+
+
 ## BOM
 
 | Item                            | Manufacturer       | Part Number           | Distributor  | Distributor part number  | Quantity  | Price    | URL |
@@ -45,7 +51,7 @@ The IMD is part of the shutdown circuit. It is connected in series with the iner
 | **Total**          			  |                    |                       |              |                          |           | $xx.xx |   |
 
 ## Analysis
-The choice to purchase an IMD is intended to speed up the building process for the vehicle and to be able to adhere to the rules and constraints of Formula SAE. Since we are on a schedule, and this is only a small part of the whole, this decision will allow us to easier incorporate this part into our vehicle. The IMD meets the requirements of the Formula SAE Rulebook, as it is one of the IMDs listed in the approved parts list for Formula SAE. Overall, this is the best solution for all intended purposes as it does not make sense for us to design our own IMD. By going thiis route with the IMD, we just need to know how to connect it to the shutdown circuit.
+The choice to purchase an IMD is intended to speed up the building process for the vehicle and to be able to adhere to the rules and constraints of Formula SAE. This IMD is a good choice because it IMD meets the requirements of the Formula SAE Rulebook, as it is one of the IMDs listed in the approved parts list for Formula SAE. Since it is already recommended withing the Formula SAE rulebook, it saves us time from having to do more research than necessary to choose an IMD. Overall, this is the best solution for all intended purposes as it does not make sense for us to design our own IMD. By going thiis route with the IMD, we just need to know how to connect it to the shutdown circuit.
 
 ## References
 1. Formula SAE, “Formula SAE Rules 2024 Version 1.0”, fsaeonline.com, <https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=369d01c0-589d-4ebe-b8d4-b07544f4a52b> (accessed Nov 15, 2024)
