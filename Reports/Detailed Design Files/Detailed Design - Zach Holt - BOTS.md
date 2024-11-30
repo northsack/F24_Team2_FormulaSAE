@@ -30,6 +30,7 @@ The BOTS is part of the shutdown circuit. It is connected in series with the Shu
 
 ![](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/overall-vehicle-diagram.PNG)
 Figure 1: Vehicle Wiring Diagram
+
 The BOTS is shown on the left side of the wiring diagram and is connected in series with the shutdown buttons and IMD.
 
 
