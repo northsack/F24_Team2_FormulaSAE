@@ -82,7 +82,7 @@ The Accumulator will have the following connections to other subsystems in the e
   |----------------------------------------------------|-----------------|-----------|
   | Shutdown Circuit (+) and (-)             	     | DC Power        | Input     |
   | 12 V Low Voltage Battery (+) and (-)				| DC Power 		 | Input 	|
-
+  | Motor Controller Ready (+) and (-)               | DC Power         | Output    |
 # Buildable Schematic
 ![Figure 1: Overall Schematic of Vehicle](https://github.com/northsack/F24_Team2_FormulaSAE/blob/detailed_design/Documentation/Images/overall-vehicle-diagram.PNG)
 ![Figure 2: Buildable Schematic of Accumulator](https://github.com/northsack/F24_Team2_FormulaSAE/blob/Evan-Morse--DD/Documentation/Images/Buildable-Schematic-Evan.PNG)
@@ -170,9 +170,11 @@ When the shutdown circuit is closed, the Accumulator will begin precharging the 
 In order to provide power to the external terminals of the Accumulator, Accumulator Isolation Relays (AIRs) must be used.  The AIRs that will be used for this vehicle are KILOVAC EV200 AAANA. These relays are normally open, have 12 V controlled coils, are rated for voltages within the range of 12-900 Volts, and meet all rules specifications for the FSAE Electric competition.  
 
 ###### Microcontroller Behavior
-To operate the internal relays and monitor the motor controller voltage, an Arduino Nano microcontroller will be used inside of the Accumulator.  The Arduino Nano will use digital outputs to control transistors to operate the relays for precharging, discharging, and normal operation. The Arduino Nano will also use an analogue input to monitor the voltage of the motor controller.  This analogue input will act as the feedback in the precharge system. 
+To operate the internal relays and monitor the motor controller voltage, an Arduino Nano microcontroller will be used inside of the Accumulator.  The Arduino Nano will use digital outputs to control transistors to operate the relays for precharging, discharging, and normal operation, as well as signal to the motor controller when it is safe to operate the motor.  The Arduino Nano will also use an analogue input to monitor the voltage of the motor controller.  This analogue input will act as the feedback in the precharge system. 
 
-A voltage divider circuit is necessary to step down the voltage across the motor controller from 102 V to within a 0-5 V range so that the microcontroller can monitor the voltage of the motor controller.  Once the microcontroller observes that the monitored voltage is at least 90% of the Accumulator voltage, then the microcontroller can turn off the precharge circuit.
+The microcontroller must be able to communicate with the motor controller to prevent the motor from running when the precharge circuit is in operation.  If the motor starts while precharging, the precharge resistors will be destroyed by the amount of power the motor will pull.
+
+A voltage divider circuit is necessary to step down the voltage across the motor controller from the range of 120 V to 77 V to a 0-5 V range so that the microcontroller can monitor the voltage of the motor controller.  Once the microcontroller observes that the monitored voltage is at least 90% of the Accumulator voltage, then the microcontroller can turn off the precharge circuit.
 
 Transistors are necessary because the Arduino's digital outputs are only 5 Volts, but the relay coils for the Accumulator require 12 Volts.  Thus the 5 Volt digital output of the Arduino will not be sufficient to control these relays.  Each output of the microcontroller is connected to the base of a BJT NpN transistor.  The Emitter of the BJT is connected to the relay, and the Collector of the BJT is connected to the 12 Volt supply.
 
@@ -181,7 +183,7 @@ The operations of the microcontroller are as follows:
 1. Shutdown Circuit open ---> closed (Car is ready to drive):
 	1. Microcontroller will open the discharge circuit relay, and will close the precharge relay which will begin charging the capacitors
 	2. Microcontroller will monitor the voltage across the motor controller
-	3. Once the monitored voltage is greater than or equal to 90 % of the Accumulator's current voltage, the microcontroller will open the precharge relay and close the + and - terminal AIRs.  As an example, if the Accumulator's voltage is 102 V, this precharge circuit would charge the capacitors to 92 V before closing the AIRs.  
+	3. Once the monitored voltage is greater than or equal to 90 % of the Accumulator's current voltage, the microcontroller will open the precharge relay and close the + and - terminal AIRs.  The microcontroller will also provide power across the Motor Controller Ready terminals.  As an example, if the Accumulator's voltage is 102 V, this precharge circuit would charge the capacitors to 92 V before closing the AIRs and powering the Motor Controller Ready terminals.  
 	
 2. Shutdown Circuit closed ---> open (Car needs to stop):
 	1. Microcontroller will keep the - terminal AIR closed, but will open the + terminal AIR as well as close the discharge relay.
