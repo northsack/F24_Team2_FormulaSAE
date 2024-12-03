@@ -166,21 +166,16 @@ The charger subsystem meets Formula SAE safety and performance specifications, s
 
 ### **References**
 
-1. Formula SAE, "Formula SAE Electric Rules," SAE International, 2024.  
-   Accessed: Nov. 20, 2024. [https://www.sae.org/](https://www.sae.org/)
-  
-2. Sevcon, "DVT Configuration Software Manual," 2022.  
-   Accessed: Nov. 20, 2024. [https://www.sevcon.com](https://www.sevcon.com)
+1. Formula SAE, "Formula SAE Electric Rules," SAE International, 2024. Accessed: Nov. 20, 2024. [https://www.sae.org/](https://www.sae.org/)  
 
-3. Vicor, "AC-DC Converter Specifications," 2023.  
-   Accessed: Nov. 20, 2024. [https://www.vicorpower.com](https://www.vicorpower.com)
+2. Zero Motorcycles, "Quick Charger Specifications," 2023. Accessed: Nov. 20, 2024. [https://zeromotorcycles.com](https://zeromotorcycles.com)  
 
-4. Bender, "ISOMETER® IR155 3204 User Manual," 2021.  
-   Accessed: Nov. 20, 2024. [https://www.bender-usa.com](https://www.bender-usa.com)
+3. Sevcon, "DVT Configuration Software Manual," 2022. Accessed: Nov. 20, 2024. [https://www.sevcon.com](https://www.sevcon.com)  
 
-5. Digi-Key, "Throttle Position Sensor Specifications," 2023.  
-   Accessed: Nov. 20, 2024. [https://www.digikey.com](https://www.digikey.com)
+4. Bender, "ISOMETER® IR155 3204 User Manual," 2021. Accessed: Nov. 20, 2024. [https://www.bender-usa.com](https://www.bender-usa.com)  
 
+5. Electric Drive Engineering, "Sevcon Wiring Harness Specifications," 2023. Accessed: Nov. 20, 2024. [https://electricdriveengineering.com](https://electricdriveengineering.com)  
 
+6. Haltech, "Throttle Position Sensor Datasheet," 2023. Accessed: Nov. 20, 2024. [https://www.haltech.com](https://www.haltech.com)  
 ---
 
