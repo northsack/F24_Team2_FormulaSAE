@@ -81,12 +81,11 @@ The motor controller communicates with various subsystems, as shown below:
 | **Component Name**          | **Manufacturer** | **Part Number**  | **Distributor** | **Distributor Part Number** | **Quantity** | **Price** | **URL**                                                       |  
 |-----------------------------|------------------|------------------|-----------------|----------------------------|--------------|-----------|--------------------------------------------------------------|  
 | Motor Controller            | Sevcon          | 6585-503-001     | Sevcon          | 6585-503-001               | 1            | $800.00   | [Sevcon](https://www.sevcon.com)                              |  
-| Sevcon DVT Software         | Sevcon          | DVT-2023         | Sevcon          | DVT-2023                   | 1            | $502.32   | [Sevcon](https://www.sevcon.com)                              |  
 | Wiring Harness              | McMaster-Carr   | 7099K12          | McMaster-Carr   | 7099K12                    | 1            | $47.00    | [McMaster-Carr](https://www.mcmaster.com)                     |  
 | Thermistor                  | Honeywell       | 15TS08-302       | Digi-Key        | 15TS08-302                 | 1            | $40.00    | [Digi-Key](https://www.digikey.com)                           |  
-| Throttle Position Sensor    | Haltech         | HT-010402        | Haltech         | HT-010402                  | 1            | $160.00   | [Haltech](https://www.haltech.com/product/ht-010402-throttle-position-sensor-grey/) |  
+  
 
-**Total Cost:** $1,549.32  
+**Total Cost:** $887.00  
 
 ---
 
@@ -152,7 +151,7 @@ The charger subsystem interfaces with the following subsystems:
 | **AC-DC Converter**      | The Supply Net      | WSAE-12V125A     | The Supply Net    | WSAE-12V125A               | 1            | $390.00    | [AC-DC 12V 125A Power Brick with WSAE Connector](https://www.thesupplynet.com/acdc-12v-125a-power-brick-wsae-connector?srsltid=AfmBOopqHRMiYitNzeE8L6awpIhihYKF9gfj_LipGCbgrjFatGHNVgUw) |  
 | **ISOMETER® IR155 3204** | Bender              | IR155 3204       | Bender USA        | IR155 3204                 | 1            | $25.00     | [Bender USA](https://www.benderinc.com/products/ground-fault-monitoring-ungrounded/isometer-ir155-03-04-series/)                  |  
 | **Wiring Harness**       | Electric Drive Engineering | Dual Signal Throttle | Electric Drive Engineering | N/A                        | 1            | $400.00    | [Sevcon Wiring Harness](https://electricdriveengineering.com.au/product/sevcon-wiring-harness-dual-signal-throttle/) |  
-| **Throttle Position Sensor** | Haltech        | HT-010402        | Haltech           | HT-010402                  | 1            | $90.00     | [Haltech Throttle Position Sensor](https://www.haltech.com/product/ht-010402-throttle-position-sensor-grey/?srsltid=AfmBOoo3lPV1Rw_vwTMvW8oLD3R7tEIcO57HCTEhnnryN1GeVIJoi4_w)                       |  
+| **Throttle Position Sensor** | Haltech        | HT-010402        | Haltech           | HT-010402                  | 2            | $160.00     | [Haltech Throttle Position Sensor](https://www.haltech.com/product/ht-010402-throttle-position-sensor-grey/?srsltid=AfmBOoo3lPV1Rw_vwTMvW8oLD3R7tEIcO57HCTEhnnryN1GeVIJoi4_w)                       |  
 
 **Total Cost:** $2,106.18  
 
