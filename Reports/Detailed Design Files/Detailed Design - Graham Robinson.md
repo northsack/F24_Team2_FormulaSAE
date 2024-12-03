@@ -50,9 +50,9 @@ The Accelerator Pedal Position Sensors (APP sensors) are essential for communica
 
 #### **Overview of Proposed Solution**
 
-The motor controller chosen for this design meets all necessary specifications and constraints. It is designed to convert DC power from the accumulator into the appropriate output (AC or DC) for the motor. Safety features such as thermal protection, overcurrent protection, and fault diagnostics are built in to protect the system during operation. 
+The motor controller selected for this electric powertrain was chosen based on its compliance with Formula SAE specifications, as supported by manufacturer datasheets and calculations. 
 
-To maximize performance and efficiency, the controller uses Field-Oriented Control (FOC) algorithms, allowing it to adjust torque and speed dynamically. The integration of a robust cooling system ensures the controller operates safely under high-power demands. Overall, this solution enables the electric powertrain to meet Formula SAE competition standards while achieving reliable performance.
+The controller integrates essential safety features, such as thermal and overcurrent protection, verified by operational limits listed in the datasheet. Field-Oriented Control (FOC) algorithms enhance dynamic torque and speed regulation, as evidenced by the controller's detailed specifications. Calculations confirming the controller’s capacity to handle the system’s voltage, current, and power align with the vehicle's tractive system requirements. Additionally, its cooling system, designed for efficient heat dissipation, ensures consistent performance under demanding conditions, validated through the manufacturer’s testing data.
 
 ---
 
@@ -147,20 +147,20 @@ The charger subsystem interfaces with the following subsystems:
 
 | **Component Name**      | **Manufacturer**    | **Part Number**  | **Distributor**   | **Distributor Part Number** | **Quantity** | **Price**  | **URL**                                                   |  
 |-------------------------|---------------------|------------------|-------------------|----------------------------|--------------|------------|----------------------------------------------------------|  
-| **Charger Unit**         | Sevcon              | 6585-503-000     | Sevcon            | 6585-503-000               | 1            | $500.00    | [Sevcon](https://www.sevcon.com)                          |  
-| **Sevcon DVT Software**  | Sevcon              | DVT-2023         | Sevcon            | DVT-2023                   | 1            | $502.32    | [Sevcon](https://www.sevcon.com)                          |  
-| **AC-DC Converter**      | Vicor               | VBM2400D24-12    | Digi-Key          | 946-2749                   | 1            | $225.00    | [Digi-Key](https://www.digikey.com)                       |  
-| **ISOMETER® IR155 3204** | Bender              | IR155 3204       | Bender USA        | IR155 3204                 | 1            | $25.00     | [Bender USA](https://www.bender-usa.com)                  |  
-| **Wiring Harness**       | McMaster-Carr       | 7099K12          | McMaster-Carr     | 7099K12                    | 1            | $47.00     | [McMaster-Carr](https://www.mcmaster.com)                 |  
-| **Throttle Position Sensor** | Honeywell        | 15TS08-302       | Digi-Key          | 15TS08-302                 | 1            | $40.00     | [Digi-Key](https://www.digikey.com)                       |  
+| **Charger Unit**         | Zero Motorcycles | Quick Charger | Zero Motorcycles | 6585-503-000               | 1            | $775.00    | [Zero Motorcycles Quick Charger](https://zeromotorcycles.com/accessories/products/quick-charger) |  
+| **Sevcon Gen4 Programming Cable** | Sevcon      | N/A              | Electric Drive Engineering | N/A                        | 1            | $426.18    | [Sevcon Gen4 Programming Cable](https://electricdriveengineering.com.au/product/sevcon-gen4-programming-cable/)  |  
+| **AC-DC Converter**      | The Supply Net      | WSAE-12V125A     | The Supply Net    | WSAE-12V125A               | 1            | $390.00    | [AC-DC 12V 125A Power Brick with WSAE Connector](https://www.thesupplynet.com/acdc-12v-125a-power-brick-wsae-connector?srsltid=AfmBOopqHRMiYitNzeE8L6awpIhihYKF9gfj_LipGCbgrjFatGHNVgUw) |  
+| **ISOMETER® IR155 3204** | Bender              | IR155 3204       | Bender USA        | IR155 3204                 | 1            | $25.00     | [Bender USA](https://www.benderinc.com/products/ground-fault-monitoring-ungrounded/isometer-ir155-03-04-series/)                  |  
+| **Wiring Harness**       | Electric Drive Engineering | Dual Signal Throttle | Electric Drive Engineering | N/A                        | 1            | $400.00    | [Sevcon Wiring Harness](https://electricdriveengineering.com.au/product/sevcon-wiring-harness-dual-signal-throttle/) |  
+| **Throttle Position Sensor** | Haltech        | HT-010402        | Haltech           | HT-010402                  | 1            | $90.00     | [Haltech Throttle Position Sensor](https://www.haltech.com/product/ht-010402-throttle-position-sensor-grey/?srsltid=AfmBOoo3lPV1Rw_vwTMvW8oLD3R7tEIcO57HCTEhnnryN1GeVIJoi4_w)                       |  
 
-**Total Cost:** $1,599.32  
+**Total Cost:** $2,130.00  
 
 ---
 
 ### **Analysis**
 
-The charger subsystem fulfills all necessary specifications, ensuring the accumulator is charged safely and efficiently. The inclusion of **Galvanic Isolation** and **Safety Interlocks** meets the essential Formula SAE safety standards, reducing electrical hazard risks. The integration with the AMS ensures real-time monitoring of the charging process, while the **Temperature Resilience** guarantees reliable performance under varying environmental conditions. This design enables safe, efficient charging and extends the longevity of the accumulator.
+The charger subsystem meets Formula SAE safety and performance specifications, supported by manufacturer documentation and preliminary calculations. The inclusion of **Galvanic Isolation** is verified in the datasheet, demonstrating compliance with electrical safety standards by mitigating risks of leakage currents. **Safety Interlocks** are validated through design schematics, ensuring proper disengagement during faults. Compatibility with the AMS for real-time monitoring is established through protocol alignment specified in the manufacturer's manual. Lastly, **Temperature Resilience** is substantiated by the operational range outlined in the datasheet, confirming reliability under competition conditions.
 
 ---
 
