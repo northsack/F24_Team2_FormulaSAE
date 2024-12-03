@@ -55,7 +55,7 @@ The Tractive System Active Light (TSAL) subsystem interfaces with both high- and
   The TSAL does not transmit digital data but serves as a direct hardware-driven visual signal. Its on/off state communicates the operational status of the high-voltage tractive system.
 
 # Printed Circuit Board Layout
-![467460232_524481267248244_5575185478033707727_n](https://github.com/user-attachments/assets/815f21d8-fb3d-453d-8d8e-b46d14fb3baf)
+<img width="797" alt="Fixed TSAL schematic" src="https://github.com/user-attachments/assets/0fc1c25a-64b6-4844-87bc-5fbe00c74da0">
 
 ![462561839_603419298698998_6469560685586508983_n](https://github.com/user-attachments/assets/a571366d-d4d7-4bf7-badc-f7fa59feae46)
 
