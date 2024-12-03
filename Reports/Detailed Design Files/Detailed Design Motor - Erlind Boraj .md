@@ -22,7 +22,7 @@ The motor was required to deliver at least 60 horsepower and 60 foot-pounds of t
 The motor had to be compatible with the pre-designed chassis. Any deviation in size or mounting requirements would have led to costly redesigns and fabrication delays, which the team aimed to avoid.
 
 #### Economic Considerations
-Cost was a significant constraint. The team successfully negotiated a 20% discount from the manufacturer. This decision exemplifies the balance between performance and budget—a critical consideration in engineering projects.
+Cost was a significant constraint. The team successfully negotiated a 20% discount from the manufacturer. This constraint restricts us from purchasing some spare parts at the same discount rate, therefore budget has to be reconsidered if the need for spare parts arises. This decision exemplifies the balance between performance and budget—a critical consideration in engineering projects.
 
 #### Standards and Ethical Constraints
 The motor had to comply with FSAE technical standards, ensuring safety and adherence to competition rules. Additionally, the team aimed to minimize the environmental impact by selecting an electric motor over traditional combustion engines, aligning with broader ethical and sustainability goals.
@@ -31,8 +31,11 @@ The motor had to comply with FSAE technical standards, ensuring safety and adher
 The motor's compatibility with the electric drivetrain and battery system posed additional constraints. Any changes to the motor specifications would require recalibration of the control systems, increasing complexity.
 
 # Overview of Proposed Solution
+The proposed solution for the motor subsystem is a three-phase AC motor sourced from the Zero FXE electric motorcycle. This motor was selected due to its compatibility with the Formula SAE car's requirements, including its lightweight design, sufficient power output, and adaptability to the existing chassis. The motor satisfies the performance demands by delivering 60 horsepower and 60 ft-lb of torque, ensuring the vehicle achieves competitive acceleration and top speed metrics.
 
-The proposed TSAL subsystem utilizes hardware-based activation triggered by the shutdown circuit and high-voltage connections. The TSAL integrates directly with the accumulator and the DC power input from the shutdown circuit to ensure precise activation when the tractive system is live. It automatically illuminates when the tractive system voltage exceeds 60V and turns off when the shutdown circuit disables the high-voltage system. This design complies with all Formula SAE Electric safety requirements, ensuring reliability and safety during operation and maintenance while maintaining a straightforward and robust hardware configuration.
+To meet operational constraints, the motor will integrate with a three-phase AC power input system managed by a motor controller, which synchronizes current delivery to maximize efficiency and torque. A thermistor is included to monitor motor temperature and prevent overheating, ensuring reliability and longevity during high-demand operations. Furthermore, sine and cosine encoders provide high-resolution rotor position feedback, enabling precise motor control and seamless power delivery critical for performance in racing conditions.
+
+This configuration not only complies with the Formula SAE technical and safety standards but also ensures the motor subsystem fulfills its role of converting electrical energy into mechanical power efficiently and safely, aligning with the team’s design goals and constraints.
 
 # Interface with Other Subsystems
 
@@ -86,7 +89,7 @@ The motor subsystem is designed to fulfill the performance, reliability, and saf
 
 - #### Torque and Power Output:
 1. The motor subsystem meets the performance specifications of 60 horsepower and 60 ft-lbs of torque. This ensures sufficient mechanical power for the vehicle's propulsion while maintaining compliance with Formula SAE performance guidelines. 
-2. The use of sine and cosine encoders enables high-resolution feedback, ensuring precise rotor position and speed control. This enhances torque generation and smooth operation, critical for competitive racing scenarios.
+2. The use of sine and cosine encoders enables high-resolution feedback, ensuring precise rotor position and speed control. High-resolution feedback provides very small increments of positional or rotational data, allowing the control system to detect and respond to very quick changes in motor position or speed. With higher resolution, the system minimizes errors in detecting the actual position or velocity, which is essential for precise torque control and efficient energy usage. This enhances torque generation and smooth operation, critical for competitive racing scenarios.
 
 #### Safety and Thermal Management
 
