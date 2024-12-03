@@ -146,12 +146,12 @@ The charger subsystem interfaces with the following subsystems:
 |-------------------------|---------------------|------------------|-------------------|----------------------------|--------------|------------|----------------------------------------------------------|  
 | **Charger Unit**         | Zero Motorcycles | Quick Charger | Zero Motorcycles | 6585-503-000               | 1            | $775.00    | [Zero Motorcycles Quick Charger](https://zeromotorcycles.com/accessories/products/quick-charger) |  
 | **Sevcon Gen4 Programming Cable** | Sevcon      | N/A              | Electric Drive Engineering | N/A                        | 1            | $426.18    | [Sevcon Gen4 Programming Cable](https://electricdriveengineering.com.au/product/sevcon-gen4-programming-cable/)  |  
-| **AC-DC Converter**      | The Supply Net      | WSAE-12V125A     | The Supply Net    | WSAE-12V125A               | 1            | $390.00    | [AC-DC 12V 125A Power Brick with WSAE Connector](https://www.thesupplynet.com/acdc-12v-125a-power-brick-wsae-connector?srsltid=AfmBOopqHRMiYitNzeE8L6awpIhihYKF9gfj_LipGCbgrjFatGHNVgUw) |  
+| **AC-DC Converter**      | The Supply Net      | WSAE-12V125A     | The Supply Net    | WSAE-12V125A               | 1            | $240.00    | [AC-DC 12V 125A Power Brick with WSAE Connector](https://www.thesupplynet.com/acdc-12v-125a-power-brick-wsae-connector?srsltid=AfmBOopqHRMiYitNzeE8L6awpIhihYKF9gfj_LipGCbgrjFatGHNVgUw) |  
 | **ISOMETER® IR155 3204** | Bender              | IR155 3204       | Bender USA        | IR155 3204                 | 1            | $25.00     | [Bender USA](https://www.benderinc.com/products/ground-fault-monitoring-ungrounded/isometer-ir155-03-04-series/)                  |  
-| **Wiring Harness**       | Electric Drive Engineering | Dual Signal Throttle | Electric Drive Engineering | N/A                        | 1            | $400.00    | [Sevcon Wiring Harness](https://electricdriveengineering.com.au/product/sevcon-wiring-harness-dual-signal-throttle/) |  
+| **Wiring Harness**       | Electric Drive Engineering | Dual Signal Throttle | Electric Drive Engineering | N/A                        | 1            | $262.67    | [Sevcon Wiring Harness](https://electricdriveengineering.com.au/product/sevcon-wiring-harness-dual-signal-throttle/) |  
 | **Throttle Position Sensor** | Haltech        | HT-010402        | Haltech           | HT-010402                  | 2            | $160.00     | [Haltech Throttle Position Sensor](https://www.haltech.com/product/ht-010402-throttle-position-sensor-grey/?srsltid=AfmBOoo3lPV1Rw_vwTMvW8oLD3R7tEIcO57HCTEhnnryN1GeVIJoi4_w)                       |  
 
-**Total Cost:** $2,336.18  
+**Total Cost:** $2,048.85  
 
 ---
 
