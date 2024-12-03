@@ -82,10 +82,8 @@ The motor controller communicates with various subsystems, as shown below:
 |-----------------------------|------------------|------------------|----------------------|-----------------------------|--------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------|  
 | **Size 4 Gen 4.5 Controller** | Sevcon           | 60-07009         | Koup's Cycle Shop    | 60-07009                   | 1            | $1,078.84   | [Zero Motorcycles Controller](https://shop.koups.com/products/zero-motorcycles-controller-size-4-gen-4-5-sevcon-special-order-60-07009)     |  
 | **Wiring Harness**           | McMaster-Carr    | 7099K12          | McMaster-Carr        | 7099K12                    | 1            | $47.00      | [McMaster-Carr Wiring Harness](https://www.mcmaster.com/products/wire-assortments/wire-assortments-7/)                                       |  
-| **Thermistor**               | Honeywell        | 15TS08-302       | Digi-Key             | 15TS08-302                 | 1            | $40.00      | [Digi-Key Thermistor](https://www.digikey.com/products/en?keywords=15TS08-302)                                                              |  
 
-
-**Total Cost:** $1165.84  
+**Total Cost:** $1,125.84  
 
 ---
 
@@ -153,7 +151,7 @@ The charger subsystem interfaces with the following subsystems:
 | **Wiring Harness**       | Electric Drive Engineering | Dual Signal Throttle | Electric Drive Engineering | N/A                        | 1            | $400.00    | [Sevcon Wiring Harness](https://electricdriveengineering.com.au/product/sevcon-wiring-harness-dual-signal-throttle/) |  
 | **Throttle Position Sensor** | Haltech        | HT-010402        | Haltech           | HT-010402                  | 2            | $160.00     | [Haltech Throttle Position Sensor](https://www.haltech.com/product/ht-010402-throttle-position-sensor-grey/?srsltid=AfmBOoo3lPV1Rw_vwTMvW8oLD3R7tEIcO57HCTEhnnryN1GeVIJoi4_w)                       |  
 
-**Total Cost:** $2,106.18  
+**Total Cost:** $2,336.18  
 
 ---
 
