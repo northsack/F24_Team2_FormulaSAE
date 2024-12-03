@@ -61,26 +61,22 @@ The Tractive System Active Light (TSAL) subsystem interfaces with both high- and
 
 # BOM
 
-| Component Name       | Type            | Qty | Price ($) | Seller   |
-|----------------------|-----------------|-----|-----------|----------|
-| 249K                | Resistor        | 4   | 0.236     | Mouser   |
-| 2k2                 | Resistor        | 3   | 0.2       | Mouser   |
-| 75k                 | Resistor        | 1   | 0.3       | Mouser   |
-| 24k                 | Resistor        | 1   | 0.3       | Mouser   |
-| 900                 | Resistor        | 1   | 0.24      | Mouser   |
-| 100                 | Resistor        | 2   | 0.59      | Mouser   |
-| 10k                 | Resistor        | 2   | 0.49      | Mouser   |
-| 22k                 | Resistor        | 2   | 0.43      | Mouser   |
-| 220k                | Resistor        | 1   | 0.19      | Mouser   |
-| MCT06P10-TP         | Semiconductor   | 2   | 1.18      | DigiKey  |
-| 4n35                | Transistor      | 1   | 0.8       | Mouser   |
-| 2n7002              | Semiconductor   | 2   | 0.19      | Mouser   |
-| 10n                 | Capacitor       | 1   | 0.1       | DigiKey  |
-| 100n                | Capacitor       | 3   | 0.1       | DigiKey  |
-| LM311               | Op-Amp          | 1   | 0.41      | Mouser   |
-| D2 12V              | LED             | 2   | 12.99     | Amazon   |
-| PCB                 | PCB Multilayer  | 1   | 2         | JLCPCB   |
-| **Total**           |                 |     | **20.746**|          |
+| Designator        | Component Name       | Type                   | Qty | Unit Price ($) | Cost ($) | Seller   | Link                                                                                                                                                      |
+|-------------------|----------------------|------------------------|-----|----------------|----------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| R2, R4, R6, R7   | 249K                | Resistor               | 4   | 0.1            | 0.4      | DigiKey  | [Link](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402FT249K/1761551)                                                      |
+| R9, R13, R19     | 2k2                 | Resistor               | 3   | 0.1            | 0.3      | Mouser   | [Link](https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-072K2L?qs=diQw95jMAeOQmNpe2MM%252BPw%3D%3D&utm_id=9491304176&gad_source=1&gclid=CjwKCAiA0rW6...) |
+| R1               | 75k                 | Resistor               | 1   | 0.3            | 0.3      | Mouser   | [Link](https://www.mouser.com/ProductDetail/Panasonic/ERJ-UP6D7502V?qs=sGAEpiMZZMtlubZbdhIBIKPMpJOYNEkDqYshHOdxkBg%3D)                                   |
+| R3               | 24k                 | Resistor               | 1   | 0.3            | 0.3      | Mouser   | [Link](https://www.mouser.com/ProductDetail/Panasonic/ERJ-UP6D2402V?qs=sGAEpiMZZMtlubZbdhIBIKPMpJOYNEkDpufIQJki2Xs%3D)                                   |
+| R5               | 900                 | Resistor               | 1   | 0.24           | 0.24     | Mouser   | [Link](https://www.mouser.com/ProductDetail/YAGEO/RT1206CRE07900RL?qs=sGAEpiMZZMtlubZbdhIBINSnPd898yDPrCMhEg74LXc%3D)                                    |
+| R10, R11         | 100                 | Resistor               | 2   | 0.59           | 1.18     | Mouser   | [Link](https://www.mouser.com/ProductDetail/Vishay/CRCW2010100RJNEFIF?qs=sGAEpiMZZMtlubZbdhIBIAW9tqFSvq7cjSuKP2OF4So%3D)                                 |
+| R14, R18         | 10k                 | Resistor               | 2   | 0.49           | 0.98     | Mouser   | [Link](https://www.mouser.com/ProductDetail/Vishay/CRCW121010K0JNEAIF?qs=sGAEpiMZZMtlubZbdhIBIAW9tqFSvq7cfvlLajQr2%2FY%3D)                               |
+| R15, R16         | 22k                 | Resistor               | 2   | 0.43           | 0.86     | Mouser   | [Link](https://www.mouser.com/ProductDetail/Panasonic/ERA-2VPB2202X?qs=sGAEpiMZZMtlubZbdhIBIL52mBdk1sg11xMAiwWYatA%3D)                                   |
+| R17              | 220k                | Resistor               | 1   | 0.19           | 0.19     | Mouser   | [Link](https://www.mouser.com/ProductDetail/Panasonic/ERA-6AED224V?qs=sGAEpiMZZMtlubZbdhIBINE5Vwz7C5t%2FpDMSRA4swAI%3D)                                   |
+| R8               | 49k9                | Resistor               | 1   | 0.64           | 0.64     | Mouser   | [Link](https://www.mouser.com/ProductDetail/YAGEO/RT0402BRB0749K9L?qs=sGAEpiMZZMtlubZbdhIBIKm0gsRX2fVk0Es%252BQVvijq4%3D)                                |
+| Q2, Q4           | MCT06P10-TP         | Semiconductor          | 2   | 1.18           | 2.36     | DigiKey  | [Link](https://www.digikey.com/en/products/detail/micro-commercial-co/MCT06P10-TP/10054657)                                                              |
+| U3               | 4n35                | Transistor             | 1   | 0.71           | 0.71     | Mouser   | [Link](https://www.mouser.com/ProductDetail/Vishay-Semiconductors/4N35?qs=o4busQjUnQaG1dxXB%2Fpaxg%3D%3D&srsltid=AfmBOorwDq-Dzcd5pJc-EAu5wW6GyLD1yWyCHVAoF5GrS9oNHpK2FIOL)|
+| Total            |                    |                        |     |                | **22.86**|          |                                                                                                                                                           |
+
 
 **Note:** This BOM does not account for spare parts. Quatities in the table represent the minimum quantity needed for the one PCB. The team will order at least twice the quantity shown in the BOM. The BOM does not account for shipping cost or bulk prices. Sellers are subject to change, based on their shipping prices and time. 
 
