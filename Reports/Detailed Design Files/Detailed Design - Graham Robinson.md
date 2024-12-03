@@ -78,14 +78,14 @@ The motor controller communicates with various subsystems, as shown below:
 
 #### **Bill of Materials (BOM)**
 
-| **Component Name**          | **Manufacturer** | **Part Number**  | **Distributor** | **Distributor Part Number** | **Quantity** | **Price** | **URL**                                                       |  
-|-----------------------------|------------------|------------------|-----------------|----------------------------|--------------|-----------|--------------------------------------------------------------|  
-| Motor Controller            | Sevcon          | 6585-503-001     | Sevcon          | 6585-503-001               | 1            | $800.00   | [Sevcon](https://www.sevcon.com)                              |  
-| Wiring Harness              | McMaster-Carr   | 7099K12          | McMaster-Carr   | 7099K12                    | 1            | $47.00    | [McMaster-Carr](https://www.mcmaster.com)                     |  
-| Thermistor                  | Honeywell       | 15TS08-302       | Digi-Key        | 15TS08-302                 | 1            | $40.00    | [Digi-Key](https://www.digikey.com)                           |  
-  
+| **Component Name**          | **Manufacturer** | **Part Number**  | **Distributor**      | **Distributor Part Number** | **Quantity** | **Price**   | **URL**                                                                                                                                       |  
+|-----------------------------|------------------|------------------|----------------------|-----------------------------|--------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------|  
+| **Size 4 Gen 4.5 Controller** | Sevcon           | 60-07009         | Koup's Cycle Shop    | 60-07009                   | 1            | $1,078.84   | [Zero Motorcycles Controller](https://shop.koups.com/products/zero-motorcycles-controller-size-4-gen-4-5-sevcon-special-order-60-07009)     |  
+| **Wiring Harness**           | McMaster-Carr    | 7099K12          | McMaster-Carr        | 7099K12                    | 1            | $47.00      | [McMaster-Carr Wiring Harness](https://www.mcmaster.com/products/wire-assortments/wire-assortments-7/)                                       |  
+| **Thermistor**               | Honeywell        | 15TS08-302       | Digi-Key             | 15TS08-302                 | 1            | $40.00      | [Digi-Key Thermistor](https://www.digikey.com/products/en?keywords=15TS08-302)                                                              |  
 
-**Total Cost:** $887.00  
+
+**Total Cost:** $1165.84  
 
 ---
 
