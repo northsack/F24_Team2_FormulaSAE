@@ -157,7 +157,7 @@ The charger subsystem interfaces with the following subsystems:
 
 ### **Analysis**
 
-The charger subsystem meets Formula SAE safety and performance specifications, supported by manufacturer documentation and preliminary calculations. The inclusion of **Galvanic Isolation** is verified in the datasheet, demonstrating compliance with electrical safety standards by mitigating risks of leakage currents. **Safety Interlocks** are validated through design schematics, ensuring proper disengagement during faults. Compatibility with the AMS for real-time monitoring is established through protocol alignment specified in the manufacturer's manual. Lastly, **Temperature Resilience** is substantiated by the operational range outlined in the datasheet, confirming reliability under competition conditions.
+The charger subsystem meets Formula SAE safety and performance specifications, supported by manufacturer documentation and preliminary calculations. The inclusion of **Galvanic Isolation** is verified in the datasheet [2]. This demonstrates compliance with electrical safety standards by mitigating risks of leakage currents. **Safety Interlocks** are validated through design schematics, ensuring proper disengagement during faults. Compatibility with the AMS for real-time monitoring is established through protocol alignment specified in the manufacturer's manual. Lastly, **Temperature Resilience** is substantiated by the operational range outlined in the datasheet, confirming reliability under competition conditions.
 
 ---
 
@@ -173,6 +173,10 @@ The charger subsystem meets Formula SAE safety and performance specifications, s
 
 5. Electric Drive Engineering, "Sevcon Wiring Harness Specifications," 2023. Accessed: Nov. 20, 2024. [https://electricdriveengineering.com](https://electricdriveengineering.com)  
 
-6. Haltech, "Throttle Position Sensor Datasheet," 2023. Accessed: Nov. 20, 2024. [https://www.haltech.com](https://www.haltech.com)  
+6. Haltech, "Throttle Position Sensor Datasheet," 2023. Accessed: Nov. 20, 2024. [https://www.haltech.com](https://www.haltech.com)
+
+7. Sevcon, "Size 4 Gen 4.5 Controller," Part No. 60-07009. Accessed: Dec. 2, 2024. [Koup's Cycle Shop](https://shop.koups.com/products/zero-motorcycles-controller-size-4-gen-4-5-sevcon-special-order-60-07009).  
+
+8. McMaster-Carr, "Wiring Harness, 7099K12," 2024. Accessed: Dec. 2, 2024. [McMaster-Carr Wiring Harness](https://www.mcmaster.com/products/wire-assortments/wire-assortments-7/).   
 ---
 
