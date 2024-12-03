@@ -154,7 +154,7 @@ The charger subsystem interfaces with the following subsystems:
 | **Wiring Harness**       | Electric Drive Engineering | Dual Signal Throttle | Electric Drive Engineering | N/A                        | 1            | $400.00    | [Sevcon Wiring Harness](https://electricdriveengineering.com.au/product/sevcon-wiring-harness-dual-signal-throttle/) |  
 | **Throttle Position Sensor** | Haltech        | HT-010402        | Haltech           | HT-010402                  | 1            | $90.00     | [Haltech Throttle Position Sensor](https://www.haltech.com/product/ht-010402-throttle-position-sensor-grey/?srsltid=AfmBOoo3lPV1Rw_vwTMvW8oLD3R7tEIcO57HCTEhnnryN1GeVIJoi4_w)                       |  
 
-**Total Cost:** $2,130.00  
+**Total Cost:** $2,106.18  
 
 ---
 
