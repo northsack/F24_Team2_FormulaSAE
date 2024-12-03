@@ -7,7 +7,7 @@ Cookeville, TN, USA
 [jdmunoz42@tntech.edu](mailto:jdmunoz42@tntech.edu)
 
 ## Function of the Subsystem - Shutdown Circuit/Brake System Plausibility Device (BSPD)
-The function of the BSPD subsystem is open the vehicle's shutdown circuit when a open or short circuit is detected in the input sensors, or when two shutdown condidtions are true, for 0.5 seconds [1]. These shutdown condidtions will be disscused in more detail in their own section. The BSPD will be placed in series with the other components of the vehicle's shutdown circuit [1].
+The function of the BSPD subsystem is open the vehicle's shutdown circuit when a open or short circuit is detected in the input sensors, or when two shutdown conditions are true, for 0.5 seconds [1]. These shutdown conditions will be discussed in more detail in their own section. The BSPD will be placed in series with the other components of the vehicle's shutdown circuit [1].
 
 ## Specifications and Constraints
 #### Shutdown System Specifications:
