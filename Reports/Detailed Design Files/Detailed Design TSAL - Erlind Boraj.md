@@ -38,7 +38,7 @@ The Tractive System Active Light (TSAL) subsystem interfaces with both high- and
 
 #### Inputs
 - **High-Voltage Input (Accumulator):**  
-  The TSAL indirectly receives power from the accumulator via the DC-DC converter, which steps down the tractive system voltage to a level usable by the GLV system. The TSAL activates when the tractive system voltage exceeds 60V.
+  The TSAL indirectly receives power from the accumulator, which steps down the tractive system voltage to a level usable by the GLV system. The TSAL activates when the tractive system voltage exceeds 60V.
 
 - **Low-Voltage Input (Shutdown Circuit):**  
   The TSAL is directly connected to the shutdown circuit, which enables or disables the TSAL by controlling the power supplied to it. The shutdown circuit ensures that the TSAL deactivates when the tractive system is no longer live.
@@ -49,7 +49,7 @@ The Tractive System Active Light (TSAL) subsystem interfaces with both high- and
 
 #### Communication and Data Transfer
 - **Method of Communication:**  
-  The TSAL subsystem relies on hardware signals for communication. The DC-DC converter powers the TSAL only when the tractive system is active, ensuring hardware-based control without the need for software intervention.
+  The TSAL subsystem relies on hardware signals for communication. The accumulator powers the TSAL only when the tractive system is active, ensuring hardware-based control without the need for software intervention.
 
 - **Data Transmitted:**  
   The TSAL does not transmit digital data but serves as a direct hardware-driven visual signal. Its on/off state communicates the operational status of the high-voltage tractive system.
