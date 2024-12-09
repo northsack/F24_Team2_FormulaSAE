@@ -89,11 +89,13 @@ The motor controller communicates with various subsystems, as shown below:
 
 #### **Analysis**
 
-The motor controller design successfully meets the subsystem’s constraints and performance goals. Its ability to regulate power, manage torque, and adjust speed ensures the vehicle can perform under various conditions, including achieving a top speed of 60 mph.  
+To achieve 60 mph, the motor needs to operate at approximately 4500 RPM based on a 4:1 gear ratio and an 18-inch tire diameter. The Zero FXE motor, paired with the controller, is designed to operate efficiently up to 6000 RPM, providing a comfortable margin for this speed.
 
-Safety features like overcurrent, overvoltage, and thermal protection prevent failures and extend the lifespan of components. The integration of APP sensors and control algorithms ensures reliable response to driver input while maximizing energy efficiency.  
+Also, at 60 mph, the power demand from aerodynamic drag and rolling resistance is calculated to be around 22 kW. The motor controller, with a peak output of 38.8 kW, easily meets this requirement, ensuring sufficient reserve power for acceleration or changes in load conditions.
 
-By meeting Formula SAE standards, this motor controller provides the functionality and reliability required to compete effectively.  
+In addition, the controller uses advanced field-oriented control (FOC) algorithms to regulate torque and speed, ensuring precise and reliable operation. This not only achieves the required speed but also maximizes energy efficiency and driver responsiveness under varying conditions.
+
+By meeting Formula SAE standards, this motor controller provides the functionality and reliability required to compete effectively.   
 
 ---
 
