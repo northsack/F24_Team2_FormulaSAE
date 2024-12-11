@@ -54,8 +54,14 @@ The Tractive System Active Light (TSAL) subsystem interfaces with both high- and
 - **Data Transmitted:**  
   The TSAL does not transmit digital data but serves as a direct hardware-driven visual signal. Its on/off state communicates the operational status of the high-voltage tractive system.
 
+  
+- **Isolated Power Supply:**  
+  The power supply utilizes a 6-pin connector that serves as the main power and T-cell output interface. The incoming power connects directly to GLV+ (Grounded Low Voltage positive), which represents the raw positive voltage from the car. To protect the system from potential reverse polarity damage, the power is routed through a rectifier diode, converting it into VCC. This polarity-protected version of GLV+ ensures stable power for sensitive components. The system also includes an isolated 12V supply using a SPAN 0-8X12, a 12V-to-12V DC-DC converter. This isolated 12V (notated as +12V) powers the high-voltage side of the circuit. Grounding is split into two reference points: GLV- for low-voltage ground and a separate high-voltage ground symbol for the high-voltage side, ensuring proper isolation and safety.
+
 # Printed Circuit Board Layout
 <img width="797" alt="Fixed TSAL schematic" src="https://github.com/user-attachments/assets/0fc1c25a-64b6-4844-87bc-5fbe00c74da0">
+![image](https://github.com/user-attachments/assets/c2b4f60c-930d-41de-b73a-cfef7b9d9db9)
+
 
 ![462561839_603419298698998_6469560685586508983_n](https://github.com/user-attachments/assets/a571366d-d4d7-4bf7-badc-f7fa59feae46)
 
@@ -74,18 +80,19 @@ The Tractive System Active Light (TSAL) subsystem interfaces with both high- and
 | R17            | 220K               | Resistor              | 1   | 0.19           | 0.19     | Mouser  | [Link](https://www.mouser.com/ProductDetail/Panasonic/ERA-6AED224V)                                                           |
 | R8             | 49K9               | Resistor              | 1   | 0.64           | 0.64     | Mouser  | [Link](https://www.mouser.com/ProductDetail/YAGEO/RT0402BRB0749K9L)                                                           |
 | R12            | 1M                 | Resistor              | 1   | 0.86           | 0.86     | Mouser  | [Link](https://www.mouser.com/ProductDetail/Vishay-Draloric/RCV25121M00JNEG)                                                   |
+| U1            | SPAN02A-12             | DC DC CONVERTER 12V 2W              | 1   | 6.50           | 6.50     | DigiKey  | [Link]([https://www.mouser.com/ProductDetail/Vishay-Draloric/RCV25121M00JNEG](https://www.digikey.com/en/products/detail/mean-well-usa-inc/SPAN02A-12/7706967?gclsrc=aw.ds&&utm_adgroup=Converters&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Product&utm_term=&utm_content=Converters&utm_id=go_cmp-120565755_adg-18031790235_ad-665604606902_dsa-59698345408_dev-c_ext-_prd-_sig-CjwKCAiAjeW6BhBAEiwAdKltMrbsnhzlEvGHFSN7So8JiN--pKazj7aSctcC4QO4b5IQmuOiheopjBoCuuEQAvD_BwE&gad_source=1&gclid=CjwKCAiAjeW6BhBAEiwAdKltMrbsnhzlEvGHFSN7So8JiN--pKazj7aSctcC4QO4b5IQmuOiheopjBoCuuEQAvD_BwE&gclsrc=aw.ds))                                                   |
 | Q2, Q4         | MCT06P10-TP        | Seminconductor           | 2   | 1.18           | 2.36     | DigiKey | [Link](https://www.digikey.com/en/products/detail/micro-commercial-co/MCT06P10-TP/10054657)                                     |
 | U3             | 4N35               | Optocoupler           | 1   | 0.71           | 0.71     | Mouser  | [Link](https://www.mouser.com/ProductDetail/Vishay/4N35)                                                                       |
 | Q1, Q3         | 2N7002             | MOSFET                | 2   | 0.16           | 0.32     | Mouser  | [Link](https://www.mouser.com/ProductDetail/Nexperia/2N7002215)                                                               |
 | C2             | 10nF               | Capacitor             | 1   | 0.11           | 0.11     | DigiKey | [Link](https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR61C106KE15K/2546903)                                 |
 | C3, C4, C5     | 100nF              | Capacitor             | 3   | 0.53           | 1.59     | DigiKey | [Link](https://www.digikey.com/en/products/detail/murata-electronics/GRM31CD80J107MEA8K/13905021)                                 |
 | U2             | LM311              | Comparator            | 1   | 0.41           | 0.41     | Mouser  | [Link](https://www.mouser.com/ProductDetail/Texas-Instruments/LM311P)                                                         |
-| D2             | 12V Zener          | Zener Diode           | 1   | 0.18           | 0.18     | Mouser  | [Link](https://www.mouser.com/ProductDetail/Nexperia/1N4742A113)                                                              |
+| D2, D3             | 12V Zener          | Zener Diode           | 2   | 0.18           | 0.36     | Mouser  | [Link](https://www.mouser.com/ProductDetail/Nexperia/1N4742A113)                                                              |
 | N/A            | PCB                | PCB Multilayer        | 1   | 2              | 2        | JLCPCB  | Custom Product, no link                                                                                                         |
 | N/A            | MEJ1S1215SC        | Isolated DC-DC Converter | 1   | 8.63           | 8.63     | Mouser  | [Link](https://www.mouser.com/ProductDetail/Murata-Power-Solutions/MEJ1S1215SC)                                                |
 | U1             | MC1455BDR2G        | Timer                 | 1   | 0.36           | 0.36     | Mouser  | [Link](https://www.mouser.com/ProductDetail/onsemi/MC1455BDR2G)                                                               |
 | D1             | 1N4007             | Diode                 | 1   | 0.13           | 0.13     | DigiKey | [Link](https://www.digikey.com/en/products/detail/diodes-inc/1N4007/1137589)                                                   |
-| **Total**      |                    |                       |     |                | **22.86** |         |                                                                                                                                    |
+| **Total**      |                    |                       |     |                | **29.54** |         |                                                                                                                                    |
                                                                                                                                                        |
 
 
