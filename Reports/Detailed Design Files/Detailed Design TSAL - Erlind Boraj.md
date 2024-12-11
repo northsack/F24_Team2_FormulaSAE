@@ -150,7 +150,17 @@ The TSAL circuit is built on a single control board and consists of HV connectio
   The circuit uses an isolated 12V supply for the HV side. The low-voltage side is powered through a polarity-protected connection.
 
 - **Current Handling:**  
-  The design ensures sufficient current capacity for all components, avoiding bottlenecks. For example, MOSFETs are rated for continuous currents up to 5A.
+  The design ensures sufficient current capacity for all components, avoiding bottlenecks. The design ensures sufficient current capacity for all components, especially focusing on the red and green LEDs. The selected MOSFETs (2N7002) are rated for continuous currents up to 5A. This rating is significantly higher than the current typically required to drive LEDs. Most standard red and green LEDs have a forward current requirement of around 20mA to 30mA each, with a maximum forward voltage of around 2.0V to 2.4V for red LEDs and 2.0V to 3.2V for green LEDs.
+
+Given these operating conditions, the total current needed for both LEDs combined would be at most 60mA (30mA each, conservatively), which is only 1.2% of the 5A capacity. This margin ensures that the MOSFETs are operating well below their maximum continuous current rating, providing a robust and highly reliable design.
+
+LED Selection and Part Justification
+
+The specific LED parts chosen for this design are as follows:
+
+Red LED: Vishay TLHR4400
+Green LED: Vishay TLHG4400
+These LEDs are known for their high brightness and low current requirements. The forward current for both models is around 20mA, and they operate with a forward voltage of about 2.1V (red) and 2.2V (green), perfectly aligned with the design's power supply system.
 
 
 #### Design Considerations and Improvements
