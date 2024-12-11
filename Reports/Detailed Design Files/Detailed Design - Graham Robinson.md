@@ -169,16 +169,16 @@ The charger subsystem meets Formula SAE safety and performance specifications, s
 
 2. Zero Motorcycles, "Quick Charger Specifications," 2023. Accessed: Nov. 20, 2024. [https://zeromotorcycles.com](https://zeromotorcycles.com)  
 
-3. Sevcon, "DVT Configuration Software Manual," 2022. Accessed: Nov. 20, 2024. [https://www.sevcon.com](https://www.sevcon.com)  
+3. Sevcon, "DVT Configuration Software Manual," 2022. Accessed: Nov. 20, 2024. [Sevcon Gen4 Programming Cable](https://electricdriveengineering.com.au/product/sevcon-gen4-programming-cable/)  
 
-4. Bender, "ISOMETER® IR155 3204 User Manual," 2021. Accessed: Nov. 20, 2024. [https://www.bender-usa.com](https://www.bender-usa.com)  
+4. Bender, "ISOMETER® IR155 3204 User Manual," 2021. Accessed: Nov. 20, 2024. [Bender USA](https://www.benderinc.com/products/ground-fault-monitoring-ungrounded/isometer-ir155-03-04-series/)  
 
-5. Electric Drive Engineering, "Sevcon Wiring Harness Specifications," 2023. Accessed: Nov. 20, 2024. [https://electricdriveengineering.com](https://electricdriveengineering.com)  
+5. Electric Drive Engineering, "Sevcon Wiring Harness Specifications," 2023. Accessed: Nov. 20, 2024. [Sevcon Wiring Harness](https://electricdriveengineering.com.au/product/sevcon-wiring-harness-dual-signal-throttle/) 
 
 6. Haltech, "Throttle Position Sensor Datasheet," 2023. Accessed: Nov. 20, 2024. [https://www.haltech.com](https://www.haltech.com)
 
 7. Sevcon, "Size 4 Gen 4.5 Controller," Part No. 60-07009. Accessed: Dec. 2, 2024. [Koup's Cycle Shop](https://shop.koups.com/products/zero-motorcycles-controller-size-4-gen-4-5-sevcon-special-order-60-07009).  
 
-8. McMaster-Carr, "Wiring Harness, 7099K12," 2024. Accessed: Dec. 2, 2024. [McMaster-Carr Wiring Harness](https://www.mcmaster.com/products/wire-assortments/wire-assortments-7/).   
+8. McMaster-Carr, "Wiring Harness, 7099K12," 2024. Accessed: Dec. 2, 2024. [McMaster-Carr Wiring Harness](https://www.mcmaster.com/products/wire-assortments/wire-assortments-7/) .   
 ---
 
