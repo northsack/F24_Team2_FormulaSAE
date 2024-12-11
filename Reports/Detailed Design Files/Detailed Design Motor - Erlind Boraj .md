@@ -70,10 +70,10 @@ Feedback data includes encoder signals (sine and cosine waveforms) for position 
 
 # BOM
 
-| Component Name       | Type            | Qty | Price ($) | Seller   |
-|----------------------|-----------------|-----|-----------|----------|
-| 2022 Zero FXE                | Motor        | 1   | 11195     | Max Motorsports   |
-| **Total**           |                 |     | **11195**|          |
+| **Component Name**                                  | **Part #**  | **Type**  | **Qty** | **Price ($)** | **Manufacturer**           |
+|---------------------------------------------------|------------|-----------|--------|---------------|----------------------------|
+| [ZERO Motorcycles ZF75-5 MOTOR FXU with weatherproofing (Special Order)](https://shop.koups.com/products/zero-motorcycles-zf75-5-motor-fxu-with-weatherproofing-special-order-30-07313?srsltid=AfmBOopgJkQvCRNcGaoHMfMGdf4ahVZ089tzurXjObRiSE-kAUNS2wgj) | 30-07313   | Motor     | 1      | 1073.33       | Zero Motorcycles California |
+| **Total**                                          |            |           |        | **1073.33**   |                            |
 
 **Note:** This BOM only shows the original price of the bike. It does not account for discounts give to academic projects, or depriciation of the bike at the time of purchase.This BOM does not account for spare parts. Quatities in the table represent the minimum quantity needed. The BOM does not account for shipping cost.
 
@@ -90,6 +90,8 @@ The motor subsystem is designed to fulfill the performance, reliability, and saf
 - #### Torque and Power Output:
 1. The motor subsystem meets the performance specifications of 60 horsepower and 60 ft-lbs of torque. This ensures sufficient mechanical power for the vehicle's propulsion while maintaining compliance with Formula SAE performance guidelines. 
 2. The use of sine and cosine encoders enables high-resolution feedback, ensuring precise rotor position and speed control. High-resolution feedback provides very small increments of positional or rotational data, allowing the control system to detect and respond to very quick changes in motor position or speed. With higher resolution, the system minimizes errors in detecting the actual position or velocity, which is essential for precise torque control and efficient energy usage. This enhances torque generation and smooth operation, critical for competitive racing scenarios.
+3. The motor sourced from the Zero FXE motorcycle has a maximum speed estimated to be around **85 mph**, according to data from the Zero Bike website. This speed is sufficient to meet the performance requirement of the Formula SAE car, which aims for a top speed of **at least 60 mph**. To verify this, tests were conducted by the Formula SAE crew and advisor using the Zero Bike, factoring in the weight of the driver. The results confirmed that the motor provides adequate power and speed to achieve the 60 mph goal. However, precise validation of the car's maximum speed will require further testing once the car's body and supporting systems are fully assembled. This approach ensures that aerodynamic drag, rolling resistance, and system integration are properly accounted for in real-world conditions.
+
 
 #### Safety and Thermal Management
 
