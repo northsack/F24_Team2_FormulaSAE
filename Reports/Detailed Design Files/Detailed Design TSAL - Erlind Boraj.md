@@ -55,7 +55,7 @@ The Tractive System Active Light (TSAL) subsystem interfaces with both high- and
   The TSAL does not transmit digital data but serves as a direct hardware-driven visual signal. Its on/off state communicates the operational status of the high-voltage tractive system.
 
   
-- **Isolated Power Supply:**  
+  #### Isolated Power Supply  
   The power supply utilizes a 6-pin connector that serves as the main power and T-cell output interface. The incoming power connects directly to GLV+ (Grounded Low Voltage positive), which represents the raw positive voltage from the car. To protect the system from potential reverse polarity damage, the power is routed through a rectifier diode, converting it into VCC. This polarity-protected version of GLV+ ensures stable power for sensitive components. The system also includes an isolated 12V supply using a SPAN 0-8X12, a 12V-to-12V DC-DC converter. This isolated 12V (notated as +12V) powers the high-voltage side of the circuit. Grounding is split into two reference points: GLV- for low-voltage ground and a separate high-voltage ground symbol for the high-voltage side, ensuring proper isolation and safety.
 
 # Printed Circuit Board Layout
