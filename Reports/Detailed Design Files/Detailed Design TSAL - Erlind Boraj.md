@@ -93,7 +93,7 @@ The Tractive System Active Light (TSAL) subsystem interfaces with both high- and
 | N/A            | MEJ1S1215SC        | Isolated DC-DC Converter | 1   | 8.63           | 8.63     | Mouser  | [Link](https://www.mouser.com/ProductDetail/Murata-Power-Solutions/MEJ1S1215SC)                                                |
 | U1             | MC1455BDR2G        | Timer                 | 1   | 0.36           | 0.36     | Mouser  | [Link](https://www.mouser.com/ProductDetail/onsemi/MC1455BDR2G)                                                               |
 | D1             | 1N4007             | Diode                 | 1   | 0.13           | 0.13     | DigiKey | [Link](https://www.digikey.com/en/products/detail/diodes-inc/1N4007/1137589)                                                   |
-| D3            | 5V Zener           | Zener Diode           | 1  | 0.18           | 0.18     | Mouser  | [Link](https://www.mouser.com/ProductDetail/Nexperia/1N4742A113)|
+| D3            | 5V Zener           | Zener Diode           | 1  | 0.18           | 0.18     | Mouser  | [Link](https://www.mouser.com/ProductDetail/Nexperia/1N5231CTR)|
 | **Total**      |                    |                       |     |                | **29.54** |         |                                                                                                                                    |
                                                                                                                                                        |
 
