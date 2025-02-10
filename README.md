@@ -1,4 +1,4 @@
-# Ratchet Roosters - Formula SAE EV
+# Formula SAE EV
 
 The descriptions and information in all readme files in the starter repo (including this one) must be edited. All section descriptions must be deleted. Any failure to remove the description information (like the statement that you are currently reading) will be heavily penalized!
 
@@ -29,6 +29,8 @@ Below the video link show some well-taken, appropriately sized images of the pro
 ### Team
 
 Give a brief bio for each team member and their broad contribution to the project (no need to be terribly specifc).
+
+Zach Holt: Electrical Engineering Major who worked on BOTS and IMD design, as well as worked on the motor controller wiring.
 
 ### Faculty Supervisor
 
