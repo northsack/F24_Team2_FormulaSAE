@@ -34,6 +34,7 @@ Below the video link show some well-taken, appropriately sized images of the pro
 Give a brief bio for each team member and their broad contribution to the project (no need to be terribly specifc).
 
 Zach Holt: Electrical Engineering Major who worked on BOTS and IMD design, as well as worked on the motor controller wiring.
+
 Jesse Munoz: Electrical Engineering Major, who worked on the BSPD and shutdown circuit desgin, as well as powerpack and motor connections.
 
 ### Faculty Supervisor
