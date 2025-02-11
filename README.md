@@ -9,7 +9,10 @@ Give the elevator pitch and abstract for the project. It should allow interested
 
 ## Capabilities
 
-Here explain in more detail (though not as much as will be given in the datasheet) what the version of this project in this repo is capable of doing.
+Here explain in more detail (though not as much as will be given in the datasheet) what the version of this project in this repo is capable of doing. (delete this line later)
+
+### (In progress)
+In the year we worked on this project we have taken the FX Zero motorcycle’s powerpack and have been able to make the proper connections to get it to power our power train system. The power train system includes the FX Zero motorcycle’s motor and the Sevcon Gen 4 motor controller. With our current configuration we have been able to connect and program the motor controller to control the motor speed by accepting inputs from 2 throttle sensors. 
 
 
 ## Salient Outcomes
@@ -31,6 +34,7 @@ Below the video link show some well-taken, appropriately sized images of the pro
 Give a brief bio for each team member and their broad contribution to the project (no need to be terribly specifc).
 
 Zach Holt: Electrical Engineering Major who worked on BOTS and IMD design, as well as worked on the motor controller wiring.
+Jesse Munoz: Electrical Engineering Major, who worked on the BSPD and shutdown circuit desgin, as well as powerpack and motor connections.
 
 ### Faculty Supervisor
 
@@ -55,7 +59,24 @@ In the reports section of this repository information about the individual expec
 
 ### Documentation
 
-In the documentaion section information regarding the documentation that is required and how it should be organized is given.
+In the documentaion section information regarding the documentation that is required and how it should be organized is given. (delete this line later)
+
+### (In progress)
+Our documentation folder contains 4 folders:
+	Electrical
+	Images
+	Meeting Minutes
+	Other Files
+
+These folders contain files used in other documents such as our project proposal, conceptual design, and detailed design files.
+
+A description of each folder’s contents are below:
+
+- Electrical - Contains PCB files, and schematics
+- Images - Contains block diagrams,  flowcharts, wiring diagrams, as well as demo images used in presentations.
+- Meeting Minutes - Contains the meeting minutes files that documented the topics and purpose of all our team meetings.
+- Other Files - Contain miscellaneous files such as Gnatt charts.
+
 
 ### Software
 
