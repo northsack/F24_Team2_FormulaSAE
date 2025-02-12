@@ -1,11 +1,13 @@
 # Formula SAE EV
 
-The descriptions and information in all readme files in the starter repo (including this one) must be edited. All section descriptions must be deleted. Any failure to remove the description information (like the statement that you are currently reading) will be heavily penalized!
 
 ## Executive Summary
 
-Give the elevator pitch and abstract for the project. It should allow interested visitors to broadly understand the motivation for the project and what the project has accomplished.
+Tennessee Tech Motorsports (TTM) is building its first Formula SAE Electric vehicle, focusing on designing and integrating an electric powertrain that meets competition rules while matching the performance of its gas-powered car. The project includes key electrical systems like the accumulator, motor controller, and safety circuits, ensuring reliability, efficiency, and compliance with Formula SAE standards.
 
+Instead of designing a powertrain from scratch, the team modified components from a 2022 Zero FXE electric motorcycle to fit the Formula SAE car. This allows them to use proven hardware while customizing key systems like the motor controller, shutdown circuits, and safety features. The powertrain delivers 52 horsepower, 55 ft-lbs of torque, a 60 mph top speed, and at least one hour of endurance.
+
+The goal of the team is to build a powertrain system that uses dual throttles to control the speed of a motor. A mechanical engineering senior design team is developing a chassis where the electric powertrain components will be installed.
 
 ## Capabilities
 
@@ -81,4 +83,4 @@ A description of each folder’s contents are below:
 
 ### Software
 
-In the software directory of the repo information regarding how each team is expected to document software can be found.
+No custom software is currently being used for this project.
