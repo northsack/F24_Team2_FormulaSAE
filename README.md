@@ -30,7 +30,7 @@ In the year we worked on this project we have taken the FX Zero motorcycle’s p
 - Minimizes modifications to chassis and other structural components.  
 
 #### Competitive Model
-- Achieves targeted performance metrics (60 hp, 60 ft-lbs torque, 60-75 mph top speed).  
+- Achieves targeted performance metrics.  
 
 ### Team Outcomes
 
