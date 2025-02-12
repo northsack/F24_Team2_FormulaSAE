@@ -69,6 +69,8 @@ Zach Holt: Electrical Engineering Major who worked on BOTS and IMD design, as we
 
 Jesse Munoz: Electrical Engineering Major, who worked on the BSPD and shutdown circuit desgin, as well as powerpack and motor connections.
 
+Erlind Boraj: Electrical Engineering Major, who worked on the motor controller wiring, motor subsystem, TSAL integrateion.
+
 ### Faculty Supervisor
 
 Tell who the faculty supervisor was for the project
