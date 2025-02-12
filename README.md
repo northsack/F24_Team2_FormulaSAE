@@ -45,7 +45,7 @@ Tell who the faculty supervisor was for the project
 
 ### Stakeholders
 
-Tell a bit about the customer for the project. Also discuss any other groups (specific or general) that are expected to be impacted by the project.
+The customer for the project is Tennessee Tech University since we are helping design a competition vehicle. Groups that are largely impacted by our project include the ECE department, the Formula SAE club, and Tennessee Tech University as a whole.
 
 ### Recognitions
 
@@ -58,7 +58,7 @@ Give the layout of the repo and what can be found where. Make it easy on those w
 
 ### Reports
 
-In the reports section of this repository information about the individual expectations for the reports and how they should be housed is provided.
+Under the reports section, our group's detailed design, conceptual design, project proposal, and more files can be found. Detailed design files are located in their own folder in the Reports directory.
 
 ### Documentation
 
