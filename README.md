@@ -19,7 +19,37 @@ In the year we worked on this project we have taken the FX Zero motorcycle’s p
 
 ## Salient Outcomes
 
-Projects often have some outcomes that are more interesting than others. Here, highlight those things that you found interesting!
+### Project Outcomes
+
+#### Successful Vehicle Propulsion System
+- Integration of the selected three-phase AC motor into the powertrain.  
+- Correct power delivery from integrated battery.  
+
+#### Efficient Design
+- Achieves performance and design targets set by both mechanical and electrical teams.  
+- Minimizes modifications to chassis and other structural components.  
+
+#### Competitive Model
+- Achieves targeted performance metrics (60 hp, 60 ft-lbs torque, 60-75 mph top speed).  
+
+### Team Outcomes
+
+#### Knowledge and Skill Development
+- Hands-on experience with electric vehicle powertrains.  
+- Exposure to high-voltage systems, control algorithms, and system integration.  
+
+#### Project Management and Collaboration
+- Effective teamwork in designing and implementing the electric car.  
+- Coordinating across electrical, mechanical, and software teams for seamless execution.  
+
+#### Problem-Solving and Innovation
+- Addressing design constraints and overcoming integration challenges.  
+- Applying creative solutions to improve efficiency and performance.  
+
+#### Industry Readiness & Career Advancement
+- Gaining experience in EV technology, a growing sector in the automotive industry.  
+- Enhancing resumes and increasing employability in electric mobility and engineering fields.  
+
 
 
 ## Project Demonstration & Images
