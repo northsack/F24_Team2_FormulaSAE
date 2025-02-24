@@ -73,7 +73,7 @@ Erlind Boraj: Electrical Engineering Major, who worked on the motor controller w
 
 ### Faculty Supervisor
 
-Tell who the faculty supervisor was for the project
+Mark Davis (mwdavis@tntech.edu)
 
 ### Stakeholders
 
