@@ -196,7 +196,7 @@ These LEDs are known for their high brightness and low current requirements. The
 5. LEM, "Current Transducer HO-S series Datasheet," *LEM*.  
    [https://www.lem.com](https://www.lem.com) (accessed Nov 21, 2024).
 
-6. "Video Title," *YouTube*, published by [Channel Name], [Video Length]. Available: [https://www.youtube.com/watch?v=5dQUlfogNlM](https://www.youtube.com/watch?v=5dQUlfogNlM). [Accessed: Nov. 21, 2024].
+6. Copyright (c) 2019 Michael Ruppe : [ https://github.com/michaelruppe [Accessed: Nov. 21, 2024].
 
 7. FormulaElectricRacingNUST. "Tractive System Activation Light 2024." Hackster.io, 16 July 2024. [Online]. Available: https://www.hackster.io/formulaelectricracingnust/tractive-system-activation-light-2024-fbaa8f. [Accessed: 21 Nov 2024].
 
