@@ -8,7 +8,7 @@ The purpose of this experimental analysis is to evaluate the operational perform
 
 - Verification that the motor operates when supplied with available power.
 - Assessment of motor speed and response under limited current conditions.
-- Validation of sensor outputs (temperature, RPM, throttle) for reliability.
+- Validation of sensor outputs (temperature, torque, throttle) for reliability.
 - Identification of any abnormalities or inefficiencies in motor operation.
 
 These tests serve as a foundational baseline, allowing for future comparison once a full-power battery is available.
@@ -54,6 +54,7 @@ We expected deviations from ideal operation due to the restricted current input.
 The motor successfully spun at low throttle levels without load. Grinding began when the throttle was pushed further, confirming the motor's current needs exceeded the power supply’s limit.
 
 ### Test 2: Maximum Torque Recording
+"Maximum torque" refers to the highest torque recorded by the motor controller when gradually increasing the throttle until the motor reaches its malfunction point. During this process, motor speed behavior was observed, and torque and voltage were recorded at the peak point. The highest voltage and torque values displayed by the motor controller software at this point were designated as max voltage and max torque.
 
 | Run | Max Throttle Voltage (V) | Max Torque (Nm) |
 |-----|---------------------------|-----------------|
@@ -67,6 +68,8 @@ The motor successfully spun at low throttle levels without load. Grinding began 
 - Max Torque: 1.5629 Nm  
 
 ### Test 3: Proportional Torque vs. Throttle
+
+Objective was to determine whether the increase in torque is proportional to the increase in throttle input, where throttle position is represented by throttle voltage. This test evaluates whether torque rises at the same rate as throttle voltage—i.e., does doubling the throttle input result in doubled torque? The throttle was held at a stable position and pressed the same fixed distance for each test run. This distance was an arbitrary value between zero and maximum throttle.
 
 | Run | Throttle Voltage (V) | Torque (Nm) |
 |-----|-----------------------|-------------|
