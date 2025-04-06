@@ -46,7 +46,7 @@ Since the data only reflects whether the shutdown circuit was disconnected after
 The collected data indicates that all components behaved as expected. This is significant because it confirms that the shutdown circuit will function properly when integrated into the car, ensuring driver safety.
 
 #### 6. Summary
-While all the components of the shutdown circuit do behave as they should and do meet the success criteria from the conceptual design report it is important to mention that not every component of the shutdown described in the conceptual design is present in our final version of the shutdown circuit. This is because of some issues with purchasing the Insulation Monitoring Device (IMD), and High Voltage Disconnect (HVD). For the IMD a quote request must be submitted before purchasing and getting in contact with the manufacturer is a long process. The HVD was difficult because finding the appropriate disconnect is difficult because the car’s chassis is not completed at the time of this report.
+While all the components of the shutdown circuit do behave as they should and do meet the success criteria from the conceptual design report it is important to mention that not every component of the shutdown described in the conceptual design is present in our final version of the shutdown circuit. This is because of some issues with purchasing the Insulation Monitoring Device (IMD), and High Voltage Disconnect (HVD). For the IMD a quote request must be submitted before purchasing and getting in contact with the manufacturer is a long process. Finding the appropriate HVD is difficult because the car’s chassis is not completed at the time of this report.
 
 ## Experimental Analysis of Motor Subsystem
 
