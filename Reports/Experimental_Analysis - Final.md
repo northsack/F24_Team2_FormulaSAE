@@ -8,17 +8,19 @@
 To test the shutdown circuit, the goal was to verify that each component properly opens the circuit when triggered. The shutdown circuit includes two master switches, the GLV fuse, the BSPD module, the inertia switch, three shutdown buttons, and the BOTS switch. Each component will be actuated three times to ensure consistent and reliable operation.
 
 #### 2. Detailed Procedure
-The experiment that will be used to test the shutdown circuit is as follows. The shutdown circuit will be turned on, and then each component will be actuated properly. The BSPD, unlike the other components, cannot be actuated physically only electronically. To test that the BSPD is functioning as needed the two sensor pins on the BSPD will have various voltages applied to them from 0 V to 5 V and then 13.8 V will be applied to the power pin. A datasheet for the BSPD has a truth table that tells when the relay, and shutdown circuit, on the board will be opened or closed. The voltages on the sensor pins will then be set to the conditions described on the truth table and then the BSPD will be powered and the shutdown circuit will be evaluated. This will be done for each of the conditions labeled on the truth table. 
+The experiment used to test the shutdown circuit is as follows. The shutdown circuit will be turned on, and each component will then be actuated properly. The BSPD, unlike the other components, cannot be actuated physically—only electronically. To test that the BSPD is functioning correctly, various voltages ranging from 0 V to 5 V will be applied to its two sensor pins, followed by applying 13.8 V to the power pin. The BSPD datasheet includes a truth table that specifies when the relay—and thus the shutdown circuit—should open or close. The sensor pin voltages will be set according to the conditions listed in the truth table, the BSPD will be powered, and the shutdown circuit will be evaluated. This process will be repeated for each condition listed in the truth table.
 
-Data Collection: The data being collected will be the condition of the shutdown circuit after the device under test has been actuated. 
-Trials: Since the shutdown circuit’s data is mostly data on how the switches affect the shutdown circuit only three trials, for each component will be collected. The BSPD’s most common modes of operation will also undergo three trials each. 
+**Data Collection:**  
+The data collected will indicate the state of the shutdown circuit after each component is actuated.
+
+**Trials:**  
+Since the focus is on how each component affects the shutdown circuit, three trials will be conducted for each one. The BSPD’s most common modes of operation will also be tested with three trials each.
+
 
 #### 3. Expected Results
-
 The expected result is that each switch will successfully open the shutdown circuit. The BSPD is also expected to open the circuit unless both of its sensor pins are at or above 4.44 V. It is acceptable for one sensor pin to be in the 4.44 to 5 V range, as long as the other remains between 0.45 and 4.44 V.
 
 #### 4. Actual Results
-
 Since the data only reflects whether the shutdown circuit was disconnected after the tested component was actuated, a value of 0 indicates that the shutdown circuit opened, while a value of 1 indicates that it remained closed. The initial condition of the shutdown circuit in all trials will be closed (1).
 
 
@@ -173,4 +175,4 @@ Zach Holt: Reviewed document and formatted into markdown.
 
 Evan Morse: Performed tests on the motor.
 
-Graham Robinson: Reviewed and Revised the report.
+Graham Robinson: Reviewed and revised the report.
