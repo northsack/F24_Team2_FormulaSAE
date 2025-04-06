@@ -4,7 +4,8 @@
 ## Experimental Analysis of Shutdown Circuit
 
 #### 1. Purpose and Justification
-To test the shutdown circuit testing that the components do actually open the circuit when it should. The shutdown circuit that is built includes two master switches, the GLV fuse, the BSPD module, inertia switch, three shutdown buttons, and the BOTS switch. Each component will be actuated 3 times to ensure that  
+
+To test the shutdown circuit, the goal was to verify that each component properly opens the circuit when triggered. The shutdown circuit includes two master switches, the GLV fuse, the BSPD module, the inertia switch, three shutdown buttons, and the BOTS switch. Each component will be actuated three times to ensure consistent and reliable operation.
 
 #### 2. Detailed Procedure
 The experiment that will be used to test the shutdown circuit is as follows. The shutdown circuit will be turned on, and then each component will be actuated properly. The BSPD, unlike the other components, cannot be actuated physically only electronically. To test that the BSPD is functioning as needed the two sensor pins on the BSPD will have various voltages applied to them from 0 V to 5 V and then 13.8 V will be applied to the power pin. A datasheet for the BSPD has a truth table that tells when the relay, and shutdown circuit, on the board will be opened or closed. The voltages on the sensor pins will then be set to the conditions described on the truth table and then the BSPD will be powered and the shutdown circuit will be evaluated. This will be done for each of the conditions labeled on the truth table. 
@@ -12,11 +13,14 @@ The experiment that will be used to test the shutdown circuit is as follows. The
 Data Collection: The data being collected will be the condition of the shutdown circuit after the device under test has been actuated. 
 Trials: Since the shutdown circuit’s data is mostly data on how the switches affect the shutdown circuit only three trials, for each component will be collected. The BSPD’s most common modes of operation will also undergo three trials each. 
 
-### 3. Expected Results
-The expected results will be that the switches will open the shutdown circuit. The BSPD is expected to also open the shutdown circuit, unless the voltage of both of the sensor pins are at or above 4.44 V. The voltage of one sensor pin can be in the 4.44 to 5 volt range as long as the other sensor pin remains in the 0.45 to 4.44 volt range. 
+#### 3. Expected Results
 
-### 4. Actual Results
-Since the data is only if the shutdown circuit was disconnected after the component under test is actuated, a 0 will indicate that the shutdown circuit opened and a 1 will indicate that the shutdown circuit remained closed, the starting condition of the shutdown circuit in all trials will be closed (1)
+The expected result is that each switch will successfully open the shutdown circuit. The BSPD is also expected to open the circuit unless both of its sensor pins are at or above 4.44 V. It is acceptable for one sensor pin to be in the 4.44 to 5 V range, as long as the other remains between 0.45 and 4.44 V.
+
+#### 4. Actual Results
+
+Since the data only reflects whether the shutdown circuit was disconnected after the tested component was actuated, a value of 0 indicates that the shutdown circuit opened, while a value of 1 indicates that it remained closed. The initial condition of the shutdown circuit in all trials will be closed (1).
+
 
 | Part | Trial 1 | Trial 2 | Trial 3 |
 |------|---------|---------|---------|
@@ -35,10 +39,11 @@ Since the data is only if the shutdown circuit was disconnected after the compon
 | 0.45 - 4.44 V | 0 | 0 | 1 | 1 |
 | 4.45 - 5 V | 0 | 0 | 1 | 0 |
 
-### 5. Interpretation and Conclusions
-From the collected data it seems that all the components behave as expected. This is significant because it shows that the shutdown circuit will behave as it is needed when it is built into the car and thus will protect the driver. 
+#### 5. Interpretation and Conclusions
 
-### 6. Summary
+The collected data indicates that all components behaved as expected. This is significant because it confirms that the shutdown circuit will function properly when integrated into the car, ensuring driver safety.
+
+#### 6. Summary
 While all the components of the shutdown circuit do behave as they should and do meet the success criteria from the conceptual design report it is important to mention that not every component of the shutdown described in the conceptual design is present in our final version of the shutdown circuit. This is because of some issues with purchasing the Insulation Monitoring Device (IMD), and High Voltage Disconnect (HVD). For the IMD a quote request must be submitted before purchasing and getting in contact with the manufacturer is a long process. The HVD was difficult because finding the appropriate disconnect is difficult because the car’s chassis is not completed at the time of this report.
 
 ## Experimental Analysis of Motor Subsystem
@@ -88,10 +93,6 @@ Given the system’s design for much higher current operation (up to 440A), we e
 - Temperature would not rise significantly.
 - RPM and torque would increase linearly with throttle until reaching the low-current limit.
 
-We expected deviations from ideal operation due to the restricted current input.
-
-Reference Expected Results - Motor Controller Specifications (from controller software)
-
 **Traction Baseline Profile:**
 
 - Max Forward Speed: 6050 rpm  
@@ -103,7 +104,7 @@ Reference Expected Results - Motor Controller Specifications (from controller so
 
 - Max Torque: 100% of peak  
 - Current Limit: 440A RMS  
-- Peak Torque: 152 Nm  
+- Peak Torque: 152 N-m  
 - Max Motor Speed: 6100 rpm  
 - Overspeed Protection: 8000 rpm  
 
@@ -118,7 +119,7 @@ The motor successfully spun at low throttle levels without load. Grinding began 
 #### Test 2: Maximum Torque Recording
 "Maximum torque" refers to the highest torque recorded by the motor controller when gradually increasing the throttle until the motor reaches its malfunction point. During this process, motor speed behavior was observed, and torque and voltage were recorded at the peak point. The highest voltage and torque values displayed by the motor controller software at this point were designated as max voltage and max torque.
 
-| Run | Max Throttle Voltage (V) | Max Torque (Nm) |
+| Run | Max Throttle Voltage (V) | Max Torque (N-m) |
 |-----|---------------------------|-----------------|
 | 1   | 0.358                     | 2.3125          |
 | 2   | 0.299                     | 1.3140          |
@@ -127,13 +128,14 @@ The motor successfully spun at low throttle levels without load. Grinding began 
 
 **Averages:**
 - Max Throttle Voltage: 0.321V  
-- Max Torque: 1.5629 Nm  
+- Max Torque: 1.5629 N-m  
 
 #### Test 3: Proportional Torque vs. Throttle
 
-Objective was to determine whether the increase in torque is proportional to the increase in throttle input, where throttle position is represented by throttle voltage. This test evaluates whether torque rises at the same rate as throttle voltage—i.e., does doubling the throttle input result in doubled torque? The throttle was held at a stable position and pressed the same fixed distance for each test run. This distance was an arbitrary value between zero and maximum throttle.
+The objective was to determine whether the increase in torque is proportional to the increase in throttle input, with throttle position represented by throttle voltage. This test evaluates whether torque increases at the same rate as throttle voltage—for example, whether doubling the throttle input results in doubled torque. During each test run, the throttle was held at a stable position and pressed the same fixed distance. This distance was an arbitrary value between zero and full throttle.
 
-| Run | Throttle Voltage (V) | Torque (Nm) |
+
+| Run | Throttle Voltage (V) | Torque (N-m) |
 |-----|-----------------------|-------------|
 | 1   | 0.315                 | 0.4375      |
 | 2   | 0.315                 | 0.5628      |
@@ -142,7 +144,7 @@ Objective was to determine whether the increase in torque is proportional to the
 
 **Averages:**
 - Throttle Voltage: 0.315V  
-- Torque: 0.5001 Nm  
+- Torque: 0.5001 N-m  
 
 **Change in Torque Between Tests 2 and 3:** 3.125  
 **Change in Throttle Voltage:** ~1.02  
@@ -155,16 +157,20 @@ Temperature was recorded via the motor controller. It remained at a constant 36�
 ### 5. Interpretation and Conclusions
 
 - **Motor Operation:** The motor operates under minimal conditions. Its successful activation confirms fundamental functionality.
-- **Limited Torque:** The torque values measured (~1.5 Nm max) are less than 1% of the rated 152 Nm. This confirms that the current supply is insufficient to push the motor toward its full capabilities.
+- **Limited Torque:** The torque values measured (~1.5 N-m max) are less than 1% of the rated 152 N-m. This confirms that the current supply is insufficient to push the motor toward its full capabilities.
 - **Temperature:** No change was observed. This is expected given the low power usage. Future tests should re-examine thermal behavior.
 - **Throttle-Torque Relationship:** There is a roughly proportional relationship between throttle and torque, but full validation will require higher current levels.
 
 ### 6. Summary
-The motor subsystem was tested under limited current conditions to verify basic functionality and collect baseline data. Using a 104V power supply limited to 6A, the motor successfully activated and responded to throttle inputs, though grinding noises at higher throttle levels indicated insufficient current. Maximum recorded torque was approximately 1.56 Nm, significantly below the rated 152 Nm, and temperature remained stable at 36°C. The throttle-to-torque relationship appeared roughly proportional, though full validation requires higher current tests. These results confirm that the motor is operational and establish a foundation for future high-power evaluations.
+The motor subsystem was tested under limited current conditions to verify basic functionality and collect baseline data. Using a 104V power supply limited to 6A, the motor successfully activated and responded to throttle inputs, though grinding noises at higher throttle levels indicated insufficient current. Maximum recorded torque was approximately 1.56 N-m, significantly below the rated 152 N-m, and temperature remained stable at 36°C. The throttle-to-torque relationship appeared roughly proportional, though full validation requires higher current tests. These results confirm that the motor is operational and establish a foundation for future high-power evaluations.
 
 ## Statement of Contribution
 Jesse Munoz: Performed tests on each part of the shutdown circuit as well as drafted the experimental analysis document.
-Erlind Boraj: Performed tests on the motor. Reviwed formated the document.
+
+Erlind Boraj: Performed tests on the motor and reviewed the document.
+
 Zach Holt: Reviewed document and formatted into markdown.
+
 Evan Morse: Performed tests on the motor.
-Graham Robinson: Reviewed the report.
+
+Graham Robinson: Reviewed and Revised the report.
