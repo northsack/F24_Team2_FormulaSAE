@@ -160,7 +160,7 @@ Temperature was recorded via the motor controller. It remained at a constant 36Â
 - **Throttle-Torque Relationship:** There is a roughly proportional relationship between throttle and torque, but full validation will require higher current levels.
 
 ### 6. Summary
-
+The motor subsystem was tested under limited current conditions to verify basic functionality and collect baseline data. Using a 104V power supply limited to 6A, the motor successfully activated and responded to throttle inputs, though grinding noises at higher throttle levels indicated insufficient current. Maximum recorded torque was approximately 1.56 Nm, significantly below the rated 152 Nm, and temperature remained stable at 36Â°C. The throttle-to-torque relationship appeared roughly proportional, though full validation requires higher current tests. These results confirm that the motor is operational and establish a foundation for future high-power evaluations.
 
 ## Statement of Contribution
 Jesse Munoz: Performed tests on each part of the shutdown circuit as well as drafted the experimental analysis document.
