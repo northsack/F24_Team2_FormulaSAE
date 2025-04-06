@@ -159,6 +159,9 @@ Temperature was recorded via the motor controller. It remained at a constant 36Â
 - **Temperature:** No change was observed. This is expected given the low power usage. Future tests should re-examine thermal behavior.
 - **Throttle-Torque Relationship:** There is a roughly proportional relationship between throttle and torque, but full validation will require higher current levels.
 
+### 6. Summary
+
+
 ## Statement of Contribution
 Jesse Munoz: Performed tests on each part of the shutdown circuit as well as drafted the experimental analysis document.
 Erlind Boraj: Performed tests on the motor. Reviwed formated the document.
