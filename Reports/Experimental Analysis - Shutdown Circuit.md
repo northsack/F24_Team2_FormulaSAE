@@ -48,3 +48,8 @@ From the collected data it seems that all the components behave as expected. Thi
 
 ## Summary
 While all the components of the shutdown circuit do behave as they should and do meet the success criteria from the conceptual design report it is important to mention that not every component of the shutdown described in the conceptual design is present in our final version of the shutdown circuit. This is because of some issues with purchasing the Insulation Monitoring Device (IMD), and High Voltage Disconnect (HVD). For the IMD a quote request must be submitted before purchasing and getting in contact with the manufacturer is a long process. The HVD was difficult because finding the appropriate disconnect is difficult because the car’s chassis is not completed at the time of this report.
+
+## Statement of Contribution
+Jesse Munoz: Performed tests on each part of the shutdown circuit as well as drafted the experimental analysis document.
+
+Zach Holt: Reviewed document and formatted into markdown.
