@@ -76,10 +76,14 @@ These tests serve as a foundational baseline, allowing for future comparison onc
 
 **Setup:**
 
-- The motor was connected to the controller and powered by the limited supply.
+- The motor was connected to the controller in the same way as shown in our wiring diagrams and powered by the limited supply.
+- The motor controller was connected to a laptop for monitoring purposes. The motor controller software can be used to get measurements when the motor is running.
 - The throttle was pressed slowly until grinding noise began, signaling low current-induced instability. Throttle was then released to avoid damage.
 - Tests were repeated at constant throttle positions to ensure consistency.
 - All data was captured using the motor controller’s built-in telemetry.
+
+- For the shutdown circuit, all components were connected as shown in the wiring diagram.
+- Each component was tested individually 3 separate times to ensure full capability to open the circuit if triggered.
 
 **Safety:**
 
