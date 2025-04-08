@@ -155,6 +155,11 @@ The objective was to determine whether the increase in torque is proportional to
 **Change in Torque Between Tests 2 and 3:** 3.125  
 **Change in Throttle Voltage:** ~1.02  
 
+
+The following are measurements of throttle voltage (purple) and Motor phase voltage(blue) take through an oscilloscope.
+![TEK00003](https://github.com/user-attachments/assets/3c3aacf7-56ee-475f-b36c-b5c7019ff3dd)
+![TEK00002](https://github.com/user-attachments/assets/80af52ff-6ea0-4909-9182-e650646dae00)
+
 #### Test 4: Temperature Monitoring
 
 Temperature was recorded via the motor controller. It remained at a constant 36°C throughout all tests. This is expected because the motor was operating at only a fraction of its rated power. Significant heat generation is unlikely until full-load conditions are tested.
