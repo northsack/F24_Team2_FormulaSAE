@@ -156,11 +156,19 @@ The objective was to determine whether the increase in torque is proportional to
 **Change in Throttle Voltage:** ~1.02  
 
 
-The following are measurements of throttle voltage (purple) and Motor phase voltage(blue) take through an oscilloscope.
-![TEK00003](https://github.com/user-attachments/assets/3c3aacf7-56ee-475f-b36c-b5c7019ff3dd)
-![TEK00002](https://github.com/user-attachments/assets/80af52ff-6ea0-4909-9182-e650646dae00)
 
-#### Test 4: Temperature Monitoring
+#### Test 4: Throttle Pedal Displacement vs Throttle Voltage
+
+Using spacer with known, or measured thickness, we held the Throttle pedal stable at different displacemnts. The throttle voltage was then meausured through an oscilloscope to determine the rlationship between them.
+
+![image](https://github.com/user-attachments/assets/31c1d623-da7b-429b-9a48-1c0cf29da2c1)
+
+The graph shows the relationship between Throttle Pedal Displacement (mm) and Throttle Voltage (V). As expected, the voltage increases with pedal displacement, reflecting the progressive response of the throttle position sensor. The curve is slightly nonlinear—initial displacement causes small voltage increases, while later stages show a steeper voltage rise. This indicates that the throttle system has finer control at low pedal positions and becomes more responsive at higher displacements.
+
+
+
+
+#### Test 5: Temperature Monitoring
 
 Temperature was recorded via the motor controller. It remained at a constant 36°C throughout all tests. This is expected because the motor was operating at only a fraction of its rated power. Significant heat generation is unlikely until full-load conditions are tested.
 
