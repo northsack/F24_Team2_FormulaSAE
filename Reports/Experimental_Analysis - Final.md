@@ -122,42 +122,7 @@ These values indicate the motor's full capability. Compared to our low-power tes
 
 The motor successfully spun at low throttle levels without load. Grinding began when the throttle was pushed further, confirming the motor's current needs exceeded the power supply’s limit.
 
-#### Test 2: Maximum Torque Recording
-"Maximum torque" refers to the highest torque recorded by the motor controller when gradually increasing the throttle until the motor reaches its malfunction point. During this process, motor speed behavior was observed, and torque and voltage were recorded at the peak point. The highest voltage and torque values displayed by the motor controller software at this point were designated as max voltage and max torque.
-
-| Run | Max Throttle Voltage (V) | Max Torque (N-m) |
-|-----|---------------------------|-----------------|
-| 1   | 0.358                     | 2.3125          |
-| 2   | 0.299                     | 1.3140          |
-| 3   | 0.301                     | 1.3125          |
-| 4   | 0.326                     | 1.3125          |
-
-**Averages:**
-- Max Throttle Voltage: 0.321V  
-- Max Torque: 1.5629 N-m  
-
-#### Test 3: Proportional Torque vs. Throttle
-
-The objective was to determine whether the increase in torque is proportional to the increase in throttle input, with throttle position represented by throttle voltage. This test evaluates whether torque increases at the same rate as throttle voltage—for example, whether doubling the throttle input results in doubled torque. During each test run, the throttle was held at a stable position and pressed the same fixed distance. This distance was an arbitrary value between zero and full throttle.
-
-
-| Run | Throttle Voltage (V) | Torque (N-m) |
-|-----|-----------------------|-------------|
-| 1   | 0.315                 | 0.4375      |
-| 2   | 0.315                 | 0.5628      |
-| 3   | 0.315                 | 0.4375      |
-| 4   | 0.315                 | 0.5625      |
-
-**Averages:**
-- Throttle Voltage: 0.315V  
-- Torque: 0.5001 N-m  
-
-**Change in Torque Between Tests 2 and 3:** 3.125  
-**Change in Throttle Voltage:** ~1.02  
-
-
-
-#### Test 4: Throttle Pedal Displacement vs Throttle Voltage
+#### Test 2: Throttle Pedal Displacement vs Throttle Voltage
 
 Using spacer with known, or measured thickness, we held the Throttle pedal stable at different displacemnts. The throttle voltage was then meausured through an oscilloscope to determine the rlationship between them.
 
@@ -171,7 +136,7 @@ In order to improve the linearity and address the errors, some remeasuremnts wer
 ![image](https://github.com/user-attachments/assets/b8e4d0df-edee-4246-afc0-80259cec1272)
 The new graph shows a higher linearity of 99.91%. Factors that affect the linearity include equipment imperfections and measurement imperfections. The testing was done using spacers which were not made to correctly fit the gap between the throttle pedal and the displacement screw on the throttle pedal. Therefore, the thickness of the measured spacer may not match exactly the perpendicular distance of the throttle displacement (distance from screw's resting position to the displaced screw position). The power supply used is also not what is meant to power the throttle; therefore, there may be imperfections once the throttle is pressed to its max or barely moved from the 0 position, which will justify the slight imperfect voltage levels at the beginning and end of the graphed line.
 
-#### Test 5: Temperature Monitoring
+#### Test 3: Temperature Monitoring
 
 Temperature was recorded via the motor controller. It remained at a constant 36°C throughout all tests. This is expected because the motor was operating at only a fraction of its rated power. Significant heat generation is unlikely until full-load conditions are tested.
 
