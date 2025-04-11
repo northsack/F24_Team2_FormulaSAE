@@ -167,8 +167,9 @@ Using spacer with known, or measured thickness, we held the Throttle pedal stabl
 The graph shows the relationship between Throttle Pedal Displacement (mm) and Throttle Voltage (V). As expected, the voltage increases with pedal displacement, reflecting the progressive response of the throttle position sensor. 
 
 The data demonstrates strong linearity, with the calculated R-squared value indicating a high percentage alignment to a linear trend. The voltage consistently increases with displacement, and the linear regression closely approximates the observed values. This confirms the tested data is both reliable and exhibits a strong linear relationship.
-
-
+In order to improve the linearity and address the errors, some remeasuremnts were done (shown in graph below).
+![image](https://github.com/user-attachments/assets/b8e4d0df-edee-4246-afc0-80259cec1272)
+The new graph shows a higher linearity of 99.91%. Factors that affect the linearity include equipment imperfections and measurement imperfections. The testing was done using spacers which were not made to correctly fit the gap between the throttle pedal and the displacement screw on the throttle pedal. Therefore, the thickness of the measured spacer may not match exactly the perpendicular distance of the throttle displacement (distance from screw's resting position to the displaced screw position). The power supply used is also not what is meant to power the throttle; therefore, there may be imperfections once the throttle is pressed to its max or barely moved from the 0 position, which will justify the slight imperfect voltage levels at the beginning and end of the graphed line.
 
 #### Test 5: Temperature Monitoring
 
