@@ -161,10 +161,12 @@ The objective was to determine whether the increase in torque is proportional to
 
 Using spacer with known, or measured thickness, we held the Throttle pedal stable at different displacemnts. The throttle voltage was then meausured through an oscilloscope to determine the rlationship between them.
 
-![image](https://github.com/user-attachments/assets/31c1d623-da7b-429b-9a48-1c0cf29da2c1)
+![image](https://github.com/user-attachments/assets/81486fcb-98f1-4de0-b93e-4ee5fae0c880)
 
-The graph shows the relationship between Throttle Pedal Displacement (mm) and Throttle Voltage (V). As expected, the voltage increases with pedal displacement, reflecting the progressive response of the throttle position sensor. The curve is slightly nonlinear—initial displacement causes small voltage increases, while later stages show a steeper voltage rise. This indicates that the throttle system has finer control at low pedal positions and becomes more responsive at higher displacements.
 
+The graph shows the relationship between Throttle Pedal Displacement (mm) and Throttle Voltage (V). As expected, the voltage increases with pedal displacement, reflecting the progressive response of the throttle position sensor. 
+
+The data demonstrates strong linearity, with the calculated R-squared value indicating a high percentage alignment to a linear trend. The voltage consistently increases with displacement, and the linear regression closely approximates the observed values. This confirms the tested data is both reliable and exhibits a strong linear relationship.
 
 
 
