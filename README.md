@@ -11,10 +11,7 @@ The goal of the team is to build a powertrain system that uses dual throttles to
 
 ## Capabilities
 
-Here explain in more detail (though not as much as will be given in the datasheet) what the version of this project in this repo is capable of doing. (delete this line later)
-
-### (In progress)
-In the year we worked on this project we have taken the FX Zero motorcycle’s powerpack and have been able to make the proper connections to get it to power our power train system. The power train system includes the FX Zero motorcycle’s motor and the Sevcon Gen 4 motor controller. With our current configuration we have been able to connect and program the motor controller to control the motor speed by accepting inputs from 2 throttle sensors. 
+In the year we worked on this project we have taken the FX Zero motorcycle’s motor and have been able to make the proper connections to get it to spin. The power train system includes the FX Zero motorcycle’s motor and the Sevcon Gen 4 motor controller. With our current configuration we have been able to connect and program the motor controller to control the motor speed by accepting input from a throttle sensor. We have also designed and built most of the working shutdown circuit. All systems of this project were made to be compliant with the FASE EV rules.
 
 
 ## Salient Outcomes
