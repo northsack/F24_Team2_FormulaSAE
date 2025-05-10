@@ -10,7 +10,7 @@ This part of the shutdown circuit will need to be improved because when the BOTS
 
 Master Switches: https://www.summitracing.com/parts/hla-002843011#overview
 
-The Masster Switches were purchased in-person but these are the same that we got for the shutdown circuit
+The Master Switches were purchased in-person but these are the same that we got for the shutdown circuit
 
 Battery: https://www.amazon.com/KBT-Replacement-Battery-Capacity-Compatible/dp/B0C2CJBS55?mcid=bca6d4a646e93144affcf55bfafad4fe&hvocijid=7589644394963285148-B0C2CJBS55-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=7589644394963285148&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9194992&hvtargid=pla-2281435177858&th=1
 
